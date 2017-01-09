@@ -14,6 +14,7 @@
 #include "dataset.h"
 #include "dsolver.h"
 #include "alglib.h"
+#include "explore.h"
 
 void main_test();
 void main_model();
@@ -21,6 +22,7 @@ void main_solve();
 void main_graph();
 void main_shoot(double);
 void main_range(double);
+void main_maps();
 
 using std::cout;
 
@@ -32,6 +34,7 @@ void usage()
     cout << "\tshoot (angle) - simple shots (default)\n";
     cout << "\trange <R>|max - solve for range\n";
     cout << "\tbuild - continuously improve graph or point\n";
+    cout << "\tmaps - explore U function interactively\n";
 }
 
 int main(int ac, char * av[])
@@ -53,6 +56,7 @@ try
     else if ( av1 == "model" ) main_model();
     else if ( av1 == "solve" ) main_solve();
     else if ( av1 == "build" ) main_graph();
+    else if ( av1 == "maps" ) main_maps();
     else if ( av1 == "shoot" )
     {
         double r = INF_VAL;
@@ -304,3 +308,20 @@ void main_graph()
         }
     }
 }
+
+void main_maps()
+{
+    Psi psi;
+    Dataset experiment;
+    Explorer e(&psi, &experiment);
+
+    while (1)
+    {
+        string line;
+        std::cout << "> ";
+        std::getline(std::cin, line);
+        std::istringstream is(line);
+        if ( !e.run(is) ) break;
+    }
+}
+

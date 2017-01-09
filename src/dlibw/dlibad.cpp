@@ -32,7 +32,7 @@ Dlibad::vd Dlibad::solve(const vd & v) const
                     2 * sz + 1, // number of interpolation points
                     dlib::uniform_matrix<double>(sz, 1, -1e100),
                     dlib::uniform_matrix<double>(sz, 1, 1e100),
-                    1,    // initial trust region radius
+                    0.01,    // initial trust region radius
                     1e-12,  // stopping trust region radius
                     100000    // max number of objective function evaluations
                    );

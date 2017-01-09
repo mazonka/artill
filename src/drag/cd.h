@@ -104,7 +104,7 @@ class CdAlpha : public Cd
         Names nm;
         struct B
         {
-            double bs, a0, am, as, ah, bm, bh;
+            double a0, am, as, ah, bm, bh, bs;
             double calc(double x);
         };
         union
