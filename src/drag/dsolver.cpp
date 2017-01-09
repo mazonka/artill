@@ -67,6 +67,7 @@ void Dsolver::solve()
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();
     Alglib as(&fun, pms);
+    //A_dlib as(&fun, pms);
 
     pms = as.solve();
     psi->cd->setParams(pms);

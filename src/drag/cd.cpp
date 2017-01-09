@@ -333,13 +333,13 @@ double CdAlpha::B::calc(double x)
 
     //a(x)=a0+ah/(1+exp(-as*(x-am)))
     //b(x)=bh/(1+exp(-bs*(x-bm)))
-    double a = a0 + ah / (1 + exp(-as * (x - am)));
-    double b =  0 + bh / (1 + exp(-bs * (x - bm)));
+    double qa = a0 + ah / (1 + exp(-as * (x - am)));
+    double qb =  0 + bh / (1 + exp(-bs * (x - bm)));
 
     const double smll = 1e-3;
     if ( x < smll ) x = smll;
 
-    return p(a + b / x);
+    return p(qa + qb / x);
 }
 
 CdPoint::CdPoint()

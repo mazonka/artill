@@ -282,8 +282,8 @@ void Entry::run_ang(Psi * psi)
     TrResult tres = Trajectory::run(psi);
     TrSolution res(tres, TrType(), angle);
 
-    for (auto p : items)
-        p->set(res);
+    for (auto q : items)
+        q->set(res);
 }
 
 void Entry::run_rng(Psi * psi)
@@ -578,12 +578,12 @@ string item::Angle::nm() const
     never(0);
 }
 
-double item::Angle::convert(bool load, double x)
+double item::Angle::convert(bool load, double z)
 {
-    if ( units == MIL && load ) return r2d(mil2rad(x));
-    if ( units == MIL && !load ) return rad2mil(deg2rad(x));
-    if ( units == RAD && load ) return r2d(x);
-    if ( units == RAD && !load ) return deg2rad(x);
+    if ( units == MIL && load ) return r2d(mil2rad(z));
+    if ( units == MIL && !load ) return rad2mil(deg2rad(z));
+    if ( units == RAD && load ) return r2d(z);
+    if ( units == RAD && !load ) return deg2rad(z);
     return x;
 }
 

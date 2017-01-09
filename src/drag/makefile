@@ -8,6 +8,7 @@ endif
 
 ALGL = ../alglib$(PLAT)/lib/
 ALIB = $(ALGL)/a.lib
+DLIB = ../dlibw/dlib/
 
 ifeq ($(PLAT),w)
 CL = cl
@@ -33,7 +34,7 @@ EOUT=-o
 ARCR=ar crs #
 endif
 
-OPT += -I $(ALGL)
+OPT += -I $(ALGL) -I $(DLIB)
 
 EEXT = .$(PLAT).exe
 

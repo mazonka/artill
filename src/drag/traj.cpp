@@ -67,13 +67,13 @@ void Trajectory::save()
         double S = 0;
         for ( auto p : path )
         {
-            double dt = p.t - q.t;
+            double du = p.t - q.t;
             S += dist(p, q);
 
             of << s(p.t)
                << ' ' << s(p.qx) << ' ' << s(p.qy) << ' ' << s(p.qz)
                << ' ' << s(p.vx) << ' ' << s(p.vy) << ' ' << s(p.vz)
-               << ' ' << s(dt) << ' ' << s(S)
+               << ' ' << s(du) << ' ' << s(S)
                << ' ' << s(rangeR(p)) << ' ' << s(heat(p) / 1000)
                << '\n';
 

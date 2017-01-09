@@ -23,7 +23,7 @@ struct Item
     virtual double util(const Item * d) const; // hint and kind redefine
 
     bool isUnknown() const;
-    virtual double convert(bool load, double x) { return x; }
+    virtual double convert(bool load, double z) { return z; }
 };
 
 class Entry

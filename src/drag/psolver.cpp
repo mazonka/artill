@@ -10,12 +10,12 @@ const double Lsrqcf::SMLL = 1e-15;
 
 bool Box::apex(double err, double & x)
 {
-    double b = B();
-    double a = A();
+    double qb = B();
+    double qa = A();
 
-    if ( a < -err )
+    if ( qa < -err )
     {
-        x = -0.5 * b / a;
+        x = -0.5 * qb / qa;
         return true;
     }
 
@@ -37,24 +37,24 @@ bool Box::apex2(double err, double & x, double & y)
 
 bool Box::root(double err, double level, double & x1, double & x2)
 {
-    double b = B();
-    double a = A();
+    double qb = B();
+    double qa = A();
     double cdy = (C() - D() * level);
-    double Det = b * b - 4 * a * cdy;
+    double Det = qb * qb - 4 * qa * cdy;
 
     if ( Det < 0 ) Det = 0;
     Det = std::sqrt(Det);
 
     if ( a < -err )
     {
-        x2 = 0.5 * (-b + Det) / a;
-        x1 = 0.5 * (-b - Det) / a;
+        x2 = 0.5 * (-qb + Det) / qa;
+        x1 = 0.5 * (-qb - Det) / qa;
         return true;
     }
 
     if ( std::abs(b) > err )
     {
-        x1 = x2 = -cdy / b;
+        x1 = x2 = -cdy / qb;
         return true;
     }
 
