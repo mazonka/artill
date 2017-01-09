@@ -21,6 +21,7 @@ void Names::load(int n)
         {
             if ( k == "#" ) { getline(in, v); continue; }
             in >> v;
+            if ( v == "=" ) in >> v;
             if ( !k.empty() && k[0] != '#' ) m[k] = v;
         }
     }

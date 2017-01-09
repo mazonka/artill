@@ -47,10 +47,15 @@ double DsolvFun::f(const Params & pms)
     }
 
     static int cntr = 999999;
-    if ( ++cntr > 2 )
+    //if ( ++cntr > 2 )
+    if ( ++cntr > 0 )
     {
         cntr = 0;
-        cout << "min = " << ubest << "     u = " << tos(u) << "    \r" << std::flush;
+        //cout << "min = " << ubest << "     u = " << tos(u) << "    \r" << std::flush;
+        cout << u << " : ";
+        for ( size_t i = 0; i < pms.v.size(); i++ )
+            cout << ' ' << pms.v[i];
+        cout << '\n';
     }
 
     return u;
@@ -67,7 +72,7 @@ void Dsolver::solve()
 {
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();
-	std::unique_ptr<Asolver> as(make_solver(&fun, pms));
+    std::unique_ptr<Asolver> as(make_solver(&fun, pms));
     //Alglib as(&fun, pms);
     //A_dlib as(&fun, pms);
 

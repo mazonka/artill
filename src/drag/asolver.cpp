@@ -7,8 +7,8 @@
 
 Asolver * make_solver(AsolFun * fn, const Params & p)
 {
-	return new Asdlib(fn,p);
-	return new Alglib(fn,p);
+//  return new Asdlib(fn,p);
+    return new Alglib(fn, p);
 }
 
 

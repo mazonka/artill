@@ -261,7 +261,7 @@ void main_model()
 void main_test()
 {
     ///Alglib a;
-	std::unique_ptr<Asolver> a(make_solver(nullptr,Params()));
+    std::unique_ptr<Asolver> a(make_solver(nullptr, Params()));
     testAsolver(&*a);
 }
 
