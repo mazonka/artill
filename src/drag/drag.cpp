@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <fstream>
 #include <cstdlib>
+#include <memory>
 
 #include "defs.h"
 #include "util.h"
@@ -259,9 +260,9 @@ void main_model()
 
 void main_test()
 {
-    Alglib a;
-    testAsolver(&a);
-    return;
+    ///Alglib a;
+	std::unique_ptr<Asolver> a(make_solver(nullptr,Params()));
+    testAsolver(&*a);
 }
 
 

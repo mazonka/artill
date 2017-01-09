@@ -10,7 +10,6 @@ typedef std::vector<double> vd;
 
 Params Asdlib::solve()
 {
-    //p.v[6] += 1.1;
     //xmn(p.v, f);
     return p;
 }

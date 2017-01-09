@@ -7,6 +7,7 @@
 
 Asolver * make_solver(AsolFun * fn, const Params & p)
 {
+//	return new Asdlib(fn,p);
 	return new Alglib(fn,p);
 }
 
@@ -22,7 +23,7 @@ struct Tfun: AsolFun
 double Tfun::f(const Params & x)
 {
     double y = x.v[0] * x.v[0];
-    std::cout << "AAA " << x.v[0] << " -> " << y << '\n';
+    std::cout << "# " << x.v[0] << " -> " << y << '\n';
     return y;
 }
 
