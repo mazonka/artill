@@ -3,10 +3,10 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
-#include "optimization.h"
+#include "dlibad.h"
 
-using namespace alglib;
 using std::cout;
 
 typedef std::vector<double> vd;
@@ -63,38 +63,11 @@ double func(int n, const double * x)
 }
 
 
-void function1_func(const real_1d_array & x, double & result, void * ptr)
-{
-    typef f = (typef)(ptr);
-    int sz = x.length();
-    const double * p = x.getcontent();
-    result = f(sz, p);
-}
-
 vd xmain(const vd & v, typef fn)
 {
-    real_1d_array x;
-    x.setcontent(v.size(), v.data());
-
-    double epsg = 0.0000000001;
-    double epsf = 0;
-    double epsx = 0;
-    double diffstep = 1.0e-6;
-    ae_int_t maxits = 0;
-    minlbfgsstate state;
-    minlbfgsreport rep;
-
-    minlbfgscreatef(1, x, diffstep, state);
-    minlbfgssetcond(state, epsg, epsf, epsx, maxits);
-    minlbfgsoptimize(state, function1_func, NULL, (void *)fn);
-    minlbfgsresults(state, x, rep);
-
-    //printf("%d\n", int(rep.terminationtype)); // EXPECTED: 4
-    //printf("%s\n", x.tostring(2).c_str()); // EXPECTED: [-3,3]
-
-    vd ret;
-    for ( size_t i = 0; i < v.size(); i++ ) ret.push_back(x[i]);
-    return ret;
+    Dlibad d(fn);
+    vd r = d.solve(v);
+    return r;
 }
 
 int main(int argc, char ** argv)
