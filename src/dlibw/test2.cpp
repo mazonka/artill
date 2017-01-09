@@ -48,49 +48,47 @@ struct Skewed
 // ----------------------------------------------------------------------------------------
 
 int main()
+try
 {
-    try
-    {
-        vec starting_point(4);
-        vec target(4);
+    vec starting_point(4);
+    vec target(4);
 
-        //starting_point.set_size(4);
+    //starting_point.set_size(4);
 
-        starting_point = -4, 5, 99, 3;
-        target = 3, 5, 1, 7;
+    starting_point = -4, 5, 99, 3;
+    target = 3, 5, 1, 7;
 
-        find_min_bobyqa(test_function(target),
-                        starting_point,
-                        9,    // number of interpolation points
-                        uniform_matrix<double>(4, 1, -1e100), // lower bound constraint
-                        uniform_matrix<double>(4, 1, 1e100),  // upper bound constraint
-                        10,    // initial trust region radius
-                        1e-6,  // stopping trust region radius
-                        100    // max number of objective function evaluations
-                       );
-        cout << "test_function solution:\n" << starting_point << endl;
+    find_min_bobyqa(test_function(target),
+                    starting_point,
+                    9,    // number of interpolation points
+                    uniform_matrix<double>(4, 1, -1e100), // lower bound constraint
+                    uniform_matrix<double>(4, 1, 1e100),  // upper bound constraint
+                    10,    // initial trust region radius
+                    1e-6,  // stopping trust region radius
+                    100    // max number of objective function evaluations
+                   );
+    cout << "test_function solution:\n" << starting_point << endl;
 
 
-        starting_point.set_size(7);
+    starting_point.set_size(7);
 
-        double q = -0.5;
-        starting_point = q, q, q, q, q, q, q;
+    double q = -0.5;
+    starting_point = q, q, q, q, q, q, q;
 
-        find_min_bobyqa(Skewed(),
-                        starting_point,
-                        15,    // number of interpolation points
-                        uniform_matrix<double>(7, 1, -1e100), // lower bound constraint
-                        uniform_matrix<double>(7, 1, 1e100),  // upper bound constraint
-                        10,    // initial trust region radius
-                        1e-8,  // stopping trust region radius
-                        10000    // max number of objective function evaluations
-                       );
-        cout << "test_function solution:\n" << starting_point << endl;
+    find_min_bobyqa(Skewed(),
+                    starting_point,
+                    15,    // number of interpolation points
+                    uniform_matrix<double>(7, 1, -1e100), // lower bound constraint
+                    uniform_matrix<double>(7, 1, 1e100),  // upper bound constraint
+                    10,    // initial trust region radius
+                    1e-8,  // stopping trust region radius
+                    10000    // max number of objective function evaluations
+                   );
+    cout << "test_function solution:\n" << starting_point << endl;
 
-    }
-    catch (std::exception & e)
-    {
-        cout << e.what() << endl;
-    }
+}
+catch (std::exception & e)
+{
+    cout << e.what() << endl;
 }
 
