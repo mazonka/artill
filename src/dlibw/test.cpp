@@ -21,7 +21,7 @@ double func(int n, const double * x)
 {
     if ( n % 2 || n < 1 ) throw "Bad vector";
 
-    double k = 1.0*n * n / 40;
+    double k = 1.0 * n * n / 40;
 
     auto sq = [](double y) -> double { return y * y; };
     auto len = [&sq](double ax, double ay, double bx, double by) ->
