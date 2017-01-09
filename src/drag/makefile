@@ -8,7 +8,8 @@ endif
 
 ALGL = ../alglib$(PLAT)/lib/
 ALIB = $(ALGL)/a.lib
-DLIB = ../dlibw/dlib/
+DLIL = ../dlib$(PLAT)/
+DLIB = $(DLIL)dlibad.lib
 
 ifeq ($(PLAT),w)
 CL = cl
@@ -34,7 +35,7 @@ EOUT=-o
 ARCR=ar crs #
 endif
 
-OPT += -I $(ALGL) -I $(DLIB)
+OPT += -I $(ALGL) -I $(DLIL)
 
 EEXT = .$(PLAT).exe
 
@@ -55,8 +56,8 @@ $O:
 ##drag$(EEXT): %$(EEXT):%.cpp $O/my.lib
 ##	$(CL) -Ox -EHsc $< $O/my.lib -Fe$@
 
-drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(ALIB)
-	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(ALIB)
+drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(ALIB) $(DLIB)
+	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(ALIB) $(DLIB)
 
 $O/drag$(OEXT): drag.cpp
 	$(CL) -c $(OPT) $< $(OOUT)$@
