@@ -50,35 +50,3 @@ Params Alglib::solve()
     return p;
 }
 
-//============================================
-// TEST ALGLIB
-
-struct Tfun: AsolFun
-{
-    double f(const Params & pms);
-};
-
-double Tfun::f(const Params & x)
-{
-    double y = x.v[0] * x.v[0];
-    std::cout << "AAA " << x.v[0] << " -> " << y << '\n';
-    return y;
-}
-
-void testAlglibMin(Asolver * a)
-{
-    //void tmain(); return tmain();
-
-    Tfun tf;
-    a->setFun(&tf);
-    double x = 1;
-    Params p(1, &x);
-    a->setParams(p);
-    p = a->solve();
-
-    std::cout << p.v.size() << ": {";
-    for ( auto y : p.v )
-        std::cout << ' ' << y;
-    std::cout << " }\n";
-}
-

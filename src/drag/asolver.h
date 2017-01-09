@@ -33,3 +33,6 @@ class Asolver
         void operator=(const Asolver &);
 };
 
+void testAsolver(Asolver * a);
+
+Asolver * make_solver(AsolFun * fn, const Params & p);

@@ -41,7 +41,7 @@ EEXT = .$(PLAT).exe
 src = dsolver.cpp dataset.cpp psolver.cpp rstester.cpp \
 	rsolver.cpp trres.cpp rnd.cpp cd.cpp traj.cpp \
 	alglib.cpp asolver.cpp physics.cpp timer_$(PLAT).cpp \
-	util.cpp progr.cpp psic.cpp fpoint.cpp names.cpp
+	util.cpp progr.cpp psic.cpp fpoint.cpp names.cpp asdlib.cpp
 obj := $(src:%.cpp=$O/%$(OEXT))
 
 ##srctrg = drag.cpp

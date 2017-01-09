@@ -260,7 +260,7 @@ void main_model()
 void main_test()
 {
     Alglib a;
-    testAlglibMin(&a);
+    testAsolver(&a);
     return;
 }
 

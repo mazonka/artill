@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <memory>
 
 #include "asolver.h"
 #include "dsolver.h"
@@ -66,10 +67,11 @@ void Dsolver::solve()
 {
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();
-    Alglib as(&fun, pms);
+	std::unique_ptr<Asolver> as(make_solver(&fun, pms));
+    //Alglib as(&fun, pms);
     //A_dlib as(&fun, pms);
 
-    pms = as.solve();
+    pms = as->solve();
     psi->cd->setParams(pms);
     delete data;
     data = fun.best->clone();

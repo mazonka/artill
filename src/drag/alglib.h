@@ -10,4 +10,3 @@ class Alglib : public Asolver
         Params solve();
 };
 
-void testAlglibMin(Asolver * a);
