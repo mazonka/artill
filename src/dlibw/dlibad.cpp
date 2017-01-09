@@ -33,8 +33,8 @@ Dlibad::vd Dlibad::solve(const vd & v) const
                     dlib::uniform_matrix<double>(sz, 1, -1e100),
                     dlib::uniform_matrix<double>(sz, 1, 1e100),
                     1,    // initial trust region radius
-                    1e-8,  // stopping trust region radius
-                    10000    // max number of objective function evaluations
+                    1e-12,  // stopping trust region radius
+                    100000    // max number of objective function evaluations
                    );
 
     return std::vector<double>(starting_point.begin(), starting_point.end());
