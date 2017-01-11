@@ -72,7 +72,7 @@ class Dataset
 
         std::vector<Entry *> getEntries() const { return entries; }
         string dump(const Dataset * ref) const;
-        string print() const { return "NI"; }
+		string print() const { return "NI"; }
 
     private:
         Dataset(const Dataset &);

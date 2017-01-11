@@ -10,7 +10,6 @@
 
 using std::cout;
 
-/*
 struct DsolvFun : AsolFun
 {
         Psi * psi;
@@ -83,4 +82,3 @@ void Dsolver::solve()
     data = fun.best->clone();
 }
 
-*/
