@@ -31,12 +31,14 @@ bool Explorer::run(istream & is)
         cout << "u - run current set of parameter and show U\n";
         cout << "p - show parametrs\n";
         cout << "s N Value - set parametrs, N - index\n";
+        cout << "d - show dataset\n";
     }
     else if ( s == "u" )
     {
         data->run(psi);
-		cout << std::setprecision(20);
-        cout << u() << '\n';
+        cout << std::setprecision(20);
+        cout << data->dump(ref);
+        cout << '\n';
     }
     else if ( s == "p" )
     {
@@ -51,15 +53,19 @@ bool Explorer::run(istream & is)
     {
         Params p = psi->cd->getParams();
 
-		int index = -1;
-		is>>index;
-		if( index < 0 || index >= (int)p.v.size() ) return true;
+        int index = -1;
+        is >> index;
+        if ( index < 0 || index >= (int)p.v.size() ) return true;
 
-		double val=0;
-		is>>val;
-		p.v[index] = val;
-		psi->cd->setParams(p);
-	}
+        double val = 0;
+        is >> val;
+        p.v[index] = val;
+        psi->cd->setParams(p);
+    }
+    else if ( s == "d" )
+    {
+        cout << data->print() << '\n';
+    }
 
     else cout << "? [" << s << "]" << '\n';
 

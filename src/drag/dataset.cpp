@@ -532,7 +532,7 @@ void Entry::setHint(double z)
     never("Entry::setHint");
 }
 
-string Dataset::dump(Dataset * ref) const
+string Dataset::dump(const Dataset * ref) const
 {
     std::vector<double> v;
     double u = util(ref, &v);

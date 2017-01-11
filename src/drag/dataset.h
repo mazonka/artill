@@ -71,7 +71,8 @@ class Dataset
         double util(const Dataset * d, std::vector<double> * v = nullptr) const;
 
         std::vector<Entry *> getEntries() const { return entries; }
-        string dump(Dataset * ref) const;
+        string dump(const Dataset * ref) const;
+		string print() const { return "NI"; }
 
     private:
         Dataset(const Dataset &);
