@@ -1,0 +1,23 @@
+WARNING: dataset 'Fuse' is unknown and will be ignored
+WARNING: dataset 'DFS' is unknown and will be ignored
+WARNING: dataset 'DR' is unknown and will be ignored
+WARNING: dataset 'FORK' is unknown and will be ignored
+WARNING: dataset 'AZ_drift' is unknown and will be ignored
+WARNING: dataset 'AZ_CW' is unknown and will be ignored
+Guessing trajectory type -> OUT OF REACH (using FLAT) 43.8234
+> u
+RNG U=85.5668 type=Flat R=16857.5 angle=43.8234 (R=22200, AngMil=784.4, ...)
+U = 85.566799370562122817
+> s 0 0.2
+> u
+RNG U=172.646 type=Flat R=15126.3 angle=42.8028 (R=22200, AngMil=784.4, ...)
+U = 172.64587073821095942
+> p
+ 0.2000000000000000111 1 1 0.14999999999999999445 1 0.2000000000000000111 1
+> s 0 0.15
+> p
+ 0.14999999999999999445 1 1 0.14999999999999999445 1 0.2000000000000000111 1
+> u
+RNG U=632.171 type=Flat R=15126.3 angle=26.584 (R=22200, AngMil=784.4, ...)
+U = 632.1714360616963404
+> q

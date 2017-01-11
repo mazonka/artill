@@ -1,0 +1,17 @@
+# AK47
+#mass            0.0079
+#diameter        0.00762
+#length          0.02
+
+# round 1175
+#mass		0.535
+#diameter	0.035
+#length		0.1
+
+# 155mm M107
+mass		35.42
+diameter	0.154
+length		0.858
+velocity	791
+
+cdtype		3	# 0-liner, 1-graph, 2-point 3-alpha
