@@ -1,0 +1,33 @@
+# default SI
+
+Earth_radius 	6378137
+Earth_mass   	5.9722e24
+
+# Gravitational constant
+Ggrav        	6.67408e-11
+
+# Constants used only for atmospheric calculation
+
+# sea level standard pressure, Pa
+std_press       101325
+
+# temperature lapse rate, K/km
+temp_rate       6.5
+
+# the radius of the earth, km
+Earth_atm_R     6356.766
+
+# sea level standard temperature, K
+std_temp        288.15
+
+# gravitational constant, m/sec2
+grav_atm        9.80665
+
+# molecular weight of dry air, gm/mol
+molec_w         28.9644
+
+# gas constant, J/(mol*K)
+gas_const       8.31432
+
+# speed of sound at 1K
+speed_1k        20.046
