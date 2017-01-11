@@ -11,7 +11,7 @@
 #include "traj.h"
 #include "cd.h"
 #include "rsolver.h"
-#include "dataset.h"
+#include "ds2.h"
 #include "dsolver.h"
 #include "alglib.h"
 #include "explore.h"
@@ -183,83 +183,98 @@ void main_range(double r)
 
 void main_solve()
 {
-    Psi psi;
-    Dataset experiment;
-    Dsolver ds(&psi, &experiment);
+    /*
+        Psi psi;
+        Dataset experiment;
+        Dsolver ds(&psi, &experiment);
 
-    cout << std::setprecision(20);
+        cout << std::setprecision(20);
 
-    cout << ds.ds()->dump(&experiment) << '\n';
-    cout << "Start U=" << ds.u() << '\n';
+        cout << ds.ds()->dump(&experiment) << '\n';
+        cout << "Start U=" << ds.u() << '\n';
 
-    ds.solve();
+        ds.solve();
 
-    cout << ds.ds()->dump(&experiment) << '\n';
-    cout << "Final U=" << ds.u() << '\n';
+        cout << ds.ds()->dump(&experiment) << '\n';
+        cout << "Final U=" << ds.u() << '\n';
 
-    ds.ds()->save();
-    psi.cd->saveall();
-    Params pms = ds.psi->cd->getParams();
-    cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
-
-    if (0)
-    {
-        cout << "AAA 1 u=" << ds.u() << '\n';
-        ds.ds()->run(&psi);
-        cout << "AAA 2 u=" << ds.u() << '\n';
-        ds.ds()->run(&psi);
-        cout << "AAA 3 u=" << ds.u() << '\n';
-
-        {
-            cout << "Loading Psi but clone CD ";
-            Psi ps2;
-            ps2.cd = psi.cd->clone();
-            ds.ds()->run(&ps2);
-            cout << "AAA 4 u=" << ds.u() << '\n';
-        }
-
-        {
-            cout << "Loading Psi but clone CD ";
-            Psi ps2;
-            CdAlpha * cd = dynamic_cast<CdAlpha *>(psi.cd->clone());
-            if ( !cd ) throw "AAA4";
-            cd->savecd("aaa");
-            cd->loadcd("aaa");
-            ps2.cd = cd;
-            ds.ds()->run(&ps2);
-            cout << "AAA 4b u=" << ds.u() << '\n';
-        }
+        ds.ds()->save();
+        psi.cd->saveall();
+        Params pms = ds.psi->cd->getParams();
+        cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
 
         if (0)
         {
-            cout << "Loading Psi and CD again ";
-            Psi ps2;
-            ds.ds()->run(&ps2);
-            cout << "AAA 5 u=" << ds.u() << '\n';
-        }
+            cout << "AAA 1 u=" << ds.u() << '\n';
+            ds.ds()->run(&psi);
+            cout << "AAA 2 u=" << ds.u() << '\n';
+            ds.ds()->run(&psi);
+            cout << "AAA 3 u=" << ds.u() << '\n';
 
-        {
-            cout << "Now copy CD :";
-            string aaa;
-            std::cin >> aaa;
-            Psi ps3;
-            ds.ds()->run(&ps3);
-            cout << "AAA 6 u=" << ds.u() << '\n';
+            {
+                cout << "Loading Psi but clone CD ";
+                Psi ps2;
+                ps2.cd = psi.cd->clone();
+                ds.ds()->run(&ps2);
+                cout << "AAA 4 u=" << ds.u() << '\n';
+            }
+
+            {
+                cout << "Loading Psi but clone CD ";
+                Psi ps2;
+                CdAlpha * cd = dynamic_cast<CdAlpha *>(psi.cd->clone());
+                if ( !cd ) throw "AAA4";
+                cd->savecd("aaa");
+                cd->loadcd("aaa");
+                ps2.cd = cd;
+                ds.ds()->run(&ps2);
+                cout << "AAA 4b u=" << ds.u() << '\n';
+            }
+
+            if (0)
+            {
+                cout << "Loading Psi and CD again ";
+                Psi ps2;
+                ds.ds()->run(&ps2);
+                cout << "AAA 5 u=" << ds.u() << '\n';
+            }
+
+            {
+                cout << "Now copy CD :";
+                string aaa;
+                std::cin >> aaa;
+                Psi ps3;
+                ds.ds()->run(&ps3);
+                cout << "AAA 6 u=" << ds.u() << '\n';
+            }
         }
-    }
+    */
 }
 
 void main_model()
 {
+    /*
+        Psi psi;
+        Dataset experiment;
+        Dataset * newds(experiment.clone());
+
+        newds->run(&psi);
+        newds->save();
+
+        cout << newds->dump(&experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
+        delete newds;
+    */
+
     Psi psi;
-    Dataset experiment;
-    Dataset * newds(experiment.clone());
+    Ds2 experiment;
+    ///Dataset * newds(experiment.clone());
 
-    newds->run(&psi);
-    newds->save();
+    Dmeta meta(experiment, psi);
 
-    cout << newds->dump(&experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
-    delete newds;
+    Ds2 newds = experiment.run(meta, psi);
+    newds.save();
+
+    cout << newds.dump(experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
 }
 
 void main_test()
@@ -272,56 +287,60 @@ void main_test()
 
 void main_graph()
 {
-    Psi psi;
+    /*
+        Psi psi;
 
-    int n = psi.cd->sample();
+        int n = psi.cd->sample();
 
-    for (;;)
-    {
-        Dataset experiment;
-        Dsolver ds(&psi, &experiment);
-        ds.solve();
-        ds.ds()->save();
-        psi.cd->saveall();
-
-        progress::msg("finished with " + tos(n));
-        progress::msg("\n" + ds.ds()->dump(&experiment) + " (U)\n");
-
-        cout << "Final N=" << n << " u=" << ds.u() << '\n';
-
-        if (0)
+        for (;;)
         {
-            ds.ds()->run(&psi);
-            cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
-            ds.ds()->run(&psi);
-            cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
-        }
+            Dataset experiment;
+            Dsolver ds(&psi, &experiment);
+            ds.solve();
+            ds.ds()->save();
+            psi.cd->saveall();
 
-        n = psi.cd->sample(2 * n - 1);
+            progress::msg("finished with " + tos(n));
+            progress::msg("\n" + ds.ds()->dump(&experiment) + " (U)\n");
 
-        if (0)
-        {
-            ds.ds()->run(&psi);
-            cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
-            ds.ds()->run(&psi);
-            cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
+            cout << "Final N=" << n << " u=" << ds.u() << '\n';
+
+            if (0)
+            {
+                ds.ds()->run(&psi);
+                cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
+                ds.ds()->run(&psi);
+                cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
+            }
+
+            n = psi.cd->sample(2 * n - 1);
+
+            if (0)
+            {
+                ds.ds()->run(&psi);
+                cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
+                ds.ds()->run(&psi);
+                cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
+            }
         }
-    }
+    */
 }
 
 void main_maps()
 {
-    Psi psi;
-    Dataset experiment;
-    Explorer e(&psi, &experiment);
+    /*
+        Psi psi;
+        Dataset experiment;
+        Explorer e(&psi, &experiment);
 
-    while (1)
-    {
-        string line;
-        std::cout << "> ";
-        std::getline(std::cin, line);
-        std::istringstream is(line);
-        if ( !e.run(is) ) break;
-    }
+        while (1)
+        {
+            string line;
+            std::cout << "> ";
+            std::getline(std::cin, line);
+            std::istringstream is(line);
+            if ( !e.run(is) ) break;
+        }
+    */
 }
 
