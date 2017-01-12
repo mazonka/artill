@@ -1,13 +1,3 @@
-# AK47
-#mass            0.0079
-#diameter        0.00762
-#length          0.02
-
-# round 1175
-#mass		0.535
-#diameter	0.035
-#length		0.1
-
 # 155mm M107
 mass		35.42
 diameter	0.154
