@@ -12,7 +12,7 @@ using namespace std;
 Explorer::Explorer(Psi * p, Dataset * d)
     : ref(d), psi(p), data(d->clone())
 {
-    data->run0(psi);
+    data->run_init(psi);
 }
 
 

@@ -41,10 +41,12 @@ double DsolvFun::f(const Params & pms)
         //cout << u << '\n';
         ubest = u;
         delete best;
-        best = ds->clone();
+        best = ds;
 
         psi->cd->saveall();
     }
+	else
+		delete ds;
 
     static int cntr = 999999;
     //if ( ++cntr > 2 )
@@ -64,7 +66,7 @@ double DsolvFun::f(const Params & pms)
 Dsolver::Dsolver(Psi * p, Dataset * d)
     : ref(d), psi(p), data(d->clone())
 {
-    data->run0(psi);
+    data->run_init(psi);
 }
 
 

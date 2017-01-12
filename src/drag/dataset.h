@@ -54,6 +54,8 @@ class Entry
         double getHint() const;
         void setHint(double);
         double getRange() const;
+
+        void restore(const Entry * e);
 };
 
 class Dataset
@@ -61,16 +63,18 @@ class Dataset
         std::vector<Entry *> entries;
 
         void load(string file);
+        void run_inplace(Psi * psi);
+
     public:
         Dataset();
         Dataset(int) {} // for cloning
         ~Dataset();
         Dataset * clone() const;
 
-        void run0(Psi * psi);
+        void run_init(Psi * psi);
 
         Dataset * runc(Psi * psi) const
-        { Dataset * d = clone(); d->run0(psi); return d; }
+        { Dataset * d = clone(); d->run_inplace(psi); return d; }
 
         void save() const;
         double util(const Dataset * d, std::vector<double> * v = nullptr) const;

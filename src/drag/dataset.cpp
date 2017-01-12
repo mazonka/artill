@@ -219,7 +219,7 @@ Dataset * Dataset::clone() const
     return ds;
 }
 
-void Dataset::run0(Psi * psi)
+void Dataset::run_inplace(Psi * psi)
 {
     for (auto entry : entries)
         entry->run(psi);
@@ -364,7 +364,7 @@ string Dataset::print() const
 {
     if (entries.empty()) return "";
     ///std::ofstream of(dataset_out);
-	std::ostringstream of;
+    std::ostringstream of;
     Entry * curdef = nullptr;
     for (auto p : entries)
     {
@@ -375,25 +375,25 @@ string Dataset::print() const
         curdef = p;
     }
 
-	return of.str();
+    return of.str();
 }
 
 void Dataset::save() const
 {
     if (entries.empty()) return;
     std::ofstream of(dataset_out);
-	of<<print();
-/*///
-    Entry * curdef = nullptr;
-    for (auto p : entries)
-    {
-        if (!p->sameDef(curdef))
-            of << (p->str(true)) << '\n';
+    of << print();
+    /*///
+        Entry * curdef = nullptr;
+        for (auto p : entries)
+        {
+            if (!p->sameDef(curdef))
+                of << (p->str(true)) << '\n';
 
-        of << (p->str(false)) << '\n';
-        curdef = p;
-    }
-*/
+            of << (p->str(false)) << '\n';
+            curdef = p;
+        }
+    */
 }
 
 bool Entry::sameDef(const Entry * q) const
@@ -606,5 +606,47 @@ double item::Angle::convert(bool load, double z)
     if ( units == RAD && load ) return r2d(z);
     if ( units == RAD && !load ) return deg2rad(z);
     return x;
+}
+
+
+void Dataset::run_init(Psi * psi)
+{
+    Dataset * ds = clone();
+
+    run_inplace(psi);
+
+    // restore key values
+
+    int sz = entries.size();
+    if ( sz != (int) ds->entries.size() ) never("run_init");
+
+    for (int i = 0; i < sz; i++ )
+    {
+        entries[i]->restore(ds->entries[i]);
+    }
+}
+
+void Entry::restore(const Entry * e)
+{
+	if( type != e->type ) never("types");
+
+	if( type == ANG ) return;
+
+	if( type == RNG )
+	{
+	    Item * rt = find<item::Range>();
+	    Item * re = e->find<item::Range>();
+		if( !rt || !re ) never("range");
+
+		rt->x = re->x;
+		return;
+	}
+
+	using std::cout;
+	cout<<str(1)<<" AAA 1\n";
+	cout<<str(0)<<getTypeStr()<<" AAA 2\n";
+	cout<<e->str(0)<<e->getTypeStr()<<" AAA 3\n";
+
+	never("Entry::restore NI: "+getTypeStr());
 }
 

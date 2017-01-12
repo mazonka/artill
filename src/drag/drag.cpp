@@ -189,8 +189,10 @@ void main_solve()
 
     cout << std::setprecision(20);
 
-    cout << ds.ds()->dump(&experiment) << '\n';
-    cout << "Start U=" << ds.u() << '\n';
+	Dataset * ns = ds.ds()->runc(&psi);
+    cout << ns->dump(&experiment) << '\n';
+    cout << "Start U=" << ns->util(&experiment) << '\n';
+	delete ns;
 
     ds.solve();
 
@@ -209,11 +211,14 @@ void main_model()
     Dataset experiment;
     Dataset * newds = experiment.clone();
 
-    newds->run0(&psi);
-    newds->save();
+    newds->run_init(&psi);
 
-    cout << newds->dump(&experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
+    Dataset * newd2 = newds->runc(&psi);
+    newd2->save();
+
+    cout << newd2->dump(&experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
     delete newds;
+    delete newd2;
 }
 
 void main_test()
