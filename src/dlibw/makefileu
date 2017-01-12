@@ -1,0 +1,12 @@
+
+test_dlad: test_dlad.cpp dlibadw.lib
+	g++ -Wall -O2 -std=c++11 test_dlad.cpp dlibadw.lib -o test_dlad
+
+test_dlib: test_dlib.cpp
+	g++ -Wall -O2 -std=c++11 test_dlib.cpp dlibadw.lib -o test_dlib
+
+
+dlibadu.lib: dlibad.cpp dlibad.h
+	g++ -c -Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store dlibad.cpp
+	ar crs dlibadu.lib dlibad.o
+

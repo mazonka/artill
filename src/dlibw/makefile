@@ -46,5 +46,7 @@ EOUT=-o
 ARCR=ar crs #
 endif
 
-include makefile.$(PLAT)
+$(info PLAT=$(PLAT))
+
+include makefile$(PLAT)
 

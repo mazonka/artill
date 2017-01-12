@@ -1,0 +1,13 @@
+
+test_dlad: test_dlad.cpp dlibadw.lib
+	cl -Ox -EHsc test_dlad.cpp /link dlibadw.lib
+
+test_dlib: test_dlib.cpp
+	cl -Ox -EHsc test_dlib.cpp
+
+
+dlibadw.lib: dlibad.cpp dlibad.h
+	cl -EHsc -Ox -c dlibad.cpp
+	lib dlibad.obj /OUT:dlibadw.lib
+
+
