@@ -13,11 +13,14 @@ all: dlib/optimization.h dlibad$(PLAT).lib
 #	fcl3 extr ../dlib.fcl
 #	rm -f ../dlib.fcl
 
-dlib/optimization.h:
-	bzip2 -d -k ../dlib.tar.bz2
-	chmod 0777 ../dlib.fcl
+dlib/optimization.h: ../dlib.tar
+	chmod 0777 ../dlib.tar
 	tar xvf ../dlib.tar
 	rm -f ../dlib.tar
+
+../dlib.tar:
+	bzip2 -d -k ../dlib.tar.bz2
+	chmod 0777 ../dlib.tar
 
 clean:
 	rm -rf dlib test.dat *.exe *.obj *.lib *.o

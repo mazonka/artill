@@ -34,7 +34,7 @@ void usage()
     cout << "\tshoot (angle) - simple shots (default)\n";
     cout << "\trange <R>|max - solve for range\n";
     cout << "\tbuild - continuously improve graph or point\n";
-    cout << "\tmaps - explore U function interactively\n";
+    cout << "\tmaps - explore U function interactively (under construction)\n";
 }
 
 int main(int ac, char * av[])
