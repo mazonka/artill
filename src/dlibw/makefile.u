@@ -1,0 +1,12 @@
+
+test: test.cpp dlibadw.lib
+	cl -Ox -EHsc test.cpp /link dlibadw.lib
+
+test2: test2.cpp
+	cl -Ox -EHsc -WX -W4 test2.cpp
+
+
+dlibadu.lib: dlibad.cpp dlibad.h
+	g++ -c -Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store dlibad.cpp
+	ar crs dlibadu.lib dlibad.o
+

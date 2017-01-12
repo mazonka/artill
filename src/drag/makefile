@@ -9,7 +9,7 @@ endif
 ALGL = ../alglib$(PLAT)/lib/
 ALIB = $(ALGL)/a.lib
 DLIL = ../dlibw/
-DLIB = $(DLIL)dlibad.lib
+DLIB = $(DLIL)dlibad$(PLAT).lib
 
 ifeq ($(PLAT),w)
 CL = cl
