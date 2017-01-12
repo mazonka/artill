@@ -201,61 +201,15 @@ void main_solve()
     psi.cd->saveall();
     Params pms = ds.psi->cd->getParams();
     cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
-
-    if (0)
-    {
-        cout << "AAA 1 u=" << ds.u() << '\n';
-        ds.ds()->run(&psi);
-        cout << "AAA 2 u=" << ds.u() << '\n';
-        ds.ds()->run(&psi);
-        cout << "AAA 3 u=" << ds.u() << '\n';
-
-        {
-            cout << "Loading Psi but clone CD ";
-            Psi ps2;
-            ps2.cd = psi.cd->clone();
-            ds.ds()->run(&ps2);
-            cout << "AAA 4 u=" << ds.u() << '\n';
-        }
-
-        {
-            cout << "Loading Psi but clone CD ";
-            Psi ps2;
-            CdAlpha * cd = dynamic_cast<CdAlpha *>(psi.cd->clone());
-            if ( !cd ) throw "AAA4";
-            cd->savecd("aaa");
-            cd->loadcd("aaa");
-            ps2.cd = cd;
-            ds.ds()->run(&ps2);
-            cout << "AAA 4b u=" << ds.u() << '\n';
-        }
-
-        if (0)
-        {
-            cout << "Loading Psi and CD again ";
-            Psi ps2;
-            ds.ds()->run(&ps2);
-            cout << "AAA 5 u=" << ds.u() << '\n';
-        }
-
-        {
-            cout << "Now copy CD :";
-            string aaa;
-            std::cin >> aaa;
-            Psi ps3;
-            ds.ds()->run(&ps3);
-            cout << "AAA 6 u=" << ds.u() << '\n';
-        }
-    }
 }
 
 void main_model()
 {
     Psi psi;
     Dataset experiment;
-    Dataset * newds(experiment.clone());
+    Dataset * newds = experiment.clone();
 
-    newds->run(&psi);
+    newds->run0(&psi);
     newds->save();
 
     cout << newds->dump(&experiment) << " (Cumulative utility E(lnX-lnY)^2)\n";
@@ -289,23 +243,7 @@ void main_graph()
 
         cout << "Final N=" << n << " u=" << ds.u() << '\n';
 
-        if (0)
-        {
-            ds.ds()->run(&psi);
-            cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
-            ds.ds()->run(&psi);
-            cout << "AAA 1 N=" << n << " u=" << ds.u() << '\n';
-        }
-
         n = psi.cd->sample(2 * n - 1);
-
-        if (0)
-        {
-            ds.ds()->run(&psi);
-            cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
-            ds.ds()->run(&psi);
-            cout << "AAA 2 N=" << n << " u=" << ds.u() << '\n';
-        }
     }
 }
 

@@ -29,9 +29,9 @@ struct DsolvFun : AsolFun
 double DsolvFun::f(const Params & pms)
 {
     psi->cd->setParams(pms);
-    data->run(psi);
+    Dataset * ds = data->runc(psi);
 
-    double u = data->util(reference);
+    double u = ds->util(reference);
 
     if ( u < ubest )
     {
@@ -41,7 +41,7 @@ double DsolvFun::f(const Params & pms)
         //cout << u << '\n';
         ubest = u;
         delete best;
-        best = data->clone();
+        best = ds->clone();
 
         psi->cd->saveall();
     }
@@ -64,7 +64,7 @@ double DsolvFun::f(const Params & pms)
 Dsolver::Dsolver(Psi * p, Dataset * d)
     : ref(d), psi(p), data(d->clone())
 {
-    data->run(psi);
+    data->run0(psi);
 }
 
 

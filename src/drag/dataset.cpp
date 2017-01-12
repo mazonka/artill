@@ -219,7 +219,7 @@ Dataset * Dataset::clone() const
     return ds;
 }
 
-void Dataset::run(Psi * psi)
+void Dataset::run0(Psi * psi)
 {
     for (auto entry : entries)
         entry->run(psi);
@@ -360,10 +360,11 @@ void Entry::run_rng(Psi * psi)
 }
 
 
-void Dataset::save() const
+string Dataset::print() const
 {
-    if (entries.empty()) return;
-    std::ofstream of(dataset_out);
+    if (entries.empty()) return "";
+    ///std::ofstream of(dataset_out);
+	std::ostringstream of;
     Entry * curdef = nullptr;
     for (auto p : entries)
     {
@@ -373,6 +374,26 @@ void Dataset::save() const
         of << (p->str(false)) << '\n';
         curdef = p;
     }
+
+	return of.str();
+}
+
+void Dataset::save() const
+{
+    if (entries.empty()) return;
+    std::ofstream of(dataset_out);
+	of<<print();
+/*///
+    Entry * curdef = nullptr;
+    for (auto p : entries)
+    {
+        if (!p->sameDef(curdef))
+            of << (p->str(true)) << '\n';
+
+        of << (p->str(false)) << '\n';
+        curdef = p;
+    }
+*/
 }
 
 bool Entry::sameDef(const Entry * q) const

@@ -66,13 +66,18 @@ class Dataset
         Dataset(int) {} // for cloning
         ~Dataset();
         Dataset * clone() const;
-        void run(Psi * psi);
+
+        void run0(Psi * psi);
+
+        Dataset * runc(Psi * psi) const
+        { Dataset * d = clone(); d->run0(psi); return d; }
+
         void save() const;
         double util(const Dataset * d, std::vector<double> * v = nullptr) const;
 
         std::vector<Entry *> getEntries() const { return entries; }
         string dump(const Dataset * ref) const;
-		string print() const { return "NI"; }
+        string print() const;
 
     private:
         Dataset(const Dataset &);

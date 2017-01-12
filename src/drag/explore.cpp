@@ -12,7 +12,7 @@ using namespace std;
 Explorer::Explorer(Psi * p, Dataset * d)
     : ref(d), psi(p), data(d->clone())
 {
-    data->run(psi);
+    data->run0(psi);
 }
 
 
@@ -35,9 +35,9 @@ bool Explorer::run(istream & is)
     }
     else if ( s == "u" )
     {
-        data->run(psi);
+        Dataset * ds = data->runc(psi);
         cout << std::setprecision(20);
-        cout << data->dump(ref);
+        cout << ds->dump(ref);
         cout << '\n';
     }
     else if ( s == "p" )
