@@ -8,7 +8,7 @@ endif
 
 ALGL = ../alglib$(PLAT)/lib/
 ALIB = $(ALGL)/a.lib
-DLIL = ../dlib$(PLAT)/
+DLIL = ../dlibw/
 DLIB = $(DLIL)dlibad.lib
 
 ifeq ($(PLAT),w)
@@ -41,7 +41,7 @@ EEXT = .$(PLAT).exe
 
 src = dsolver.cpp dataset.cpp psolver.cpp rstester.cpp \
 	rsolver.cpp trres.cpp rnd.cpp cd.cpp traj.cpp \
-	alglib.cpp asolver.cpp physics.cpp timer_$(PLAT).cpp \
+	asolver.cpp physics.cpp timer_$(PLAT).cpp \
 	util.cpp progr.cpp psic.cpp fpoint.cpp names.cpp \
 	asdlib.cpp explore.cpp
 obj := $(src:%.cpp=$O/%$(OEXT))
@@ -57,13 +57,17 @@ $O:
 ##drag$(EEXT): %$(EEXT):%.cpp $O/my.lib
 ##	$(CL) -Ox -EHsc $< $O/my.lib -Fe$@
 
-drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(ALIB) $(DLIB)
-	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(ALIB) $(DLIB)
+#drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(ALIB) $(DLIB)
+#	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(ALIB) $(DLIB)
+
+drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(DLIB)
+	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(DLIB)
 
 $O/drag$(OEXT): drag.cpp
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
-$(obj): $O/%$(OEXT):%.cpp *.h $(ALGL)
+#$(obj): $O/%$(OEXT):%.cpp *.h $(ALGL)
+$(obj): $O/%$(OEXT):%.cpp *.h
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
 $O/my.lib: $(obj)
