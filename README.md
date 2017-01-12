@@ -25,9 +25,10 @@ the angles (for both flat and high trajectories) for a given range.
  
 ## How to build 
 
-If you have `make`, type `make` and it should build. 
-As a direct option use `PLAT=w` for 
-Windows or `PLAT=u` for Unix builds.
+First, check out `src` directory. Then if you 
+have `make`, type `make` and it should build. 
+As a direct option use `make PLAT=w` for 
+Windows or `make PLAT=u` for Unix builds.
 
 TBD
 
