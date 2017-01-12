@@ -331,10 +331,18 @@ double CdAlpha::B::calc(double x)
 
     using std::exp;
 
-    double qa = a0 + a1 / (1 + exp(-aw * (x - am)));
-    double qb =  0 + b1 / (1 + exp(-bw * (x - bm)));
+	double waw = aw;
+	double wbw = bw;
+	
+	static const double smll = 1e-5;
+	static const double smll2 = smll*smll;
+	if( waw*waw < smll2 ) waw = smll;
+	if( wbw*wbw < smll2 ) wbw = smll;
 
-    const double smll = 1e-3;
+    double qa = a0 + a1 / (1 + exp(-(x - am)/waw));
+    double qb =  0 + b1 / (1 + exp(-(x - bm)/wbw));
+
+    ///const double smll = 1e-3;
     if ( x < smll ) x = smll;
 
     return p(qa + qb / x);
