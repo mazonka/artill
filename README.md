@@ -20,6 +20,13 @@ function from any empirical data. See section Solve.
 wind, air turbulences, initial height above the Earth’s surface.
 4. Solve for ranges or max – the programs finds 
 the angles (for both flat and high trajectories) for a given range.
-5. Tune drag coefficient function given some firing table data.
+5. Tune the drag coefficient function given some firing table data.
 
  
+## How to build 
+
+TBD
+
+## How to run
+
+TBD
