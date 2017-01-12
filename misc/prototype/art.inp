@@ -1,0 +1,39 @@
+# 35mm PMD040 HEI-T
+
+velocity	1175
+angle_deg	0.1
+angle_dlt	0
+height		0
+ntraj		1
+
+turbulence	0 	# turbulence velocity, m/s
+zwind		0	# side wind, m/s
+xwind		0	# front wind, m/s
+#temperature	15	# atmospheric temperature in C
+#BBtime		22	# number of seconds of Base Burn
+
+mass		0.535
+diameter	0.035
+length		0.1
+
+max_dist	1e8
+
+# ballistics
+shape		0.38
+bc0		0.2
+bc1		0.5
+bc2		0.2
+bd1		0.7
+bd2		1.3
+bd3		3.5
+
+# integration paramenters
+dtmax		0.05
+precision	1e-15
+dEpm_rej	3
+dEpm_max	2
+dEpm_min	1
+dh_up		1.5
+dh_dn		0.5
+
+
