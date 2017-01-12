@@ -292,11 +292,11 @@ void CdAlpha::setnm()
     // set/reset nm's pointers
     nm.sd["a0"] = &b.b.a0;
     nm.sd["am"] = &b.b.am;
-    nm.sd["as"] = &b.b.as;
-    nm.sd["ah"] = &b.b.ah;
+    nm.sd["aw"] = &b.b.aw;
+    nm.sd["a1"] = &b.b.a1;
     nm.sd["bm"] = &b.b.bm;
-    nm.sd["bs"] = &b.b.bs;
-    nm.sd["bh"] = &b.b.bh;
+    nm.sd["bw"] = &b.b.bw;
+    nm.sd["b1"] = &b.b.b1;
 }
 
 void CdAlpha::loadcd(const char * file)
@@ -333,8 +333,8 @@ double CdAlpha::B::calc(double x)
 
     //a(x)=a0+ah/(1+exp(-as*(x-am)))
     //b(x)=bh/(1+exp(-bs*(x-bm)))
-    double qa = a0 + ah / (1 + exp(-as * (x - am)));
-    double qb =  0 + bh / (1 + exp(-bs * (x - bm)));
+    double qa = a0 + a1 / (1 + exp(-aw * (x - am)));
+    double qb =  0 + b1 / (1 + exp(-bw * (x - bm)));
 
     const double smll = 1e-3;
     if ( x < smll ) x = smll;

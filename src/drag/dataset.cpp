@@ -642,6 +642,15 @@ void Entry::restore(const Entry * e)
 		return;
 	}
 
+	if( type != MAX ) never("types");
+
+	Item * mt = find<item::Max>();
+	Item * me = e->find<item::Max>();
+	if( !mt || !me ) never("range");
+
+	mt->x = me->x;
+	return;
+
 	using std::cout;
 	cout<<str(1)<<" AAA 1\n";
 	cout<<str(0)<<getTypeStr()<<" AAA 2\n";
