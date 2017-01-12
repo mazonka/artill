@@ -41,13 +41,13 @@ double Cd::calc(double v, double vs)
 void CdLiner::setnm()
 {
     // set/reset nm's pointers
-    nm.sd["shape"] = &b.b.shape;
-    nm.sd["bc0"] = &b.b.c0;
-    nm.sd["bc1"] = &b.b.c1;
-    nm.sd["bc2"] = &b.b.c2;
-    nm.sd["bd1"] = &b.b.d1;
-    nm.sd["bd2"] = &b.b.d2;
-    nm.sd["bd3"] = &b.b.d3;
+    nm.sd["shape="] = &b.b.shape;
+    nm.sd["bc0="] = &b.b.c0;
+    nm.sd["bc1="] = &b.b.c1;
+    nm.sd["bc2="] = &b.b.c2;
+    nm.sd["bd1="] = &b.b.d1;
+    nm.sd["bd2="] = &b.b.d2;
+    nm.sd["bd3="] = &b.b.d3;
 }
 
 CdLiner::CdLiner(): nm(cdliner_in)
