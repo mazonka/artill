@@ -7,23 +7,17 @@ endif
 
 all: dlib/optimization.h dlibad$(PLAT).lib
 
-#dlib/optimization.h:
-#	bzip2 -d -k ../dlib.fcl.bz2
-#	chmod 0777 ../dlib.fcl
-#	fcl3 extr ../dlib.fcl
-#	rm -f ../dlib.fcl
+dlib/optimization.h: dlib.tar
+	tar xvf dlib.tar > /dev/null
+	touch dlib/optimization.h
 
-dlib/optimization.h: ../dlib.tar
-	chmod 0777 ../dlib.tar
-	tar xvf ../dlib.tar
-	rm -f ../dlib.tar
-
-../dlib.tar:
+dlib.tar:
 	bzip2 -d -k ../dlib.tar.bz2
-	chmod 0777 ../dlib.tar
+	mv ../$@ $@
+	chmod 0777 $@
 
 clean:
-	rm -rf dlib test.dat *.exe *.obj *.lib *.o
+	rm -rf dlib test.dat *.exe *.obj *.lib *.o dlib.tar
 
 
 ifeq ($(PLAT),w)

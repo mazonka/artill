@@ -24,17 +24,14 @@ double func(int n, const double * x)
     double k = 1.0 * n * n / 40;
 
     auto sq = [](double y) -> double { return y * y; };
-    auto len = [&sq](double ax, double ay, double bx, double by) ->
-               double { return std::sqrt(sq(ax - bx) + sq(ay - by)); };
+    //auto len = [&sq](double ax, double ay, double bx, double by) ->
+    //           double { return std::sqrt(sq(ax - bx) + sq(ay - by)); };
 
     auto len2 = [&sq](double ax, double ay, double bx, double by) ->
                 double { return (sq(ax - bx) + sq(ay - by)); };
 
     double r = k * len2(0, 0, x[0], x[1]);
-///cout<<"AAA "<<r<<' ';
     r += k * len2(x[n - 2], x[n - 1], 1, 0);
-///cout<<"AAA "<<r<<'\n';
-
 
     for ( int i = 0; i < n; i += 2 )
     {
