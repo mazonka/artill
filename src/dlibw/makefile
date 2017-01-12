@@ -7,11 +7,17 @@ endif
 
 all: dlib/optimization.h dlibad$(PLAT).lib
 
+#dlib/optimization.h:
+#	bzip2 -d -k ../dlib.fcl.bz2
+#	chmod 0777 ../dlib.fcl
+#	fcl3 extr ../dlib.fcl
+#	rm -f ../dlib.fcl
+
 dlib/optimization.h:
-	bzip2 -d -k ../dlib.fcl.bz2
+	bzip2 -d -k ../dlib.tar.bz2
 	chmod 0777 ../dlib.fcl
-	fcl3 extr ../dlib.fcl
-	rm -f ../dlib.fcl
+	tar xvf ../dlib.tar
+	rm -f ../dlib.tar
 
 clean:
 	rm -rf dlib test.dat *.exe *.obj *.lib *.o
