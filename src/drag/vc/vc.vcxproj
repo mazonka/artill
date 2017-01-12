@@ -97,6 +97,7 @@
     <ClCompile Include="..\dataset.cpp" />
     <ClCompile Include="..\drag.cpp" />
     <ClCompile Include="..\dsolver.cpp" />
+    <ClCompile Include="..\explore.cpp" />
     <ClCompile Include="..\fpoint.cpp" />
     <ClCompile Include="..\names.cpp" />
     <ClCompile Include="..\physics.cpp" />

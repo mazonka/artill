@@ -189,10 +189,10 @@ void main_solve()
 
     cout << std::setprecision(20);
 
-	Dataset * ns = ds.ds()->runc(&psi);
+    Dataset * ns = ds.ds()->runc(&psi);
     cout << ns->dump(&experiment) << '\n';
     cout << "Start U=" << ns->util(&experiment) << '\n';
-	delete ns;
+    delete ns;
 
     ds.solve();
 

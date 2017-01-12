@@ -605,7 +605,7 @@ double item::Angle::convert(bool load, double z)
     if ( units == MIL && !load ) return rad2mil(deg2rad(z));
     if ( units == RAD && load ) return r2d(z);
     if ( units == RAD && !load ) return deg2rad(z);
-    return x;
+    return z;
 }
 
 
@@ -628,34 +628,34 @@ void Dataset::run_init(Psi * psi)
 
 void Entry::restore(const Entry * e)
 {
-	if( type != e->type ) never("types");
+    if ( type != e->type ) never("types");
 
-	if( type == ANG ) return;
+    if ( type == ANG ) return;
 
-	if( type == RNG )
-	{
-	    Item * rt = find<item::Range>();
-	    Item * re = e->find<item::Range>();
-		if( !rt || !re ) never("range");
+    if ( type == RNG )
+    {
+        Item * rt = find<item::Range>();
+        Item * re = e->find<item::Range>();
+        if ( !rt || !re ) never("range");
 
-		rt->x = re->x;
-		return;
-	}
+        rt->x = re->x;
+        return;
+    }
 
-	if( type != MAX ) never("types");
+    if ( type != MAX ) never("types");
 
-	Item * mt = find<item::Max>();
-	Item * me = e->find<item::Max>();
-	if( !mt || !me ) never("range");
+    Item * mt = find<item::Max>();
+    Item * me = e->find<item::Max>();
+    if ( !mt || !me ) never("range");
 
-	mt->x = me->x;
-	return;
+    mt->x = me->x;
+    return;
 
-	using std::cout;
-	cout<<str(1)<<" AAA 1\n";
-	cout<<str(0)<<getTypeStr()<<" AAA 2\n";
-	cout<<e->str(0)<<e->getTypeStr()<<" AAA 3\n";
+    using std::cout;
+    cout << str(1) << " AAA 1\n";
+    cout << str(0) << getTypeStr() << " AAA 2\n";
+    cout << e->str(0) << e->getTypeStr() << " AAA 3\n";
 
-	never("Entry::restore NI: "+getTypeStr());
+    never("Entry::restore NI: " + getTypeStr());
 }
 

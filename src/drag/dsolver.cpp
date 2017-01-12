@@ -44,14 +44,14 @@ double DsolvFun::f(const Params & pms)
         best = ds;
 
         psi->cd->saveall();
-		best->save();
+        best->save();
     }
-	else
-		delete ds;
+    else
+        delete ds;
 
     static int cntr = 999999;
     if ( ++cntr > 2 )
-    //if ( ++cntr > 0 )
+        //if ( ++cntr > 0 )
     {
         cntr = 0;
         cout << "min = " << ubest << "     u = " << tos(u) << "    \r" << std::flush;
