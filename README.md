@@ -12,12 +12,13 @@ on [Dlib](http://dlib.net/) that is included in sources
 ## What can you do with this program
 
 3. Run ballistic trajectories with different options: 
-wind, air turbulences, initial height above the Earth’s surface.
-4. Solve for ranges or max – the programs finds 
+wind, air turbulences, initial height above the Earth’s surface;
+even send to space or orbit around the Earth.
+4. Solve for ranges or max - the programs finds 
 the angles (for both flat and high trajectories) for a given range.
 5. Tune the drag coefficient function given some firing table data.
 
-You would need
+You would need to
 
 1. Define basic parameters of the projectile: mass, 
 diameter, length; and muzzle velocity.
@@ -63,4 +64,7 @@ to be compiled – that is fine.
 
 ## How to run
 
-TBD
+TBD 
+
+----
+Last modification: Jan 2017
