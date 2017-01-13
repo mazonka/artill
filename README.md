@@ -42,7 +42,7 @@ command will actually spits errors on those files not to be compiled – that is f
 
 ### Windows manual build
 
-If you have gcc installed, then follow Unix build instructions. If you use MS C++ compiler, check its version – it should be above 19:
+If you have gcc installed, then follow Unix build instructions. If you use MS C++ compiler, check its version – it should be 19 or above:
 ```
 Microsoft (R) C/C++ Optimizing Compiler Version 19.10.24821 for x86
 Copyright (C) Microsoft Corporation.  All rights reserved.
