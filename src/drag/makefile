@@ -80,4 +80,4 @@ $(ALGL):
 	false
 
 clean:
-	rm -rf $O *.exe *.obj o_* out/*.dat
+	rm -rf $O *.exe *.obj *.o o_* out/*.dat
