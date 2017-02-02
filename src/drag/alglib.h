@@ -10,6 +10,6 @@ class Alglib : public Asolver
 
         // switch to disable dlib
         //Params solve();
-        Params solve(){ return Params(); }
+        Params solve() { return Params(); }
 };
 
