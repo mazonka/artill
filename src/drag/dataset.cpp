@@ -221,8 +221,18 @@ Dataset * Dataset::clone() const
 
 void Dataset::run_inplace(Psi * psi)
 {
-    for (auto entry : entries)
-        entry->run(psi);
+    bool multithread = true;
+    if ( !multithread )
+    {
+        for (auto entry : entries)
+            entry->run(psi);
+    }
+    else for (auto entry : entries)
+        {
+            Psi * p = psi->clone();
+            entry->run(p);
+            delete p;
+        }
 }
 
 void Entry::run(Psi * psi)
