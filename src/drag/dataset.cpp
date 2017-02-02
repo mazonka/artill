@@ -5,6 +5,8 @@
 #include <cmath>
 #include <iomanip>
 
+#include <future>
+
 #include "defs.h"
 #include "util.h"
 #include "rsolver.h"
@@ -219,6 +221,13 @@ Dataset * Dataset::clone() const
     return ds;
 }
 
+
+Entry * async_run_call(Entry * e, Psi * p)
+{
+    e->run(p);
+    return e;
+}
+
 void Dataset::run_inplace(Psi * psi)
 {
     bool multithread = true;
@@ -227,12 +236,25 @@ void Dataset::run_inplace(Psi * psi)
         for (auto entry : entries)
             entry->run(psi);
     }
-    else for (auto entry : entries)
+    else
+    {
+        std::vector< std::future<Entry *> > futs;
+        std::vector< Psi * > psis;
+        for (auto entry : entries)
         {
             Psi * p = psi->clone();
-            entry->run(p);
-            delete p;
+            //entry->run(p);
+            futs.push_back( std::async (async_run_call, entry, p) );
+            psis.push_back(p);
         }
+
+        // now wait for completioin
+        for ( int i = 0; i < (int)futs.size(); i++ )
+        {
+            futs[i].get();
+            delete psis[i];
+        }
+    }
 }
 
 void Entry::run(Psi * psi)
