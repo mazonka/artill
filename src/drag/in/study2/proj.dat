@@ -1,0 +1,7 @@
+# 175mm M437A1
+mass		40
+diameter	0.175
+length		0.962
+velocity	791
+
+cdtype		3	# 0-liner, 1-graph, 2-point 3-alpha
