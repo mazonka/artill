@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <iomanip>
 #include <string>
 
@@ -32,6 +33,7 @@ bool Explorer::run(istream & is)
         cout << "p - show parametrs\n";
         cout << "s N Value - set parametrs, N - index\n";
         cout << "d - show dataset\n";
+        cout << "m I1 S1 V1 R1 I2 S2 V2 R2 S2 - generate map (Index Value Range NSteps)\n";
     }
     else if ( s == "u" )
     {
@@ -62,6 +64,10 @@ bool Explorer::run(istream & is)
         p.v[index] = val;
         psi->cd->setParams(p);
     }
+    else if ( s == "m" )
+    {
+        maps(is);
+    }
     else if ( s == "d" )
     {
         cout << data->print() << '\n';
@@ -71,3 +77,84 @@ bool Explorer::run(istream & is)
 
     return true;
 }
+
+void Explorer::maps(istream & is)
+{
+    int i1, i2, s1, s2;
+    double v1, r1, v2, r2;
+
+    is >> i1;
+    if ( !is)
+    {
+        cout << "loading " << maps_in << "\n";
+        std::ifstream in(maps_in);
+        in >> i1 >> s1 >> v1 >> r1 >> i2 >> s2 >> v2 >> r2;
+		if( !in )
+        {
+            cout << "loading failed\n";
+            return;
+        }
+    }
+    else
+    {
+        is >> s1 >> v1 >> r1 >> i2 >> s2 >> v2 >> r2;
+
+        if ( !is)
+        {
+            cout << "see help\n";
+            return;
+        }
+    }
+
+	if( s1 < 3 ) s1 = 1;
+	if( s2 < 3 ) s2 = 1;
+
+    cout << "calculating with\n" 
+		<< '\t' << i1 << ' ' << s1 << ' ' << v1 << ' ' << r1 << '\n' 
+        << '\t' << i2 << ' ' << s2 << ' ' << v2 << ' ' << r2 << '\n';
+
+    Params p0 = psi->cd->getParams();
+
+    if ( i1 < 0 || i1 >= (int)p0.v.size()
+            || i2 < 0 || i2 >= (int)p0.v.size() )
+    {
+        cout << "index out of bouds\n";
+        return;
+    }
+
+    std::ofstream of(maps_out);
+
+    cout << "0%\r" << std::flush;
+
+    for ( int i=0; i<s1; i++ )
+    {
+        for ( int j=0; j<s2; j++ )
+        {
+            Params p = p0;
+			double x = s1 > 1 ? v1-r1 + i*2*r1/(s1-1) : v1;
+			double y = s2 > 1 ? v2-r2 + j*2*r2/(s2-1) : v2;
+            p.v[i1] = x;
+            p.v[i2] = y;
+
+            psi->cd->setParams(p);
+            Dataset * ds = data->runc(psi);
+            double u = ds->util(ref);
+
+            of << std::setprecision(15);
+            of << x << '\t';
+            of << y << '\t';
+            of << u << '\n';
+            //cout<<x<<' '<<y<<'\n';
+        }
+
+        of << '\n';
+
+        double pg = 100.0 * (i+1) / s1;
+        cout << (int(pg + 0.5)) << "%\r" << std::flush;
+    }
+
+    cout << "100%\n";
+
+    psi->cd->setParams(p0);
+}
+

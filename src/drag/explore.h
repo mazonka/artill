@@ -11,6 +11,7 @@ class Explorer
         Dataset * data;
 
         double u() const { return data->util(ref); }
+        void maps(std::istream & is);
 
     public:
         ~Explorer() { delete data; }
