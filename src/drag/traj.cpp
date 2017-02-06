@@ -53,7 +53,7 @@ void Trajectory::save()
         of <<
            "# Time        X             Y             Z             "
            "vX            vY            vZ            dt            "
-           "Length        Range         HeatKJ"
+           "Length        Range         HeatKJ        Mach"
            << '\n';
 
         Fpoint z = path[0];
@@ -75,6 +75,7 @@ void Trajectory::save()
                << ' ' << s(p.vx) << ' ' << s(p.vy) << ' ' << s(p.vz)
                << ' ' << s(du) << ' ' << s(S)
                << ' ' << s(rangeR(p)) << ' ' << s(heat(p) / 1000)
+               << ' ' << s(mach(p))
                << '\n';
 
             Fpoint r = rangeP(p);
@@ -354,4 +355,14 @@ TrResult Trajectory::run(const Psi * psi)
     Trajectory t(psi, 0);
     while (t.evaluate());
     return t.finalize();
+}
+
+double Trajectory::mach(Fpoint y)
+{
+    Fpoint z = y + Fpoint(0, 0, 0, psi->s.xwind, 0);
+    double e1 = Ek(z);
+    auto rhovs = air_rho(y.R1() - cst::Earth_radius);
+    double v1 = std::sqrt(2 * e1);
+	if( rhovs.second <= 1e-10 ) return 0;
+	return v1/rhovs.second;
 }
