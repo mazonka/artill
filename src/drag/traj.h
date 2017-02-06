@@ -24,7 +24,7 @@ class Trajectory
         void cutEnd();
         void smooth();
         void fillResult(TrResult & res);
-		double mach(Fpoint p);
+        double mach(Fpoint p);
 
     public:
 

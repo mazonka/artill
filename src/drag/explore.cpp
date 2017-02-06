@@ -89,7 +89,7 @@ void Explorer::maps(istream & is)
         cout << "loading " << maps_in << "\n";
         std::ifstream in(maps_in);
         in >> i1 >> s1 >> v1 >> r1 >> i2 >> s2 >> v2 >> r2;
-		if( !in )
+        if ( !in )
         {
             cout << "loading failed\n";
             return;
@@ -106,12 +106,12 @@ void Explorer::maps(istream & is)
         }
     }
 
-	if( s1 < 3 ) s1 = 1;
-	if( s2 < 3 ) s2 = 1;
+    if ( s1 < 3 ) s1 = 1;
+    if ( s2 < 3 ) s2 = 1;
 
-    cout << "calculating with\n" 
-		<< '\t' << i1 << ' ' << s1 << ' ' << v1 << ' ' << r1 << '\n' 
-        << '\t' << i2 << ' ' << s2 << ' ' << v2 << ' ' << r2 << '\n';
+    cout << "calculating with\n"
+         << '\t' << i1 << ' ' << s1 << ' ' << v1 << ' ' << r1 << '\n'
+         << '\t' << i2 << ' ' << s2 << ' ' << v2 << ' ' << r2 << '\n';
 
     Params p0 = psi->cd->getParams();
 
@@ -126,13 +126,13 @@ void Explorer::maps(istream & is)
 
     cout << "0%\r" << std::flush;
 
-    for ( int i=0; i<s1; i++ )
+    for ( int i = 0; i < s1; i++ )
     {
-        for ( int j=0; j<s2; j++ )
+        for ( int j = 0; j < s2; j++ )
         {
             Params p = p0;
-			double x = s1 > 1 ? v1-r1 + i*2*r1/(s1-1) : v1;
-			double y = s2 > 1 ? v2-r2 + j*2*r2/(s2-1) : v2;
+            double x = s1 > 1 ? v1 - r1 + i * 2 * r1 / (s1 - 1) : v1;
+            double y = s2 > 1 ? v2 - r2 + j * 2 * r2 / (s2 - 1) : v2;
             p.v[i1] = x;
             p.v[i2] = y;
 
@@ -149,7 +149,7 @@ void Explorer::maps(istream & is)
 
         of << '\n';
 
-        double pg = 100.0 * (i+1) / s1;
+        double pg = 100.0 * (i + 1) / s1;
         cout << (int(pg + 0.5)) << "%\r" << std::flush;
     }
 

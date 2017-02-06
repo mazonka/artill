@@ -363,6 +363,6 @@ double Trajectory::mach(Fpoint y)
     double e1 = Ek(z);
     auto rhovs = air_rho(y.R1() - cst::Earth_radius);
     double v1 = std::sqrt(2 * e1);
-	if( rhovs.second <= 1e-10 ) return 0;
-	return v1/rhovs.second;
+    if ( rhovs.second <= 1e-10 ) return 0;
+    return v1 / rhovs.second;
 }
