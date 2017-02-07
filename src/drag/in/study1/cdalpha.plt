@@ -11,11 +11,13 @@ b(x)=b1/(1+exp(-(x-bm)/bw))
 
 c(x)=a(x)+b(x)/x
 
+cb(x)=x<0.85?0/0:(x>2.4?0/0:c(x))
+
 #plot "a.dat" w l lw 2
 plot [0.5:3] c(x) lw 2 t "Cd"
-#replot c(x) lw 2
+replot cb(x) w l lw 4 lt 3 t "Mach range"
 #replot "a.dat" using 1:($1*($2-a($1))) w l lw 2 t "d"
-#replot "a.dat" using 1:($1*($2)) w l lw 2 t "d"
+#replot "a.dat" using 1:($1*($2)) w p lw 2 t "d"
 
 #replot ao(x), bo(x)
 
