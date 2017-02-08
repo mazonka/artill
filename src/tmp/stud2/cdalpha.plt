@@ -10,7 +10,7 @@ b(x)=b1/(1+exp(-(x-bm)/bw))
 c(x)=a(x)+b(x)/x
 
 #plot "a.dat" w l lw 2
-plot [0.5:3] c(x) lw 2, a(x) lw 2, b(x) lw 2
+plot [0.5:3] c(x) lw 2 t "original Cd"
 replot "a.dat" using 1:($1*($2-a($1))) w l lw 2 t "d"
 #replot "a.dat" using 1:($1*($2)) w l lw 2 t "d"
 
@@ -21,5 +21,7 @@ pause 1
 #fit c(x) "a.dat" via a0,am,as,ah,bm,bs,bh
 
 #replot
+
+replot "cdgrplt.dat" w l lw 2 t "Point parametrisation"
 
 pause 1000

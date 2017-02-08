@@ -6,7 +6,7 @@
 #include "trres.h"
 
 // There are three types of Entries
-// ANGLE: (v) alpha      ... ~R ~Max -> vatiate nothing
+// ANGLE: (v) alpha      ... ~R ~Max -> variate nothing
 // RANGE: (v) (alpha) R  ... ~Max    -> variate alpha
 // MAX:   v (alpha) Max  ... ~R      -> variate alpha
 
@@ -150,6 +150,14 @@ struct TopH: Item
     static string name() { return "topH"; }
     TopH * clone() const { return new TopH(*this); }
     void set(const TrSolution & tr) { x = tr.r.topHeight; }
+    string nm() const { return name(); }
+};
+
+struct Drop: Item
+{
+    static string name() { return "Drop"; }
+    Drop * clone() const { return new Drop(*this); }
+    void set(const TrSolution & tr) { x = tr.r.drop; }
     string nm() const { return name(); }
 };
 

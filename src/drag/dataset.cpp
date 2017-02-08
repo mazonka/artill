@@ -146,6 +146,7 @@ Item * Item::create(string name)
     else if (name == Fall::name()) return new Fall();
     else if (name == TopH::name()) return new TopH();
     else if (name == TopR::name()) return new TopR();
+    else if (name == Drop::name()) return new Drop();
     else if (name == Time::name()) return new Time();
     else if (name == Vfin::name()) return new Vfin();
 

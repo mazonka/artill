@@ -40,6 +40,8 @@ TrResult::TrResult(const Psi * psi, const std::vector<Fpoint> & path)
     ekf = Ek(last) * m;
     heatKJ = 0.001 * m * (dEk(last, first) + dEp(last, first));
 
+	drop = range * std::sin(deg2rad(psi->s.angle_deg));
+
 
     // claculate top
     const double & ER = cst::Earth_radius;
