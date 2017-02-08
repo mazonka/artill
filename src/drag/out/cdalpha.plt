@@ -22,6 +22,6 @@ pause 1
 
 #replot
 
-replot "cdgrplt.dat" w l lw 2
+#replot "cdgrplt.dat" w l lw 2
 
 pause 1000
