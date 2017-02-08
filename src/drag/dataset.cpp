@@ -143,7 +143,7 @@ Item * Item::create(string name)
     else if (name == Velocity::name()) return new Velocity();
     else if (name == Max::name()) return new Max();
     else if (name == Range::name()) return new Range();
-    else if (name == Fall::name()) return new Fall();
+    ///else if (name == Fall::name()) return new Fall();
     else if (name == TopH::name()) return new TopH();
     else if (name == TopR::name()) return new TopR();
     else if (name == Drop::name()) return new Drop();
@@ -156,6 +156,10 @@ Item * Item::create(string name)
     else if (name == Angle::name_deg()) return new Angle(Angle::DEG);
     else if (name == Angle::name_mil()) return new Angle(Angle::MIL);
     else if (name == Angle::name_rad()) return new Angle(Angle::RAD);
+
+    else if (name == Fall::name_deg()) return new Fall(Fall::DEG);
+    else if (name == Fall::name_mil()) return new Fall(Fall::MIL);
+    else if (name == Fall::name_rad()) return new Fall(Fall::RAD);
 
     std::cout << "WARNING: dataset '" << name
               << "' is unknown and will be ignored\n";
@@ -646,6 +650,27 @@ double item::Angle::convert(bool load, double z)
     return z;
 }
 
+
+string item::Fall::nm() const
+{
+    switch (units)
+    {
+        case DEG: return name_deg();
+        case MIL: return name_mil();
+        case RAD: return name_rad();
+    }
+
+    never(0);
+}
+
+double item::Fall::convert(bool load, double z)
+{
+    if ( units == MIL && load ) return r2d(mil2rad(z));
+    if ( units == MIL && !load ) return rad2mil(deg2rad(z));
+    if ( units == RAD && load ) return r2d(z);
+    if ( units == RAD && !load ) return deg2rad(z);
+    return z;
+}
 
 void Dataset::run_init(Psi * psi)
 {

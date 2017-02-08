@@ -139,10 +139,16 @@ struct Angle: Item
 
 struct Fall: Item
 {
-    static string name() { return "Fall"; }
+    enum Unit { DEG, MIL, RAD } units;
+    static string name_deg() { return "Fall"; }
+    static string name_mil() { return "FallMil"; }
+    static string name_rad() { return "FallRad"; }
+    ///static string name() { return "Fall"; }
     Fall * clone() const { return new Fall(*this); }
     void set(const TrSolution & tr) { x = r2d(tr.r.beta); }
-    string nm() const { return name(); }
+    string nm() const;
+    Fall(Unit u = DEG): units(u) {}
+    virtual double convert(bool load, double x);
 };
 
 struct TopH: Item
