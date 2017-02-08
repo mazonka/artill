@@ -25,7 +25,7 @@ struct TrResult
     double alpha, beta; // shot and fall angles
     double height0; // initial shot height
     double topHeight, topRange; // height and range of the top (not X/Y max)
-	double drop;
+    double drop;
     // hieght is distance from the earth surface
 
     double finalZ; // perpendicular deviation
