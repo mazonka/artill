@@ -336,7 +336,9 @@ void Entry::run_rng(Psi * psi)
 
     if (kind.type == TrType::UNKNOWN )
     {
-        std::cout << "Guessing trajectory type " << std::flush;
+		string out;
+
+        out += "Guessing trajectory type ";
         Rsolver rs(psi, rng, TrType());
         Rsolver::RsRes pres1 = rs.getFlat();
         TrResult tres1 = pres1.first;
@@ -344,7 +346,9 @@ void Entry::run_rng(Psi * psi)
 
         if (pres1.second.type == TrType::MAX)
         {
-            std::cout << "-> OUT OF REACH (using FLAT) " << r2d(tres1.alpha) << "\n";
+            out += "-> OUT OF REACH (using FLAT) ";
+			out += tos(r2d(tres1.alpha));
+
             for (auto p : items) p->set(res1);
         }
         else if (pres1.second.type == TrType::FLAT)
@@ -358,15 +362,15 @@ void Entry::run_rng(Psi * psi)
             double uhi = util(hi);
             if (uhi < ulo)
             {
-                std::cout << "-> HIGH ang=" << r2d(tres2.alpha);
+                out += "-> HIGH ang=" + tos(r2d(tres2.alpha));
                 for (auto p : items) p->set(res2);
             }
             else
             {
-                std::cout << "-> FLAT ang=" << r2d(tres1.alpha);
+                out += "-> FLAT ang=" + tos(r2d(tres1.alpha));
                 for (auto p : items) p->set(res1);
             }
-            std::cout << " u=" << ulo << ":" << uhi  << "\n";
+            out += " u=" +tos(ulo) + ":" + tos(uhi);
             delete lo;
             delete hi;
         }
@@ -374,6 +378,7 @@ void Entry::run_rng(Psi * psi)
             never("Entry::run_rng: type from Rsolver");
 
         // we done
+		std::cout<<out<<'\n';
         return;
     } // no kind
 
