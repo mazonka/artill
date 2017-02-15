@@ -1,0 +1,7 @@
+# 155mm M795 rheinmetall
+mass		35.42
+diameter	0.154
+length		0.858
+velocity	791
+
+cdtype		3	# 0-liner, 1-graph, 2-point 3-alpha
