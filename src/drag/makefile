@@ -29,7 +29,7 @@ ifeq ($(PLAT),u)
 CL = g++
 O = o_unx
 OEXT = .o
-OPT=-Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store -pthread
+OPT=-Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store -lpthread
 OOUT=-o 
 EOUT=-o 
 ARCR=ar crs #
