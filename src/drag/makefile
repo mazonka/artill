@@ -63,11 +63,11 @@ $O:
 drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(DLIB)
 	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(DLIB)
 
-$O/drag$(OEXT): drag.cpp
+$O/drag$(OEXT): cpp/drag.cpp
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
 #$(obj): $O/%$(OEXT):%.cpp *.h $(ALGL)
-$(obj): $O/%$(OEXT):%.cpp *.h
+$(obj): $O/%$(OEXT):cpp/%.cpp *.h
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
 $O/my.lib: $(obj)
