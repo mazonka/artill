@@ -32,6 +32,8 @@ const char cdalpha_in[] = "in/cdalpha.dat";
 const char cdgrplt_out[] = "out/cdgrplt.dat";
 const char cdpoint_out[] = "out/cdpoint.dat";
 const char cdpoint_in[] = "in/cdpoint.dat";
+const char cdfixed_out[] = "out/cdfixed.dat";
+const char cdfixed_in[] = "in/cdfixed.dat";
 
 const char dataset_out[] = "out/dataset.dat";
 const char dataset_in[] = "in/dataset.dat";

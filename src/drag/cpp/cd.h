@@ -76,6 +76,7 @@ class CdPoint : public Cd
 
     public:
         CdPoint();
+        CdPoint(int){} // for descendands
         double calc(double x);
         void savecd();
         CdPoint * clone() const { return new CdPoint(*this); }
@@ -97,6 +98,22 @@ class CdPointD : public Cd
         Params getParams() { return Params(v.size() - 1, v.data() + 1); }
         void setParams(const Params &);
         int sample(int);
+
+};
+
+// same as Point but X point are fixed
+class CdFixed : public Cd
+{
+        std::vector<double> vx,vy;
+
+	public:
+		CdFixed();
+        double calc(double x);
+        void savecd();
+        CdFixed * clone() const { return new CdFixed(*this); }
+        Params getParams() { return Params(vy.size(), vy.data()); }
+        void setParams(const Params &);
+        int sample(int) { throw "CdFixed: sample not supported"; }
 };
 
 class CdAlpha : public Cd

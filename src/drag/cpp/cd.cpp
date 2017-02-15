@@ -9,7 +9,8 @@ Cd * Cd::factory(int t)
 {
     switch (t)
     {
-        case 0: return new CdLiner();
+        ///case 0: return new CdLiner();
+        case 0: return new CdFixed();
         case 1: return new CdGraph();
         case 2: return new CdPoint();
         case 3: return new CdAlpha();
@@ -447,5 +448,68 @@ int CdPoint::sample(int m)
     }
 
     return v.size() / 2;
+}
+
+///////////////////////
+// Cd Fixed
+
+CdFixed::CdFixed()
+{
+    std::ifstream in(cdfixed_in);
+
+    if (!in) throw string() + "Cannot open " + cdfixed_in;
+
+    for (double x, y; in >> x >> y;)
+    {
+        vx.push_back(x);
+        vy.push_back(y);
+    }
+
+    if (vx.size() < 2)
+        throw string() + "Too few points in " + cdfixed_in;
+
+    saveall();
+}
+
+double CdFixed::calc(double x)
+{
+    auto p = [](double x)->double { return x < 0 ? 0 : x; };
+
+    int sz = vx.size();
+    if (sz < 2) never(0);
+
+    if (x <= vx[0]) return p(vy[1]);
+
+    double z, x1, x2, y1, y2;
+    for (int i = 0; i < sz; i++ )
+    {
+        z = vx[i];
+        if (x > z) continue;
+        x2 = z;
+        x1 = vx[i - 1];
+        y2 = vy[i];
+        y1 = vy[i - 1];
+        return p(linear(x, x1, x2, y1, y2));
+    }
+
+    return p(vy[sz - 1]);
+}
+
+void CdFixed::savecd()
+{
+    std::ofstream of(cdfixed_out);
+
+    for (size_t i = 0; i < vx.size(); i++ )
+        of << vx[i] << '\t' << vy[i] << '\n';
+}
+
+void CdFixed::setParams(const Params & p)
+{
+    size_t sz = vy.size();
+    if (p.v.size() != sz)
+        never("sizes");
+
+    for (size_t i = 0; i < sz; i++)
+        vy[i] = p.v[i];
 }
 
