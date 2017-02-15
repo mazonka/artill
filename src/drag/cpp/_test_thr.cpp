@@ -13,6 +13,7 @@ bool is_prime (long long x, int y)
 }
 
 int main ()
+try
 {
     // call function asynchronously:
     long long cn = 444444439;
@@ -43,4 +44,9 @@ int main ()
                       << (i ? "is" : "is not") << " prime.\n";
 
     return 0;
+}
+catch(...)
+{
+	std::cout<<"Exception thrown";
+	return 1;
 }
