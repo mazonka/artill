@@ -1,7 +1,7 @@
-# APDS-T Rheinmetall
-mass		0.2937
-diameter	0.0192
-length		0.6
-velocity	1400
+# Lapua .338
+mass		0.0162
+diameter	0.0086
+length		0.02
+velocity	915
 
-cdtype		1	# 0-liner, 1-graph, 2-point 3-alpha
+cdtype		2	# 0-liner, 1-graph, 2-point 3-alpha
