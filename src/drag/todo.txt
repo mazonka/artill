@@ -1,4 +1,0 @@
-ANG - noHint noKind
-MAX - noKind Hint-if-noAngle
-RNG - Kind Hint-if-noAngle
-
