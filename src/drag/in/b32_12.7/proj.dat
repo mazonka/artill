@@ -1,7 +1,0 @@
-# B-32 12.7x108
-mass		0.049
-diameter	0.01295
-length		0.03
-velocity	825
-
-cdtype		3	# 0-liner, 1-graph, 2-point 3-alpha
