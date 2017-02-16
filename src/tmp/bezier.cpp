@@ -1,61 +1,52 @@
+#include <vector>
+#include <iostream>
+#include <fstream>
+
+using std::vector;
+using std::cout;
+
 class Binomial
 {
-public:
-    Binomial(int Max)
-    {
-        max = Max+1;
-        table = new unsigned int * [max]();
-        for (int i=0; i < max; i++)
+		typedef double basetype;
+        typedef vector<basetype> vu;
+        vector<vu> tbl;
+
+        basetype & v(int n, int k)
         {
-            table[i] = new unsigned int[max]();
-
-            for (int j = 0; j < max; j++)
-            {
-                table[i][j] = 0;
-            }
+            while ( n >= (int) tbl.size() ) tbl.push_back(vu());
+            vu & v = tbl[n];
+            while ( k >= (int) v.size() ) v.push_back(0);
+            return v[k];
         }
-    }
 
-    ~Binomial()
-    {
-        for (int i =0; i < max; i++)
+    public:
+
+        basetype operator()(int n, int k)
         {
-            delete table[i];
+            if (n < k) return 0;
+            if (k == 0 || n == 1 ) return 1;
+            if (n == 2 && k == 1) return 2;
+            if (n == 2 && k == 2) return 1;
+            if (n == k) return 1;
+
+            if (v(n,k)) return v(n,k);
+            v(n,k) = (*this)(n - 1, k) + (*this)(n - 1, k - 1);
+			cout<<"set n,k,B : "<<n<<' '<<k<<' '<<v(n,k)<<'\n';
+            return v(n,k);
         }
-        delete table;
-    }
 
-    unsigned int Choose(unsigned int n, unsigned int k);
-
-private:
-    bool Contains(unsigned int n, unsigned int k);
-
-    int max;
-    unsigned int **table;
+		int fill(int m)
+		{
+			for( int i=0; i<m; i++ )
+			for( int j=0; j<m; j++ ) (*this)(i,j);
+			return m;
+		}
 };
 
-unsigned int Binomial::Choose(unsigned int n, unsigned int k)
+
+int main()
 {
-    if (n < k) return 0;
-    if (k == 0 || n==1 ) return 1;
-    if (n==2 && k==1) return 2;
-    if (n==2 && k==2) return 1;
-    if (n==k) return 1;
-
-
-    if (Contains(n,k))
-    {
-        return table[n][k];
-    }
-    table[n][k] = Choose(n-1,k) + Choose(n-1,k-1);
-    return table[n][k];
-}
-
-bool Binomial::Contains(unsigned int n, unsigned int k)
-{
-    if (table[n][k] == 0) 
-    {
-        return false;
-    }
-    return true;
+	Binomial bin;
+///cout<<"AAA\n";
+	bin.fill(1000);
 }
