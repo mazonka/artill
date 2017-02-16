@@ -31,7 +31,7 @@ class Binomial
 
             if (v(n,k)) return v(n,k);
             v(n,k) = (*this)(n - 1, k) + (*this)(n - 1, k - 1);
-			cout<<"set n,k,B : "<<n<<' '<<k<<' '<<v(n,k)<<'\n';
+			//cout<<"set n,k,B : "<<n<<' '<<k<<' '<<v(n,k)<<'\n';
             return v(n,k);
         }
 
@@ -43,10 +43,28 @@ class Binomial
 		}
 };
 
+double calc(const vector<double> &v, double x)
+{
+	return 0;
+}
+
 
 int main()
 {
 	Binomial bin;
 ///cout<<"AAA\n";
-	bin.fill(1000);
+	bin.fill(100);
+
+	vector<double> graph;
+
+	{	
+		std::ifstream in("input");
+		if( !in ){ cout<<"input\n"; return 1; }
+		for( double x; in>>x; ) graph.push_back(x);
+	}
+
+	std::ofstream of("out.dat");
+
+	for( double x=0; x<4; x+=0.1 )
+	of<<x<<'\t'<<calc(graph,x)<<'\n';
 }
