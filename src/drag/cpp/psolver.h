@@ -101,6 +101,6 @@ class Lsrqcf
 
         double detr() const { return det; }
         bool next(double x, double y);
-        void range(double & a, double & b) const;
+        void range(double & ax, double & bx) const;
         bool isApexIn() const;
 };

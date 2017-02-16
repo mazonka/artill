@@ -134,7 +134,7 @@ struct Angle: Item
     void set(const TrSolution & tr) { x = r2d(tr.r.alpha); }
     string nm() const;
     Angle(Unit u = DEG): units(u) {}
-    virtual double convert(bool load, double x);
+    virtual double convert(bool load, double xx);
 };
 
 struct Fall: Item
@@ -148,7 +148,7 @@ struct Fall: Item
     void set(const TrSolution & tr) { x = r2d(tr.r.beta); }
     string nm() const;
     Fall(Unit u = DEG): units(u) {}
-    virtual double convert(bool load, double x);
+    virtual double convert(bool load, double xx);
 };
 
 struct TopH: Item
