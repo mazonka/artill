@@ -1,7 +1,7 @@
 
 max_len		1e8
 dt0		0.1
-dtmax		0.05
+dtmax		0.005
 precision	1e-15
 dEpm_rej	3
 dEpm_max	2
