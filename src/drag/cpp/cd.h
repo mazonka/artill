@@ -73,16 +73,20 @@ class CdGraph : public Cd
 class CdPoint : public Cd
 {
         std::vector<double> v;
+        const static bool Bezier = true;
 
     public:
         CdPoint();
-        CdPoint(int){} // for descendands
-        double calc(double x);
+        CdPoint(int) {} // for descendands
         void savecd();
         CdPoint * clone() const { return new CdPoint(*this); }
         Params getParams() { return Params(v.size() - 1, v.data() + 1); }
         void setParams(const Params &);
         int sample(int);
+
+        double calc(double x) { return Bezier ? calc_bezier(x) : calc_linear(x); }
+        double calc_bezier(double x);
+        double calc_linear(double x);
 };
 
 // same as Point but holds differences in X, not absolute Xs
@@ -104,10 +108,10 @@ class CdPointD : public Cd
 // same as Point but X point are fixed
 class CdFixed : public Cd
 {
-        std::vector<double> vx,vy;
+        std::vector<double> vx, vy;
 
-	public:
-		CdFixed();
+    public:
+        CdFixed();
         double calc(double x);
         void savecd();
         CdFixed * clone() const { return new CdFixed(*this); }

@@ -45,8 +45,8 @@ try
 
     return 0;
 }
-catch(...)
+catch (...)
 {
-	std::cout<<"Exception thrown";
-	return 1;
+    std::cout << "Exception thrown";
+    return 1;
 }

@@ -2,6 +2,7 @@
 #include <cmath>
 
 #include "cd.h"
+#include "binom.h"
 #include "names.h"
 #include "util.h"
 
@@ -9,7 +10,7 @@ Cd * Cd::factory(int t)
 {
     switch (t)
     {
-        ///case 0: return new CdLiner();
+            ///case 0: return new CdLiner();
         case 0: return new CdFixed();
         case 1: return new CdGraph();
         case 2: return new CdPoint();
@@ -370,7 +371,7 @@ CdPoint::CdPoint()
     saveall();
 }
 
-double CdPoint::calc(double x)
+double CdPoint::calc_linear(double x)
 {
     auto p = [](double x)->double { return x < 0 ? 0 : x; };
 
@@ -392,6 +393,52 @@ double CdPoint::calc(double x)
     }
 
     return p(v[sz - 1]);
+}
+
+double CdPoint::calc_bezier(double x)
+{
+    auto p = [](double x)->double { return x < 0 ? 0 : x; };
+
+    int sz = v.size();
+    if (sz < 2) never(0);
+    if (sz % 2) never(0);
+
+    double xn = v[0];
+    double xx = v[sz - 2];
+
+    if (x <= xn ) return p(v[1]);
+    if (x >= xx ) return p(v[sz - 1]);
+    int n = sz / 2 - 1; // number of segments
+    //double seg = (xx - xn) / n;
+    double tseg = 1.0 / n;
+
+    //double t = (xn-x)/(xx-xn); this is not right - it gives equal weights
+    double z, x1, x2, t = 0;
+    for ( int i = 0; i < sz; i += 2 )
+    {
+        z = v[i];
+        if (x > z) continue;
+        x2 = z;
+        x1 = v[i - 2];
+        //y2 = v[i + 1];
+        //y1 = v[i - 1];
+        double t0 = (i / 2 - 1) * tseg;
+        t = p(linear(x, x1, x2, t0, t0 + tseg));
+        break;
+    }
+
+
+    double sum = 0;
+    for (int i = 0; i <= n; i++ )
+    {
+        //double vx = v[2*i];
+        double vy = v[2 * i + 1];
+        double t1 = std::pow(1 - t, n - i);
+        double t2 = std::pow(t, i);
+        sum += binomial(n, i) * t1 * t2 * vy;
+    }
+
+    return p(sum);
 }
 
 void CdPoint::savecd()
