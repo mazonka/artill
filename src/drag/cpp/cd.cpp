@@ -168,7 +168,7 @@ double CdGraph::calc_bezier(double x)
     if ( x > b ) return p(v[sz - 1]);
 
     int n = sz - 1; // number of segments
-    double t = (x-a)/(b-a);
+    double t = (x - a) / (b - a);
 
     double sum = 0;
     for (int i = 0; i <= n; i++ )
