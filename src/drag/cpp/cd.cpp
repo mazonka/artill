@@ -138,7 +138,7 @@ void Cd::saveplt(const char file[])
         of << x << '\t' << calc(x) << '\n';
 }
 
-double CdGraph::calc(double x)
+double CdGraph::calc_linear(double x)
 {
     auto p = [](double x)->double { return x < 0 ? 0 : x; };
 
@@ -157,6 +157,29 @@ double CdGraph::calc(double x)
     double x1 = a + i * delt;
     double x2 = x1 + delt;
     return p(linear(x, x1, x2, y1, y2));
+}
+
+double CdGraph::calc_bezier(double x)
+{
+    auto p = [](double x)->double { return x < 0 ? 0 : x; };
+
+    if ( x < a ) return p(v[0]);
+    int sz = v.size();
+    if ( x > b ) return p(v[sz - 1]);
+
+    int n = sz - 1; // number of segments
+    double t = (x-a)/(b-a);
+
+    double sum = 0;
+    for (int i = 0; i <= n; i++ )
+    {
+        double vy = v[i];
+        double t1 = std::pow(1 - t, n - i);
+        double t2 = std::pow(t, i);
+        sum += binomial(n, i) * t1 * t2 * vy;
+    }
+
+    return p(sum);
 }
 
 void CdGraph::setParams(const Params & p)

@@ -59,15 +59,19 @@ class CdGraph : public Cd
 {
         double a, b; // range [a:b]
         std::vector<double> v;
+        const static bool Bezier = true;
 
     public:
         CdGraph();
-        double calc(double x);
         void savecd();
         CdGraph * clone() const { return new CdGraph(*this); }
         Params getParams() { return Params(v.size(), v.data()); }
         void setParams(const Params &);
         int sample(int);
+
+        double calc(double x) { return Bezier ? calc_bezier(x) : calc_linear(x); }
+        double calc_bezier(double x);
+        double calc_linear(double x);
 };
 
 class CdPoint : public Cd
