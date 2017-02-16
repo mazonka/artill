@@ -43,15 +43,57 @@ class Binomial
 		}
 };
 
+Binomial bin;
+
+inline double linear(double x, double x1, double x2, double y1, double y2)
+{ return y1 + (y2 - y1) * (x - x1) / (x2 - x1); }
+
 double calc(const vector<double> &v, double x)
 {
-	return 0;
+    auto p = [](double x)->double { return x < 0 ? 0 : x; };
+
+    int sz = v.size();
+    if (sz < 2) throw (0);
+    if (sz % 2) throw (0);
+
+	double xn = v[0];
+	double xx = v[sz-2];
+
+    if (x <= xn ) return p(v[1]);
+    if (x >= xx ) return p(v[sz-1]);
+	int n = sz/2-1; // number of segments
+	double seg = (xx-xn)/n;
+
+	//double t = (xn-x)/(xx-xn); this is not right - it gives equal weights
+    double z, x1, x2, y1, y2, t=0;
+	for( int i=0; i<sz; i += 2 )
+	{
+        z = v[i];
+        if (x > z) continue;
+        x2 = z;
+        x1 = v[i - 2];
+        //y2 = v[i + 1];
+        //y1 = v[i - 1];
+		double t0 = (i/2-1)*seg;
+        t = p(linear(x, x1, x2, t0, t0+seg));
+	}
+
+    double sum=0, vx, vy;
+    for (int i = 0; i <= n; i++ )
+    {
+        //vx = v[2*i];
+        vy = v[2*i + 1];
+		double t1 = std::pow(1-t,n-i);
+		double t2 = std::pow(t,i);
+		sum += bin(n,i)*t1*t2*vy;
+    }
+
+    return p(sum);
 }
 
 
 int main()
 {
-	Binomial bin;
 ///cout<<"AAA\n";
 	bin.fill(100);
 
