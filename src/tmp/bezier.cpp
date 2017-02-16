@@ -63,6 +63,7 @@ double calc(const vector<double> &v, double x)
     if (x >= xx ) return p(v[sz-1]);
 	int n = sz/2-1; // number of segments
 	double seg = (xx-xn)/n;
+	double tseg = 1.0/n;
 
 	//double t = (xn-x)/(xx-xn); this is not right - it gives equal weights
     double z, x1, x2, y1, y2, t=0;
@@ -74,9 +75,11 @@ double calc(const vector<double> &v, double x)
         x1 = v[i - 2];
         //y2 = v[i + 1];
         //y1 = v[i - 1];
-		double t0 = (i/2-1)*seg;
-        t = p(linear(x, x1, x2, t0, t0+seg));
+		double t0 = (i/2-1)*tseg;
+        t = p(linear(x, x1, x2, t0, t0+tseg));
+		break;
 	}
+
 
     double sum=0, vx, vy;
     for (int i = 0; i <= n; i++ )
@@ -94,7 +97,6 @@ double calc(const vector<double> &v, double x)
 
 int main()
 {
-///cout<<"AAA\n";
 	bin.fill(100);
 
 	vector<double> graph;
@@ -107,6 +109,6 @@ int main()
 
 	std::ofstream of("out.dat");
 
-	for( double x=0; x<4; x+=0.1 )
+	for( double x=0; x<4; x+=0.01 )
 	of<<x<<'\t'<<calc(graph,x)<<'\n';
 }
