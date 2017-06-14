@@ -1,20 +1,26 @@
 #pragma once
 
-#include <istream>
-#include <ostream>
+#include <sstream>
 #include <string>
+#include <map>
 
 using std::string;
 
-class ivstream : public std::istream
+class ivstream : public std::istringstream
 {
+        string name;
     public:
         ivstream(string n);
 };
 
-class ovstream : public std::ostream
+class ovstream : public std::ostringstream
 {
+        string name;
     public:
         ovstream(string n);
-        ovstream(string n, ios_base::openmode m);
+        ovstream(string n, std::ios_base::openmode m);
+        ~ovstream();
 };
+
+extern std::map<string, string> vstrmem;
+

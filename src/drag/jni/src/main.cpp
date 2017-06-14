@@ -10,7 +10,7 @@ using std::cout;
 int main(int ac, char * av[])
 {
     WorkClass x;
-    x.test();
+    x.run("test");
 }
 
 

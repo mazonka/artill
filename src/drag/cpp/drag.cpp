@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
@@ -15,6 +16,7 @@
 #include "dsolver.h"
 #include "alglib.h"
 #include "explore.h"
+#include "timer.h"
 
 void main_test();
 void main_model();
@@ -37,7 +39,17 @@ void usage()
     cout << "\tmaps - explore U function interactively (under construction)\n";
 }
 
-int main(int ac, char * av[])
+static void error(string e)
+{
+    cout << "Error: " << e << '\n';
+    std::ofstream of("drag.log",std::ios::app);
+    of<<Timer::getGmd()<<':'<<Timer::getHms()<<' '<<e<<'\n';
+}
+
+int dragmain(int ac, const char ** av);
+int main(int ac, const char * av[]){ return dragmain(ac,av); }
+
+int dragmain(int ac, const char ** av)
 try
 {
     string av1 = "shoot";
@@ -87,17 +99,20 @@ try
 }
 catch (const char * e)
 {
-    cout << "Error: " << e << '\n';
+    ///cout << "Error: " << e << '\n';
+    error(e);
     return 1;
 }
 catch (string e)
 {
-    cout << "Error: " << e << '\n';
+    ///cout << "Error: " << e << '\n';
+    error(e);
     return 1;
 }
 catch (std::exception & e)
 {
-    cout << "Error: " << e.what() << '\n';
+    ///cout << "Error: " << e.what() << '\n';
+    error(e.what());
     return 2;
 }
 catch (...)
