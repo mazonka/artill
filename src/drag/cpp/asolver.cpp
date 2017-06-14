@@ -33,8 +33,8 @@ void testAsolver(Asolver * a)
 
     Tfun tf;
     a->setFun(&tf);
-    double x = 1;
-    Params p(1, &x);
+    double x[] = {1,2,3};
+    Params p(3, x);
     a->setParams(p);
     p = a->solve();
 
