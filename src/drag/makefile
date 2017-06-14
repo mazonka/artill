@@ -49,32 +49,35 @@ src = dsolver.cpp dataset.cpp psolver.cpp rstester.cpp \
 	asdlib.cpp explore.cpp binom.cpp
 obj := $(src:%.cpp=$O/%$(OEXT))
 
-##srctrg = drag.cpp
+##srctrg = draglib.cpp
 ##trg := $(srctrg:%.cpp=%$(EEXT))
 
-all: $O drag$(EEXT)
+all: $O drag$(EEXT) $O/drag_libmain$(OEXT)
 
 $O:
 	mkdir $O
 
-##drag$(EEXT): %$(EEXT):%.cpp $O/my.lib
-##	$(CL) -Ox -EHsc $< $O/my.lib -Fe$@
+##drag$(EEXT): %$(EEXT):%.cpp $O/draglib.lib
+##	$(CL) -Ox -EHsc $< $O/draglib.lib -Fe$@
 
-#drag$(EEXT): $O/drag$(OEXT) $O/my.lib *.h $(ALIB) $(DLIB)
-#	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(ALIB) $(DLIB)
+#drag$(EEXT): $O/drag$(OEXT) $O/draglib.lib *.h $(ALIB) $(DLIB)
+#	$(CL) $(OPT) $< $O/draglib.lib $(EOUT)$@ $(ALIB) $(DLIB)
 
-drag$(EEXT): $O/drag$(OEXT) $O/my.lib cpp/*.h $(DLIB)
-	$(CL) $(OPT) $< $O/my.lib $(EOUT)$@ $(DLIB)
+drag$(EEXT): $O/drag$(OEXT) $O/draglib.lib cpp/*.h $(DLIB)
+	$(CL) $(OPT) $< $O/draglib.lib $(EOUT)$@ $(DLIB)
 
 $O/drag$(OEXT): cpp/drag.cpp
 	$(CL) -c $(OPT) $< $(OOUT)$@
+
+$O/drag_libmain$(OEXT): cpp/drag.cpp
+	$(CL) -c $(OPT) -D main=libmain $< $(OOUT)$@
 
 #$(obj): $O/%$(OEXT):%.cpp *.h $(ALGL)
 $(obj): $O/%$(OEXT):cpp/%.cpp cpp/*.h
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
-$O/my.lib: $(obj)
-	$(ARCR)$O/my.lib $(obj)
+$O/draglib.lib: $(obj)
+	$(ARCR)$O/draglib.lib $(obj)
 
 $(ALGL):
 	@echo "***************************************"

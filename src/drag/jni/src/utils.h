@@ -2,6 +2,7 @@
 #include <ostream>
 #include <vector>
 
-namespace ut {
+namespace ut
+{
 
 } // ut

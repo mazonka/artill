@@ -1,3 +1,6 @@
+DLIL = ../../../dlad/
+DLIB = $(DLIL)dlibadw.lib
+DOBJ = ../../o_msc/
 
 all: test64cl.exe workclass_s.exe workclass_d.exe wc_thin_imp.dll 
 
@@ -7,14 +10,21 @@ test64cl.exe: test64cl.cpp
 workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.obj utils.obj
 	cl /O2 -EHsc main.cpp workclass_dyn.obj wc_thin_imp.lib utils.obj -Feworkclass_d.exe
 
-workclass_s.exe: workclass_imp.obj main.cpp utils.obj wc_thin_api.h
-	cl /O2 -EHsc main.cpp workclass_imp.obj utils.obj -Feworkclass_s.exe
+workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
+	cl /O2 -EHsc main.cpp workclass_imp.lib -Feworkclass_s.exe
+
+workclass_imp.lib: workclass_imp.obj $(DOBJ)draglib.lib \
+	$(DOBJ)drag_libmain.obj $(DLIB) utils.obj
+	lib workclass_imp.obj $(DOBJ)drag_libmain.obj \
+	$(DOBJ)draglib.lib $(DLIB) utils.obj /OUT:workclass_imp.lib
 
 wc_thin_imp.lib: wc_thin_imp.dll
 	@echo dll
 
-wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj
-	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj /OUT:wc_thin_imp.dll
+wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj \
+	$(DOBJ)drag_libmain.obj $(DOBJ)draglib.lib $(DLIB)
+	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj \
+	$(DOBJ)drag_libmain.obj $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
 
 wc_thin_imp.obj: wc_thin_imp.cpp wc_thin_api.h
 	cl /O2 -c -EHsc wc_thin_imp.cpp

@@ -22,17 +22,22 @@ WorkClass::~WorkClass()
 
 double WorkClass::getElement(int x)
 {
-	return -1;
+    return -1;
 }
 
 int WorkClass::calculate(int x)
 {
-	cout<<"WorkClass::calculate "<<x<<'\n';
-	return x+1;
+    cout << "WorkClass::calculate " << x << '\n';
+    return x + 1;
 }
 
-int WorkClass::sendData(int nx, int ny, const int *x, const double *y)
+int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
 {
-	return 0;
+    return 0;
 }
 
+void WorkClass::test()
+{
+	void main_test();
+	main_test();
+}

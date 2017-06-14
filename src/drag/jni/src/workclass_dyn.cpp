@@ -14,27 +14,27 @@ using std::string;
 
 WorkClass::WorkClass()
 {
-	dyn_reference = WC_Create();
+    dyn_reference = WC_Create();
 }
 
 WorkClass::~WorkClass()
 {
-	WC_Delete(dyn_reference);
+    WC_Delete(dyn_reference);
 }
 
 
 double WorkClass::getElement(int x)
 {
-	return -1;
+    return -1;
 }
 
 int WorkClass::calculate(int x)
 {
-	return WC_Calculate(dyn_reference,x);
+    return WC_Calculate(dyn_reference, x);
 }
 
-int WorkClass::sendData(int nx, int ny, const int *x, const double *y)
+int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
 {
-	return 0;
+    return 0;
 }
 

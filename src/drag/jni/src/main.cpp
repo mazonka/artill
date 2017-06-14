@@ -7,11 +7,10 @@
 
 using std::cout;
 
-int main(int ac, char *av[])
+int main(int ac, char * av[])
 {
-	WorkClass x;
-	int z = x.calculate(122);
-	cout<<z<<'\n';
+    WorkClass x;
+    x.test();
 }
 
 

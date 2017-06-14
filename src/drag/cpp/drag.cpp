@@ -82,6 +82,8 @@ try
     else usage();
 
     progress::end();
+
+    return 0;
 }
 catch (const char * e)
 {
