@@ -51,7 +51,7 @@ ifdef MAKELIB
 
 OPT += -D main=libmain
 O = o_lib
-all: $O $O/drag$(OEXT) $O/draglib.lib drag$(EEXT)
+all: $O $O/drag$(OEXT) $O/draglib.lib
 
 else
 
@@ -63,7 +63,7 @@ src = dsolver.cpp dataset.cpp psolver.cpp rstester.cpp \
 	rsolver.cpp trres.cpp rnd.cpp cd.cpp traj.cpp \
 	asolver.cpp physics.cpp timer_$(PLAT).cpp \
 	util.cpp progr.cpp psic.cpp fpoint.cpp names.cpp \
-	asdlib.cpp explore.cpp binom.cpp vstrimp.cpp
+	asdlib.cpp explore.cpp binom.cpp vstrmem.cpp
 obj := $(src:%.cpp=$O/%$(OEXT))
 
 

@@ -17,7 +17,7 @@ workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
 
 workclass_imp.lib: $(DOBJ) workclass_imp.obj $(DOBJ)draglib.lib \
 	$(DOBJ)drag.obj $(DLIB) utils.obj
-	lib workclass_imp.obj $(DOBJ)drag_libmain.obj \
+	lib workclass_imp.obj $(DOBJ)drag.obj \
 	$(DOBJ)draglib.lib $(DLIB) utils.obj /OUT:workclass_imp.lib
 
 wc_thin_imp.lib: wc_thin_imp.dll
@@ -26,7 +26,7 @@ wc_thin_imp.lib: wc_thin_imp.dll
 wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj $(DOBJ) \
 	$(DOBJ)drag.obj $(DOBJ)draglib.lib $(DLIB)
 	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj \
-	$(DOBJ)drag_libmain.obj $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
+	$(DOBJ)drag.obj $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
 
 wc_thin_imp.obj: wc_thin_imp.cpp wc_thin_api.h
 	cl /O2 -c -EHsc wc_thin_imp.cpp
