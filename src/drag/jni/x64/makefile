@@ -1,29 +1,38 @@
 
-all: test64cl.exe apiclass.exe apiclass.dll
+all: test64cl.exe workclass_s.exe workclass_d.exe wc_thin_imp.dll 
 
 test64cl.exe: test64cl.cpp
 	cl /nologo /E test64cl.cpp
 
-apiclass.exe: apiclass.lib main.cpp apiclass.obj utils.obj
-	cl /O2 -EHsc main.cpp apiclass.obj apiclass.lib utils.obj -Feapiclass.exe
+workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.obj utils.obj
+	cl /O2 -EHsc main.cpp workclass_dyn.obj wc_thin_imp.lib utils.obj -Feworkclass_d.exe
 
-apiclass.lib: apiclass.dll
+workclass_s.exe: workclass_imp.obj main.cpp utils.obj wc_thin_api.h
+	cl /O2 -EHsc main.cpp workclass_imp.obj utils.obj -Feworkclass_s.exe
+
+wc_thin_imp.lib: wc_thin_imp.dll
 	@echo dll
 
-apiclass.dll: apiclass.obj apiclass_iface.obj utils.obj
-	link /DLL apiclass.obj apiclass_iface.obj utils.obj
+wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj
+	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj /OUT:wc_thin_imp.dll
 
-apiclass_iface.obj: apiclass_iface.cpp apiclass_iface.h
-	cl /O2 -c -EHsc apiclass_iface.cpp
+wc_thin_imp.obj: wc_thin_imp.cpp wc_thin_api.h
+	cl /O2 -c -EHsc wc_thin_imp.cpp
 
-apiclass.obj: apiclass.cpp apiclass.h utils.h
-	cl /O2 -c -EHsc apiclass.cpp
+#workclass.obj: workclass.cpp workclass.h utils.h
+#	cl /O2 -c -EHsc workclass.cpp
+
+workclass_imp.obj: workclass_imp.cpp workclass_api.h utils.h
+	cl /O2 -c -EHsc workclass_imp.cpp
+
+workclass_dyn.obj: workclass_dyn.cpp workclass_api.h utils.h wc_thin_api.h
+	cl /O2 -c -EHsc workclass_dyn.cpp
 
 utils.obj: utils.cpp utils.h
 	cl /O2 -c -EHsc utils.cpp
 
 clean:
-	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h apicl*.cpp main.cpp utils.cpp
+	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h work*.cpp wc_*.cpp main.cpp utils.cpp
 
 
 #src = hq_sl_hdt.cpp hq_sl_meta.cpp hq_sl_file.cpp hq_dbslice.cpp hq_dbindex.cpp
@@ -33,8 +42,8 @@ clean:
 #	$(COMPILER) -c $(OPT) $(INC) $(FLAGS) $< $(OOUT)$@
 
 
-fileh = apiclass.h utils.h apiclass_iface.h
-filec = apiclass.cpp apiclass_iface.cpp utils.cpp main.cpp
+fileh = wc_thin_api.h utils.h workclass_api.h
+filec = workclass_imp.cpp workclass_dyn.cpp utils.cpp main.cpp wc_thin_imp.cpp
 
 $(fileh): %.h:../src/%.h
 	cp $< $@
