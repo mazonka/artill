@@ -16,52 +16,52 @@ endif
 
 LIBDIR=../$(PLAT)
 
-all: testApiCl.class JavaApiCl.dll jar dist_$(PLAT)
-	@echo Usage: java testApiCl
-	@echo Usage: java64 testApiCl
+all: testJWC.class jWorkClass.dll jar dist_$(PLAT)
+	@echo Usage: java testJWC
+	@echo Usage: java64 testJWC
 
-dist_$(PLAT): JavaApiCl.dll apiclass.dll JavaApiCl.jar apiclass.$(PLAT)
+dist_$(PLAT): jWorkClass.dll wc_thin_imp.dll jWorkClass.jar wc_thin_imp.$(PLAT)
 	mkdir -p dist_$(PLAT)
 	cp $^ dist_$(PLAT)/
 	chmod 0777 dist_$(PLAT)/*
 
 
-jar: JavaApiCl.jar
-JavaApiCl.jar: JavaApiCl/JavaApiCl.class
-	"$(JDK)/bin/jar" -cf JavaApiCl.jar $^
+jar: jWorkClass.jar
+jWorkClass.jar: jWorkClass/jWorkClass.class
+	"$(JDK)/bin/jar" -cf jWorkClass.jar $^
 
 #JE: Prototype makeedit to support different kind of testing
-unit-test: UnitTestGS.class JavaApiCl.dll
+unit-test: UnitTestGS.class jWorkClass.dll
     @echo Usage: java -cp ".;junit-4.8.2.jar" UnitTestGS		
 UnitTestGS.class: UnitTestGS.java
 	"$(JDK)/bin/javac" -classpath ".;junit-4.8.2.jar" $<
 		
-apiclass.dll: $(LIBDIR)/apiclass.dll
+wc_thin_imp.dll: $(LIBDIR)/wc_thin_imp.dll
 	cp $< $@
 	chmod 0777 $@
-	touch apiclass.$(PLAT)
+	touch wc_thin_imp.$(PLAT)
 
-testApiCl.class: testApiCl.java
-	"$(JDK)/bin/javac" testApiCl.java
+testJWC.class: testJWC.java
+	"$(JDK)/bin/javac" testJWC.java
 
-JavaApiCl.dll: JavaApiCl_JavaApiCl.cpp JavaApiCl_JavaApiCl.h $(LIBDIR)/apiclass.lib apiclass.dll
+jWorkClass.dll: jWorkClass_jWorkClass.cpp jWorkClass_jWorkClass.h $(LIBDIR)/wc_thin_imp.lib wc_thin_imp.dll
 	cl /nologo /E test_$(PLAT).cpp
-	cl /O2 -I "$(JDK)/include" -I "$(JDK)/include/win32" -I $(LIBDIR) JavaApiCl_JavaApiCl.cpp \
-	$(LIBDIR)/apiclass.lib -MT -LD -FeJavaApiCl.dll
+	cl /O2 -I "$(JDK)/include" -I "$(JDK)/include/win32" -I $(LIBDIR) jWorkClass_jWorkClass.cpp \
+	$(LIBDIR)/wc_thin_imp.lib -MT -LD -FejWorkClass.dll
 
-JavaApiCl_JavaApiCl.h: JavaApiCl/JavaApiCl.class
-	"$(JDK)/bin/javah" JavaApiCl.JavaApiCl
+jWorkClass_jWorkClass.h: jWorkClass/jWorkClass.class
+	"$(JDK)/bin/javah" jWorkClass.jWorkClass
 
-JavaApiCl/JavaApiCl.class: JavaApiCl/JavaApiCl.java 
-	"$(JDK)/bin/javac" JavaApiCl/JavaApiCl.java
+jWorkClass/jWorkClass.class: jWorkClass/jWorkClass.java 
+	"$(JDK)/bin/javac" jWorkClass/jWorkClass.java
 
 	
 clean:
-	rm -rf *.class *.h *.obj *.exp *.lib *.dll *.log out*.gs JavaApiCl/*.class \
-	*.jar lib *.x32 *.x64 JavaApiCl/Plat.java dist_x32 dist_x64
+	rm -rf *.class *.h *.obj *.exp *.lib *.dll *.log out*.gs jWorkClass/*.class \
+	*.jar lib *.x32 *.x64 jWorkClass/Plat.java dist_x32 dist_x64
 
 
 clear:
-	rm -rf *.class *.h *.obj *.exp *.lib *.dll *.log out*.gs JavaApiCl/*.class \
-	*.jar lib *.x32 *.x64 JavaApiCl/Plat.java 
+	rm -rf *.class *.h *.obj *.exp *.lib *.dll *.log out*.gs jWorkClass/*.class \
+	*.jar lib *.x32 *.x64 jWorkClass/Plat.java 
 	
