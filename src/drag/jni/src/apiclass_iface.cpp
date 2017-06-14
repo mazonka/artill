@@ -14,7 +14,7 @@ void hello(const void* a, int sz)
 {
 	const char * s = static_cast<const char*>(a);
 	if( a ) for( int i=0; i<sz; i++ ) std::cout<<s[i];
-	std::cout<<"Function 'hello' (void*,int) args\n";
+	std::cout<<"Function 'hello' (void*,int) args ("<<a<<','<<sz<<")\n";
 }
 
 void hi()
