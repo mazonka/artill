@@ -1,0 +1,1 @@
+this directory builds DLL or SO and an example of Java interface

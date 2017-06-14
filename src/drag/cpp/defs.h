@@ -12,7 +12,7 @@ typedef signed long long intint;
 const char progr_out[] = "out/progr.dat";
 const char trajs_out[] = "out/trajs.dat";
 const char earth_out[] = "out/earth.dat";
-const char summary_out[] = "out/shots_summary.dat"; // FIXME means and variances
+const char summary_out[] = "out/shots_summary.dat";
 
 const char proj_out[] = "out/proj.dat";
 const char proj_in[] = "in/proj.dat";
