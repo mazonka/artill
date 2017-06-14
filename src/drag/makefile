@@ -1,4 +1,6 @@
 
+# to build o_lib
+# use: make MAKELIB=1
 
 ifeq ($(OS),Windows_NT)
 PLAT=w
@@ -42,17 +44,29 @@ OPT += -I $(ALGL) -I $(DLIL)
 
 EEXT = .$(PLAT).exe
 
+##srctrg = draglib.cpp
+##trg := $(srctrg:%.cpp=%$(EEXT))
+
+ifdef MAKELIB
+
+OPT += -D main=libmain
+O = o_lib
+all: $O $O/drag$(OEXT) $O/draglib.lib drag$(EEXT)
+
+else
+
+all: $O drag$(EEXT)
+endif
+
+
 src = dsolver.cpp dataset.cpp psolver.cpp rstester.cpp \
 	rsolver.cpp trres.cpp rnd.cpp cd.cpp traj.cpp \
 	asolver.cpp physics.cpp timer_$(PLAT).cpp \
 	util.cpp progr.cpp psic.cpp fpoint.cpp names.cpp \
-	asdlib.cpp explore.cpp binom.cpp
+	asdlib.cpp explore.cpp binom.cpp vstrimp.cpp
 obj := $(src:%.cpp=$O/%$(OEXT))
 
-##srctrg = draglib.cpp
-##trg := $(srctrg:%.cpp=%$(EEXT))
 
-all: $O drag$(EEXT) $O/drag_libmain$(OEXT)
 
 $O:
 	mkdir $O
@@ -69,8 +83,8 @@ drag$(EEXT): $O/drag$(OEXT) $O/draglib.lib cpp/*.h $(DLIB)
 $O/drag$(OEXT): cpp/drag.cpp
 	$(CL) -c $(OPT) $< $(OOUT)$@
 
-$O/drag_libmain$(OEXT): cpp/drag.cpp
-	$(CL) -c $(OPT) -D main=libmain $< $(OOUT)$@
+#$O/drag_libmain$(OEXT): cpp/drag.cpp
+#	$(CL) -c $(OPT) -D main=libmain $< $(OOUT)$@
 
 #$(obj): $O/%$(OEXT):%.cpp *.h $(ALGL)
 $(obj): $O/%$(OEXT):cpp/%.cpp cpp/*.h

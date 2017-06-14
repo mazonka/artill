@@ -1,11 +1,13 @@
 DLIL = ../../../dlad/
 DLIB = $(DLIL)dlibadw.lib
-DOBJ = ../../o_msc/
+DOBJ = ../../o_lib/
 
 all: test64cl.exe workclass_s.exe workclass_d.exe wc_thin_imp.dll 
 
 test64cl.exe: test64cl.cpp
-	cl /nologo /E test64cl.cpp
+	@cl /nologo /E test64cl.cpp > test64cl.ok
+	@rm -f test64cl.ok
+	@echo test x64 ok
 
 workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.obj utils.obj
 	cl /O2 -EHsc main.cpp workclass_dyn.obj wc_thin_imp.lib utils.obj -Feworkclass_d.exe
@@ -13,16 +15,16 @@ workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.obj utils.obj
 workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
 	cl /O2 -EHsc main.cpp workclass_imp.lib -Feworkclass_s.exe
 
-workclass_imp.lib: workclass_imp.obj $(DOBJ)draglib.lib \
-	$(DOBJ)drag_libmain.obj $(DLIB) utils.obj
+workclass_imp.lib: $(DOBJ) workclass_imp.obj $(DOBJ)draglib.lib \
+	$(DOBJ)drag.obj $(DLIB) utils.obj
 	lib workclass_imp.obj $(DOBJ)drag_libmain.obj \
 	$(DOBJ)draglib.lib $(DLIB) utils.obj /OUT:workclass_imp.lib
 
 wc_thin_imp.lib: wc_thin_imp.dll
 	@echo dll
 
-wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj \
-	$(DOBJ)drag_libmain.obj $(DOBJ)draglib.lib $(DLIB)
+wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj $(DOBJ) \
+	$(DOBJ)drag.obj $(DOBJ)draglib.lib $(DLIB)
 	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj \
 	$(DOBJ)drag_libmain.obj $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
 
@@ -40,6 +42,12 @@ workclass_dyn.obj: workclass_dyn.cpp workclass_api.h utils.h wc_thin_api.h
 
 utils.obj: utils.cpp utils.h
 	cl /O2 -c -EHsc utils.cpp
+
+$(DOBJ):
+	@echo "=================================="
+	@echo build library first
+	@echo in drag directory: make MAKELIB=1
+	@echo "=================================="
 
 clean:
 	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h work*.cpp wc_*.cpp main.cpp utils.cpp
