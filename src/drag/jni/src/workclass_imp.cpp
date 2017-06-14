@@ -11,6 +11,8 @@
 using std::cout;
 using std::string;
 
+extern std::map<string, string> vstrmem;
+
 WorkClass::WorkClass()
 {
 }
@@ -36,14 +38,19 @@ int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
     return 0;
 }
 
-void WorkClass::input(const string &name, const string &data){}
+void WorkClass::input(const string &name, const string &data)
+{
+	vstrmem[name] = data;
+}
 
-string WorkClass::output(const string &name){ return "XX"; }
+string WorkClass::output(const string &name){ return vstrmem[name]; }
 
 int WorkClass::run(const string &cmd)
 {
   std::istringstream is(cmd);
   std::vector<string> vs;
+
+  vs.push_back("drag");
   for( string s; is>>s; ) vs.push_back(s);
 
   std::cout<<vs.size()<<' '<<vs[0]<<'\n';
@@ -55,6 +62,8 @@ int WorkClass::run(const string &cmd)
 
   int dragmain(int ac, const char **av);
   int k = dragmain(sz,av.data());
+
+  if( k ) throw "Excepton in drag library";
 
   return k;
 }

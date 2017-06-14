@@ -42,12 +42,12 @@ void usage()
 static void error(string e)
 {
     cout << "Error: " << e << '\n';
-    std::ofstream of("drag.log",std::ios::app);
-    of<<Timer::getGmd()<<':'<<Timer::getHms()<<' '<<e<<'\n';
+    std::ofstream of("drag.log", std::ios::app);
+    of << Timer::getGmd() << ':' << Timer::getHms() << ' ' << e << '\n';
 }
 
 int dragmain(int ac, const char ** av);
-int main(int ac, const char * av[]){ return dragmain(ac,av); }
+int main(int ac, const char * av[]) { return dragmain(ac, av); }
 
 int dragmain(int ac, const char ** av)
 try
@@ -62,7 +62,6 @@ try
     if ( ac > 2 ) av2 = av[2];
 
     progress::init(av1);
-
     if (0);
     else if ( av1 == "test" ) main_test();
     else if ( av1 == "model" ) main_model();

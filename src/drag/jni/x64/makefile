@@ -50,7 +50,8 @@ $(DOBJ):
 	@echo "=================================="
 
 clean:
-	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h work*.cpp wc_*.cpp main.cpp utils.cpp
+	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h \
+	wc_*.cpp main.cpp utils.cpp *.log
 
 
 #src = hq_sl_hdt.cpp hq_sl_meta.cpp hq_sl_file.cpp hq_dbslice.cpp hq_dbindex.cpp

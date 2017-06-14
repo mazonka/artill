@@ -9,6 +9,7 @@ using std::string;
 class ivstream : public std::istringstream
 {
         string name;
+
     public:
         ivstream(string n);
 };
@@ -16,6 +17,8 @@ class ivstream : public std::istringstream
 class ovstream : public std::ostringstream
 {
         string name;
+        bool app;
+
     public:
         ovstream(string n);
         ovstream(string n, std::ios_base::openmode m);
