@@ -1,16 +1,15 @@
-#include <fstream>
 #include <cmath>
 
 #include "cd.h"
 #include "binom.h"
 #include "names.h"
 #include "util.h"
+#include "vstream.h"
 
 Cd * Cd::factory(int t)
 {
     switch (t)
     {
-            ///case 0: return new CdLiner();
         case 0: return new CdFixed();
         case 1: return new CdGraph();
         case 2: return new CdPoint();
@@ -32,7 +31,7 @@ double Cd::calc(double v, double vs)
 
     if (0)
     {
-        std::ofstream of("cduse.tmp", std::ios::app);
+        ovstream of("cduse.tmp", std::ios::app);
         of << x << '\t' << r << '\n';
     }
 
@@ -100,7 +99,7 @@ double CdLiner::calc(double mu)
 
 CdGraph::CdGraph()
 {
-    std::ifstream in(cdgraph_in);
+    ivstream in(cdgraph_in);
 
     if ( !in ) throw string() + "Cannot open " + cdgraph_in;
 
@@ -121,7 +120,7 @@ CdGraph::CdGraph()
 
 void CdGraph::savecd()
 {
-    std::ofstream of(cdgraph_out);
+    ovstream of(cdgraph_out);
 
     of << "#range " << a << '\t' << b << '\n';
 
@@ -132,7 +131,7 @@ void CdGraph::savecd()
 
 void Cd::saveplt(const char file[])
 {
-    std::ofstream of(file);
+    ovstream of(file);
 
     for (double x = 0; x < 4; x += 0.01 )
         of << x << '\t' << calc(x) << '\n';
@@ -207,7 +206,7 @@ int CdGraph::sample(int m)
 
 CdPointD::CdPointD()
 {
-    std::ifstream in(cdpoint_in);
+    ivstream in(cdpoint_in);
 
     if (!in) throw string() + "Cannot open " + cdpoint_in;
 
@@ -254,7 +253,7 @@ double CdPointD::calc(double x)
 
 void CdPointD::savecd()
 {
-    std::ofstream of(cdpoint_out);
+    ovstream of(cdpoint_out);
 
     double z = 0;
     for (size_t i = 0; i < v.size(); i += 2)
@@ -367,7 +366,6 @@ double CdAlpha::B::calc(double x)
     double qa = a0 + a1 / (1 + exp(-(x - am) / waw));
     double qb =  0 + b1 / (1 + exp(-(x - bm) / wbw));
 
-    ///const double smll = 1e-3;
     if ( x < smll ) x = smll;
 
     return p(qa + qb / x);
@@ -375,7 +373,7 @@ double CdAlpha::B::calc(double x)
 
 CdPoint::CdPoint()
 {
-    std::ifstream in(cdpoint_in);
+    ivstream in(cdpoint_in);
 
     if (!in) throw string() + "Cannot open " + cdpoint_in;
 
@@ -466,7 +464,7 @@ double CdPoint::calc_bezier(double x)
 
 void CdPoint::savecd()
 {
-    std::ofstream of(cdpoint_out);
+    ovstream of(cdpoint_out);
 
     for (size_t i = 0; i < v.size(); i += 2)
         of << v[i] << '\t' << v[i + 1] << '\n';
@@ -520,12 +518,12 @@ int CdPoint::sample(int m)
     return v.size() / 2;
 }
 
-///////////////////////
+// // // // // // // // // // //
 // Cd Fixed
 
 CdFixed::CdFixed()
 {
-    std::ifstream in(cdfixed_in);
+    ivstream in(cdfixed_in);
 
     if (!in) throw string() + "Cannot open " + cdfixed_in;
 
@@ -567,7 +565,7 @@ double CdFixed::calc(double x)
 
 void CdFixed::savecd()
 {
-    std::ofstream of(cdfixed_out);
+    ovstream of(cdfixed_out);
 
     for (size_t i = 0; i < vx.size(); i++ )
         of << vx[i] << '\t' << vy[i] << '\n';

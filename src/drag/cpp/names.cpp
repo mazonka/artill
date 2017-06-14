@@ -1,18 +1,18 @@
 #include <map>
-#include <fstream>
 #include <cstdlib>
 #include <iostream>
 #include <iomanip>
 
 #include "util.h"
 #include "names.h"
+#include "vstream.h"
 
 void Names::load(int n)
 {
     std::map<string, string> m;
 
     {
-        std::ifstream in(filename.c_str());
+        ivstream in(filename.c_str());
 
         if (!in) throw "Cannot open " + filename;
 
@@ -41,7 +41,7 @@ void Names::load(int n)
 
 void Names::save(string file, int precision)
 {
-    std::ofstream of(file.c_str());
+    ovstream of(file.c_str());
     if (!of) throw "Cannot open " + file;
 
     auto s = [](string x) -> string

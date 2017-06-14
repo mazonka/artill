@@ -1,13 +1,13 @@
-#include <fstream>
 
 #include "defs.h"
 #include "timer.h"
 #include "progr.h"
+#include "vstream.h"
 
 
 void progress::init(string f)
 {
-    std::ofstream of(progr_out);
+    ovstream of(progr_out);
 
     if ( !of )
         throw string() + "Output directory is not accessible: " + progr_out;
@@ -17,7 +17,7 @@ void progress::init(string f)
 
 void progress::msg(string m)
 {
-    std::ofstream of(progr_out, std::ios::app);
+    ovstream of(progr_out, std::ios::app);
     of << Timer::getHms() << " " << m << "\n";
 }
 

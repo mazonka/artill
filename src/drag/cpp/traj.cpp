@@ -1,5 +1,4 @@
 #include <sstream>
-#include <fstream>
 #include <iostream>
 #include <set>
 #include <cstdio>
@@ -8,6 +7,7 @@
 #include "util.h"
 #include "physics.h"
 #include "traj.h"
+#include "vstream.h"
 
 Trajectory::Trajectory(const Psi * apsi, int idlt): psi(apsi)
 {
@@ -47,8 +47,8 @@ void Trajectory::save()
     //if( int(range+0.5)%100 ) return;
 
     {
-        std::ofstream rg(earth_out, std::ios::app);
-        std::ofstream of(trajs_out, std::ios::app);
+        ovstream rg(earth_out, std::ios::app);
+        ovstream of(trajs_out, std::ios::app);
 
         of <<
            "# Time        X             Y             Z             "
@@ -99,7 +99,7 @@ void Trajectory::save()
     }
 
     {
-        std::ofstream sm(summary_out, std::ios::app);
+        ovstream sm(summary_out, std::ios::app);
 
         sm << s(rad2mil(angle0));
         sm << ' ' << s(range);

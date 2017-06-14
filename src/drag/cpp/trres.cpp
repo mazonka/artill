@@ -1,4 +1,3 @@
-#include <fstream>
 #include <cmath>
 
 #include "physics.h"
@@ -6,6 +5,7 @@
 #include "psic.h"
 #include "psolver.h"
 #include "trres.h"
+#include "vstream.h"
 
 void TrResult::init()
 {
@@ -87,7 +87,7 @@ void TrResult::save(bool append) const
 
     if ( !append )
     {
-        std::ofstream of(trres_out);
+        ovstream of(trres_out);
         of << s("# v0") << s("Angle_deg") << s("Range") << s("Time")
            << s("Fall_deg") << s("vFinal") << s("topHeight") << s("topRange")
            << s("Drift") << s("HeatKJ") << s("KinE0") << s("KinEf")
@@ -95,7 +95,7 @@ void TrResult::save(bool append) const
            << '\n';
     }
 
-    std::ofstream of(trres_out, std::ios::app);
+    ovstream of(trres_out, std::ios::app);
 
     if ( !of ) throw "Canot open " + string(trres_out);
 

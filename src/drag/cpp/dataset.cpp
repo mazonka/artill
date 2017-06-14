@@ -1,4 +1,3 @@
-#include <fstream>
 #include <iostream> //debug
 #include <cctype>
 #include <typeinfo>
@@ -7,6 +6,7 @@
 
 #include <future>
 
+#include "vstream.h"
 #include "defs.h"
 #include "util.h"
 #include "rsolver.h"
@@ -28,7 +28,7 @@ Dataset::Dataset()
 
 void Dataset::load(string file)
 {
-    std::ifstream in(file.c_str());
+    ivstream in(file.c_str());
     if ( !in ) throw "Cannot open " + file;
 
     Entry * curdef = nullptr;
@@ -143,7 +143,6 @@ Item * Item::create(string name)
     else if (name == Velocity::name()) return new Velocity();
     else if (name == Max::name()) return new Max();
     else if (name == Range::name()) return new Range();
-    ///else if (name == Fall::name()) return new Fall();
     else if (name == TopH::name()) return new TopH();
     else if (name == TopR::name()) return new TopR();
     else if (name == Drop::name()) return new Drop();
@@ -405,7 +404,6 @@ void Entry::run_rng(Psi * psi)
 string Dataset::print() const
 {
     if (entries.empty()) return "";
-    ///std::ofstream of(dataset_out);
     std::ostringstream of;
     Entry * curdef = nullptr;
     for (auto p : entries)
@@ -423,19 +421,8 @@ string Dataset::print() const
 void Dataset::save() const
 {
     if (entries.empty()) return;
-    std::ofstream of(dataset_out);
+    ovstream of(dataset_out);
     of << print();
-    /*///
-        Entry * curdef = nullptr;
-        for (auto p : entries)
-        {
-            if (!p->sameDef(curdef))
-                of << (p->str(true)) << '\n';
-
-            of << (p->str(false)) << '\n';
-            curdef = p;
-        }
-    */
 }
 
 bool Entry::sameDef(const Entry * q) const

@@ -1,9 +1,9 @@
 #include <iostream>
 #include <iomanip>
-#include <fstream>
 #include <cstdlib>
 #include <memory>
 
+#include "vstream.h"
 #include "defs.h"
 #include "util.h"
 #include "progr.h"
@@ -107,9 +107,9 @@ catch (...)
 void main_shoot(double al)
 {
     {
-        std::ofstream in1(trajs_out);
-        std::ofstream in2(earth_out);
-        std::ofstream in3(summary_out);
+        ovstream in1(trajs_out);
+        ovstream in2(earth_out);
+        ovstream in3(summary_out);
 
         in3 <<
             "# ElevMils    Range         Z             Y             "
@@ -223,7 +223,6 @@ void main_model()
 
 void main_test()
 {
-    ///Alglib a;
     std::unique_ptr<Asolver> a(make_solver(nullptr, Params()));
     testAsolver(&*a);
 }

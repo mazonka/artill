@@ -1,8 +1,8 @@
 #include <cmath>
-#include <fstream>
 #include <iostream>
 
 #include "rsolver.h"
+#include "vstream.h"
 
 struct Fun : ParabolicSolver::Function
 {
@@ -53,7 +53,7 @@ void testPS()
     else
         std::cout << "Solved Max f(" << rf << ")=" << fun.f(rf) << '\n';
 
-    std::ofstream of("fun.dat");
+    ovstream of("fun.dat");
     for ( int i = 0; i <= 90; i++ )
         of << i << '\t' << Fun().f(i) << '\n';
 }

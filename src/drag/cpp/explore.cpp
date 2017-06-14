@@ -1,11 +1,11 @@
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <string>
 
 #include "explore.h"
 #include "asolver.h"
 #include "cd.h"
+#include "vstream.h"
 
 using std::string;
 using namespace std;
@@ -87,7 +87,7 @@ void Explorer::maps(istream & is)
     if ( !is)
     {
         cout << "loading " << maps_in << "\n";
-        std::ifstream in(maps_in);
+        ivstream in(maps_in);
         in >> i1 >> s1 >> v1 >> r1 >> i2 >> s2 >> v2 >> r2;
         if ( !in )
         {
@@ -122,7 +122,7 @@ void Explorer::maps(istream & is)
         return;
     }
 
-    std::ofstream of(maps_out);
+    ovstream of(maps_out);
 
     cout << "0%\r" << std::flush;
 
