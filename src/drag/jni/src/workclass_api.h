@@ -22,5 +22,5 @@ class WorkClass
         double getElement(int x);
         int sendData(int nx, int ny, const int * x, const double * y);
 
-	void test();
+        void test();
 };

@@ -38,6 +38,6 @@ int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
 
 void WorkClass::test()
 {
-	void main_test();
-	main_test();
+    void main_test();
+    main_test();
 }
