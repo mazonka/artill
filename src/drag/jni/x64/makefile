@@ -51,7 +51,7 @@ $(DOBJ):
 
 clean:
 	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h \
-	wc_*.cpp main.cpp utils.cpp *.log
+	work*.cpp wc_*.cpp main.cpp utils.cpp *.log
 
 
 #src = hq_sl_hdt.cpp hq_sl_meta.cpp hq_sl_file.cpp hq_dbslice.cpp hq_dbindex.cpp
