@@ -50,7 +50,7 @@ EEXT = .$(PLAT).exe
 ifdef MAKELIB
 
 OPT += -D main=libmain
-O = o_lib
+O = o_lib$(PLAT)
 all: $O $O/drag$(OEXT) $O/draglib.lib
 
 else
