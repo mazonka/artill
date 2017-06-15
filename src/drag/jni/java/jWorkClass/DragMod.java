@@ -10,6 +10,30 @@ public class DragMod
         return senddata(new Protocol('R', cmd));
     }
 
+    public int setio(String name)
+    {
+        return senddata(new Protocol('S', name));
+    }
+
+    public int set_input(String data)
+    {
+        return senddata(new Protocol('I', data));
+    }
+
+    public String get_output()
+    {
+        String r = "";
+
+        for ( int i = 0; ; i++ )
+        {
+            int x = thin.calculate(i);
+            if ( x == 0 ) break;
+            r += (char)x;
+        }
+
+        return r;
+    }
+
     int senddata(Protocol  p)
     {
         int [] x = p.mk_arr();
