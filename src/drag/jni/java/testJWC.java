@@ -1,30 +1,39 @@
-import jWorkClass.jWorkClass;
+import jWorkClass.*;
 
-public class testJWC {
+public class testJWC
+{
 
-	public static void main(String[] args) 
-	{
-		jWorkClass gs = new jWorkClass();
+    public static void main(String[] args)
+    {
+        DragMod x = new DragMod();
 
+	x.run("test");
 
-		int [] x = { 50,50, 1, 1, 1 };
-		double [] y = { -0.6, 1, 1,1,1,1, 0,0,0,0 };
+	return;
 
-		gs.sendData(x.length,y.length,x,y);
-		int rk = gs.calculate(123);
-
-		for( int i=0; i<4; i++ )
-		{
-			if(i!=0) System.out.print(", ");
-			System.out.print( ""+gs.getElement(i) );
-		}
-		System.out.println("");
+/*
+        jWorkClass gs = new jWorkClass();
 
 
-		gs.destroy();
+        int [] x = { 50, 50, 1, 1, 1 };
+        double [] y = { -0.6, 1, 1, 1, 1, 1, 0, 0, 0, 0 };
 
-		System.out.println("Result1="+rk);
+        gs.sendData(x.length, y.length, x, y);
+        int rk = gs.calculate(123);
 
-		gs.destroy();
-	}
+        for ( int i = 0; i < 4; i++ )
+        {
+            if (i != 0) System.out.print(", ");
+            System.out.print( "" + gs.getElement(i) );
+        }
+        System.out.println("");
+
+
+        gs.destroy();
+
+        System.out.println("Result1=" + rk);
+
+        gs.destroy();
+*/
+    }
 }

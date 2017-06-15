@@ -27,7 +27,7 @@ dist_$(PLAT): jWorkClass.dll wc_thin_imp.dll jWorkClass.jar wc_thin_imp.$(PLAT)
 
 
 jar: jWorkClass.jar
-jWorkClass.jar: jWorkClass/jWorkClass.class
+jWorkClass.jar: jWorkClass/jWorkClass.class jWorkClass/DragMod.class
 	"$(JDK)/bin/jar" -cf jWorkClass.jar $^
 
 #JE: Prototype makeedit to support different kind of testing
@@ -55,6 +55,8 @@ jWorkClass_jWorkClass.h: jWorkClass/jWorkClass.class
 jWorkClass/jWorkClass.class: jWorkClass/jWorkClass.java 
 	"$(JDK)/bin/javac" jWorkClass/jWorkClass.java
 
+jWorkClass/DragMod.class: jWorkClass/DragMod.java 
+	"$(JDK)/bin/javac" jWorkClass/DragMod.java
 	
 clean:
 	rm -rf *.class *.h *.obj *.exp *.lib *.dll *.log out*.gs jWorkClass/*.class \
