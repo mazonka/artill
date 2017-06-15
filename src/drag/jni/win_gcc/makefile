@@ -1,5 +1,5 @@
 DLIL = ../../../dlad/
-DLIB = $(DLIL)dlibadu.lib
+DLIB = $(DLIL)dlibad.o
 DOBJ = ../../o_libu/
 
 #fPIC?
@@ -8,10 +8,10 @@ ifeq ($(OS),Windows_NT)
 OPT=-Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store -lpthread
 endif
 
-all: workclass_s.exe workclass_d.exe wc_thin_imp.so
+all: workclass_s.exe workclass_d.exe wc_thin_imp.dll
 
 workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.o utils.o
-	g++ $(OPT) main.cpp workclass_dyn.o wc_thin_imp.lib utils.o -Feworkclass_d.exe
+	g++ $(OPT) main.cpp workclass_dyn.o -L./ -lwc_thin_imp utils.o -o workclass_d.exe
 
 workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
 	g++ $(OPT) main.cpp workclass_imp.lib -o workclass_s.exe
@@ -19,15 +19,17 @@ workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
 workclass_imp.lib: $(DOBJ) workclass_imp.o $(DOBJ)draglib.lib \
 	$(DOBJ)drag.o $(DLIB) utils.o
 	ar crs workclass_imp.lib workclass_imp.o $(DOBJ)drag.o \
-	$(DOBJ)draglib.lib $(DLIB) utils.o
+	$(DOBJ)/*.o $(DLIB) utils.o
+
+#	$(DOBJ)draglib.lib $(DLIB) utils.o
 
 wc_thin_imp.lib: wc_thin_imp.dll
 	@echo dll
 
 wc_thin_imp.dll: workclass_imp.o wc_thin_imp.o utils.o $(DOBJ) \
 	$(DOBJ)drag.o $(DOBJ)draglib.lib $(DLIB)
-	link /DLL workclass_imp.o wc_thin_imp.o utils.o \
-	$(DOBJ)drag.o $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
+	g++ -shared workclass_imp.o wc_thin_imp.o utils.o \
+	$(DOBJ)*.o $(DLIB) -o wc_thin_imp.dll
 
 wc_thin_imp.o: wc_thin_imp.cpp wc_thin_api.h
 	g++ -c $(OPT) wc_thin_imp.cpp
