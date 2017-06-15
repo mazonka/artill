@@ -1,6 +1,6 @@
 DLIL = ../../../dlad/
 DLIB = $(DLIL)dlibadw.lib
-DOBJ = ../../o_lib/
+DOBJ = ../../o_libw/
 
 all: test64cl.exe workclass_s.exe workclass_d.exe wc_thin_imp.dll 
 
