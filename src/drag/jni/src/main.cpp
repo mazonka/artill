@@ -13,8 +13,9 @@ try
     WorkClass x;
     x.run("test");
 
-    x.input("hi", "hello");
-    cout << "\nout: " << x.output("hi");
+    x.setio("hi");
+    x.set_input("hello");
+    cout << "\nout: " << x.get_output();
 }
 catch (const char * e)
 {

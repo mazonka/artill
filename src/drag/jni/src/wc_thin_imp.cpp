@@ -48,22 +48,33 @@ intptr_t WC_Create()
     return x;
 }
 
+double WC_GetElement(intptr_t gs, int x)
+{
+    return 60;
+}
 
 int WC_Calculate(intptr_t gs, int x)
 {
-    return togs(gs)->calculate(x);
-}
-
-double WC_GetElement(intptr_t gs, int x)
-{
-    return togs(gs)->getElement(x);
+    const string & n = togs(gs)->getio();
+    const string & s = vstrmem[n];
+    if ( x >= (int)s.size() ) return 0;
+    if ( x < 0 ) return 0;
+    return int((unsigned char)(s[x]));
 }
 
 int WC_SendData(intptr_t gs, int nx, int ny, const int * x, const double * y)
 {
     Protocol p(nx, x);
-    cout << "AAA " << p.get_f() << ' ' << p.get_str() << '\n';
-    return togs(gs)->sendData(nx, ny, x, y);
+
+    switch (p.get_f())
+    {
+        case 'S': togs(gs)->setio(p.get_str()); break;
+        case 'I': togs(gs)->set_input(p.get_str()); break;
+        case 'R': togs(gs)->run(p.get_str()); break;
+        default: return 77;
+    }
+
+    return 0;
 }
 
 

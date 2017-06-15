@@ -3,8 +3,12 @@
 #include <string>
 #include <ostream>
 #include <vector>
+#include <map>
 
 using std::string;
+
+// defined in vstrmem
+extern std::map<string, string> vstrmem;
 
 namespace ut
 {

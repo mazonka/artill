@@ -11,8 +11,6 @@
 using std::cout;
 using std::string;
 
-extern std::map<string, string> vstrmem;
-
 WorkClass::WorkClass()
 {
 }
@@ -38,12 +36,14 @@ int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
     return 0;
 }
 
-void WorkClass::input(const string & name, const string & data)
+void WorkClass::setio(const string & name) { ioname = name; }
+
+void WorkClass::set_input(const string & data)
 {
-    vstrmem[name] = data;
+    vstrmem[ioname] = data;
 }
 
-string WorkClass::output(const string & name) { return vstrmem[name]; }
+string WorkClass::get_output() { return vstrmem[ioname]; }
 
 int WorkClass::run(const string & cmd)
 {
