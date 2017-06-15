@@ -53,7 +53,7 @@ int WorkClass::run(const string & cmd)
     vs.push_back("drag");
     for ( string s; is >> s; ) vs.push_back(s);
 
-    std::cout << vs.size() << ' ' << vs[0] << '\n';
+    ///std::cout << vs.size() << ' ' << vs[0] << '\n';
 
     int sz = (int)vs.size();
     std::vector<const char *> av;
