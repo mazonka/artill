@@ -38,34 +38,34 @@ int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
     return 0;
 }
 
-void WorkClass::input(const string &name, const string &data)
+void WorkClass::input(const string & name, const string & data)
 {
-	vstrmem[name] = data;
+    vstrmem[name] = data;
 }
 
-string WorkClass::output(const string &name){ return vstrmem[name]; }
+string WorkClass::output(const string & name) { return vstrmem[name]; }
 
-int WorkClass::run(const string &cmd)
+int WorkClass::run(const string & cmd)
 {
-  std::istringstream is(cmd);
-  std::vector<string> vs;
+    std::istringstream is(cmd);
+    std::vector<string> vs;
 
-  vs.push_back("drag");
-  for( string s; is>>s; ) vs.push_back(s);
+    vs.push_back("drag");
+    for ( string s; is >> s; ) vs.push_back(s);
 
-  std::cout<<vs.size()<<' '<<vs[0]<<'\n';
+    std::cout << vs.size() << ' ' << vs[0] << '\n';
 
-  int sz = (int)vs.size();
-  std::vector<const char *> av;
+    int sz = (int)vs.size();
+    std::vector<const char *> av;
 
-  for( int i=0; i<sz; i++ ) av.push_back(vs[i].data());
+    for ( int i = 0; i < sz; i++ ) av.push_back(vs[i].data());
 
-  int dragmain(int ac, const char **av);
-  int k = dragmain(sz,av.data());
+    int dragmain(int ac, const char ** av);
+    int k = dragmain(sz, av.data());
 
-  if( k ) throw "Excepton in drag library";
+    if ( k ) throw "Excepton in drag library";
 
-  return k;
+    return k;
 }
 
 

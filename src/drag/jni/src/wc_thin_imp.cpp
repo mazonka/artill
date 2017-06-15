@@ -2,6 +2,7 @@
 #include <cstring>
 
 #include "workclass_api.h"
+#include "utils.h"
 
 #define IFACEDECL
 #include "wc_thin_api.h"
@@ -60,6 +61,8 @@ double WC_GetElement(intptr_t gs, int x)
 
 int WC_SendData(intptr_t gs, int nx, int ny, const int * x, const double * y)
 {
+    Protocol p(nx, x);
+    cout << "AAA " << p.get_f() << ' ' << p.get_str() << '\n';
     return togs(gs)->sendData(nx, ny, x, y);
 }
 

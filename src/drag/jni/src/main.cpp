@@ -12,6 +12,9 @@ try
 {
     WorkClass x;
     x.run("test");
+
+    x.input("hi", "hello");
+    cout << "\nout: " << x.output("hi");
 }
 catch (const char * e)
 {

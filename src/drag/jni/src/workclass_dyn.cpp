@@ -38,11 +38,18 @@ int WorkClass::sendData(int nx, int ny, const int * x, const double * y)
     return 0;
 }
 
-void WorkClass::input(const string &name, const string &data){}
+void WorkClass::input(const string & name, const string & data) {}
 
-string WorkClass::output(const string &name){ return "XX"; }
+string WorkClass::output(const string & name) { return "XX"; }
 
-int WorkClass::run(const string &cmd)
+int WorkClass::run(const string & cmd)
 {
-  return 0;
+    Protocol p('R', &cmd);
+    auto x = p.mk_arr();
+
+    int k = WC_SendData(dyn_reference, (int)x.size(), 0, x.data(), 0);
+
+    if ( k ) throw "Excepton in drag library";
+
+    return k;
 }
