@@ -2,46 +2,47 @@ DLIL = ../../../dlad/
 DLIB = $(DLIL)dlibadu.lib
 DOBJ = ../../o_libu/
 
-all: test64cl.exe workclass_s.exe workclass_d.exe wc_thin_imp.so
+#fPIC?
+OPT=-Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store -pthread
+ifeq ($(OS),Windows_NT)
+OPT=-Wall -O2 -std=c++11 -fno-strict-aliasing -ffloat-store -lpthread
+endif
 
-test64cl.exe: test64cl.cpp
-	@g++ /nologo /E test64cl.cpp > test64cl.ok
-	@rm -f test64cl.ok
-	@echo test x64 ok
+all: workclass_s.exe workclass_d.exe wc_thin_imp.so
 
-workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.obj utils.obj
-	g++ /O2 -EHsc main.cpp workclass_dyn.obj wc_thin_imp.lib utils.obj -Feworkclass_d.exe
+workclass_d.exe: wc_thin_imp.lib main.cpp workclass_dyn.o utils.o
+	g++ $(OPT) main.cpp workclass_dyn.o wc_thin_imp.lib utils.o -Feworkclass_d.exe
 
 workclass_s.exe: workclass_imp.lib main.cpp wc_thin_api.h
-	g++ /O2 -EHsc main.cpp workclass_imp.lib -Feworkclass_s.exe
+	g++ $(OPT) main.cpp workclass_imp.lib -o workclass_s.exe
 
-workclass_imp.lib: $(DOBJ) workclass_imp.obj $(DOBJ)draglib.lib \
-	$(DOBJ)drag.obj $(DLIB) utils.obj
-	lib workclass_imp.obj $(DOBJ)drag.obj \
-	$(DOBJ)draglib.lib $(DLIB) utils.obj /OUT:workclass_imp.lib
+workclass_imp.lib: $(DOBJ) workclass_imp.o $(DOBJ)draglib.lib \
+	$(DOBJ)drag.o $(DLIB) utils.o
+	ar crs workclass_imp.lib workclass_imp.o $(DOBJ)drag.o \
+	$(DOBJ)draglib.lib $(DLIB) utils.o
 
 wc_thin_imp.lib: wc_thin_imp.dll
 	@echo dll
 
-wc_thin_imp.dll: workclass_imp.obj wc_thin_imp.obj utils.obj $(DOBJ) \
-	$(DOBJ)drag.obj $(DOBJ)draglib.lib $(DLIB)
-	link /DLL workclass_imp.obj wc_thin_imp.obj utils.obj \
-	$(DOBJ)drag.obj $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
+wc_thin_imp.dll: workclass_imp.o wc_thin_imp.o utils.o $(DOBJ) \
+	$(DOBJ)drag.o $(DOBJ)draglib.lib $(DLIB)
+	link /DLL workclass_imp.o wc_thin_imp.o utils.o \
+	$(DOBJ)drag.o $(DOBJ)draglib.lib $(DLIB) /OUT:wc_thin_imp.dll
 
-wc_thin_imp.obj: wc_thin_imp.cpp wc_thin_api.h
-	g++ /O2 -c -EHsc wc_thin_imp.cpp
+wc_thin_imp.o: wc_thin_imp.cpp wc_thin_api.h
+	g++ -c $(OPT) wc_thin_imp.cpp
 
-#workclass.obj: workclass.cpp workclass.h utils.h
+#workclass.o: workclass.cpp workclass.h utils.h
 #	g++ /O2 -c -EHsc workclass.cpp
 
-workclass_imp.obj: workclass_imp.cpp workclass_api.h utils.h
-	g++ /O2 -c -EHsc workclass_imp.cpp
+workclass_imp.o: workclass_imp.cpp workclass_api.h utils.h
+	g++ -c $(OPT) workclass_imp.cpp
 
-workclass_dyn.obj: workclass_dyn.cpp workclass_api.h utils.h wc_thin_api.h
-	g++ /O2 -c -EHsc workclass_dyn.cpp
+workclass_dyn.o: workclass_dyn.cpp workclass_api.h utils.h wc_thin_api.h
+	g++ -c $(OPT) workclass_dyn.cpp
 
-utils.obj: utils.cpp utils.h
-	g++ /O2 -c -EHsc utils.cpp
+utils.o: utils.cpp utils.h
+	g++ -c $(OPT) utils.cpp
 
 $(DOBJ):
 	@echo "=================================="
@@ -50,7 +51,7 @@ $(DOBJ):
 	@echo "=================================="
 
 clean:
-	rm -rf *.exe *.obj *.exp *.lib *.dll out*.gs *.h \
+	rm -rf *.exe *.o *.exp *.lib *.dll out*.gs *.h \
 	work*.cpp wc_*.cpp main.cpp utils.cpp *.log
 
 

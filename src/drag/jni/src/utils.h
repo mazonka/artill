@@ -32,7 +32,7 @@ class Protocol
 
         string mk_str() const;
     public:
-        Protocol( char c, const string * t ): func(c), text(t) {}
+        Protocol( char c, const string * t ): text(t), func(c) {}
         Protocol( int sz, const int * a );
 
         std::vector<int> mk_arr() const;
