@@ -14,7 +14,7 @@ else
 $(error PLAT is not set; must be x32 or x64; e.g. make PLAT=x64)
 endif
 
-LIBDIR=../$(PLAT)
+LIBDIR=../msc_$(PLAT)
 
 all: testJWC.class jWorkClass.dll jar dist_$(PLAT)
 	@echo Usage: java testJWC
