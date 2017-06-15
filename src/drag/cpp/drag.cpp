@@ -98,19 +98,16 @@ try
 }
 catch (const char * e)
 {
-    ///cout << "Error: " << e << '\n';
     error(e);
     return 1;
 }
 catch (string e)
 {
-    ///cout << "Error: " << e << '\n';
     error(e);
     return 1;
 }
 catch (std::exception & e)
 {
-    ///cout << "Error: " << e.what() << '\n';
     error(e.what());
     return 2;
 }

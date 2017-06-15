@@ -108,6 +108,8 @@ try
     set_cdgr(x);
 
     x.run("shoot");
+    x.setio("out/trres.dat");
+    cout << "\nout:\n" << x.get_output();
 }
 catch (const char * e)
 {
