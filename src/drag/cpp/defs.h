@@ -38,6 +38,9 @@ const char cdfixed_in[] = "in/cdfixed.dat";
 const char dataset_out[] = "out/dataset.dat";
 const char dataset_in[] = "in/dataset.dat";
 
-const char trres_out[] = "out/trres.dat";
 const char maps_out[] = "out/umap.dat";
 const char maps_in[] = "in/maps.dat";
+const char trres_out[] = "out/trres.dat";
+
+
+

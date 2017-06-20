@@ -193,8 +193,8 @@ void main_range(double r)
              << r2d(h.alpha) << " (" << high.second.str() << ")\n";
     }
 
-    void save_ranges(const Rsolver::RsRes &, const Rsolver::RsRes &);
-    save_ranges(flat,high);
+    flat.first.save(false);
+    high.first.save(true);
 }
 
 void main_solve()
@@ -284,21 +284,3 @@ void main_maps()
 }
 
 
-void save_ranges(const Rsolver::RsRes & flat, const Rsolver::RsRes & high)
-{
-    const TrResult & f = flat.first;
-    const TrResult & h = high.first;
-
-    cout << std::setprecision(20);
-    if ( flat.second.type == TrType::MAX )
-    {
-        cout << "Max range " << f.range << " at " << r2d(f.alpha) << '\n';
-    }
-    else
-    {
-        cout << "Range " << f.range << " at "
-             << r2d(f.alpha) << " (" << flat.second.str() << ")\n";
-        cout << "Range " << h.range << " at "
-             << r2d(h.alpha) << " (" << high.second.str() << ")\n";
-    }
-}
