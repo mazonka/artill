@@ -99,7 +99,7 @@ try
     //x.set_input("hello");
     //cout << "\nout: " << x.get_output();
 
-    // test 3
+    // test 3 - shoot
 
     set_proj(x);
     set_shot(x);
@@ -109,7 +109,15 @@ try
 
     x.run("shoot");
     x.setio("out/trres.dat");
-    cout << "\nout:\n" << x.get_output();
+    cout << "\ntrres:\n" << x.get_output();
+
+    // test 4 - range
+    x.run("range 5000");
+    x.setio("out/range.dat");
+    cout << "\nrange 5000:\n" << x.get_output();
+
+    x.run("range max");
+    cout << "\nrange max:\n" << x.get_output();
 }
 catch (const char * e)
 {

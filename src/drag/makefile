@@ -101,3 +101,8 @@ $(ALGL):
 
 clean:
 	rm -rf $O *.exe *.obj *.o o_* out/*.dat
+
+help:
+	@echo use make to build plain executable
+	@echo use MAKELIB=1 to build library
+	@echo use PLAT=[u/w] to select unix or windows build
