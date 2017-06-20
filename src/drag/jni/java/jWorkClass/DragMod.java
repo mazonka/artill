@@ -65,7 +65,6 @@ public class DragMod
         {
             return ut_s2a(func + text);
         }
-
     }
 }
 
