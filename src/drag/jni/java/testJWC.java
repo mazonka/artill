@@ -3,7 +3,7 @@ import jWorkClass.*;
 public class testJWC
 {
 
-    public static void main(String[] args)
+    static void testDragMod()
     {
         DragMod x = new DragMod();
 
@@ -29,31 +29,17 @@ public class testJWC
 
 
         return;
+    }
 
-        /*
-                jWorkClass gs = new jWorkClass();
+    static void testDmExample()
+    {
+        DmExample x = new DmExample();
+    }
 
-
-                int [] x = { 50, 50, 1, 1, 1 };
-                double [] y = { -0.6, 1, 1, 1, 1, 1, 0, 0, 0, 0 };
-
-                gs.sendData(x.length, y.length, x, y);
-                int rk = gs.calculate(123);
-
-                for ( int i = 0; i < 4; i++ )
-                {
-                    if (i != 0) System.out.print(", ");
-                    System.out.print( "" + gs.getElement(i) );
-                }
-                System.out.println("");
-
-
-                gs.destroy();
-
-                System.out.println("Result1=" + rk);
-
-                gs.destroy();
-        */
+    public static void main(String[] args)
+    {
+        //testDragMod();
+	testDmExample();
     }
 
     static void set_proj(DragMod x)
@@ -73,12 +59,12 @@ public class testJWC
     {
         String shot =
             "angle_deg 10\n"
-            +"angle_dlt 0\n"
-            +"height 0\n"
-            +"ntraj 1\n"
-            +"turbulence 0\n"
-            +"zwind 0\n"
-            +"xwind 0\n";
+            + "angle_dlt 0\n"
+            + "height 0\n"
+            + "ntraj 1\n"
+            + "turbulence 0\n"
+            + "zwind 0\n"
+            + "xwind 0\n";
 
         x.setio("in/shot.dat");
         x.set_input(shot);
@@ -88,16 +74,16 @@ public class testJWC
     {
         String inte =
             "max_len 1e8\n"
-            +"dt0 0.1\n"
-            +"dtmax 0.005\n"
-            +"precision 1e-15\n"
-            +"dEpm_rej 3\n"
-            +"dEpm_max 2\n"
-            +"dEpm_min 1\n"
-            +"dh_up 1.5\n"
-            +"dh_dn 0.5\n"
-            +"renormE 10\n"
-            +"dragcare 0.5\n";
+            + "dt0 0.1\n"
+            + "dtmax 0.005\n"
+            + "precision 1e-15\n"
+            + "dEpm_rej 3\n"
+            + "dEpm_max 2\n"
+            + "dEpm_min 1\n"
+            + "dh_up 1.5\n"
+            + "dh_dn 0.5\n"
+            + "renormE 10\n"
+            + "dragcare 0.5\n";
 
         x.setio("in/integr.dat");
         x.set_input(inte);
@@ -108,16 +94,16 @@ public class testJWC
     {
         String cons =
             "Earth_radius 6378137\n"
-            +"Earth_mass 5.9722e24\n"
-            +"Ggrav 6.67408e-11\n"
-            +"std_press 101325\n"
-            +"temp_rate 6.5\n"
-            +"Earth_atm_R 6356.766\n"
-            +"std_temp 288.15\n"
-            +"grav_atm 9.80665\n"
-            +"molec_w 28.9644\n"
-            +"gas_const 8.31432\n"
-            +"speed_1k 20.046\n";
+            + "Earth_mass 5.9722e24\n"
+            + "Ggrav 6.67408e-11\n"
+            + "std_press 101325\n"
+            + "temp_rate 6.5\n"
+            + "Earth_atm_R 6356.766\n"
+            + "std_temp 288.15\n"
+            + "grav_atm 9.80665\n"
+            + "molec_w 28.9644\n"
+            + "gas_const 8.31432\n"
+            + "speed_1k 20.046\n";
 
         x.setio("in/consts.dat");
         x.set_input(cons);
@@ -127,8 +113,8 @@ public class testJWC
     {
         String cdgr =
             "#range 0.3 3\n"
-            +"0 0.2\n"
-            +"0 0.2\n";
+            + "0 0.2\n"
+            + "0 0.2\n";
 
         x.setio("in/cdgraph.dat");
         x.set_input(cdgr);

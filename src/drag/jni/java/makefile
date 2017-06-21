@@ -27,7 +27,7 @@ dist_$(PLAT): jWorkClass.dll wc_thin_imp.dll jWorkClass.jar wc_thin_imp.$(PLAT)
 
 
 jar: jWorkClass.jar
-jWorkClass.jar: jWorkClass/jWorkClass.class jWorkClass/DragMod.class
+jWorkClass.jar: jWorkClass/jWorkClass.class jWorkClass/DragMod.class jWorkClass/DmExample.class
 	"$(JDK)/bin/jar" -cf jWorkClass.jar $^
 
 #JE: Prototype makeedit to support different kind of testing

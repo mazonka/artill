@@ -1,7 +1,8 @@
 package jWorkClass;
 
 
-public class DragMod
+public class DmExample
 {
     DragMod dm = new DragMod();
 }
+
