@@ -91,9 +91,9 @@ double Function::integrate2(int k) const
         double x2 = v[i].x;
         double y1 = v[i - 1].y;
         double y2 = v[i].y;
-	double d1 = x2 - x1;
-	double d = d1;
-	for( int j=1; j<k; j++ ) d*=d1;
+        double d1 = x2 - x1;
+        double d = d1;
+        for ( int j = 1; j < k; j++ ) d *= d1;
         sum += d * (y1 * y1 + y1 * y2 + y2 * y2);
     }
     return sum / 3;
@@ -136,9 +136,10 @@ void Function::sample(const Function & f)
 
 double Function::noise() const
 {
-    Point r=range(); 
-    double span = r.y-r.x;
-    return fourthder().integrate2(6)/span;
+    Point r = range();
+    double span = r.y - r.x;
+    Function f = inject(15);
+    return f.fourthder().integrate2(6) / span;
 }
 
 Function Function::fourthder() const
@@ -174,12 +175,31 @@ Function Function::fourthder() const
     }
 
     for ( int k = 0; k < size(); k++ ) // take average
-	if( cntr[k] ) r.setY( k, r.getY(k) / cntr[k] );
+        if ( cntr[k] ) r.setY( k, r.getY(k) / cntr[k] );
 
     r.save("smooth.tmp");
     return r;
 }
 
+Function Function::inject(int n) const
+{
+    Function r;
+
+    const Function & t = *this;
+
+    r.v.push_back(t[0]);
+
+    for (int i = 1; i < size(); i++ )
+    {
+        Function f(n, Point(t[i - 1].x, t[i].x));
+        for (int j = 1; j < f.size(); j++ )
+            r.v.push_back(Point(f[j].x, 0));
+    }
+
+    for ( int i = 0; i < r.size(); i++ ) r.setY(i, y(r[i].x) );
+
+    return r;
+}
 
 // *** non-class members *** //
 #include "asolver.h"

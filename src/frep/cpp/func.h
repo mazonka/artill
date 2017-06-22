@@ -28,8 +28,8 @@ class Function
 
         double y(double x) const;
 
-	// k=1 normal integration of p^2 formula
-        double integrate2(int k) const; 
+        // k=1 normal integration of p^2 formula
+        double integrate2(int k) const;
 
         double integrate1() const;
 
@@ -42,6 +42,7 @@ class Function
 
         double noise() const;
         Function fourthder() const;
+        Function inject(int n) const;
 };
 
 
