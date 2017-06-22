@@ -33,7 +33,12 @@ public class testJWC
 
     static void testDmExample()
     {
-        DmExample x = new DmExample();
+	DmExample.Proj proj = new DmExample.Proj();
+	DmExample.Drag drag = new DmExample.Drag();
+	
+        DmExample x = new DmExample(proj,drag);
+	DmExample.Traj traj = x.range(2000,true);
+	drag = x.solve();
     }
 
     public static void main(String[] args)
