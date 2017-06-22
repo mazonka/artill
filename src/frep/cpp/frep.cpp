@@ -29,6 +29,9 @@ try
     normalise(&a, &b, false);
 
     b.save(out);
+
+    cout << "noise a = " << a.noise() << '\n';
+    cout << "noise b = " << b.noise() << '\n';
 }
 catch (string e)
 {
@@ -100,7 +103,7 @@ void test01()
 void test02()
 {
     Function a("tests/t02a.dat");
-    cout << "t02a integrate2 => " << a.integrate2() << '\n';
+    cout << "t02a integrate2 => " << a.integrate2(1) << '\n';
     cout << "t02a integrate1 => " << a.integrate1() << '\n';
 }
 
@@ -133,9 +136,9 @@ struct Fun : AsolFun
 double Fun::f(const Params & pms)
 {
     setParamsToFun(pf, pms);
-    double r = (*bf - *pf).integrate2();
+    double r = (*bf - *pf).integrate2(1);
 
-    static double r0 = 1e100; if( r0>r ){ cout<<"   (" <<r<<")      \r"; r0=r; }
+    static double r0 = 1e100; if ( r0 > r ) { cout << "   (" << r << ")      \r"; r0 = r; }
 
     return r;
 }
@@ -196,13 +199,13 @@ void normalise(const Function * a, Function * b, bool doit)
     cout << "a => " << sa << '\n';
     cout << "b => " << sb << '\n';
 
-	if( !doit ) return;
+    if ( !doit ) return;
 
     // a = b + z*dx => z = (a-b)/dx
 
     int sz = b->size();
     Point r = b->range();
-    double z = (sa - sb) / (r.y-r.x);
+    double z = (sa - sb) / (r.y - r.x);
 
     for ( int i = 0; i < sz; i++ )
         b->setY(i, b->getY(i) + z);

@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include <fstream>
 #include <set>
 
@@ -80,7 +82,7 @@ double Function::y(double x) const
     return 0;
 }
 
-double Function::integrate2() const
+double Function::integrate2(int k) const
 {
     double sum = 0;
     for ( int i = 1; i < size(); i++ )
@@ -89,7 +91,10 @@ double Function::integrate2() const
         double x2 = v[i].x;
         double y1 = v[i - 1].y;
         double y2 = v[i].y;
-        sum += (x2 - x1) * (y1 * y1 + y1 * y2 + y2 * y2);
+	double d1 = x2 - x1;
+	double d = d1;
+	for( int j=1; j<k; j++ ) d*=d1;
+        sum += d * (y1 * y1 + y1 * y2 + y2 * y2);
     }
     return sum / 3;
 }
@@ -128,6 +133,53 @@ void Function::sample(const Function & f)
     for ( int i = 0; i < size(); i++ )
         v[i].y = f.y(v[i].x);
 }
+
+double Function::noise() const
+{
+    Point r=range(); 
+    double span = r.y-r.x;
+    return fourthder().integrate2(6)/span;
+}
+
+Function Function::fourthder() const
+{
+    const Function & f = *this;
+    Function r = f - f;
+
+    std::vector<int> cntr(size(), 0);
+
+    for ( int k = 4; k < size(); k++ ) // select group of 5
+    {
+        double f44 = 0;
+        for ( int ic = 0; ic < 5; ic++ )
+        {
+            int i = k - 4 + ic;
+            double prod = 1;
+            for ( int jc = 0; jc < 5; jc++ )
+            {
+                int j = k - 4 + jc;
+                if ( i == j ) continue;
+                prod *= (f[i].x - f[j].x);
+            }
+            f44 += f[i].y / prod;
+        }
+        f44 *= 24;
+
+        for ( int ic = 0; ic < 5; ic++ )
+        {
+            int i = k - 4 + ic;
+            r.setY( i, r.getY(i) + f44 );
+            ++cntr[i];
+        }
+    }
+
+    for ( int k = 0; k < size(); k++ ) // take average
+	if( cntr[k] ) r.setY( k, r.getY(k) / cntr[k] );
+
+    r.save("smooth.tmp");
+    return r;
+}
+
 
 // *** non-class members *** //
 #include "asolver.h"

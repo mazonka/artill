@@ -27,14 +27,21 @@ class Function
         void save(string f);
 
         double y(double x) const;
-        double integrate2() const;
+
+	// k=1 normal integration of p^2 formula
+        double integrate2(int k) const; 
+
         double integrate1() const;
 
         void sample(const Function & f);
 
         void setY(int i, double y) { v[i].y = y; }
         double getY(int i) const { return v[i].y; }
-	Point range() const { return Point(v[0].x,v[size() - 1].x); }
+        Point operator[](int i) const { return v[i]; }
+        Point range() const { return Point(v[0].x, v[size() - 1].x); }
+
+        double noise() const;
+        Function fourthder() const;
 };
 
 
