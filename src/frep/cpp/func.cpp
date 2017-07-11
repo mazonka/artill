@@ -177,7 +177,7 @@ Function Function::fourthder() const
     for ( int k = 0; k < size(); k++ ) // take average
         if ( cntr[k] ) r.setY( k, r.getY(k) / cntr[k] );
 
-    r.save("smooth.tmp");
+    //r.save("smooth.tmp");
     return r;
 }
 
