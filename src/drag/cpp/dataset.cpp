@@ -188,7 +188,11 @@ void Entry::figureOutType()
 
     if (find(&m)) type = MAX;
     else if (find(&r)) type = RNG;
-    else type = ANG;
+    else
+    {
+        type = ANG;
+        if ( !find<item::Angle>() ) throw("Entry type rules not satisfied");
+    }
 
     // validate
     if (type == MAX)
@@ -310,6 +314,7 @@ void Entry::run_ang(Psi * psi)
     Item * p = find<item::Velocity>();
     if (p) psi->p.velocity = p->x;
     p = find<item::Angle>();
+    if ( !p ) never("Angle item is not found in ANG record");
 
     double angle = p->x;
     if (!p) never("Entry::run (4)");
