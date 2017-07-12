@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <memory>
 
+#include "dlibad.h" // Qmaxeval
 #include "asolver.h"
 #include "dsolver.h"
 #include "psic.h"
@@ -31,7 +32,7 @@ double DsolvFun::f(const Params & pms, const void * orig)
     psi->cd->setParams(pms);
     Dataset * ds = data->runc(psi);
 
-    double q = ds->util(reference);
+    double u = ds->util(reference);
 
     double s = 0;
     bool fempty = true;
@@ -50,15 +51,15 @@ double DsolvFun::f(const Params & pms, const void * orig)
         }
     }
 
-    double u = 0*q+s;
+    double w = u + s;
 
-    if ( u < ubest )
+    if ( w < ubest )
     {
         //cout << data->dump(reference) << '\n';
         //cout << std::setprecision(17);
         //cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
         //cout << u << '\n';
-        ubest = u;
+        ubest = w;
         delete best;
         best = ds;
 
@@ -69,20 +70,21 @@ double DsolvFun::f(const Params & pms, const void * orig)
         delete ds;
 
     static int cntr = 1000 * 1000 * 5;
+    static int cntrQ = 0; cntrQ++;
     if ( ++cntr > 2 )
         //if ( ++cntr > 0 )
     {
         cntr = 0;
-        cout << "min = " << ubest << "  u = " << tos(u)
-             << "  s = " << s << (fempty ? " smooth bad" : "")
-             <<  "        \r" << std::flush;
-        // "smooth bad" means that Function object is not implemented
+        cout << (Qmaxeval - cntrQ) << " min = " << ubest << "  u = " << tos(u)
+             << "  s = " << (fempty ? "nosmooth" : tos(s) )
+             <<  "   \r" << std::flush;
+        // "nosmooth" means that Function object is not implemented
         // for this Cd, see Cd::buildFunction
 
         //cout << u << " : "; for ( size_t i = 0; i < pms.v.size(); i++ ) cout << ' ' << pms.v[i]; cout << '\n';
     }
 
-    return u;
+    return w;
 }
 
 Dsolver::Dsolver(Psi * p, Dataset * d)
