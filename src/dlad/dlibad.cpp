@@ -12,7 +12,7 @@ struct Function
     const void * data;
 
     Function(int d, Dlibad::typef f, const void * v)
-  	: dim(d), fn(f), data(v) {}
+        : dim(d), fn(f), data(v) {}
 
     double operator() ( const vec & a ) const
     {

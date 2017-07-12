@@ -7,7 +7,7 @@ class Dlibad
     public:
         typedef double (*typef)(int, const double *, const void *);
         typef fn;
-	const void * data;
+        const void * data;
 
         typedef std::vector<double> vd;
 
