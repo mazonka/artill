@@ -129,6 +129,19 @@ Function::Function(int n, Point rng)
     v.push_back(Point(x2, 0));
 }
 
+Function::Function(const std::vector<double> & xs)
+{
+    if ( xs.size() < 2 ) never("number of points < 2");
+    for ( size_t i = 0; i < xs.size(); i++ ) v.push_back(Point(xs[i], 0));
+}
+
+Function::Function(const Function & f, const std::vector<double> & ys)
+{
+    if ( f.size() != (int)ys.size() ) never("Function sizes mismatch");
+    for ( int i = 0; i < f.size(); i++ )
+        v.push_back(Point(f.v[i].x, ys[i]));
+}
+
 void Function::sample(const Function & f)
 {
     for ( int i = 0; i < size(); i++ )

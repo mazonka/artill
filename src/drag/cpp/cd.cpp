@@ -581,3 +581,10 @@ void CdFixed::setParams(const Params & p)
         vy[i] = p.v[i];
 }
 
+Function CdFixed::buildFunction() const
+{
+    Function r(vx);
+    for ( int i = 0; i < r.size(); i++ ) r.setY(i, vy[i]);
+    return r;
+}
+

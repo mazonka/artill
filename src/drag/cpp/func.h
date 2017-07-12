@@ -21,6 +21,8 @@ class Function
         Function() {}
         Function(string f) { load(f); }
         Function(int n, Point rng);
+        Function(const std::vector<double> & xs);
+        Function(const Function & f, const std::vector<double> & ys);
 
         void load(string f);
         Function operator-(const Function & f) const;

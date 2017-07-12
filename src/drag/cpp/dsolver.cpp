@@ -31,7 +31,26 @@ double DsolvFun::f(const Params & pms, const void * orig)
     psi->cd->setParams(pms);
     Dataset * ds = data->runc(psi);
 
-    double u = ds->util(reference);
+    double q = ds->util(reference);
+
+    double s = 0;
+    bool fempty = true;
+
+    if ( orig)
+    {
+        const Function * of = static_cast<const Function *>(orig);
+        if ( of->size() > 1 )
+        {
+            Function g(*of, pms.v);
+
+            for ( int i = 0; i < g.size(); i++ ) g.setY(i, pms.v[i]);
+
+            s = g.noise() / 1;
+            fempty = false;
+        }
+    }
+
+    double u = 0*q+s;
 
     if ( u < ubest )
     {
@@ -49,31 +68,17 @@ double DsolvFun::f(const Params & pms, const void * orig)
     else
         delete ds;
 
-    double s = 0;
-
-    if ( orig)
-    {
-        const Function * of = static_cast<const Function *>(orig);
-        // smoother multiplier
-        //double sm =
-
-        if ( of->size() > 1 )
-        {
-            //cout << "AAA " << u << ' ' << of->noise() << ' ' << '\n';
-            s = of->noise();
-        }
-        else
-            //cout << "AAA " << u << " empty" << '\n';
-            of;
-    }
-
     static int cntr = 1000 * 1000 * 5;
     if ( ++cntr > 2 )
         //if ( ++cntr > 0 )
     {
         cntr = 0;
         cout << "min = " << ubest << "  u = " << tos(u)
-             << "  s = " << s << "        \r" << std::flush;
+             << "  s = " << s << (fempty ? " smooth bad" : "")
+             <<  "        \r" << std::flush;
+        // "smooth bad" means that Function object is not implemented
+        // for this Cd, see Cd::buildFunction
+
         //cout << u << " : "; for ( size_t i = 0; i < pms.v.size(); i++ ) cout << ' ' << pms.v[i]; cout << '\n';
     }
 
