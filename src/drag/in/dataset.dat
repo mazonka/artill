@@ -13,7 +13,12 @@ R            Vf           Drop         Kind         Hint
 2000         267.301      73.6218      1            2.10959      
 }
 
-v0         Angle_deg    Range        Time         Fall_deg     vFinal       topHeight    topRange     Drift        HeatKJ       KinE0        KinEf        TrajLength   Elevation0   RejectRate   
+# Valid colums: V, Max, R, (Angle, AngMil, AngRad),
+# (Fall, FallMil, FallRad), topH, topR, Drop, Time,
+# Vf, Kind, Hint, and <unknown>.
+# Where <unknown> is anything that does not match the others.
+
+v0         Angle          R            Time         Fall         Vf           topH         topR         Drift        HeatKJ       KinE0        KinEf        TrajLength   Elevation0   RejectRate   
 ------------------------------------------------
 915          0.1          266.787      0.319879     0.115949     757.861      0.123951     137.634      0            2.12925      6781.52      4652.27      266.879      0            0            
 915          0.2          477.111      0.620281     0.257333     645.393      0.467306     252.598      0            3.40761      6781.52      3373.91      480.159      0            0            

@@ -25,6 +25,7 @@ void main_graph();
 void main_shoot(double);
 void main_range(double);
 void main_maps();
+void main_frep(int ac, const char ** av);
 
 using std::cout;
 
@@ -37,6 +38,7 @@ void usage()
     cout << "\trange <R>|max - solve for range\n";
     cout << "\tbuild - continuously improve graph or point\n";
     cout << "\tmaps - explore U function interactively (under construction)\n";
+    cout << "\tfrep - reparametrise function\n";
 }
 
 static void error(string e)
@@ -68,6 +70,7 @@ try
     else if ( av1 == "solve" ) main_solve();
     else if ( av1 == "build" ) main_graph();
     else if ( av1 == "maps" ) main_maps();
+    else if ( av1 == "frep" ) main_frep(ac,av);
     else if ( av1 == "shoot" )
     {
         double r = INF_VAL;
@@ -283,4 +286,16 @@ void main_maps()
     }
 }
 
+
+void main_frep(int ac, const char ** av)
+{
+	if( ac < 5 )
+	{
+		for( int i=0; i<ac; i++ ) cout<<' '<<av[i]<<'\n';
+
+		return;
+	}
+
+	cout<<"OK";
+}
 
