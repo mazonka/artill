@@ -1,3 +1,5 @@
+#pragma error
+
 #include <iostream>
 #include <cmath>
 

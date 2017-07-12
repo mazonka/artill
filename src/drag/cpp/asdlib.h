@@ -5,8 +5,9 @@
 class Asdlib : public Asolver
 {
     public:
-        Asdlib() {}
-        Asdlib(AsolFun * fn, const Params & p): Asolver(fn, p) {}
+        ///Asdlib() {}
+        Asdlib(AsolFun * fn, const Params & p, const void * d)
+            : Asolver(fn, p, d) {}
 
         // switch to disable dlib
         Params solve();

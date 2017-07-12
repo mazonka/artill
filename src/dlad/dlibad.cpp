@@ -9,12 +9,15 @@ struct Function
 {
     int dim;
     Dlibad::typef fn;
-    Function(int d, Dlibad::typef f): dim(d), fn(f) {}
+    const void * data;
+
+    Function(int d, Dlibad::typef f, const void * v)
+  	: dim(d), fn(f), data(v) {}
 
     double operator() ( const vec & a ) const
     {
         std::vector<double> v(a.begin(), a.end());
-        return fn(a.size(), v.data());
+        return fn(a.size(), v.data(), data);
     }
 };
 
@@ -27,7 +30,7 @@ Dlibad::vd Dlibad::solve(const vd & v) const
 
     for ( int i = 0; i < sz; i++ ) starting_point(i) = v[i];
 
-    find_min_bobyqa(Function(sz, fn),
+    find_min_bobyqa(Function(sz, fn, data),
                     starting_point,
                     2 * sz + 1, // number of interpolation points
                     dlib::uniform_matrix<double>(sz, 1, -1e100),

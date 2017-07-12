@@ -1,11 +1,12 @@
-#include <iostream>
+#include <iostream> /// debug
 
 #include <set>
 
 #include "vstream.h"
 #include "func.h"
+#include "util.h"
 
-inline void never(int i) { throw std::to_string(i); }
+///inline void never(int i) { throw std::to_string(i); }
 
 void Function::load(string f)
 {
@@ -136,10 +137,11 @@ void Function::sample(const Function & f)
 
 double Function::noise() const
 {
+    if ( size() < 2 ) never("Empty function is used");
     Point r = range();
     double span = r.y - r.x;
-    Function f = inject(15);
-    return f.fourthder().integrate2(6) / span;
+    Function f = inject(15); // injecting 15 points is sufficient
+    return f.fourthder().integrate2(6) / span; // integraion of 6th order (see doc)
 }
 
 Function Function::fourthder() const

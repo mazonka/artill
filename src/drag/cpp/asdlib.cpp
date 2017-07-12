@@ -8,17 +8,17 @@
 typedef std::vector<double> vd;
 
 AsolFun * asol_fun;
-double as_fun(int sz, const double * v)
+double as_fun(int sz, const double * v, const void * d)
 {
-    return asol_fun->f(Params(sz, v));
+    return asol_fun->f(Params(sz, v), d);
 }
 
 Params Asdlib::solve()
 {
     asol_fun = f;
-    f->f(p);
+    f->f(p, data );
 
-    Dlibad d(as_fun);
+    Dlibad d(as_fun, data);
     p.v = d.solve(p.v);
 
     return p;

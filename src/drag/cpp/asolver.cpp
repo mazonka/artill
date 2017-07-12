@@ -1,13 +1,13 @@
 #include <iostream>
 
 #include "asolver.h"
-#include "alglib.h"
+///#include "alglib.h"
 #include "asdlib.h"
 
 
-Asolver * make_solver(AsolFun * fn, const Params & p)
+Asolver * make_solver(AsolFun * fn, const Params & p, const void * data)
 {
-    return new Asdlib(fn, p);
+    return new Asdlib(fn, p, data);
     //return new Alglib(fn, p);
 }
 
@@ -17,10 +17,10 @@ Asolver * make_solver(AsolFun * fn, const Params & p)
 
 struct Tfun: AsolFun
 {
-    double f(const Params & pms);
+    double f(const Params & pms, const void *);
 };
 
-double Tfun::f(const Params & x)
+double Tfun::f(const Params & x, const void *)
 {
     double y = x.v[0] * x.v[0];
     std::cout << "# " << x.v[0] << " -> " << y << '\n';

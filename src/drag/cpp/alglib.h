@@ -1,3 +1,4 @@
+#pragma error
 #pragma once
 
 #include "asolver.h"

@@ -14,10 +14,11 @@
 #include "rsolver.h"
 #include "dataset.h"
 #include "dsolver.h"
-#include "alglib.h"
+///#include "alglib.h"
 #include "explore.h"
 #include "timer.h"
 #include "frep.h"
+#include "func.h"
 
 void main_test();
 void main_model();
@@ -70,7 +71,7 @@ try
     else if ( av1 == "solve" ) main_solve();
     else if ( av1 == "build" ) main_graph();
     else if ( av1 == "maps" ) main_maps();
-    else if ( av1 == "frep" ) main_frep(ac-1,av+1);
+    else if ( av1 == "frep" ) main_frep(ac - 1, av + 1);
     else if ( av1 == "shoot" )
     {
         double r = INF_VAL;
@@ -242,7 +243,7 @@ void main_model()
 
 void main_test()
 {
-    std::unique_ptr<Asolver> a(make_solver(nullptr, Params()));
+    std::unique_ptr<Asolver> a(make_solver(nullptr, Params(), nullptr));
     testAsolver(&*a);
 }
 

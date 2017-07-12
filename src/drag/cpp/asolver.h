@@ -2,6 +2,8 @@
 
 #include <vector>
 
+///#include "func.h"
+
 struct Params
 {
     std::vector<double> v;
@@ -12,7 +14,7 @@ struct Params
 
 struct AsolFun
 {
-    virtual double f(const Params &) = 0;
+    virtual double f(const Params &, const void * data) = 0;
 };
 
 class Asolver
@@ -20,10 +22,14 @@ class Asolver
     protected:
         AsolFun * f;
         Params p;
+        const void * data;
 
     public:
         Asolver(): f(nullptr) {}
-        Asolver(AsolFun * fn, const Params & p): f(fn), p(p) {}
+
+        Asolver(AsolFun * fn, const Params & p, const void * d)
+            : f(fn), p(p), data(d) {}
+
         virtual Params solve() = 0;
         void setFun(AsolFun * af) { f = af; }
         void setParams(const Params & ap) { p = ap; }
@@ -35,4 +41,4 @@ class Asolver
 
 void testAsolver(Asolver * a);
 
-Asolver * make_solver(AsolFun * fn, const Params & p);
+Asolver * make_solver(AsolFun * fn, const Params & p, const void * data);

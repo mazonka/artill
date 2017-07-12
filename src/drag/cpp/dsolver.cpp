@@ -6,7 +6,7 @@
 #include "dsolver.h"
 #include "psic.h"
 #include "cd.h"
-#include "alglib.h"
+#include "func.h"
 
 using std::cout;
 
@@ -16,7 +16,7 @@ struct DsolvFun : AsolFun
         const Dataset * reference;
         Dataset * data, *best;
         double ubest;
-        double f(const Params & pms);
+        double f(const Params & pms, const void * origf);
         DsolvFun(Psi * p, const Dataset * rf, Dataset * dt)
             : psi(p), reference(rf), data(dt), best(nullptr), ubest(INF_VAL) {}
         ~DsolvFun() { delete best; }
@@ -26,7 +26,7 @@ struct DsolvFun : AsolFun
         void operator=(const DsolvFun &) const;
 };
 
-double DsolvFun::f(const Params & pms)
+double DsolvFun::f(const Params & pms, const void * orig)
 {
     psi->cd->setParams(pms);
     Dataset * ds = data->runc(psi);
@@ -49,12 +49,31 @@ double DsolvFun::f(const Params & pms)
     else
         delete ds;
 
-    static int cntr = 999999;
+    double s = 0;
+
+    if ( orig)
+    {
+        const Function * of = static_cast<const Function *>(orig);
+        // smoother multiplier
+        //double sm =
+
+        if ( of->size() > 1 )
+        {
+            //cout << "AAA " << u << ' ' << of->noise() << ' ' << '\n';
+            s = of->noise();
+        }
+        else
+            //cout << "AAA " << u << " empty" << '\n';
+            of;
+    }
+
+    static int cntr = 1000 * 1000 * 5;
     if ( ++cntr > 2 )
         //if ( ++cntr > 0 )
     {
         cntr = 0;
-        cout << "min = " << ubest << "     u = " << tos(u) << "    \r" << std::flush;
+        cout << "min = " << ubest << "  u = " << tos(u)
+             << "  s = " << s << "        \r" << std::flush;
         //cout << u << " : "; for ( size_t i = 0; i < pms.v.size(); i++ ) cout << ' ' << pms.v[i]; cout << '\n';
     }
 
@@ -72,9 +91,8 @@ void Dsolver::solve()
 {
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();
-    std::unique_ptr<Asolver> as(make_solver(&fun, pms));
-    //Alglib as(&fun, pms);
-    //A_dlib as(&fun, pms);
+    Function orf = psi->cd->buildFunction();
+    std::unique_ptr<Asolver> as(make_solver(&fun, pms, &orf));
 
     pms = as->solve();
     psi->cd->setParams(pms);

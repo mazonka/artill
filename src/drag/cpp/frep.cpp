@@ -131,15 +131,16 @@ struct Fun : AsolFun
 
     Fun(const Function * a, Function * b): bf(a), pf(b) {}
 
-    double f(const Params & pms);
+    double f(const Params & pms, const void *);
 };
 
-double Fun::f(const Params & pms)
+double Fun::f(const Params & pms, const void *)
 {
     setParamsToFun(pf, pms);
     double r = (*bf - *pf).integrate2(1);
 
-    static double r0 = 1e100; if ( r0 > r ) { cout << "   (" << r << ")      \r"; r0 = r; }
+    static double r0 = 1e100; if ( r0 > r )
+    { cout << "   (" << r << ")      \r"; r0 = r; }
 
     return r;
 }
@@ -160,7 +161,7 @@ void test04()
     ///pms.v = std::vector(3,0);
     getParamsFromFun(&b, pms);
 
-    std::unique_ptr<Asolver> as(make_solver(&fun, pms));
+    std::unique_ptr<Asolver> as(make_solver(&fun, pms, nullptr));
     pms = as->solve();
 
     cout << "Solved : {";
@@ -184,7 +185,7 @@ void buildFun(const Function * a, Function * b)
     Params pms;
     getParamsFromFun(b, pms);
 
-    std::unique_ptr<Asolver> as(make_solver(&fun, pms));
+    std::unique_ptr<Asolver> as(make_solver(&fun, pms, nullptr));
     pms = as->solve();
 
     cout << "Solved : {"; for ( auto x : pms.v ) cout << ' ' << x; cout <<  " }\n";

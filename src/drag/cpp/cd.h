@@ -5,6 +5,7 @@
 
 #include "names.h"
 #include "asolver.h"
+#include "func.h"
 
 class Cd
 {
@@ -27,6 +28,7 @@ class Cd
         virtual void savecd() = 0;
 
         virtual int sample(int = 0) = 0; // takes new size, returns new size
+        virtual Function buildFunction() const = 0;
 };
 
 class CdLiner : public Cd
@@ -53,6 +55,7 @@ class CdLiner : public Cd
         { std::memcpy(b.p, v.data(), 7 * sizeof(double)); }
 
         int sample(int) { throw "CdLiner: sample not supported"; }
+        Function buildFunction() const { return Function(); }
 };
 
 class CdGraph : public Cd
@@ -72,6 +75,7 @@ class CdGraph : public Cd
         double calc(double x) { return Bezier ? calc_bezier(x) : calc_linear(x); }
         double calc_bezier(double x);
         double calc_linear(double x);
+        Function buildFunction() const { return Function(); }
 };
 
 class CdPoint : public Cd
@@ -91,6 +95,7 @@ class CdPoint : public Cd
         double calc(double x) { return Bezier ? calc_bezier(x) : calc_linear(x); }
         double calc_bezier(double x);
         double calc_linear(double x);
+        Function buildFunction() const { return Function(); }
 };
 
 // same as Point but holds differences in X, not absolute Xs
@@ -106,7 +111,7 @@ class CdPointD : public Cd
         Params getParams() { return Params(v.size() - 1, v.data() + 1); }
         void setParams(const Params &);
         int sample(int);
-
+        Function buildFunction() const { return Function(); }
 };
 
 // same as Point but X point are fixed
@@ -122,6 +127,7 @@ class CdFixed : public Cd
         Params getParams() { return Params(vy.size(), vy.data()); }
         void setParams(const Params &);
         int sample(int) { throw "CdFixed: sample not supported"; }
+        Function buildFunction() const { return Function(); }
 };
 
 class CdAlpha : public Cd
@@ -155,5 +161,7 @@ class CdAlpha : public Cd
 
         void savecd(const char * file);
         void loadcd(const char * file);
+
+        Function buildFunction() const { return Function(); }
 };
 
