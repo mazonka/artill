@@ -1,8 +1,8 @@
 
-angle_deg	10
-angle_dlt	5
+angle_deg	1
+angle_dlt	1
 height		0
-ntraj		1
+ntraj		9
 
 turbulence	0 	# turbulence velocity, m/s
 zwind		0	# side wind, m/s

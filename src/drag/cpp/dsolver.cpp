@@ -46,12 +46,12 @@ double DsolvFun::f(const Params & pms, const void * orig)
 
             for ( int i = 0; i < g.size(); i++ ) g.setY(i, pms.v[i]);
 
-            s = g.noise4() * 1;
+            s = g.noise1() + g.noise2() + g.noise4();
             fempty = false;
         }
     }
 
-    double w = u + s;
+    double w = u + u * s;
 
     if ( w < ubest )
     {
