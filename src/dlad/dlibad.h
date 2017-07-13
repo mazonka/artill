@@ -17,3 +17,5 @@ class Dlibad
 };
 
 
+extern int Qmaxeval; // 100000;
+

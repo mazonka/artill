@@ -148,13 +148,44 @@ void Function::sample(const Function & f)
         v[i].y = f.y(v[i].x);
 }
 
-double Function::noise() const
+double Function::noise4() const
 {
     if ( size() < 2 ) never("Empty function is used");
     Point r = range();
     double span = r.y - r.x;
     Function f = inject(15); // injecting 15 points is sufficient
     return f.fourthder().integrate2(6) / span; // integraion of 6th order (see doc)
+}
+
+double Function::noise1() const
+{
+    if ( size() < 2 ) never("Empty function is used");
+    Point r = range();
+    double span = r.y - r.x;
+    double sum = 0;
+    for ( int i = 1; i < size(); i++ )
+    {
+        double y = v[i].y - v[i - 1].y;
+        sum += y * y / (v[i].x - v[i - 1].x);
+    }
+
+    return sum / span;
+}
+
+double Function::noise2() const
+{
+    if ( size() < 2 ) never("Empty function is used");
+    if ( size() < 3 ) return 0;
+    Point r = range();
+    double span = r.y - r.x;
+    double sum = 0;
+    for ( int i = 2; i < size(); i++ )
+    {
+        double y = v[i].y - 2 * v[i - 1].y + v[i - 2].y;
+        sum += y * y / (v[i].x - v[i - 2].x);
+    }
+
+    return sum / span;
 }
 
 Function Function::fourthder() const

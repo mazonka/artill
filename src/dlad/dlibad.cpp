@@ -5,6 +5,8 @@
 
 typedef dlib::matrix<double, 0, 1> vec;
 
+int Qmaxeval = 100000;
+
 struct Function
 {
     int dim;
@@ -37,7 +39,7 @@ Dlibad::vd Dlibad::solve(const vd & v) const
                     dlib::uniform_matrix<double>(sz, 1, 1e100),
                     0.01,    // initial trust region radius
                     1e-12,  // stopping trust region radius
-                    100000    // max number of objective function evaluations
+                    Qmaxeval //100000 max number of objective function evaluations
                    );
 
     return std::vector<double>(starting_point.begin(), starting_point.end());

@@ -31,7 +31,7 @@ class Function
         double y(double x) const;
 
         // k=1 normal integration of p^2 formula
-        double integrate2(int k) const;
+        double integrate2(int k = 1) const;
 
         double integrate1() const;
 
@@ -42,7 +42,9 @@ class Function
         Point operator[](int i) const { return v[i]; }
         Point range() const { return Point(v[0].x, v[size() - 1].x); }
 
-        double noise() const;
+        double noise4() const;
+        double noise2() const;
+        double noise1() const;
         Function fourthder() const;
         Function inject(int n) const;
 };

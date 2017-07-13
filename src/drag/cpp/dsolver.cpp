@@ -46,7 +46,7 @@ double DsolvFun::f(const Params & pms, const void * orig)
 
             for ( int i = 0; i < g.size(); i++ ) g.setY(i, pms.v[i]);
 
-            s = g.noise() / 1;
+            s = g.noise4() * 1;
             fempty = false;
         }
     }

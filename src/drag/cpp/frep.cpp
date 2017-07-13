@@ -2,16 +2,22 @@
 #include <memory>
 #include <exception>
 #include <sstream>
+#include <limits>
+#include <set>
 
 #include "frep.h"
 #include "func.h"
 #include "asolver.h"
+#include "util.h"
 
 using std::cout;
 
-bool options(int ac, const char * av[], Function & f_in, Function & f_p, string & out);
+bool options(int ac, const char * av[],
+             Function & f_in, Function & f_p, string & out, bool & reduce);
+
 void buildFun(const Function * a, Function * b);
 void normalise(const Function * a, Function * b, bool doit);
+void reduceFun(const Function * a, Function * b);
 
 int main_frep(int ac, const char * av[])
 try
@@ -24,14 +30,27 @@ try
     Function a, b;
     string out;
 
-    if ( !options(ac, av, a, b, out) ) return 0;
-    buildFun(&a, &b);
-    normalise(&a, &b, false);
+    bool reduce = false;
+    if ( !options(ac, av, a, b, out, reduce) ) return 0;
+
+    if ( reduce )
+    {
+        reduceFun(&a, &b);
+    }
+    else
+    {
+        buildFun(&a, &b);
+        normalise(&a, &b, false);
+    }
 
     b.save(out);
 
-    cout << "noise a = " << a.noise() << '\n';
-    cout << "noise b = " << b.noise() << '\n';
+    cout << "noise1 a = " << a.noise1() << '\n';
+    cout << "noise1 b = " << b.noise1() << '\n';
+    cout << "noise2 a = " << a.noise2() << '\n';
+    cout << "noise2 b = " << b.noise2() << '\n';
+    cout << "noise4 a = " << a.noise4() << '\n';
+    cout << "noise4 b = " << b.noise4() << '\n';
 
     return 0;
 }
@@ -52,12 +71,16 @@ catch (...)
 }
 
 
-bool options(int ac, const char * av[], Function & f_in, Function & f_p, string & out)
+bool options(int ac, const char * av[],
+             Function & f_in, Function & f_p, string & out, bool & reduce)
 {
     if ( ac < 3 )
     {
-        cout << "Usage: input_file number output_file\n";
-        cout << "Or: input_file file_points output_file\n";
+        cout << "Usage:  input_file  number       output_file\n";
+        cout << "or:     input_file  file_points  output_file\n";
+        cout << "or:     input_file  @number      output_file\n\n";
+        cout << "number defines number of points for reparametrisation\n";
+        cout << "@number defines number of points to gracefully reduce\n\n";
         return false;
     }
 
@@ -65,11 +88,20 @@ bool options(int ac, const char * av[], Function & f_in, Function & f_p, string 
     f_in.load(inp);
     cout << "Input file : " << inp << '\n';
 
+    string av2 = av[2];
+    if ( av[2][0] == '@' )
     {
-        std::istringstream is(av[2]);
+        reduce = true;
+        av2 = av2.substr(1);
+    }
+
+
+    {
+        std::istringstream is(av2);
         int x; is >> x;
         if (is.fail()) // name
         {
+            if ( reduce ) throw "Use number with @";
             f_p.load(av[2]);
             cout << "Parametrising with " << f_p.size()
                  << " points from " << av[2] << '\n';
@@ -214,3 +246,50 @@ void normalise(const Function * a, Function * b, bool doit)
 
     cout << "b => " << b->integrate1() << '\n';
 }
+
+Function dropInFun(const Function & c, const std::set<int> & i)
+{
+    std::vector<double> xs, ys;
+    for ( int j = 0; j < c.size(); j++ )
+    {
+        if ( i.find(j) != i.end() ) continue;
+        xs.push_back(c[j].x);
+        ys.push_back(c[j].y);
+    }
+
+    return Function(Function(xs), ys);
+}
+
+void reduceFun(const Function * a, Function * b)
+{
+    if ( b->size() < 2 ) throw "no < 2";
+    Function c = *a;
+    while ( c.size() > b->size() )
+    {
+        std::set<int> todel;
+        double mn = std::numeric_limits<double>::max();
+
+        for ( int i = 1; i < c.size() - 1; i++ )
+        {
+            Function d = c;
+            std::set<int> ex; ex.insert(i);
+            d = dropInFun(d, ex);
+
+            double z = (*a - d).integrate2();
+
+            if ( z > mn ) continue;
+            if ( z < mn ) { todel.clear(); mn = z; }
+            todel.insert(i);
+        }
+
+        if ( todel.empty() ) never("");
+
+        c = dropInFun(c, todel);
+
+        std::cout << c.size() << "  \r";
+    }
+    std::cout << '\n';
+
+    *b = c;
+}
+
