@@ -588,3 +588,9 @@ Function CdFixed::buildFunction() const
     return r;
 }
 
+int CdFixed::sample(int)
+{
+    // FIXME
+    { throw "CdFixed: 1 sample not supported"; }
+}
+

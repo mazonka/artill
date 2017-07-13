@@ -126,7 +126,7 @@ class CdFixed : public Cd
         CdFixed * clone() const { return new CdFixed(*this); }
         Params getParams() { return Params(vy.size(), vy.data()); }
         void setParams(const Params &);
-        int sample(int) { throw "CdFixed: sample not supported"; }
+        int sample(int);
         Function buildFunction() const;
 };
 
