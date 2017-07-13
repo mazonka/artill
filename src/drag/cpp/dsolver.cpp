@@ -30,8 +30,8 @@ struct DsolvFun : AsolFun
 double DsolvFun::f(const Params & pms, const void * orig)
 {
     psi->cd->setParams(pms);
-    Dataset * ds = data->runc(psi);
 
+    Dataset * ds = data->runc(psi);
     double u = ds->util(reference);
 
     double s = 0;
@@ -43,9 +43,7 @@ double DsolvFun::f(const Params & pms, const void * orig)
         if ( of->size() > 1 )
         {
             Function g(*of, pms.v);
-
             for ( int i = 0; i < g.size(); i++ ) g.setY(i, pms.v[i]);
-
             s = g.noise1() + g.noise2() + g.noise4();
             fempty = false;
         }
@@ -55,10 +53,6 @@ double DsolvFun::f(const Params & pms, const void * orig)
 
     if ( w < ubest )
     {
-        //cout << data->dump(reference) << '\n';
-        //cout << std::setprecision(17);
-        //cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
-        //cout << u << '\n';
         ubest = w;
         delete best;
         best = ds;
@@ -71,8 +65,7 @@ double DsolvFun::f(const Params & pms, const void * orig)
 
     static int cntr = 1000 * 1000 * 5;
     static int cntrQ = 0; cntrQ++;
-    if ( ++cntr > 2 )
-        //if ( ++cntr > 0 )
+    if ( ++cntr > 4 )
     {
         cntr = 0;
         cout << (Qmaxeval - cntrQ) << " min = " << ubest << "  u = " << tos(u)
@@ -96,6 +89,8 @@ Dsolver::Dsolver(Psi * p, Dataset * d)
 
 void Dsolver::solve()
 {
+    //Qmaxeval = 1000;
+
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();
     Function orf = psi->cd->buildFunction();
