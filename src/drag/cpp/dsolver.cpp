@@ -64,8 +64,8 @@ double DsolvFun::f(const Params & pms, const void * orig)
         delete ds;
 
     static int cntr = 1000 * 1000 * 5;
-    static int cntrQ = 0; cntrQ++;
-    if ( ++cntr > 4 )
+    static int cntrQ = -1; ++cntrQ;
+    if ( ++cntr > 9 )
     {
         cntr = 0;
         cout << (Qmaxeval - cntrQ) << " min = " << ubest << "  u = " << tos(u)

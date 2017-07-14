@@ -588,9 +588,35 @@ Function CdFixed::buildFunction() const
     return r;
 }
 
-int CdFixed::sample(int)
+int CdFixed::sample(int m)
 {
-    // FIXME
-    { throw "CdFixed: 1 sample not supported"; }
+    int n = vx.size();
+    if ( n < 2 ) never("CdFixed::sample");
+
+    if ( m <= n ) return n;
+
+    if ( m == 2 * n - 1 )
+    {
+        std::vector<double> x, y;
+
+        x.push_back(vx[0]);
+        y.push_back(vy[0]);
+
+        for ( int i = 1; i < n; i++ )
+        {
+            double z = (vx[i - 1] + vx[i]) / 2;
+            x.push_back(z);
+            y.push_back(calc(z));
+            x.push_back(vx[i]);
+            y.push_back(vy[i]);
+        }
+
+        vx.swap(x);
+        vy.swap(y);
+
+        return vx.size();
+    }
+
+    throw "CdFixed: sample of arbitrary N is not implemented";
 }
 
