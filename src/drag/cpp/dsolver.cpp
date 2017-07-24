@@ -89,7 +89,7 @@ Dsolver::Dsolver(Psi * p, Dataset * d)
 
 void Dsolver::solve()
 {
-    //Qmaxeval = 100;
+    //Qmaxeval = 50;
 
     DsolvFun fun(psi, ref, data);
     Params pms = psi->cd->getParams();

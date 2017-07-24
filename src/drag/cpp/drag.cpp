@@ -226,6 +226,27 @@ void main_solve()
     psi.cd->saveall();
     Params pms = ds.psi->cd->getParams();
     cout << "{"; for (auto x : pms.v) cout << ' ' << x; cout << " }\n";
+
+    void main_solve_2(Params);
+    main_solve_2(pms);
+}
+
+void main_solve_2(Params pms)
+{
+    Psi psi;
+    Dataset experiment;
+
+    cout << std::setprecision(20);
+
+    Dataset * ns1 = experiment.runc(&psi);
+    cout << "U in  =" << ns1->util(&experiment) << '\n';
+    delete ns1;
+
+    psi.cd->setParams(pms);
+    Dataset * ns2 = experiment.runc(&psi);
+    cout << "U out =" << ns2->util(&experiment) << '\n';
+    delete ns2;
+    psi.cd->saveall();
 }
 
 void main_model()
