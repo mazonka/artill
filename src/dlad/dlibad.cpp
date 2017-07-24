@@ -1,3 +1,4 @@
+#include <iostream>
 
 #include "dlibad.h"
 
@@ -32,15 +33,24 @@ Dlibad::vd Dlibad::solve(const vd & v) const
 
     for ( int i = 0; i < sz; i++ ) starting_point(i) = v[i];
 
-    find_min_bobyqa(Function(sz, fn, data),
-                    starting_point,
-                    2 * sz + 1, // number of interpolation points
-                    dlib::uniform_matrix<double>(sz, 1, -1e100),
-                    dlib::uniform_matrix<double>(sz, 1, 1e100),
-                    0.01,    // initial trust region radius
-                    1e-12,  // stopping trust region radius
-                    Qmaxeval //100000 max number of objective function evaluations
-                   );
+    try
+    {
+        find_min_bobyqa(Function(sz, fn, data),
+                        starting_point,
+                        2 * sz + 1, // number of interpolation points
+                        dlib::uniform_matrix<double>(sz, 1, -1e100),
+                        dlib::uniform_matrix<double>(sz, 1, 1e100),
+                        0.01,    // initial trust region radius
+                        1e-12,  // stopping trust region radius
+                        Qmaxeval // max number of function evaluations
+                       );
+
+    }
+    catch (std::exception & e)
+    {
+        std::cout << "\nQmaxeval = " << Qmaxeval;
+        std::cout << "\nbobyqa exception : " << e.what() << '\n';
+    }
 
     return std::vector<double>(starting_point.begin(), starting_point.end());
 }

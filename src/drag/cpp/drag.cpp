@@ -102,16 +102,19 @@ try
 }
 catch (const char * e)
 {
+    cout<<"Exception 'const char *'\n";
     error(e);
     return 1;
 }
 catch (string e)
 {
+    cout<<"Exception 'string'\n";
     error(e);
     return 1;
 }
 catch (std::exception & e)
 {
+    cout<<"Exception 'std::exception'\n";
     error(e.what());
     return 2;
 }
