@@ -14,7 +14,7 @@
 
 using std::cout;
 
-static int Qcntr = -1;
+///static int Qcntr = -1;
 
 struct DsolvFun : AsolFun
 {
@@ -23,10 +23,15 @@ struct DsolvFun : AsolFun
         Dataset * data, *best;
         double ubest;
         double smcoeff;
+        int maxeval, qcntr, ccntr; // maxeval, number of evals, output counter
+
         double f(const Params & pms, const void * origf);
-        DsolvFun(Psi * p, const Dataset * rf, Dataset * dt, double smc)
+
+        DsolvFun(Psi * p, const Dataset * rf, Dataset * dt, double smc, int me)
             : psi(p), reference(rf), data(dt), best(nullptr),
-              ubest(INF_VAL), smcoeff(smc) {}
+              ubest(INF_VAL), smcoeff(smc), maxeval(me),
+              qcntr(0), ccntr(0) {}
+
         ~DsolvFun() { delete best; }
 
     private:
@@ -70,12 +75,11 @@ double DsolvFun::f(const Params & pms, const void * orig)
     else
         delete ds;
 
-    static int cntr = 1000 * 1000 * 5;
-    ++Qcntr;
-    if ( ++cntr > 9 )
+    ++qcntr;
+    if ( ++ccntr > 9 )
     {
-        cntr = 0;
-        cout << (Qmaxeval - Qcntr) << " min = " << ubest << "  u = " << tos(u)
+        ccntr = 0;
+        cout << (maxeval - qcntr) << " min = " << ubest << "  u = " << tos(u)
              << "  s = " << (fempty ? "nosmooth" : tos(s) )
              <<  "   \r" << std::flush;
         // "nosmooth" means that Function object is not implemented
@@ -94,17 +98,17 @@ Dsolver::Dsolver(Psi * p, const Dataset * d)
 }
 
 
-void Dsolver::solve(double smcoeff)
+void Dsolver::solve(double smcoeff, int maxeval)
 {
-    Qmaxeval = 10000;
-    Qcntr = -1;
+    ///Qmaxeval = 10000;
+    ///Qcntr = -1;
 
-    DsolvFun fun(psi, ref, data, smcoeff);
+    DsolvFun fun(psi, ref, data, smcoeff, maxeval);
     Params pms = psi->cd->getParams();
     Function orf = psi->cd->buildFunction();
     std::unique_ptr<Asolver> as(make_solver(&fun, pms, &orf));
 
-    pms = as->solve();
+    pms = as->solve(maxeval);
     psi->cd->setParams(pms);
     delete data;
     data = fun.best->clone();
@@ -147,7 +151,7 @@ double solve_smcoeff(double smcoeff, Psi & psi)
     cout << "Start U=" << ns->util(&experiment) << '\n';
     delete ns;
 
-    sv.solve(smcoeff);
+    sv.solve(smcoeff, psi.i.maxeval);
 
     //cout << sv.ds()->dump(&experiment) << '\n';
 
@@ -178,6 +182,14 @@ double solve_scenario(const Vd & vd, Params * pms)
 
     for ( auto x : vd )
     {
+        if ( x < 0 )
+        {
+            int mx = int(-x);
+            std::cout << "\nSetting maxeval to " << x << '\n';
+            psi.i.maxeval = mx;
+            continue;
+        }
+
         std::cout << "\nSolving for smcoeff " << x
                   << " in " << scenario_str(vd) << "\n";
 
@@ -191,7 +203,7 @@ double solve_scenario(const Vd & vd, Params * pms)
 void finalise_solver(Params pms)
 {
     Psi psi;
-    if( !pms.v.empty() ) psi.cd->setParams(pms);
+    if ( !pms.v.empty() ) psi.cd->setParams(pms);
     solve_smcoeff(0, psi);
 }
 

@@ -13,13 +13,13 @@ double as_fun(int sz, const double * v, const void * d)
     return asol_fun->f(Params(sz, v), d);
 }
 
-Params Asdlib::solve()
+Params Asdlib::solve(int maxeval)
 {
     asol_fun = f;
     f->f(p, data );
 
     Dlibad d(as_fun, data);
-    p.v = d.solve(p.v);
+    p.v = d.solve(p.v, maxeval);
 
     return p;
 }

@@ -31,14 +31,15 @@ struct ShotBlob
 //Integration
 struct IntgBlob
 {
-    static const int NI = 11;
+    static const int NI = 12;
     double maxLength;
     double dt0, dtmax;
     double dEpm_max, dEpm_min, dEpm_rej;
     double precision;
     double dh_up, dh_dn;
-    int renormE;  // steps between E renormalisation (10)
+    int renormN;  // steps between E renormalisation (10)
     double dragcare; // exponent usage precision (0.5)
+    int maxeval; // max evals for optimisation
 };
 
 // Constants

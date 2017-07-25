@@ -30,7 +30,7 @@ class Asolver
         Asolver(AsolFun * fn, const Params & p, const void * d)
             : f(fn), p(p), data(d) {}
 
-        virtual Params solve() = 0;
+        virtual Params solve(int maxeval) = 0;
         void setFun(AsolFun * af) { f = af; }
         void setParams(const Params & ap) { p = ap; }
 

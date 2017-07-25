@@ -70,8 +70,9 @@ Psi::Psi(): cd(nullptr)
         nm.sd["dh_up"] = &i.dh_up;
         nm.sd["dh_dn"] = &i.dh_dn;
         nm.sd["precision"] = &i.precision;
-        nm.si["renormE"] = &i.renormE;
+        nm.si["renormE"] = &i.renormN;
         nm.sd["dragcare"] = &i.dragcare;
+        nm.si["maxeval"] = &i.maxeval;
 
         nm.load(i.NI);
 

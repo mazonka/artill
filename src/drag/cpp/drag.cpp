@@ -219,7 +219,7 @@ void main_solve()
     cout << "Start U=" << ns->util(&experiment) << '\n';
     delete ns;
 
-    ds.solve(0);
+    ds.solve(0, psi.i.maxeval);
 
     cout << ds.ds()->dump(&experiment) << '\n';
     cout << "Final U=" << ds.u() << '\n';
@@ -285,7 +285,7 @@ void main_graph()
     {
         Dataset experiment;
         Dsolver ds(&psi, &experiment);
-        ds.solve(0);
+        ds.solve(0, psi.i.maxeval);
         ds.ds()->save();
         psi.cd->saveall();
 

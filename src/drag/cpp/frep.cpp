@@ -194,7 +194,7 @@ void test04()
     getParamsFromFun(&b, pms);
 
     std::unique_ptr<Asolver> as(make_solver(&fun, pms, nullptr));
-    pms = as->solve();
+    pms = as->solve(100000);
 
     cout << "Solved : {";
     for ( auto x : pms.v ) cout << ' ' << x;
@@ -218,7 +218,7 @@ void buildFun(const Function * a, Function * b)
     getParamsFromFun(b, pms);
 
     std::unique_ptr<Asolver> as(make_solver(&fun, pms, nullptr));
-    pms = as->solve();
+    pms = as->solve(100000);
 
     cout << "Solved : {"; for ( auto x : pms.v ) cout << ' ' << x; cout <<  " }\n";
 

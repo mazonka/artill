@@ -10,7 +10,7 @@ class Asdlib : public Asolver
             : Asolver(fn, p, d) {}
 
         // switch to disable dlib
-        Params solve();
+        Params solve(int maxeval);
         //Params solve(){ return Params(); }
 };
 

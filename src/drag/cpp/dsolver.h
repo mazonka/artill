@@ -14,7 +14,7 @@ class Dsolver
         ~Dsolver() { delete data; }
         Dsolver(Psi * p, const Dataset * d);
 
-        void solve(double smcoeff);
+        void solve(double smcoeff, int maxeval);
         double u() const { return data->util(ref); }
 
         Dataset * ds() { return data; }

@@ -36,7 +36,7 @@ void testAsolver(Asolver * a)
     double x[] = {1, 2, 3};
     Params p(3, x);
     a->setParams(p);
-    p = a->solve();
+    p = a->solve(100000);
 
     std::cout << p.v.size() << ": {";
     for ( auto y : p.v )

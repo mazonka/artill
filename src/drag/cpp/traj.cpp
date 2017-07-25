@@ -29,7 +29,7 @@ Trajectory::Trajectory(const Psi * apsi, int idlt): psi(apsi)
     trlength = 0;
     reject = 0;
 
-    renorm = psi->i.renormE;
+    renorm = psi->i.renormN;
 
     Fpoint z(0, 0, 0, 0, 0);
     Ek0 = dEk(z, p);
@@ -309,7 +309,7 @@ accept:
     dEacc += dE;
     if ( --renorm < 0 && renormE(y2, -dEacc) )
     {
-        renorm = psi->i.renormE;
+        renorm = psi->i.renormN;
         dEacc = 0;
     }
 
