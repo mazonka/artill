@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 #ifdef max
 #undef max
 #endif
@@ -8,6 +10,8 @@
 #endif
 
 typedef signed long long intint;
+typedef std::vector<double> Vd;
+typedef std::vector<Vd> Vdd;
 
 const char progr_out[] = "out/progr.dat";
 const char trajs_out[] = "out/trajs.dat";
@@ -41,6 +45,8 @@ const char dataset_in[] = "in/dataset.dat";
 const char maps_out[] = "out/umap.dat";
 const char maps_in[] = "in/maps.dat";
 const char trres_out[] = "out/trres.dat";
+const char optim_in[] = "in/optim.dat";
+const char optim_out[] = "out/optim.dat";
 
 
 

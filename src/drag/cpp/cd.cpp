@@ -575,7 +575,7 @@ void CdFixed::setParams(const Params & p)
 {
     size_t sz = vy.size();
     if (p.v.size() != sz)
-        never("sizes");
+        never("sizes " + tos(p.v.size()) + ' ' + tos(sz));
 
     for (size_t i = 0; i < sz; i++)
         vy[i] = p.v[i];

@@ -1,13 +1,16 @@
-# this is a optimisation plan
+# this is an optimisation plan
 # each line represents an optimisation scenario
 # each number in the line represents smoother coefficient in the optimisation
 # optimisation works sequencially for each number and
 # in parallel for each scenario
 # the scenario with the best result wins
 
-0
-1000
+#0
+#1000
 
 #0
-#100 1 1e-6 0
-#0 1e4 1 1e-3 0
+#10000 1000 100 10 1 0.1 0.01 0.001 0 1 10 100 10 1 0.1 0.01 0.001
+
+100 3 4 1
+1000 10 1 0.1
+

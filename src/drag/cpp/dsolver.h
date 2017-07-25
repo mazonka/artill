@@ -12,9 +12,9 @@ class Dsolver
         Dataset * data;
 
         ~Dsolver() { delete data; }
-        Dsolver(Psi * p, Dataset * d);
+        Dsolver(Psi * p, const Dataset * d);
 
-        void solve();
+        void solve(double smcoeff);
         double u() const { return data->util(ref); }
 
         Dataset * ds() { return data; }
@@ -23,3 +23,6 @@ class Dsolver
         Dsolver(const Dsolver &);
         void operator=(const Dsolver &);
 };
+
+
+void strategic_solver();

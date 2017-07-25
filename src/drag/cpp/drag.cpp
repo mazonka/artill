@@ -206,6 +206,8 @@ void main_range(double r)
 
 void main_solve()
 {
+    return strategic_solver();
+
     Psi psi;
     Dataset experiment;
     Dsolver ds(&psi, &experiment);
@@ -217,7 +219,7 @@ void main_solve()
     cout << "Start U=" << ns->util(&experiment) << '\n';
     delete ns;
 
-    ds.solve();
+    ds.solve(0);
 
     cout << ds.ds()->dump(&experiment) << '\n';
     cout << "Final U=" << ds.u() << '\n';
@@ -283,7 +285,7 @@ void main_graph()
     {
         Dataset experiment;
         Dsolver ds(&psi, &experiment);
-        ds.solve();
+        ds.solve(0);
         ds.ds()->save();
         psi.cd->saveall();
 
