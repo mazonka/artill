@@ -65,7 +65,4 @@ to be compiled – that is fine.
 
 ## How to run
 
-TBD 
-
-----
-Last modification: Jan 2017
+See User Guide
