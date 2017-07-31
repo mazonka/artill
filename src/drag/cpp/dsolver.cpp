@@ -121,7 +121,11 @@ Vdd load_optim()
 
     ivstream in(optim_in);
     ///if ( !in ) return Vdd({Vd({0})});
-    if ( !in ) return Vdd();
+    if ( !in )
+    {
+        std::cout << "No " << optim_in << " found - using default optimisation\n";
+        return Vdd();
+    }
 
     for ( string line; (getline(in, line), in); )
     {
@@ -131,7 +135,12 @@ Vdd load_optim()
         std::istringstream is(line);
 
         Vd v;
-        for ( double x; is >> x; ) v.push_back(x);
+        for ( double x; is >> x; )
+        {
+            if ( x < 0 && x > -10 ) throw string(optim_in) + ": too small maxeval";
+            v.push_back(x);
+        }
+
         if ( v.empty() ) throw string(optim_in) + ": bad format";
         r.push_back(v);
     }
