@@ -13,9 +13,9 @@ class Dlibad
 
         Dlibad(typef f, const void * d): fn(f), data(d) {}
 
-        vd solve(const vd & v) const;
+        vd solve(const vd & v, int maxeval) const;
 };
 
 
-extern int Qmaxeval; // 100000;
+///extern int Qmaxeval; // 100000;
 

@@ -11,13 +11,13 @@ using std::cout;
 
 typedef std::vector<double> vd;
 
-typedef double (*typef)(int, const double *);
+///typedef double (*typef)(int, const double *);
 double f_orig(int n, const double * x)
 {
     return 100 * pow(x[0] + 3, 4) + pow(x[1] - 3, 4);
 }
 
-double func(int n, const double * x)
+double func(int n, const double * x, const void *)
 {
     if ( n % 2 || n < 1 ) throw "Bad vector";
 
@@ -60,10 +60,10 @@ double func(int n, const double * x)
 }
 
 
-vd xmain(const vd & v, typef fn)
+vd xmain(const vd & v, Dlibad::typef fn)
 {
-    Dlibad d(fn);
-    vd r = d.solve(v);
+    Dlibad d(fn, (const void *)nullptr);
+    vd r = d.solve(v, 100000);
     return r;
 }
 
@@ -74,7 +74,7 @@ int main(int argc, char ** argv)
 
     a = xmain(a, func);
     for ( size_t i = 0; i < a.size(); i++ ) std::cout << ' ' << a[i];
-    std::cout << "\n" << func(a.size(), a.data()) << '\n';
+    std::cout << "\n" << func(a.size(), a.data(), nullptr) << '\n';
 
     std::ofstream of("test.dat");
     of << "0 0\n";

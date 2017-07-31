@@ -6,7 +6,7 @@
 
 typedef dlib::matrix<double, 0, 1> vec;
 
-int Qmaxeval = 100000;
+///int Qmaxeval = 100000;
 
 struct Function
 {
@@ -25,7 +25,7 @@ struct Function
 };
 
 
-Dlibad::vd Dlibad::solve(const vd & v) const
+Dlibad::vd Dlibad::solve(const vd & v, int maxeval) const
 {
     int sz = v.size();
     vec starting_point(sz);
@@ -42,14 +42,14 @@ Dlibad::vd Dlibad::solve(const vd & v) const
                         dlib::uniform_matrix<double>(sz, 1, 1e100),
                         0.01,    // initial trust region radius
                         1e-12,  // stopping trust region radius
-                        Qmaxeval // max number of function evaluations
+                        maxeval // max number of function evaluations
                        );
 
     }
     catch (std::exception & e)
     {
-        std::cout << "\nQmaxeval = " << Qmaxeval;
-        std::cout << "\nbobyqa exception : " << e.what() << '\n';
+        std::cout << "\nmaxeval = " << maxeval;
+        std::cout << "\nbobyqa : " << e.what() << '\n';
     }
 
     return std::vector<double>(starting_point.begin(), starting_point.end());
