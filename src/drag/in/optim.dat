@@ -2,7 +2,7 @@
 # each line represents an optimisation scenario
 # each positive number in the line represents 
 # the smoother coefficient in the optimisation
-# optimisation works sequencially for each number and
+# optimisation works sequentially for each number and
 # sequentially (or in parallel if implemented) for each scenario
 # the scenario with the best result wins
 # negative value sets the number of function evaluations for
