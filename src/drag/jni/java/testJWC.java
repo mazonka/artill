@@ -88,7 +88,8 @@ public class testJWC
             + "dh_up 1.5\n"
             + "dh_dn 0.5\n"
             + "renormE 10\n"
-            + "dragcare 0.5\n";
+            + "dragcare 0.5\n"
+            + "maxeval 10000\n";
 
         x.setio("in/integr.dat");
         x.set_input(inte);
