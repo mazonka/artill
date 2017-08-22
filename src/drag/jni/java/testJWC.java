@@ -43,7 +43,7 @@ public class testJWC
 
     public static void main(String[] args)
     {
-        //testDragMod();
+        testDragMod();
 	testDmExample();
     }
 
