@@ -8,7 +8,7 @@ using ovstream = std::ofstream;
 
 #else
 
-#include "vstrimp.h"
+#include "vstrmem.h"
 
 #endif
 
