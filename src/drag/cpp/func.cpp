@@ -8,6 +8,14 @@
 
 ///inline void never(int i) { throw std::to_string(i); }
 
+#if GCC_VERSION <= 40902
+namespace std // gcc 4.9.2 cygwin does not have to_string
+{
+template <class T> inline string to_string(T x)
+{ std::ostringstream os; os << x; return os.str(); }
+}
+#endif
+
 void Function::load(string f)
 {
     ivstream in(f.c_str());
