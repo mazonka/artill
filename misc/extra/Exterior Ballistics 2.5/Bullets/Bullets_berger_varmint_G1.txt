@@ -1,0 +1,27 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 4,37       0,120    G1       1,30          800           ? 172 dia. Berger 20 gr Match Grade FB Varmint Nr. 13704 Twist 12"
+ 4,37       0,150    G1       1,62          800           ? 172 dia. Berger 25 gr Match Grade FB Varmint Nr. 13708 Twist 10"
+ 4,37       0,178    G1       1,94          800           ? 172 dia. Berger 30 gr Match Grade FB Varmint Nr. 17310 Twist 9"
+ 5,18       0,149    G1       1,94          800           ? 204 dia. Berger 30 gr Match Grade FB Varmint Nr. 20302 Twist 14"
+ 5,18       0,176    G1       2,27          800           ? 204 dia. Berger 35 gr Match Grade FB Varmint Nr. 20303 Twist 14"
+ 5,18       0,225    G1       2,59          800           ? 204 dia. Berger 40 gr Match Grade BT Varmint Nr. 20304 Twist 12"
+ 5,18       0,281    G1       3,24          800           ? 204 dia. Berger 50 gr Match Grade BT Varmint Nr. 20305 Twist 9"
+ 5,18       0,381    G1       3,56          800           ? 204 dia. Berger 55 gr Match Grade BT Long Range Varmint Nr. 20306 Twist 8"
+ 5,69       0,119    G1       1,94          800           ? 224 dia. Berger 30 gr Match Grade FB Varmint Nr. 22301 Twist 15"
+ 5,69       0,155    G1       2,59          800           ? 224 dia. Berger 40 gr Match Grade FB Varmint Nr. 22303 Twist 15"
+ 5,69       0,196    G1       3,24          800           ? 224 dia. Berger 50 gr Match Grade FB Varmint Nr. 22307 Twist 14"
+ 5,69       0,197    G1       3,37          800           ? 224 dia. Berger 52 gr Match Grade FB Varmint Nr. 22309 Twist 14"
+ 5,69       0,210    G1       3,56          800           ? 224 dia. Berger 55 gr Match Grade FB Varmint Nr. 22311 Twist 14"
+ 5,69       0,278    G1       3,89          800           ? 224 dia. Berger 60 gr Match Grade FB Varmint Nr. 22312 Twist 12"
+ 5,69       0,294    G1       4,15          800           ? 224 dia. Berger 64 gr Match Grade FB Varmint Nr. 22316 Twist 12"
+ 6,17       0,236    G1       3,89          800           ? 243 dia. Berger 60 gr Match Grade FB Varmint Nr. 24301 Twist 14"
+ 6,17       0,291    G1       4,47          800           ? 243 dia. Berger 69 gr Match Grade High BC FB Varmint Nr. 24313 Twist 12"
+ 6,17       0,306    G1       5,18          800           ? 243 dia. Berger 80 gr Match Grade FB Varmint Nr. 24321 Twist 12"
+ 6,17       0,391    G1       5,70          800           ? 243 dia. Berger 88 gr Match Grade High BC FB Varmint Nr. 24323 Twist 10"

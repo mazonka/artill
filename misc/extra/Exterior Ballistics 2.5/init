@@ -1,0 +1,27 @@
+
+            *** Exterior Ballistics *** 
+--------------------------------------------------
+                   Jan Krcmar 
+--------------------------------------------------
+
+ Ammo: .338 Lapua B408 Lock Base 16.2g ( 250gr)
+
+ Drag Function: D:\oleg\drag_data\Exterior Ballistics 2.5\Drag Functions\Lapua - November 2015\338-lapua b408 16,2g (250gr) lock base_radar.drg
+ BC [lb/in2]:                   0.3115  
+ Form Factor [-]:               1.0000  
+ Bullet Weight [g]:             16.2000  
+ Bullet Diameter [mm]:          8.6000  
+ Muzzle Velocity [m/s]:         555.0  
+ Sight Height [mm]:              0.0  
+ Angle of Departure [deg]:      0.603655  
+ Zero Range [m]:                500  
+ 1 Click:                       1/4 MOA
+ Air Temperature [C]:           15.0  
+ Air Pressure [hPa]:            977.9  
+ Air Humidity [%]:               0.0  
+ Air Density [kg/m3]:           1.1823  
+ Cross Wind [m/s]:               0.0  
+ Longitudinal Wind [m/s]:        0.0  
+ Vertical Wind [m/s]:            0.0  
+ Gravity Acceleration [m/s2]:   9.810  
+ Computation Step [ms]:         3.00  

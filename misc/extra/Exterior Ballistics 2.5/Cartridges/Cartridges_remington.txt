@@ -1,0 +1,214 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 4,38       0,185    G1       1,30          1219           61 17 Remington Fireball 20 gr. AccuTip-V
+ 4,38       0,193    G1       1,62          1173           61 17 Remington Fireball 25 gr. UMC Jacketed Hollow Point
+ 4,38       0,185    G1       1,30          1295           61 17 Remington 20 gr. AccuTip-V
+ 4,38       0,187    G1       1,62          1231           61 17 Remington 25 gr. Hollow Point
+ 5,19       0,210    G1       2,07          1288           61 204 Ruger 32 gr. AccuTip-V
+ 5,19       0,275    G1       2,59          1189           61 204 Ruger 40 gr. AccuTip-V Boat Tail
+ 5,70       0,109    G1       2,27          945           61 22 Hornet 35 gr. AccuTip-V
+ 5,70       0,130    G1       2,92          820           61 22 Hornet 45 gr. Pointed Soft Point
+ 5,70       0,130    G1       2,92          820           61 22 Hornet 45 gr. Hollow Point
+ 5,70       0,175    G1       3,24          1152           61 220 Swift 50 gr. Pointed Soft Point
+ 5,70       0,238    G1       3,24          913           61 221 Rem. Fireball 50 gr. AccuTip-V Boat Tail
+ 5,70       0,175    G1       3,24          957           61 222 Remington 50 gr. Pointed Soft Point
+ 5,70       0,188    G1       3,24          957           61 222 Remington 50 gr. Power-Lokt Hollow Point
+ 5,70       0,242    G1       3,24          957           61 222 Remington 50 gr. AccuTip-V Boat Tail
+ 5,70       0,161    G1       2,92          1082           61 223 Remington 45 gr. Jacketed Iron-Tin Core HP
+ 5,70       0,202    G1       3,56          988           61 223 Remington 55 gr. UMC Metal Case
+ 5,70       0,173    G1       2,92          1082           61 223 Remington 45 gr. UMC Jacketed Hollow Point
+ 5,70       0,192    G1       3,24          1044           61 223 Remington 50 gr. UMC Jacketed Hollow Point
+ 5,70       0,242    G1       3,24          1039           61 223 Remington 50 gr. AccuTip-V Boat Tail
+ 5,70       0,255    G1       3,56          988           61 223 Remington 55 gr. AccuTip-V
+ 5,70       0,197    G1       3,56          988           61 223 Remington 55 gr. Pointed Soft Point
+ 5,70       0,209    G1       3,56          988           61 223 Remington 55 gr. Power-Lokt Hollow Point
+ 5,70       0,202    G1       3,56          988           61 223 Remington 55 gr. Metal Case
+ 5,70       0,234    G1       4,02          945           61 223 Remington 62 gr. Core-Lokt Ultra Bonded
+ 5,70       0,205    G1       4,02          922           61 223 Remington 62 gr. Hollow Point Match
+ 5,70       0,261    G1       4,02          945           61 223 Remington 62 gr. Closed Tip Flat Base
+ 5,70       0,336    G1       4,47          914           61 223 Remington 69 gr. MatchKing BTHP
+ 5,70       0,362    G1       4,99          850           61 223 Remington 77 gr. MatchKing BTHP
+ 5,70       0,173    G1       2,92          1219           61 22-250 Remington 45 gr. UMC Jacketed Hollow Point
+ 5,70       0,192    G1       3,24          1164           61 22-250 Remington 50 gr. UMC Jacketed Hollow Point
+ 5,70       0,161    G1       2,92          1219           61 22-250 Remington 45 gr. Jacketed Iron-Tin Core HP
+ 5,70       0,242    G1       3,24          1158           61 22-250 Remington 50 gr. AccuTip-V Boat Tail
+ 5,70       0,197    G1       3,56          1122           61 22-250 Remington 55 gr. Pointed Soft Point
+ 6,18       0,356    G1       6,48          945           61 6 mm Remington 100 gr. Core-Lokt Pointed Soft Point
+ 6,17       0,330    G1       4,86          1029           61 243 Win. 75 gr. AccuTip-V Boat Tail
+ 6,17       0,255    G1       5,18          1021           61 243 Win. 80 gr. Pointed Soft Point
+ 6,17       0,255    G1       5,18          1021           61 243 Win. 80 gr. Power-Lokt Hollow Point
+ 6,17       0,299    G1       5,18          1021           61 243 Win. 80 gr. Copper Solid Tipped
+ 6,17       0,390    G1       5,83          951           61 243 Win. 90 gr. Swift Scirocco Bonded
+ 6,17       0,355    G1       6,16          951           61 243 Win. 95 gr. AccuTip
+ 6,17       0,373    G1       6,48          902           61 243 Win. 100 gr. Core-Lokt Ultra Bonded
+ 6,17       0,356    G1       6,48          902           61 243 Win. 100 gr. Core-Lokt Pointed Soft Point
+ 6,54       0,292    G1       6,48          985           61 25-06 Remington 100 gr. Core-Lokt Pointed Soft Point
+ 6,54       0,380    G1       7,45          914           61 25-06 Remington 115 gr. Core-Lokt Ultra Bonded
+ 6,54       0,362    G1       7,78          911           61 25-06 Remington 120 gr. Core-Lokt Pointed Soft Point
+ 6,55       0,190    G1       5,57          445           61 25-20 Win. 86 gr. Soft Point
+ 6,55       0,285    G1       6,48          860           61 250 Savage 100 gr. Pointed Soft Point
+ 6,55       0,240    G1       7,58          808           61 257 Roberts 117 gr. Core-Lokt Soft Point
+ 6,71       0,435    G1       9,07          777           61 6.5 x 55 Swedish 140 gr. Core-Lokt Pointed Soft Point
+ 6,72       0,323    G1       7,78          978           61 6.5 mm Remington Mag. 120 gr. Core-Lokt Pointed Soft Point
+ 6,72       0,480    G1       7,78          881           61 260 Remington 120 gr. AccuTip Boat Tail
+ 6,72       0,435    G1       9,07          838           61 260 Remington 140 gr. Core-Lokt Pointed Soft Point
+ 6,72       0,457    G1       9,07          838           61 260 Remington 140 gr. Core-Lokt Ultra Bonded
+ 6,72       0,435    G1       9,07          719           61 260 Remington 140 gr. Core-Lokt Pointed Soft Point
+ 6,73       0,384    G1       9,07          924           61 264 Win. Mag. 140 gr. Core-Lokt Pointed Soft Point
+ 7,06       0,344    G1       7,45          800           61 6.8 mm Rem. SPC 115 gr. Open Tip Match (OTM)
+ 7,06       0,292    G1       7,45          800           61 6.8 mm Rem. SPC 115 gr. Metal Case
+ 7,06       0,333    G1       7,45          800           61 6.8 mm Rem. SPC 115 gr. MatchKing BTHP
+ 7,06       0,295    G1       7,45          800           61 6.8 mm Rem. SPC 115 gr. Core-Lokt Ultra Bonded
+ 7,06       0,252    G1       6,48          1012           61 270 Win. 100 gr. Pointed Soft Point
+ 7,06       0,295    G1       7,45          826           61 270 Win. 115 gr. Core-Lokt Pointed Soft Point
+ 7,06       0,447    G1       8,42          933           61 270 Win. 130 gr. AccuTip Boat Tail
+ 7,06       0,433    G1       8,42          933           61 270 Win. 130 gr. Swift Scirocco Bonded
+ 7,06       0,336    G1       8,42          933           61 270 Win. 130 gr. Core-Lokt Pointed Soft Point
+ 7,06       0,372    G1       8,42          933           61 270 Win. 130 gr. Bronze Point
+ 7,06       0,431    G1       8,42          933           61 270 Win. 130 gr. Copper Solid Tipped
+ 7,06       0,360    G1       9,07          892           61 270 Win. 140 gr. Core-Lokt Ultra Bonded
+ 7,06       0,339    G1       9,07          892           61 270 Win. 140 gr. Swift A-Frame PSP
+ 7,06       0,261    G1       9,72          869           61 270 Win. 150 gr. Core-Lokt Soft Point
+ 7,06       0,336    G1       8,42          1001           61 270 WSM 130 gr. Core-Lokt Soft Point
+ 7,23       0,486    G1       9,07          914           61 280 Remington 140 gr. AccuTip
+ 7,23       0,390    G1       9,07          914           61 280 Remington 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,346    G1       9,72          881           61 280 Remington 150 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,290    G1       10,69          860           61 280 Remington 165 gr. Core-Lokt Soft Point
+ 7,23       0,343    G1       7,78          914           61 7 mm-08 Remington 120 gr. Hollow Point
+ 7,23       0,390    G1       9,07          872           61 7 mm-08 Remington 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,486    G1       9,07          872           61 7 mm-08 Remington 140 gr. AccuTip Boat Tail
+ 7,23       0,390    G1       9,07          720           61 7 mm-08 Remington 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,409    G1       9,07          968           61 7 mm Remington Mag. 140 gr. Core-Lokt Ultra Bonded
+ 7,23       0,390    G1       9,07          968           61 7 mm Remington Mag. 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,388    G1       9,07          826           61 7 mm Remington Mag. 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,468    G1       9,07          968           61 7 mm Remington Mag. 140 gr. Copper Solid Tipped
+ 7,23       0,533    G1       9,72          948           61 7 mm Remington Mag. 150 gr. Swift Scirocco Bonded
+ 7,23       0,486    G1       9,07          968           61 7 mm Remington Mag. 140 gr. AccuTip Boat Tail
+ 7,23       0,530    G1       9,72          948           61 7 mm Remington Mag. 150 gr. AccuTip Boat Tail
+ 7,23       0,346    G1       9,72          948           61 7 mm Remington Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,415    G1       10,37          899           61 7 mm Remington Mag. 160 gr. Core-Lokt Ultra Bonded
+ 7,23       0,427    G1       11,34          872           61 7 mm Remington Mag. 175 gr. Core-Lokt Pointed Soft Point
+ 7,25       0,390    G1       9,07          811           61 7 x 57 140 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,409    G1       9,07          968           61 7 mm Remington Short Action Ultra Mag. 140 gr. Core-Lokt Ultra Bonded
+ 7,23       0,346    G1       9,72          948           61 7 mm Remington Short Action Ultra Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,23       0,414    G1       10,37          902           61 7 mm Remington Short Action Ultra Mag. 160 gr. Core-Lokt Ultra Bonded
+ 7,23       0,409    G1       9,07          1044           61 7 mm Rem Ultra Mag. 140 gr. Core-Lokt Ultra Bonded
+ 7,23       0,533    G1       9,72          1013           61 7 mm Rem Ultra Mag. 150 gr. Swift Scirocco Bonded
+ 7,23       0,493    G1       11,34          922           61 7 mm Rem Ultra Mag. 175 gr. Swift A-Frame PSP
+ 7,23       0,414    G1       10,37          899           61 7 mm Rem Ultra Mag. 160 gr. Core-Lokt Ultra Bonded
+ 7,23       0,409    G1       9,07          914           61 7 mm Rem Ultra Mag. 140 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,166    G1       7,13          607           51 30 Carbine 110 gr. UMC Metal Case
+ 7,85       0,166    G1       7,13          607           51 30 Carbine 110 gr. Soft Point
+ 7,85       0,335    G1       8,10          853           61 30 Remington AR 125 gr. AccuTip Boat Tail
+ 7,85       0,267    G1       8,10          853           61 30 Remington AR 125 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,314    G1       9,72          785           61 30 Remington AR 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,266    G1       7,97          853           61 30 Remington AR 123 gr. Metal Case
+ 7,85       0,215    G1       8,10          663           61 30-30 Win. 125 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,193    G1       9,72          728           61 30-30 Win. 150 gr. Core-Lokt Soft Point
+ 7,85       0,186    G1       9,72          677           61 30-30 Win. 150 gr. Copper Solid Tipped
+ 7,85       0,254    G1       11,02          671           61 30-30 Win. 170 gr. Core-Lokt Soft Point
+ 7,85       0,254    G1       11,02          671           61 30-30 Win. 170 gr. Core-Lokt Hollow Point
+ 7,85       0,383    G1       11,66          741           61 30-40 Krag 180 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,197    G1       3,56          1244           61 30-06 Springfield Accelerator 55 gr. Pointed Soft Point
+ 7,85       0,268    G1       8,10          957           61 30-06 Springfield 125 gr. Pointed Soft Point
+ 7,85       0,267    G1       8,10          811           61 30-06 Springfield 125 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,314    G1       9,72          887           61 30-06 Springfield 150 gr. UMC Metal Case
+ 7,85       0,435    G1       9,72          887           61 30-06 Springfield 150 gr. Swift Scirocco Bonded
+ 7,85       0,415    G1       9,72          887           61 30-06 Springfield 150 gr. AccuTip Boat Tail
+ 7,85       0,314    G1       9,72          887           61 30-06 Springfield 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,365    G1       9,72          887           61 30-06 Springfield 150 gr. Bronze Point
+ 7,85       0,331    G1       9,72          887           61 30-06 Springfield 150 gr. Core-Lokt Ultra Bonded
+ 7,85       0,400    G1       9,72          887           61 30-06 Springfield 150 gr. Copper Solid Tipped
+ 7,85       0,447    G1       10,69          853           61 30-06 Springfield 165 gr. Copper Solid Tipped
+ 7,85       0,447    G1       10,69          853           61 30-06 Springfield 165 gr. AccuTip Boat Tail
+ 7,85       0,339    G1       10,69          853           61 30-06 Springfield 165 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,356    G1       10,89          853           61 30-06 Springfield 168 gr. Core-Lokt Ultra Bonded
+ 7,85       0,480    G1       11,66          831           61 30-06 Springfield 180 gr. AccuTip Boat Tail
+ 7,85       0,377    G1       11,66          823           61 30-06 Springfield 180 gr. Swift A-Frame PSP
+ 7,85       0,402    G1       11,66          823           61 30-06 Springfield 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,500    G1       11,66          823           61 30-06 Springfield 180 gr. Swift Scirocco Bonded
+ 7,85       0,248    G1       11,66          823           61 30-06 Springfield 180 gr. Core-Lokt Soft Point
+ 7,85       0,383    G1       11,66          823           61 30-06 Springfield 180 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,412    G1       11,66          823           61 30-06 Springfield 180 gr. Bronze Point
+ 7,85       0,294    G1       14,26          735           61 30-06 Springfield 220 gr. Core-Lokt Soft Point
+ 7,85       0,314    G1       9,72          802           61 300 Savage 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,294    G1       9,72          1003           61 300 Win. Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,314    G1       9,72          808           61 300 Win. Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,310    G1       9,72          1003           61 300 Win. Mag. 150 gr. Core-Lokt Ultra Bonded
+ 7,85       0,400    G1       9,72          1003           61 300 Win. Mag. 150 gr. Copper Solid Tipped
+ 7,85       0,447    G1       10,69          994           61 300 Win. Mag. 165 gr. Copper Solid Tipped
+ 7,85       0,507    G1       11,66          902           61 300 Win. Mag. 180 gr. Swift Scirocco Bonded
+ 7,85       0,402    G1       11,66          902           61 300 Win. Mag. 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,481    G1       11,66          902           61 300 Win. Mag. 180 gr. AccuTip Boat Tail
+ 7,85       0,383    G1       11,66          902           61 300 Win. Mag. 180 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,395    G1       12,96          861           61 300 Win. Mag. 200 gr. Swift A-Frame PSP
+ 7,85       0,294    G1       9,72          1012           61 300 WSM 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,480    G1       11,66          917           61 300 WSM 180 gr. AccuTip Boat Tail
+ 7,85       0,507    G1       11,66          908           61 300 WSM 180 gr. Swift Scirocco Bonded
+ 7,84       0,193    G1       9,72          831           61 308 Marlin Express 150 gr. Soft Point
+ 7,85       0,314    G1       8,10          811           61 308 Win. 125 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,314    G1       9,72          860           61 308 Win. 150 gr. UMC Metal Case
+ 7,85       0,435    G1       9,72          860           61 308 Win. 150 gr. Swift Scirocco Bonded
+ 7,85       0,331    G1       9,72          860           61 308 Win. 150 gr. Core-Lokt Ultra Bonded
+ 7,85       0,314    G1       9,72          860           61 308 Win. 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,400    G1       9,72          860           61 308 Win. 150 gr. Copper Solid Tipped
+ 7,85       0,447    G1       10,69          823           61 308 Win. 165 gr. AccuTip Boat Tail
+ 7,85       0,475    G1       10,89          817           61 308 Win. 168 gr. MatchKing BTHP
+ 7,85       0,496    G1       11,34          795           61 308 Win. 175 gr. MatchKing BTHP
+ 7,85       0,402    G1       11,66          799           61 308 Win. 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,248    G1       11,66          799           61 308 Win. 180 gr. Core-Lokt Soft Point
+ 7,85       0,383    G1       11,66          799           61 308 Win. 180 gr. Core-Lokt Pointed Soft Point
+ 7,83       0,383    G1       11,66          951           61 300 Wby. Mag. 180 gr. Core-Lokt Pointed Soft Point
+ 7,92       0,315    G1       11,28          754           61 303 British 174 gr. UMC Metal Case
+ 7,92       0,247    G1       11,66          750           61 303 British 180 gr. Core-Lokt Soft Point
+ 7,92       0,266    G1       7,97          721           61 7.62 x 39 123 gr. UMC Metal Case
+ 7,92       0,267    G1       8,10          721           61 7.62 x 39 125 gr. Pointed Soft Point
+ 7,85       0,330    G1       9,72          975           61 300 Remington Short Action Ultra Mag. 150 gr. Core-Lokt Ultra Bonded
+ 7,85       0,339    G1       10,69          937           61 300 Remington Short Action Ultra Mag. 165 gr. Core-Lokt Poined Soft Point
+ 7,85       0,403    G1       11,66          902           61 300 Remington Short Action Ultra Mag. 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,533    G1       12,31          884           61 300 Remington Short Action Ultra Mag. 190 gr. MatchKing BTHP
+ 7,85       0,435    G1       9,72          1052           61 300 Remington Ultra Mag. 150 gr. Swift Scirocco Bonded
+ 7,85       0,500    G1       11,66          991           61 300 Remington Ultra Mag. 180 gr. Swift Scirocco Bonded
+ 7,85       0,447    G1       10,69          994           61 300 Remington Ultra Mag. 165 gr. Copper Solid Tipped
+ 7,85       0,382    G1       11,66          991           61 300 Remington Ultra Mag. 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,395    G1       12,96          924           61 300 Remington Ultra Mag. 200 gr. Swift A-Frame PSP
+ 7,85       0,395    G1       11,66          908           61 300 Remington Ultra Mag. 180 gr. Core-Lokt Ultra Bonded
+ 7,85       0,507    G1       11,66          908           61 300 Remington Ultra Mag. 180 gr. Swift Scirocco Bonded
+ 7,85       0,415    G1       9,72          887           61 300 Remington Ultra Mag. 150 gr. AccuTip Boat Tail
+ 7,85       0,314    G1       9,72          887           61 300 Remington Ultra Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,85       0,314    G1       9,72          858           61 300 Remington Ultra Mag. 150 gr. Core-Lokt Pointed Soft Point
+ 7,94       0,166    G1       6,48          369           61 32-20 Win. 100 gr. Lead
+ 8,18       0,239    G1       11,02          686           61 32 Win. Special 170 gr. Core-Lokt Soft Point
+ 8,22       0,332    G1       12,96          884           61 8 mm Rem. Magnum 200 gr. Swift A-Frame PSP
+ 8,22       0,205    G1       11,02          719           61 8 mm Mauser 170 gr. Core-Lokt Soft Point
+ 8,60       0,291    G1       16,20          667           61 338 Marlin Express 250 gr. Soft Point
+ 8,61       0,337    G1       14,58          849           61 338 Win. Mag. 225 gr. Swift A-Frame PSP
+ 8,61       0,435    G1       14,58          847           61 338 Win. Mag. 225 gr. Core-Lokt Pointed Soft Point
+ 8,61       0,456    G1       14,58          847           61 338 Win. Mag. 225 gr. Core-Lokt Ultra Bonded
+ 8,61       0,431    G1       16,20          811           61 338 Win. Mag. 250 gr. Core-Lokt Pointed Soft Point
+ 8,60       0,431    G1       16,20          872           61 338 Remington Ultra Mag. 250 gr. Core-Lokt Pointed Soft Point
+ 8,60       0,427    G1       16,20          872           61 338 Remington Ultra Mag. 250 gr. Swift A-Frame PSP
+ 8,61       0,675    G1       16,20          902           61 338 Lapua Magnum 250 gr. Scenar
+ 9,12       0,184    G1       9,72          701           61 35 Remington 150 gr. Core-Lokt Pointed Soft Point
+ 9,12       0,192    G1       12,96          634           61 35 Remington 200 gr. Core-Lokt Soft Point
+ 9,12       0,294    G1       12,96          815           61 35 Whelen 200 gr. Core-Lokt  Pointed Soft Point
+ 9,12       0,409    G1       16,20          732           61 35 Whelen 250 gr. Pointed Soft Point
+ 9,12       0,293    G1       12,96          846           61 350 Remington Mag. 200 gr. Core-Lokt Pointed Soft Point
+ 9,55       0,267    G1       17,50          820           61 375 H&H Mag. 270 gr. Soft Point
+ 9,55       0,350    G1       19,44          769           61 375 H&H Mag. 300 gr. Swift A-Frame PSP
+ 9,55       0,267    G1       17,50          884           61 375 Remington Ultra Mag. 270 gr. Soft Point
+ 9,55       0,350    G1       19,44          841           61 375 Remington Ultra Mag. 300 gr. Swift A-Frame PSP
+ 10,57       0,367    G1       25,92          732           61 416 Rem. Magnum 400 gr. Swift A-Frame PSP
+ 10,97       0,166    G1       15,55          536           51 44 Rem. Magnum 240 gr. Soft Point
+ 10,97       0,166    G1       15,55          536           51 44 Rem. Magnum 240 gr. Semi-Jacketed Hollow Point
+ 10,93       0,146    G1       15,55          716           61 444 Mar. 240 gr. Soft Point
+ 11,63       0,213    G1       19,44          552           61 45-70 Government 300 gr. Semi-Jacketed Hollow Point
+ 11,63       0,281    G1       26,24          405           61 45-70 Government 405 gr. Soft Point
+ 11,49       0,208    G1       16,20          671           61 450 Bushmaster 250 gr. Soft Point
+ 11,49       0,144    G1       16,85          664           61 450 Bushmaster 260 gr. AccuTip

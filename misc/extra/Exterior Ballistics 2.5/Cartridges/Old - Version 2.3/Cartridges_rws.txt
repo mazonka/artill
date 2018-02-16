@@ -1,0 +1,142 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,114    G1       3,00          740           60 22 Hornet  RWS  46 gr MJ
+ 5,70       0,152    G1       3,00          740           60 22 Hornet  RWS  46 gr TMS
+ 5,70       0,186    G1       3,00          740           60 22 Hornet  RWS  46 gr VMS
+ 5,70       0,186    G1       3,24          970           60 222 Rem  RWS  50 gr TMS
+ 5,70       0,183    G1       3,40          985           60 222 Rem  RWS  52 gr MJ
+ 5,70       0,207    G1       3,40          990           60 223 Rem  RWS  52 gr TMS
+ 5,70       0,240    G1       4,10          920           60 5.6 x 50 Magnum  RWS  63 gr TMS
+ 5,70       0,186    G1       3,24          1070           60 5.6 x 50 R Magnum  RWS  50 gr TMS
+ 5,70       0,207    G1       3,60          1000           60 5.6 x 50 R Magnum  RWS  56 gr TMS
+ 5,70       0,240    G1       4,10          900           60 5.6 x 50 R Magnum  RWS  63 gr TMS
+ 5,70       0,248    G1       4,60          870           60 5.6 x 52 R  RWS  71 gr TMS
+ 5,70       0,260    G1       4,80          1040           60 5.6 x 57  RWS  74 gr KS
+ 6,17       0,294    G1       6,20          955           60 243 Win.  RWS  96 gr KS
+ 6,17       0,371    G1       6,50          935           60 243 Win.  RWS  100 gr TMS
+ 6,70       0,315    G1       10,30          670           45 6.5 x 54 Mann.Sch.  RWS  159 gr TMR
+ 6,71       0,361    G1       8,20          885           65 6.5 x 55  RWS  127 gr KS
+ 6,71       0,305    G1       9,10          870           65 6.5 x 55  RWS  140 gr DK
+ 6,70       0,255    G1       6,00          1010           60 6.5 x 57  RWS  93 gr TMS
+ 6,70       0,308    G1       7,00          945           60 6.5 x 57  RWS  108 gr KS
+ 6,70       0,361    G1       8,20          870           60 6.5 x 57  RWS  127 gr KS
+ 6,70       0,305    G1       9,10          775           60 6.5 x 57  RWS  140 gr DK
+ 6,70       0,255    G1       6,00          985           60 6.5 x 57 R  RWS  93 gr TMS
+ 6,70       0,308    G1       7,00          870           60 6.5 x 57 R  RWS  108 gr KS
+ 6,70       0,361    G1       8,20          835           60 6.5 x 57 R  RWS  127 gr KS
+ 6,70       0,305    G1       9,10          775           60 6.5 x 57 R  RWS  140 gr DK
+ 6,70       0,361    G1       8,20          930           65 6.5 x 65 RWS  RWS  127 gr KS
+ 6,70       0,361    G1       8,20          870           65 6.5 x 65 R RWS  RWS  127 gr KS
+ 6,70       0,255    G1       6,00          1150           65 6.5 x 68  RWS  93 gr TMS
+ 6,70       0,361    G1       8,20          960           65 6.5 x 68  RWS  127 gr KS
+ 7,06       0,325    G1       8,40          965           65 270 Win  RWS  130 gr TMS
+ 7,06       0,272    G1       8,40          955           65 270 Win  RWS  130 gr HMK
+ 7,06       0,345    G1       9,70          895           65 270 Win  RWS  150 gr KS
+ 7,06       0,345    G1       9,70          955           60 270 WSM  RWS  150 gr KS
+ 7,25       0,325    G1       10,50          800           60 7 x 57  RWS  162 gr ID Classic
+ 7,25       0,382    G1       11,20          770           60 7 x 57  RWS  173 gr HMK
+ 7,25       0,290    G1       8,00          900           60 7 x 57  RWS  123 gr KS
+ 7,25       0,338    G1       10,00          790           60 7 x 57 R  RWS  154 gr DK
+ 7,25       0,381    G1       10,50          780           60 7 x 57 R  RWS  162 gr KS
+ 7,25       0,325    G1       10,50          780           60 7 x 57 R  RWS  162 gr ID Classic
+ 7,25       0,383    G1       11,20          750           60 7 x 57 R  RWS  173 gr HMK
+ 7,25       0,356    G1       11,50          750           60 7 x 57 R  RWS  177 gr ID Classic
+ 7,25       0,290    G1       8,00          890           60 7 x 57 R  RWS  123 gr KS
+ 7,25       0,255    G1       9,00          780           60 7 x 57 R  RWS  139 gr TMR
+ 7,23       0,399    G1       10,30          895           65 7 mm Rem. Mag.  RWS  159 gr EVO
+ 7,23       0,381    G1       10,50          930           65 7 mm Rem. Mag.  RWS  162 gr KS
+ 7,23       0,356    G1       11,50          890           60 7 mm Rem. Mag.  RWS  177 gr ID Classic
+ 7,23       0,346    G1       9,40          970           65 7 mm Rem. Mag.  RWS  145 gr TMS
+ 7,23       0,325    G1       10,50          850           65 280 Rem  RWS  162 gr ID Classic
+ 7,25       0,338    G1       10,00          885           65 7 x 64  RWS  154 gr DK
+ 7,25       0,399    G1       10,30          880           65 7 x 64  RWS  159 gr EVO
+ 7,25       0,381    G1       10,50          880           65 7 x 64  RWS  162 gr KS
+ 7,25       0,325    G1       10,50          880           65 7 x 64  RWS  162 gr ID Classic
+ 7,25       0,301    G1       11,20          800           65 7 x 64  RWS  173 gr TMR
+ 7,25       0,383    G1       11,20          850           65 7 x 64  RWS  173 gr HMK
+ 7,25       0,356    G1       11,50          850           65 7 x 64  RWS  177 gr ID Classic
+ 7,25       0,290    G1       8,00          970           65 7 x 64  RWS  123 gr KS
+ 7,25       0,338    G1       10,00          865           60 7 x 65 R  RWS  154 gr DK
+ 7,25       0,399    G1       10,30          865           65 7 x 65 R  RWS  159 gr EVO
+ 7,25       0,325    G1       10,50          870           60 7 x 65 R  RWS  162 gr ID Classic
+ 7,25       0,381    G1       10,50          860           60 7 x 65 R  RWS  162 gr KS
+ 7,25       0,301    G1       11,20          770           60 7 x 65 R  RWS  173 gr TMR
+ 7,25       0,383    G1       11,20          830           60 7 x 65 R  RWS  173 gr HMK
+ 7,25       0,356    G1       11,50          820           60 7 x 65 R  RWS  177 gr ID Classic
+ 7,25       0,290    G1       8,00          930           60 7 x 65 R  RWS  123 gr KS
+ 7,85       0,309    G1       10,00          815           60 308 Win  RWS  154 gr BIONIC BLACK
+ 7,85       0,309    G1       10,00          815           60 308 Win  RWS  154 gr BIONIC YELLOV
+ 7,85       0,293    G1       10,70          820           60 308 Win  RWS  165 gr DK
+ 7,85       0,329    G1       10,70          820           60 308 Win  RWS  165 gr KS
+ 7,85       0,480    G1       10,90          800           65 308 Win  RWS  168 gr MS
+ 7,85       0,350    G1       11,70          780           60 308 Win  RWS  181 gr UNI Classic
+ 7,85       0,356    G1       11,70          780           60 308 Win  RWS  181 gr HMK
+ 7,85       0,366    G1       11,90          775           60 308 Win  RWS  184 gr EVO
+ 7,85       0,550    G1       12,30          759           65 308 Win  RWS  190 gr MS
+ 7,85       0,235    G1       8,40          895           60 308 Win  RWS  130 gr FS
+ 7,85       0,298    G1       9,70          870           60 308 Win  RWS  150 gr KS
+ 7,85       0,303    G1       9,70          870           60 308 Win  RWS  150 gr ID Classic
+ 7,85       0,309    G1       10,00          885           60 30-06  RWS  154 gr BIONIC BLACK
+ 7,85       0,309    G1       10,00          885           60 30-06  RWS  154 gr BIONIC YELLOV
+ 7,85       0,329    G1       10,70          870           60 30-06  RWS  165 gr KS
+ 7,85       0,293    G1       10,70          870           60 30-06  RWS  165 gr DK
+ 7,85       0,356    G1       11,70          840           60 30-06  RWS  181 gr HMK
+ 7,85       0,350    G1       11,70          840           60 30-06  RWS  181 gr UNI Classic
+ 7,85       0,366    G1       11,90          835           60 30-06  RWS  184 gr EVO
+ 7,85       0,356    G1       13,00          735           60 30-06  RWS  201 gr KS
+ 7,85       0,380    G1       13,00          790           60 30-06  RWS  201 gr UNI Classic
+ 7,85       0,303    G1       9,70          910           60 30-06  RWS  150 gr ID Classic
+ 7,85       0,298    G1       9,70          910           60 30-06  RWS  150 gr KS
+ 7,85       0,293    G1       10,70          900           60 30 R Blaser  RWS  165 gr DK
+ 7,85       0,350    G1       11,70          860           60 30 R Blaser  RWS  181 gr UNI Classic
+ 7,85       0,366    G1       11,90          850           60 30 R Blaser  RWS  184 gr EVO
+ 7,85       0,356    G1       13,00          800           60 30 R Blaser  RWS  201 gr KS
+ 7,85       0,298    G1       9,70          940           60 30 R Blaser  RWS  150 gr KS
+ 7,85       0,366    G1       11,90          930           65 300 WSM  RWS  184 gr EVO
+ 7,85       0,329    G1       10,70          970           65 300 Win Mag  RWS  165 gr KS
+ 7,85       0,293    G1       10,70          970           65 300 Win Mag  RWS  165 gr DK
+ 7,85       0,480    G1       10,90          983           65 300 Win Mag  RWS  168 gr MS
+ 7,85       0,350    G1       11,70          940           65 300 Win Mag  RWS  181 gr UNI Classic
+ 7,85       0,366    G1       11,90          930           65 300 Win Mag  RWS  184 gr EVO
+ 8,22       0,282    G1       11,70          820           65 8 x 57 IS  RWS  181 gr DK
+ 8,22       0,326    G1       12,10          820           65 8 x 57 IS  RWS  187 gr HMK
+ 8,22       0,288    G1       12,70          800           65 8 x 57 IS  RWS  196 gr TMR
+ 8,09       0,288    G1       12,70          705           65 8 x 57 IR  RWS  196 gr TMR
+ 8,22       0,360    G1       12,80          800           60 8 x 57 IS  RWS  198 gr ID Classic
+ 8,22       0,350    G1       13,00          730           60 8 x 57 IS  RWS  201 gr EVO
+ 8,22       0,282    G1       11,70          760           60 8 x 57 IRS  RWS  181 gr DK
+ 8,22       0,326    G1       12,10          770           60 8 x 57 IRS  RWS  187 gr HMK
+ 8,22       0,288    G1       12,70          730           60 8 x 57 IRS  RWS  196 gr TMR
+ 8,22       0,360    G1       12,80          750           60 8 x 57 IRS  RWS  198 gr ID Classic
+ 8,22       0,350    G1       13,00          720           60 8 x 57 IRS  RWS  201 gr EVO
+ 8,22       0,282    G1       11,70          945           65 8 x 68 S  RWS  181 gr DK
+ 8,22       0,310    G1       11,70          990           65 8 x 68 S  RWS  181 gr KS
+ 8,09       0,282    G1       11,70          835           60 8 x 60 S  RWS  181 gr DK
+ 8,22       0,326    G1       12,10          970           65 8 x 68 S  RWS  187 gr HMK
+ 8,22       0,350    G1       13,00          915           65 8 x 68 S  RWS  201 gr EVO
+ 8,22       0,343    G1       14,50          870           65 8 x 68 S  RWS  224 gr KS
+ 9,30       0,266    G1       14,60          800           60 9.3 x 62  RWS  225 gr DK
+ 9,30       0,320    G1       16,00          800           60 9.3 x 62  RWS  247 gr KS
+ 9,30       0,372    G1       16,70          780           60 9.3 x 62  RWS  258 gr HMK
+ 9,30       0,309    G1       18,50          695           60 9.3 x 62  RWS  285 gr TMR
+ 9,30       0,400    G1       18,80          730           60 9.3 x 62  RWS  290 gr EVO
+ 9,30       0,465    G1       19,00          740           60 9.3 x 62  RWS  293 gr UNI Classic
+ 9,30       0,266    G1       14,60          900           65 9.3 x 64  RWS  225 gr DK
+ 9,30       0,465    G1       19,00          785           65 9.3 x 64  RWS  293 gr UNI Classic
+ 9,30       0,266    G1       14,60          785           60 9.3 x 74 R  RWS  225 gr DK
+ 9,30       0,320    G1       16,00          750           60 9.3 x 74 R  RWS  247 gr KS
+ 9,30       0,372    G1       16,70          750           60 9.3 x 74 R  RWS  258 gr HMK
+ 9,30       0,309    G1       18,50          695           60 9.3 x 74 R  RWS  285 gr TMR
+ 9,30       0,400    G1       18,80          700           60 9.3 x 74 R  RWS  290 gr EVO
+ 9,30       0,465    G1       19,00          695           60 9.3 x 74 R  RWS  293 gr UNI Classic
+ 9,55       0,403    G1       19,40          790           65 375 H&H Magnum  RWS  299 gr KS
+ 9,55       0,290    G1       19,40          790           65 375 H&H Magnum  RWS  299 gr VMR
+ 9,55       0,334    G1       19,50          790           65 375 H&H Magnum  RWS  301 gr UNI Classic
+ 10,72       0,335    G1       26,00          705           65 404 Rimless  RWS  401 gr TMR
+ 70,72       0,344    G1       26,00          705           65 404 Rimless  RWS  401 gr VM

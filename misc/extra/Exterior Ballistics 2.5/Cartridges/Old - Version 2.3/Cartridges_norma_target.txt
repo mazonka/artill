@@ -1,0 +1,18 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 6.17       0.517    G1       6.80          850           60 6mm BR DL NORMA 105 gr. Moly Coated HP
+ 6.17       0.517    G1       6.80          922           60 6mm XC NORMA 105 gr. Berger DL
+ 6.71       0.499    G1       9.33          800           60 6.5 x 55 Golden Target NORMA 144 gr. Sierra HP
+ 6.71       0.548    G1       8.42          830           60 6.5 x 55 Golden Target NORMA 130 gr. HP
+ 6.71       0.548    G1       8.42          910           60 6.5 x 55 DL Fält NORMA 130 gr. Moly Coated HP
+ 6.71       0.548    G1       8.42          800           60 6.5 x 55 DL Bana NORMA 130 gr. Moly Coated HP
+ 6.71       0.345    G1       6.48          800           60 6.5 x 55 Rekrutt NORMA 100 gr. HP
+ 7.85       0.499    G1       9.72          830           60 308 Win Golden Target NORMA 150 gr. FMJ
+ 7.85       0.470    G1       10.89          777           60 308 Win DL NORMA 168 gr. Moly Coated HP
+ 7.85       0.499    G1       9.72          847           60 30-06 Golden Target NORMA 150 gr. FMJ

@@ -1,0 +1,176 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 6,17       0,288    G1       5,18          732           ? 243 dia. Sierra (6mm) 80 gr. SPT Single Shot Pistol 7150
+ 6,17       0,270    vari.       5,18          732           ? Variable Ballistic Coefficient 
+ 6,17       0,245    vari.       5,18          396           ? Variable Ballistic Coefficient 
+ 6,38       0,111    G1       3,24          274           ? 251 dia. Sierra 50 gr. FMJ 8000
+ 6,38       0,108    vari.       3,24          274           ? Variable Ballistic Coefficient 
+ 6,38       0,104    vari.       3,24          183           ? Variable Ballistic Coefficient 
+ 7,21       0,327    G1       8,42          701           ? 284 dia. Sierra (7mm) 130 gr. SPT Single Shot Pistol 7250
+ 7,21       0,321    vari.       8,42          701           ? Variable Ballistic Coefficient 
+ 7,21       0,300    vari.       8,42          396           ? Variable Ballistic Coefficient 
+ 7,82       0,102    G1       5,51          732           ? 308 dia. Sierra 85 gr. RN 8005
+ 7,82       0,106    vari.       5,51          732           ? Variable Ballistic Coefficient 
+ 7,82       0,113    vari.       5,51          457           ? Variable Ballistic Coefficient 
+ 7,82       0,304    G1       8,75          853           ? 308 dia. Sierra 135 gr. SPT - Single Shot Pistol 7350
+ 7,82       0,294    vari.       8,75          853           ? Variable Ballistic Coefficient 
+ 7,82       0,282    vari.       8,75          686           ? Variable Ballistic Coefficient 
+ 7,82       0,255    vari.       8,75          457           ? Variable Ballistic Coefficient 
+ 7,92       0,120    G1       4,60          274           ? 312 dia. Sierra (32 cal) 71 gr. FMJ 8010
+ 7,92       0,117    vari.       4,60          274           ? Variable Ballistic Coefficient 
+ 7,92       0,112    vari.       4,60          183           ? Variable Ballistic Coefficient 
+ 7,92       0,125    G1       5,83          335           ? 312 dia. Sierra (32 cal) 90 gr. JHC 8030
+ 7,92       0,146    vari.       5,83          335           ? Variable Ballistic Coefficient 
+ 7,92       0,112    vari.       5,83          297           ? Variable Ballistic Coefficient 
+ 7,92       0,083    vari.       5,83          236           ? Variable Ballistic Coefficient 
+ 9,02       0,095    G1       5,83          396           ? 355 dia. Sierra (9mm) 90 gr. JHP 8100
+ 9,02       0,115    vari.       5,83          396           ? Variable Ballistic Coefficient 
+ 9,02       0,105    vari.       5,83          274           ? Variable Ballistic Coefficient 
+ 9,02       0,094    G1       6,16          366           ? 355 dia. Sierra (9mm) 95 gr. FMJ 8105
+ 9,02       0,108    vari.       6,16          366           ? Variable Ballistic Coefficient 
+ 9,02       0,116    vari.       6,16          305           ? Variable Ballistic Coefficient 
+ 9,02       0,110    vari.       6,16          244           ? Variable Ballistic Coefficient 
+ 9,02       0,127    G1       7,45          396           ? 355 dia. Sierra (9mm) 115 gr. FMJ 8115
+ 9,02       0,155    vari.       7,45          396           ? Variable Ballistic Coefficient 
+ 9,02       0,130    vari.       7,45          274           ? Variable Ballistic Coefficient 
+ 9,02       0,107    G1       7,45          366           ? 355 dia. Sierra (9mm) 115 gr. JHP 8110
+ 9,02       0,160    vari.       7,45          366           ? Variable Ballistic Coefficient 
+ 9,02       0,124    vari.       7,45          305           ? Variable Ballistic Coefficient 
+ 9,02       0,140    vari.       7,45          244           ? Variable Ballistic Coefficient 
+ 9,02       0,115    G1       8,10          366           ? 355 dia. Sierra (9mm) 125 gr. FMJ 8120
+ 9,02       0,160    vari.       8,10          366           ? Variable Ballistic Coefficient 
+ 9,02       0,180    vari.       8,10          305           ? Variable Ballistic Coefficient 
+ 9,02       0,180    vari.       8,10          244           ? Variable Ballistic Coefficient 
+ 9,02       0,124    G1       8,10          366           ? 355 dia. Sierra (9mm) 125 gr. JHP 8125
+ 9,02       0,137    vari.       8,10          366           ? Variable Ballistic Coefficient 
+ 9,02       0,168    vari.       8,10          274           ? Variable Ballistic Coefficient 
+ 9,02       0,120    G1       8,42          366           ? 355 dia. Sierra (9mm) 130 gr. FMJ 8345
+ 9,02       0,160    vari.       8,42          366           ? Variable Ballistic Coefficient 
+ 9,02       0,180    vari.       8,42          305           ? Variable Ballistic Coefficient 
+ 9,02       0,185    vari.       8,42          244           ? Variable Ballistic Coefficient 
+ 9,07       0,120    G1       7,13          396           ? 357 dia. Sierra (38 cal) 110 gr. JHC Blitz 8300
+ 9,07       0,135    vari.       7,13          396           ? Variable Ballistic Coefficient 
+ 9,07       0,120    vari.       7,13          274           ? Variable Ballistic Coefficient 
+ 9,07       0,133    G1       8,10          396           ? 357 dia. Sierra (38 cal) 125 gr. JHC 8320
+ 9,07       0,155    vari.       8,10          396           ? Variable Ballistic Coefficient 
+ 9,07       0,140    vari.       8,10          274           ? Variable Ballistic Coefficient 
+ 9,07       0,133    G1       8,10          396           ? 357 dia. Sierra (38 cal) 125 gr. JSP 8310
+ 9,07       0,155    vari.       8,10          396           ? Variable Ballistic Coefficient 
+ 9,07       0,140    vari.       8,10          274           ? Variable Ballistic Coefficient 
+ 9,07       0,078    G1       9,07          640           ? 357 dia. Sierra (38 cal) 140 gr. JHC 8325
+ 9,07       0,118    vari.       9,07          640           ? Variable Ballistic Coefficient 
+ 9,07       0,145    vari.       9,07          503           ? Variable Ballistic Coefficient 
+ 9,07       0,155    vari.       9,07          366           ? Variable Ballistic Coefficient 
+ 9,07       0,115    vari.       9,07          274           ? Variable Ballistic Coefficient 
+ 9,07       0,100    G1       10,24          640           ? 357 dia. Sierra (38 cal) 158 gr. JHC 8360
+ 9,07       0,124    vari.       10,24          640           ? Variable Ballistic Coefficient 
+ 9,07       0,161    vari.       10,24          503           ? Variable Ballistic Coefficient 
+ 9,07       0,175    vari.       10,24          366           ? Variable Ballistic Coefficient 
+ 9,07       0,125    vari.       10,24          274           ? Variable Ballistic Coefficient 
+ 9,07       0,100    G1       10,24          640           ? 357 dia. Sierra (38 cal) 158 gr. JSP 8340
+ 9,07       0,124    vari.       10,24          640           ? Variable Ballistic Coefficient 
+ 9,07       0,161    vari.       10,24          503           ? Variable Ballistic Coefficient 
+ 9,07       0,175    vari.       10,24          366           ? Variable Ballistic Coefficient 
+ 9,07       0,125    vari.       10,24          274           ? Variable Ballistic Coefficient 
+ 9,07       0,175    G1       11,02          396           ? 357 dia. Sierra (38 cal) 170 gr. FMJ Match 8350
+ 9,07       0,285    vari.       11,02          396           ? Variable Ballistic Coefficient 
+ 9,07       0,222    vari.       11,02          274           ? Variable Ballistic Coefficient 
+ 9,07       0,108    G1       11,02          640           ? 357 dia. Sierra (38 cal) 170 gr. JHC 8365
+ 9,07       0,140    vari.       11,02          640           ? Variable Ballistic Coefficient 
+ 9,07       0,176    vari.       11,02          503           ? Variable Ballistic Coefficient 
+ 9,07       0,190    vari.       11,02          366           ? Variable Ballistic Coefficient 
+ 9,07       0,140    vari.       11,02          274           ? Variable Ballistic Coefficient 
+ 9,07       0,147    G1       11,66          610           ? 357 dia. Sierra (38 cal) 180 gr. FPJ Match 8370
+ 9,07       0,171    vari.       11,66          610           ? Variable Ballistic Coefficient 
+ 9,07       0,199    vari.       11,66          488           ? Variable Ballistic Coefficient 
+ 9,07       0,210    vari.       11,66          366           ? Variable Ballistic Coefficient 
+ 9,07       0,165    vari.       11,66          274           ? Variable Ballistic Coefficient 
+ 9,22       0,100    G1       6,16          274           ? 363 dia. Sierra 95 gr. JHP Makarov 8200
+ 9,22       0,095    vari.       6,16          274           ? Variable Ballistic Coefficient 
+ 9,22       0,088    vari.       6,16          251           ? Variable Ballistic Coefficient 
+ 9,22       0,123    G1       6,48          282           ? 363 dia. Sierra 100 gr. FPJ Makarov 8250
+ 9,22       0,100    vari.       6,48          282           ? Variable Ballistic Coefficient 
+ 9,22       0,092    vari.       6,48          229           ? Variable Ballistic Coefficient 
+ 10,16       0,105    G1       8,75          366           ? 400 dia. Sierra (10mm) 135 gr. JHP 8425
+ 10,16       0,115    vari.       8,75          366           ? Variable Ballistic Coefficient 
+ 10,16       0,120    vari.       8,75          305           ? Variable Ballistic Coefficient 
+ 10,16       0,105    vari.       8,75          259           ? Variable Ballistic Coefficient 
+ 10,16       0,120    G1       9,72          351           ? 400 dia. Sierra (10mm) 150 gr. JHP 8430
+ 10,16       0,130    vari.       9,72          351           ? Variable Ballistic Coefficient 
+ 10,16       0,142    vari.       9,72          305           ? Variable Ballistic Coefficient 
+ 10,16       0,110    vari.       9,72          259           ? Variable Ballistic Coefficient 
+ 10,16       0,130    G1       10,69          351           ? 400 dia. Sierra (10mm) 165 gr. JHP 8445
+ 10,16       0,145    vari.       10,69          351           ? Variable Ballistic Coefficient 
+ 10,16       0,155    vari.       10,69          305           ? Variable Ballistic Coefficient 
+ 10,16       0,115    vari.       10,69          259           ? Variable Ballistic Coefficient 
+ 10,16       0,140    G1       11,66          351           ? 400 dia. Sierra (10mm) 180 gr. JHP 8460
+ 10,16       0,160    vari.       11,66          351           ? Variable Ballistic Coefficient 
+ 10,16       0,170    vari.       11,66          305           ? Variable Ballistic Coefficient 
+ 10,16       0,120    vari.       11,66          259           ? Variable Ballistic Coefficient 
+ 10,16       0,190    G1       12,31          335           ? 400 dia. Sierra (10mm) 190 gr. FPJ 8480
+ 10,16       0,212    vari.       12,31          335           ? Variable Ballistic Coefficient 
+ 10,16       0,190    vari.       12,31          299           ? Variable Ballistic Coefficient 
+ 10,16       0,195    vari.       12,31          244           ? Variable Ballistic Coefficient 
+ 10,41       0,123    G1       11,02          396           ? 410 dia. Sierra 170 gr. JHC 8500
+ 10,41       0,122    vari.       11,02          396           ? Variable Ballistic Coefficient 
+ 10,41       0,120    vari.       11,02          274           ? Variable Ballistic Coefficient 
+ 10,41       0,165    G1       13,61          396           ? 410 dia. Sierra 210 gr. JHC 8520
+ 10,41       0,210    vari.       13,61          396           ? Variable Ballistic Coefficient 
+ 10,41       0,160    vari.       13,61          274           ? Variable Ballistic Coefficient 
+ 10,90       0,130    G1       11,66          396           ? 4295 dia. Sierra (44 cal) 180 gr. JHC 8600
+ 10,90       0,125    vari.       11,66          396           ? Variable Ballistic Coefficient 
+ 10,90       0,140    vari.       11,66          274           ? Variable Ballistic Coefficient 
+ 10,90       0,160    G1       13,61          366           ? 4295 dia. Sierra (44 cal) 210 gr. JHC 8620
+ 10,90       0,175    vari.       13,61          366           ? Variable Ballistic Coefficient 
+ 10,90       0,170    vari.       13,61          274           ? Variable Ballistic Coefficient 
+ 10,90       0,180    G1       14,26          396           ? 4295 dia. Sierra (44 cal) 220 gr. FPJ Match 8605
+ 10,90       0,185    vari.       14,26          396           ? Variable Ballistic Coefficient 
+ 10,90       0,200    vari.       14,26          335           ? Variable Ballistic Coefficient 
+ 10,90       0,170    vari.       14,26          274           ? Variable Ballistic Coefficient 
+ 10,90       0,185    G1       15,55          396           ? 4295 dia. Sierra (44 cal) 240 gr. JHC 8610
+ 10,90       0,172    vari.       15,55          396           ? Variable Ballistic Coefficient 
+ 10,90       0,171    vari.       15,55          274           ? Variable Ballistic Coefficient 
+ 10,90       0,213    G1       16,20          366           ? 4295 dia. Sierra (44 cal) 250 gr. FPJ Match 8615
+ 10,90       0,230    vari.       16,20          366           ? Variable Ballistic Coefficient 
+ 10,90       0,195    vari.       16,20          274           ? Variable Ballistic Coefficient 
+ 10,90       0,230    G1       19,44          366           ? 4295 dia. Sierra (44 cal) 300 gr. JSP 8630
+ 10,90       0,250    vari.       19,44          366           ? Variable Ballistic Coefficient 
+ 10,90       0,195    vari.       19,44          274           ? Variable Ballistic Coefficient 
+ 11,46       0,110    G1       11,99          366           ? 4515 dia. Sierra (45 cal) 185 gr. FPJ Match 8810
+ 11,46       0,135    vari.       11,99          366           ? Variable Ballistic Coefficient 
+ 11,46       0,135    vari.       11,99          274           ? Variable Ballistic Coefficient 
+ 11,46       0,100    G1       11,99          366           ? 4515 dia. Sierra (45 cal) 185 gr. JHP 8800
+ 11,46       0,110    vari.       11,99          366           ? Variable Ballistic Coefficient 
+ 11,46       0,135    vari.       11,99          274           ? Variable Ballistic Coefficient 
+ 11,46       0,120    G1       12,96          366           ? 4515 dia. Sierra (45 cal) 200 gr. FPJ Match 8825
+ 11,46       0,145    vari.       12,96          366           ? Variable Ballistic Coefficient 
+ 11,46       0,150    vari.       12,96          274           ? Variable Ballistic Coefficient 
+ 11,46       0,140    G1       14,90          335           ? 4515 dia. Sierra (45 cal) 230 gr. FMJ Match 8815
+ 11,46       0,200    vari.       14,90          335           ? Variable Ballistic Coefficient 
+ 11,46       0,205    vari.       14,90          274           ? Variable Ballistic Coefficient 
+ 11,46       0,145    G1       14,90          396           ? 4515 dia. Sierra (45 cal) 230 gr. JHP 8805
+ 11,46       0,169    vari.       14,90          274           ? Variable Ballistic Coefficient 
+ 11,46       0,141    vari.       14,90          274           ? Variable Ballistic Coefficient 
+ 11,46       0,150    G1       15,55          335           ? 4515 dia. Sierra (45 cal) 240 gr. JHC 8820
+ 11,46       0,160    vari.       15,55          335           ? Variable Ballistic Coefficient 
+ 11,46       0,170    vari.       15,55          274           ? Variable Ballistic Coefficient 
+ 11,46       0,192    G1       19,44          427           ? 4515 dia. Sierra (45 cal) 300 gr. JSP 8830
+ 11,46       0,121    vari.       19,44          427           ? Variable Ballistic Coefficient 
+ 11,46       0,240    vari.       19,44          366           ? Variable Ballistic Coefficient 
+ 11,46       0,165    vari.       19,44          274           ? Variable Ballistic Coefficient 
+ 12,70       0,155    G1       22,68          541           ? 500 dia. Sierra (50 cal) 350 gr. JHP 5350
+ 12,70       0,158    vari.       22,68          541           ? Variable Ballistic Coefficient 
+ 12,70       0,169    vari.       22,68          494           ? Variable Ballistic Coefficient 
+ 12,70       0,177    vari.       22,68          448           ? Variable Ballistic Coefficient 
+ 12,70       0,188    vari.       22,68          396           ? Variable Ballistic Coefficient 
+ 12,70       0,185    G1       25,92          488           ? 500 dia. Sierra (50 cal) 400 gr. FPJ 5400
+ 12,70       0,198    vari.       25,92          488           ? Variable Ballistic Coefficient 
+ 12,70       0,212    vari.       25,92          442           ? Variable Ballistic Coefficient 
+ 12,70       0,227    vari.       25,92          390           ? Variable Ballistic Coefficient 
+ 12,70       0,234    vari.       25,92          351           ? Variable Ballistic Coefficient 

@@ -1,0 +1,64 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,69       0,202    G1       3,60          800           ? 224 dia. Lapua 55 gr. SP Soft Point E539
+ 5,69       0,251    G1       3,60          800           ? 224 dia. Lapua 55 gr. FMJ FMJ S538
+ 5,69       0,341    G1       4,50          800           ? 224 dia. Lapua 69 gr. HPBT Scenar GB541
+ 5,69       0,386    G1       5,00          800           ? 224 dia. Lapua 77 gr. HPBT Scenar GB527
+ 5,69       0,341    G1       4,50          800           ? 224 dia. Lapua 69 gr. HPBT ScenarL GB544
+ 5,69       0,386    G1       5,00          800           ? 224 dia. Lapua 77 gr. HPBT ScenarL GB545
+ 6,16       0,230    G1       5,80          800           ? 243 dia. Lapua 90 gr. CEX Naturalis N509
+ 6,18       0,319    G1       5,00          800           ? 243 dia. Lapua 77 gr. HP Hollow Point G490
+ 6,18       0,319    G1       5,00          800           ? 243 dia. Lapua 77 gr. HP HP Silver Jacket G490
+ 6,18       0,434    G1       5,80          800           ? 243 dia. Lapua 90 gr. HPBT Scenar GB493
+ 6,18       0,434    G1       5,80          800           ? 243 dia. Lapua 90 gr. CHPBT Scenar Silver Jacket GB493
+ 6,18       0,472    G1       6,80          800           ? 243 dia. Lapua 105 gr. HPBT Scenar GB478
+ 6,18       0,472    G1       6,80          800           ? 243 dia. Lapua 105 gr. CHPBT Scenar Silver Jacket GB478
+ 6,18       0,434    G1       5,80          800           ? 243 dia. Lapua 90 gr. HPBT ScenarL GB543
+ 6,18       0,472    G1       6,80          800           ? 243 dia. Lapua 105 gr. HPBT ScenarL GB542
+ 6,71       0,250    G1       6,50          800           ? 264 dia. Lapua 100 gr. FMJ FMJ S341
+ 6,71       0,250    G1       6,50          800           ? 264 dia. Lapua 100 gr. FMJCE FMJ Cutting Edge S496
+ 6,71       0,424    G1       6,50          800           ? 264 dia. Lapua 100 gr. HPBT Scenar GB504
+ 6,71       0,424    G1       6,50          800           ? 264 dia. Lapua 100 gr. CHPBT Scenar Silver Jacket GB504
+ 6,71       0,465    G1       7,00          800           ? 264 dia. Lapua 108 gr. HPBT Scenar GB464
+ 6,71       0,465    G1       7,00          800           ? 264 dia. Lapua 108 gr. CHPBT Scenar Silver Jacket GB464
+ 6,71       0,527    G1       8,00          800           ? 264 dia. Lapua 123 gr. HPBT Scenar GB489
+ 6,71       0,527    G1       8,00          800           ? 264 dia. Lapua 123 gr. CHPBT Scenar Silver Jacket GB489
+ 6,71       0,578    G1       9,00          800           ? 264 dia. Lapua 139 gr. HPBT Scenar GB458
+ 6,71       0,578    G1       9,00          800           ? 264 dia. Lapua 139 gr. CHPBT Scenar Silver Jacket GB458
+ 6,71       0,636    G1       9,30          800           ? 264 dia. Lapua 144 gr. FMJBT FMJ Boat Tail B343
+ 6,71       0,377    G1       10,10          800           ? 264 dia. Lapua 155 gr. SP Mega E471
+ 6,71       0,329    G1       9,10          800           ? 264 dia. Lapua 140 gr. CEX Naturalis N507
+ 7,21       0,280    G1       10,40          800           ? 284 dia. Lapua 160 gr. CEX Naturalis N510
+ 7,83       0,170    G1       6,50          800           ? 308 dia. Lapua 100 gr. HPCE HP Cutting  Edge G477
+ 7,83       0,270    G1       8,00          800           ? 308 dia. Lapua 123 gr. FMJ FMJ S374
+ 7,83       0,460    G1       10,00          800           ? 308 dia. Lapua 155 gr. HPBT Scenar GB491
+ 7,83       0,460    G1       10,00          800           ? 308 dia. Lapua 155 gr. CHPBT Scenar Silver Jacket GB491
+ 7,83       0,446    G1       10,85          800           ? 308 dia. Lapua 167 gr. HPBT Scenar GB422
+ 7,83       0,446    G1       10,85          800           ? 308 dia. Lapua 167 gr. CHPBT Scenar Silver Jacket GB422
+ 7,83       0,482    G1       12,00          800           ? 308 dia. Lapua 185 gr. HPBT Scenar GB432
+ 7,83       0,482    G1       12,00          800           ? 308 dia. Lapua 185 gr. CHPBT Scenar Silver Jacket GB432
+ 7,83       0,434    G1       9,72          800           ? 308 dia. Lapua 150 gr. FMJBT Lock Base B466
+ 7,83       0,498    G1       11,00          800           ? 308 dia. Lapua 170 gr. FMJBT Lock Base B476
+ 7,83       0,506    G1       12,00          800           ? 308 dia. Lapua 185 gr. FMJBT D46 D46
+ 7,83       0,518    G1       13,00          800           ? 308 dia. Lapua 200 gr. FMJBT Subsonic B416
+ 7,83       0,330    G1       9,72          800           ? 308 dia. Lapua 150 gr. SP Mega E469
+ 7,83       0,319    G1       12,00          800           ? 308 dia. Lapua 185 gr. SP Mega E415
+ 7,83       0,344    G1       13,00          800           ? 308 dia. Lapua 200 gr. SP Mega E401
+ 7,83       0,321    G1       11,00          800           ? 308 dia. Lapua 170 gr. CEX Naturalis N518
+ 7,87       0,448    G1       13,00          800           ? 310 dia. Lapua 200 gr. FMJBT D166 D166
+ 7,91       0,257    G1       8,00          800           ? 311 dia. Lapua 123 gr. FMJ FMJ S405
+ 8,20       0,275    G1       11,70          800           ? 323 dia. Lapua 180 gr. CEX Naturalis N516
+ 8,60       0,625    G1       16,20          800           ? 338 dia. Lapua 250 gr. FMJBT Lock Base B408
+ 8,60       0,648    G1       16,20          800           ? 338 dia. Lapua 250 gr. HPBT Scenar GB488
+ 8,60       0,736    G1       19,44          800           ? 338 dia. Lapua 300 gr. HPBT Scenar GB528
+ 8,60       0,373    G1       15,00          800           ? 338 dia. Lapua 231 gr. CEX Naturalis N508
+ 9,30       0,339    G1       18,50          800           ? 366 dia. Lapua 285 gr. SP Mega E433
+ 9,30       0,344    G1       14,30          800           ? 366 dia. Lapua 220 gr. CEX Naturalis N522
+ 12,70       0,960    G1       48,60          800           ? 50 dia. Lapua 750 gr. SOLID Bullex-N BNS
+ 12,70       0,980    G1       51,80          800           ? 50 dia. Lapua 800 gr. SOLID Bullex-N BNS

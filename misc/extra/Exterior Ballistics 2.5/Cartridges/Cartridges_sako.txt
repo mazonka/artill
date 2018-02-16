@@ -1,0 +1,104 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,181    G1       3,20          975           ? 222 Rem.  50 gr. SPEEDHEAD
+ 5,70       0,181    G1       3,20          975           ? 222 Rem. Range 50 gr. SPEEDHEAD
+ 5,70       0,181    G1       3,20          975           ? 222 Rem.  50 gr. GAMEHEAD
+ 5,70       0,238    G1       3,20          975           ? 222 Rem.  50 gr. ARROWHEAD
+ 5,70       0,207    G1       3,56          1000           ? 222 Rem.  55 gr. GAMEHEAD
+ 5,70       0,221    G1       3,40          925           ? 222 Rem.  52 gr. RACEHEAD
+ 5,70       0,181    G1       3,20          985           ? 222 Rem. Mag. 50 gr. SPEEDHEAD
+ 5,70       0,181    G1       3,20          985           ? 222 Rem. Mag. 50 gr. GAMEHEAD
+ 5,70       0,207    G1       3,56          1015           ? 222 Rem. Mag. 55 gr. GAMEHEAD
+ 5,70       0,181    G1       3,20          985           ? 223 Rem.  50 gr. SPEEDHEAD
+ 5,70       0,181    G1       3,20          985           ? 223 Rem.  50 gr. GAMEHEAD
+ 5,70       0,238    G1       3,20          985           ? 223 Rem.  50 gr. ARROWHEAD
+ 5,70       0,221    G1       3,56          1015           ? 223 Rem.  55 gr. GAMEHEAD
+ 5,70       0,300    G1       4,50          865           ? 223 Rem.  69 gr. RACEHEAD
+ 5,70       0,181    G1       3,20          1150           ? 22-250 Rem.  50 gr. SPEEDHEAD
+ 5,70       0,181    G1       3,20          1150           ? 22-250 Rem.  50 gr. GAMEHEAD
+ 5,70       0,238    G1       3,20          1150           ? 22-250 Rem.  50 gr. ARROWHEAD
+ 5,70       0,221    G1       3,56          1115           ? 22-250 Rem.  55 gr. GAMEHEAD
+ 6,17       0,255    G1       4,50          945           ? 6PPC USA 70 gr. RACEHEAD
+ 6,17       0,350    G1       5,80          870           ? 243 Win.  90 gr. SPEEDHEAD
+ 6,17       0,349    G1       5,80          955           ? 243 Win.  90 gr. GAMEHEAD
+ 6,17       0,270    G1       6,50          905           ? 243 Win.  100 gr. GAMEHEAD
+ 6,17       0,257    G1       6,50          915           ? 243 Win.  100 gr. DEERHEAD
+ 6,54       0,381    G1       7,60          910           ? 25-06 Rem. 117 gr. GAMEHEAD
+ 6,72       0,250    G1       6,50          920           ? 260 Rem. Range 100 gr. SPEEDHEAD
+ 6,72       0,510    G1       8,00          870           ? 260 Rem.  123 gr. RACEHEAD
+ 6,72       0,360    G1       10,10          750           ? 260 Rem. 156 gr. DEERHEAD
+ 6,71       0,250    G1       6,50          850           ? 6.5 x 55 SE Range 100 gr. SPEEDHEAD
+ 6,71       0,526    G1       9,00          850           ? 6.5 x 55 SE 139 gr. RACEHEAD
+ 6,71       0,377    G1       10,10          800           ? 6.5 x 55 SE 156 gr. GAMEHEAD
+ 7,26       0,147    G1       5,10          740           ? 7 x 33 Sako 78 gr. SPEEDHEAD
+ 7,26       0,147    G1       5,10          740           ? 7 x 33 Sako 78 gr. GAMEHEAD
+ 7,06       0,431    G1       8,40          850           ? 270 Win.  130 gr. POWERHEAD
+ 7,06       0,321    G1       10,10          840           ? 270 Win.  156 gr. HAMMERHEAD
+ 7,25       0,322    G1       7,80          945           ? 7 x 64 120 gr. GAMEHEAD
+ 7,25       0,515    G1       9,70          900           ? 7 x 64 150 gr. ARROWHEAD II
+ 7,25       0,407    G1       11,00          850           ? 7 x 64 170 gr. HAMMERHEAD
+ 7,25       0,407    G1       11,00          800           ? 7 x 65 R 170 gr. HAMMERHEAD
+ 7,23       0,515    G1       9,70          925           ? 7 mm Rem. Mag. 150 gr. ARROWHEAD II
+ 7,23       0,407    G1       11,00          905           ? 7 mm Rem. Mag. 170 gr. HAMMERHEAD
+ 7,92       0,342    G1       8,00          715           ? 7.62 x 39  123 gr. SPEEDHEAD
+ 7,92       0,342    G1       8,00          715           ? 7.62 x 39  123 gr. GAMEHEAD
+ 7,85       0,330    G1       8,00          900           ? 308 Win. Range 123 gr. SPEEDHEAD
+ 7,85       0,236    G1       6,60          950           ? 308 Win. Super Range 102 gr. CUTHEAD
+ 7,85       0,320    G1       8,00          925           ? 308 Win.  123 gr. GAMEHEAD
+ 7,85       0,410    G1       9,70          870           ? 308 Win.  150 gr. SUPER HAMMERHEAD
+ 7,85       0,398    G1       10,70          825           ? 308 Win.  165 gr. POWERHEAD 
+ 7,85       0,421    G1       11,70          795           ? 308 Win.  180 gr. SUPER HAMMERHEAD
+ 7,85       0,387    G1       11,70          795           ? 308 Win.  180 gr. HAMMERHEAD
+ 7,85       0,520    G1       11,70          795           ? 308 Win.  180 gr. ARROWHEAD II
+ 7,85       0,356    G1       13,00          745           ? 308 Win.  200 gr. HAMMERHEAD
+ 7,85       0,480    G1       10,90          820           ? 308 Win.  168 gr. RACEHEAD
+ 7,85       0,330    G1       8,00          900           ? 7.62 x 53 R 123 gr. SPEEDHEAD
+ 7,85       0,330    G1       8,00          900           ? 7.62 x 53 R Range 123 gr. SPEEDHEAD
+ 7,85       0,421    G1       11,70          795           ? 7.62 x 53 R 180 gr. SUPER HAMMERHEAD
+ 7,85       0,387    G1       11,70          795           ? 7.62 x 53 R 180 gr. HAMMERHEAD
+ 7,85       0,356    G1       13,00          745           ? 7.62 x 53 R 200 gr. HAMMERHEAD
+ 7,85       0,330    G1       8,00          900           ? 30-06 Sprg. 123 gr. SPEEDHEAD
+ 7,85       0,330    G1       8,00          900           ? 30-06 Sprg. Range 123 gr. SPEEDHEAD
+ 7,85       0,320    G1       8,00          950           ? 30-06 Sprg. 123 gr. GAMEHEAD
+ 7,85       0,410    G1       9,70          905           ? 30-06 Sprg. 150 gr. SUPER HAMMERHEAD
+ 7,85       0,421    G1       11,70          825           ? 30-06 Sprg. 180 gr. SUPER HAMMERHEAD
+ 7,85       0,387    G1       11,70          825           ? 30-06 Sprg. 180 gr. HAMMERHEAD
+ 7,85       0,398    G1       11,70          825           ? 30-06 Sprg. 180 gr. POWERHEAD 
+ 7,85       0,520    G1       11,70          825           ? 30-06 Sprg. 180 gr. ARROWHEAD II
+ 7,85       0,408    G1       14,30          735           ? 30-06 Sprg. 220 gr. HAMMERHEAD
+ 7,85       0,421    G1       11,70          905           ? 300 WSM 180 gr. SUPER HAMMERHEAD
+ 7,85       0,520    G1       11,70          905           ? 300 WSM 180 gr. ARROWHEAD II
+ 7,85       0,410    G1       9,70          1035           ? 300 Win. Mag. 150 gr. SUPER HAMMERHEAD
+ 7,85       0,421    G1       11,70          900           ? 300 Win. Mag. 180 gr. SUPER HAMMERHEAD
+ 7,85       0,520    G1       11,70          900           ? 300 Win. Mag. 180 gr. ARROWHEAD II
+ 7,85       0,408    G1       14,30          825           ? 300 Win. Mag. 220 gr. HAMMERHEAD
+ 7,85       0,480    G1       10,90          920           ? 300 Win. Mag. 168 gr. RACEHEAD
+ 8,22       0,276    G1       13,00          770           ? 8.2 x 53 R 200 gr. HAMMERHEAD
+ 8,22       0,330    G1       9,70          820           ? 8 x 57 JS  150 gr. GAMEHEAD
+ 8,22       0,276    G1       13,00          770           ? 8 x 57 JS  200 gr. HAMMERHEAD
+ 8,22       0,374    G1       11,30          760           ? 8 x 57 JRS 175 gr. GAMEHEAD
+ 8,22       0,276    G1       13,00          730           ? 8 x 57 JRS 200 gr. HAMMERHEAD
+ 8,60       0,398    G1       13,00          800           ? 338 Federal 200 gr. MOOSEHEAD
+ 8,60       0,352    G1       12,00          820           ? 338 Federal 185 gr. POWERHEAD 
+ 8,61       0,342    G1       16,20          810           ? 338 Win. Mag. 250 gr. HAMMERHEAD
+ 8,61       0,469    G1       17,80          750           ? 338 Win. Mag. 275 gr. TWINHEAD II
+ 9,30       0,244    G1       16,60          710           ? 9.3 x 53 R Finnish 256 gr. GAMEHEAD
+ 9,30       0,380    G1       15,00          770           ? 9.3 x 62 Range 231 gr. SPEEDHEAD
+ 9,30       0,361    G1       16,20          760           ? 9.3 x 62 250 gr. POWERHEAD 
+ 9,30       0,315    G1       18,50          720           ? 9.3 x 62 286 gr. HAMMERHEAD
+ 9,30       0,380    G1       15,00          720           ? 9,3 x 66 Sako Range 231 gr. SPEEDHEAD
+ 9,30       0,494    G1       16,20          840           ? 9,3 x 66 Sako 250 gr. ARROWHEAD
+ 9,30       0,315    G1       18,50          780           ? 9,3 x 66 Sako 286 gr. HAMMERHEAD
+ 9,30       0,361    G1       18,50          775           ? 9,3 x 66 Sako 286 gr. POWERHEAD 
+ 9,30       0,258    G1       18,50          780           ? 9,3 x 66 Sako 286 gr. RAMHEAD
+ 9,30       0,361    G1       16,20          720           ? 9.3 x 74 R 250 gr. POWERHEAD 
+ 9,30       0,315    G1       18,50          680           ? 9.3 x 74 R 286 gr. HAMMERHEAD
+ 9,55       0,326    G1       17,50          830           ? 375 H&H Mag. 270 gr. POWERHEAD 
+ 9,55       0,284    G1       17,50          830           ? 375 H&H Mag. 270 gr. RAMHEAD
+ 9,55       0,325    G1       19,40          770           ? 375 H&H Mag. 300 gr. TWINHEAD II

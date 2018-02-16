@@ -1,0 +1,215 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,19       0,206    G1       2,07          1234           61 204 Ruger 32 gr. Ballistic Silvertip
+ 5,19       0,167    G1       2,20          1227           61 204 Ruger 34 gr. Hollow Point
+ 5,70       0,130    G1       2,98          841           61 218 Bee 46 gr. Hollow Point
+ 5,70       0,130    G1       2,92          820           61 22 Hornet 45 gr. Soft Point
+ 5,70       0,130    G1       2,98          820           61 22 Hornet 46 gr. Hollow Point
+ 5,70       0,200    G1       3,24          1180           61 220 Swift 50 gr. Pointed Soft Point
+ 5,70       0,201    G1       2,27          1326           61 22-250 Remington 35 gr. Ballistic Silvertip
+ 5,70       0,238    G1       3,24          1161           61 22-250 Remington 50 gr. Ballistic Silvertip
+ 5,70       0,267    G1       3,56          1122           61 22-250 Remington 55 gr. Ballistic Silvertip
+ 5,70       0,197    G1       3,56          1122           61 22-250 Remington 55 gr. Pointed Soft Point
+ 5,70       0,251    G1       4,15          1067           61 22-250 Remington 64 gr. Power-Point
+ 5,70       0,267    G1       3,56          997           61 5.56mm 55 gr. Full Metal Jacket
+ 5,70       0,201    G1       2,27          1158           61 223 Remington 35 gr. Ballistic Silvertip
+ 5,70       0,238    G1       3,24          1039           61 223 Remington 50 gr. Ballistic Silvertip
+ 5,70       0,267    G1       3,56          988           61 223 Remington 55 gr. Ballistic Silvertip
+ 5,70       0,208    G1       3,89          838           41 223 Remington 60 gr. PDX1 DefenderTM
+ 5,70       0,247    G1       4,15          920           61 223 Remington 64 gr. Power Core 95/5
+ 5,70       0,231    G1       4,15          920           61 223 Remington 64 gr. Power Max Bonded
+ 5,70       0,175    G1       3,24          957           61 222 Remington 50 gr. Pointed Soft Point
+ 5,70       0,223    G1       3,43          1015           61 223 Remington 53 gr. Hollow Point
+ 5,70       0,197    G1       3,56          988           61 223 Remington 55 gr. Pointed Soft Point TIN
+ 5,70       0,197    G1       3,56          988           61 223 Remington 55 gr. Pointed Soft Point
+ 5,70       0,257    G1       4,15          920           61 223 Remington 64 gr. Power-Point
+ 5,70       0,185    G1       2,92          1097           61 223 Remington 45 gr. Jacketed H. P.
+ 5,70       0,255    G1       3,56          988           61 223 Remington 55 gr. Full Metal Jacket
+ 5,70       0,283    G1       4,02          945           61 223 Remington 62 gr. Full Metal Jacket
+ 5,69       0,276    G1       3,56          1173           61 223 WSSM 55 gr. Ballistic Silvertip
+ 5,69       0,233    G1       3,56          1173           61 223 WSSM 55 gr. Pointed Soft Point
+ 5,69       0,233    G1       4,15          1097           61 223 WSSM 64 gr. Power-Point
+ 5,70       0,208    G1       3,56          1088           61 225 Winchester 55 gr. Pointed Soft Point
+ 6,17       0,411    G1       6,16          945           61 243 Winchester 95 gr. XP3TM
+ 6,17       0,276    G1       3,56          1192           61 243 Winchester 55 gr. Ballistic Silvertip
+ 6,17       0,400    G1       6,16          945           61 243 Winchester 95 gr. Ballistic Silvertip
+ 6,17       0,255    G1       5,18          1021           61 243 Winchester 80 gr. Pointed Soft Point
+ 6,17       0,372    G1       6,48          902           61 243 Winchester 100 gr. Power Max Bonded
+ 6,17       0,356    G1       6,48          902           61 243 Winchester 100 gr. Power-Point
+ 6,17       0,411    G1       6,16          960           61 243 WSSM 95 gr. XP3
+ 6,17       0,276    G1       3,56          1237           61 243 WSSM 55 gr. Ballistic Silvertip
+ 6,17       0,401    G1       6,16          960           61 243 WSSM 95 gr. Ballistic Silvertip
+ 6,17       0,356    G1       6,48          948           61 243 WSSM 100 gr. Power-Point
+ 6,54       0,420    G1       7,13          945           61 25 WSSM 110 gr. AccuBond CT
+ 6,54       0,333    G1       5,51          1058           61 25 WSSM 85 gr. Ballistic Silvertip
+ 6,54       0,446    G1       7,45          933           61 25 WSSM 115 gr. Ballistic Silvertip
+ 6,54       0,344    G1       7,78          911           61 25 WSSM 120 gr. Positive Exp. Point
+ 6,18       0,356    G1       6,48          945           61 6mm Remington 100 gr. Power-Point
+ 6,54       0,420    G1       7,13          945           61 25-06 Remington 110 gr. AccuBond CT
+ 6,54       0,333    G1       5,51          1058           61 25-06 Remington 85 gr. Ballistic Silvertip
+ 6,54       0,446    G1       7,45          933           61 25-06 Remington 115 gr. Ballistic Silvertip
+ 6,54       0,259    G1       5,83          1049           61 25-06 Remington 90 gr. Positive Exp. Point
+ 6,54       0,344    G1       7,78          911           61 25-06 Remington 120 gr. Positive Exp. Point
+ 6,55       0,191    G1       5,57          445           61 25-20 Winchester 86 gr. Soft Point
+ 6,55       0,213    G1       7,58          680           61 25-35 Winchester 117 gr. Soft Point
+ 6,55       0,254    G1       6,48          860           61 250 Savage 100 gr. Silvertip
+ 6,55       0,240    G1       7,58          847           61 257 Roberts +P 117 gr. Power-Point
+ 6,73       0,384    G1       9,07          924           61 264 Winchester Mag. 140 gr. Power-Point
+ 6,71       0,450    G1       9,07          777           61 6.5 x 55 Swedish 140 gr. Soft Point
+ 7,06       0,459    G1       8,42          930           61 270 Winchester 130 gr. E-Tip
+ 7,06       0,436    G1       8,42          930           61 270 Winchester 130 gr. XP3
+ 7,06       0,503    G1       9,72          899           61 270 Winchester 150 gr. XP3
+ 7,06       0,472    G1       9,07          899           61 270 Winchester 140 gr. AccuBond CT
+ 7,06       0,433    G1       8,42          930           61 270 Winchester 130 gr. Ballistic Silvertip
+ 7,06       0,360    G1       8,42          933           61 270 Winchester 130 gr. Power Core 95/5
+ 7,06       0,340    G1       8,42          933           61 270 Winchester 130 gr. Power Max Bonded
+ 7,06       0,372    G1       8,42          933           61 270 Winchester 130 gr. Power-Point
+ 7,06       0,336    G1       8,42          933           61 270 Winchester 130 gr. Silvertip
+ 7,06       0,344    G1       9,72          869           61 270 Winchester 150 gr. Power-Point
+ 7,06       0,459    G1       8,42          998           61 270 WSM 130 gr. E-Tip
+ 7,06       0,436    G1       8,42          998           61 270 WSM 130 gr. XP3
+ 7,06       0,503    G1       9,72          951           61 270 WSM 150 gr. XP3
+ 7,06       0,472    G1       9,07          975           61 270 WSM 140 gr. AccuBond CT
+ 7,06       0,432    G1       8,42          998           61 270 WSM 130 gr. Ballistic Silvertip
+ 7,06       0,496    G1       9,72          951           61 270 WSM 150 gr. Ballistic Silvertip
+ 7,06       0,344    G1       9,72          960           61 270 WSM 150 gr. Power-Point
+ 7,06       0,340    G1       8,42          998           61 270 WSM 130 gr. Power Max Bonded
+ 7,23       0,485    G1       9,07          927           61 280 Remington 140 gr. Ballistic Silvertip
+ 7,21       0,364    G1       9,72          872           61 284 Winchester 150 gr. Power-Point
+ 7,23       0,454    G1       9,07          844           61 7mm-08 Remington 140 gr. Ballistic Silvertip
+ 7,23       0,360    G1       9,07          853           61 7mm-08 Remington 140 gr. Power-Point
+ 7,23       0,498    G1       9,07          960           61 7mm WSM 140 gr. E-Tip
+ 7,23       0,512    G1       10,37          930           61 7mm WSM 160 gr. XP3
+ 7,23       0,460    G1       9,07          983           61 7mm WSM 140 gr. AccuBond CT
+ 7,23       0,512    G1       10,37          930           61 7mm WSM 160 gr. AccuBond CT
+ 7,23       0,460    G1       9,07          983           61 7mm WSM 140 gr. Ballistic Silvertip
+ 7,23       0,393    G1       9,72          975           61 7mm WSM 150 gr. Power Max Bonded
+ 7,23       0,346    G1       9,72          975           61 7mm WSM 150 gr. Power-Point
+ 7,23       0,498    G1       9,07          945           61 7mm Remington Mag. 140 gr. E-Tip
+ 7,23       0,512    G1       10,37          899           61 7mm Remington Mag. 160 gr. XP3
+ 7,23       0,460    G1       9,07          969           61 7mm Remington Mag. 140 gr. AccuBond CT
+ 7,23       0,512    G1       10,37          899           61 7mm Remington Mag. 160 gr. AccuBond CT
+ 7,23       0,416    G1       9,07          945           61 7mm Remington Mag. 140 gr. Power Core 95/5
+ 7,23       0,460    G1       9,07          948           61 7mm Remington Mag. 140 gr. Ballistic Silvertip
+ 7,23       0,493    G1       9,72          945           61 7mm Remington Mag. 150 gr. Ballistic Silvertip
+ 7,23       0,393    G1       9,72          942           61 7mm Remington Mag. 150 gr. Power Max Bonded
+ 7,23       0,426    G1       11,34          872           61 7mm Remington Mag. 175 gr. Power-Point
+ 7,23       0,373    G1       9,72          942           61 7mm Remington Mag. 150 gr. Power-Point
+ 7,25       0,355    G1       9,40          811           61 7mm Mauser (7 x 57) 145 gr. Power-Point
+ 7,92       0,244    G1       7,97          721           51 7.62 x 39mm 123 gr. Soft Point
+ 7,92       0,245    G1       7,97          718           61 7.62 x 39mm 123 gr. Full Metal Jacket
+ 7,85       0,415    G1       9,53          838           61 7.62 x 51mm NATO 147 gr. Full Metal Jacket
+ 7,92       0,486    G1       11,66          786           61 7.62 x 54R 180 gr. Full Metal Jacket
+ 7,92       0,267    G1       11,66          800           61 7.62 x 54R 180 gr. Soft Point
+ 7,85       0,166    G1       7,13          607           51 30 Carbine 110 gr. Hollow Soft Point
+ 7,85       0,180    G1       7,13          607           61 30 Carbine 110 gr. Full Metal Jacket
+ 7,85       0,232    G1       9,72          728           61 30-30 Winchester 150 gr. Ballistic Silvertip
+ 7,85       0,237    G1       9,72          728           61 30-30 Winchester 150 gr. Power Core 95/5
+ 7,85       0,224    G1       9,72          728           61 30-30 Winchester 150 gr. Power Max Bonded
+ 7,85       0,218    G1       9,72          728           61 30-30 Winchester 150 gr. Hollow Point
+ 7,85       0,218    G1       9,72          728           61 30-30 Winchester 150 gr. Power-Point
+ 7,85       0,218    G1       9,72          728           61 30-30 Winchester 150 gr. Silvertip
+ 7,85       0,241    G1       11,02          671           61 30-30 Winchester 170 gr. Power-Point
+ 7,85       0,278    G1       11,02          671           61 30-30 Winchester 170 gr. Silvertip
+ 7,85       0,469    G1       9,72          884           61 30-06 Springfield 150 gr. E-Tip
+ 7,85       0,523    G1       11,66          838           61 30-06 Springfield 180 gr. E-Tip
+ 7,85       0,527    G1       11,66          838           61 30-06 Springfield 180 gr. XP3
+ 7,85       0,437    G1       9,72          892           61 30-06 Springfield 150 gr. XP3
+ 7,85       0,509    G1       11,66          838           61 30-06 Springfield 180 gr. AccuBond CT
+ 7,85       0,435    G1       9,72          884           61 30-06 Springfield 150 gr. Ballistic Silvertip
+ 7,85       0,475    G1       10,89          850           61 30-06 Springfield 168 gr. Ballistic Silvertip
+ 7,85       0,507    G1       11,66          838           61 30-06 Springfield 180 gr. Ballistic Silvertip
+ 7,85       0,344    G1       9,72          890           61 30-06 Springfield 150 gr. Power Core 95/5
+ 7,85       0,325    G1       9,72          890           61 30-06 Springfield 150 gr. Power Max Bonded
+ 7,85       0,268    G1       8,10          957           61 30-06 Springfield 125 gr. Pointed Soft Point
+ 7,85       0,294    G1       9,72          890           61 30-06 Springfield 150 gr. Power-Point
+ 7,85       0,314    G1       9,72          887           61 30-06 Springfield 150 gr. Silvertip
+ 7,85       0,341    G1       10,69          853           61 30-06 Springfield 165 gr. Pointed Soft Point
+ 7,85       0,394    G1       11,66          823           61 30-06 Springfield 180 gr. Power Max Bonded
+ 7,85       0,381    G1       11,66          823           61 30-06 Springfield 180 gr. Power-Point
+ 7,85       0,383    G1       11,66          823           61 30-06 Springfield 180 gr. Silvertip
+ 7,85       0,421    G1       9,53          920           61 30-06 Springfield 147 gr. Full Metal Jacket
+ 7,85       0,394    G1       11,66          741           61 30-40 Krag 180 gr. Power-Point
+ 7,85       0,469    G1       9,72          1006           61 300 WSM 150 gr. E-Tip
+ 7,85       0,523    G1       11,66          917           61 300 WSM 180 gr. E-Tip
+ 7,85       0,527    G1       11,66          917           61 300 WSM 180 gr. XP3
+ 7,85       0,437    G1       9,72          1006           61 300 WSM 150 gr. XP3
+ 7,85       0,509    G1       11,66          917           61 300 WSM 180 gr. AccuBond CT
+ 7,85       0,424    G1       9,72          1006           61 300 WSM 150 gr. Ballistic Silvertip
+ 7,85       0,507    G1       11,66          917           61 300 WSM 180 gr. Ballistic Silvertip
+ 7,85       0,325    G1       9,72          997           61 300 WSM 150 gr. Power Max Bonded
+ 7,85       0,294    G1       9,72          997           61 300 WSM 150 gr. Power-Point
+ 7,85       0,394    G1       11,66          905           61 300 WSM 180 gr. Power Max Bonded
+ 7,85       0,438    G1       11,66          905           61 300 WSM 180 gr. Power-Point
+ 7,85       0,469    G1       9,72          994           61 300 Winchester Mag. 150 gr. E-Tip
+ 7,85       0,523    G1       11,66          899           61 300 Winchester Mag. 180 gr. E-Tip
+ 7,85       0,527    G1       11,66          914           61 300 Winchester Mag. 180 gr. XP3
+ 7,85       0,437    G1       9,72          994           61 300 Winchester Mag. 150 gr. XP3
+ 7,85       0,344    G1       9,72          994           61 300 Winchester Mag 150 gr. Power Core 95/5
+ 7,85       0,509    G1       11,66          899           61 300 Winchester Mag. 180 gr. AccuBond CT
+ 7,85       0,507    G1       11,66          899           61 300 Winchester Mag. 180 gr. Ballistic Silvertip
+ 7,85       0,325    G1       9,72          1003           61 300 Winchester Mag. 150 gr. Power Max Bonded
+ 7,85       0,294    G1       9,72          1003           61 300 Winchester Mag. 150 gr. Power-Point
+ 7,85       0,394    G1       11,66          902           61 300 Winchester Mag. 180 gr. Power Max Bonded
+ 7,85       0,438    G1       11,66          902           61 300 Winchester Mag. 180 gr. Power-Point
+ 7,85       0,294    G1       9,72          802           61 300 Savage 150 gr. Power-Point
+ 7,92       0,369    G1       11,66          750           61 303 British 180 gr. Power-Point
+ 7,85       0,253    G1       11,66          765           61 307 Winchester 180 gr. Power-Point
+ 7,85       0,469    G1       9,72          856           61 308 Winchester 150 gr. E-Tip
+ 7,85       0,437    G1       9,72          861           61 308 Winchester 150 gr. XP3
+ 7,85       0,435    G1       9,72          856           61 308 Winchester 150 gr. Ballistic Silvertip
+ 7,85       0,474    G1       10,89          814           61 308 Winchester 168 gr. Ballistic Silvertip
+ 7,85       0,453    G1       10,89          817           61 308 Winchester Match 168 gr. Sierra MatchKing BTHP
+ 7,85       0,503    G1       10,89          814           61 308 Winchester 168 gr. E-Tip
+ 7,85       0,325    G1       9,72          860           61 308 Winchester 150 gr. Power Max Bonded
+ 7,85       0,294    G1       9,72          860           61 308 Winchester 150 gr. Power-Point
+ 7,85       0,382    G1       11,66          799           61 308 Winchester 180 gr. Power-Point
+ 7,85       0,383    G1       11,66          799           61 308 Winchester 180 gr. Silvertip
+ 7,85       0,415    G1       9,53          853           61 308 Winchester 147 gr. Full Metal Jacket
+ 8,18       0,205    G1       11,02          686           61 32 Winchester Special 170 gr. Power-Point
+ 7,94       0,166    G1       6,48          369           61 32-20 Winchester 100 gr. Lead
+ 8,22       0,205    G1       11,02          719           61 8mm Mauser (8 x 57) 170 gr. Power-Point
+ 8,20       0,500    G1       12,96          899           61 325 WSM 200 gr. XP3
+ 8,20       0,477    G1       12,96          899           61 325 WSM 200 gr. AccuBond CT
+ 8,20       0,439    G1       11,66          933           61 325 WSM 180 gr. Ballistic Silvertip
+ 8,20       0,403    G1       14,26          866           61 325 WSM 220 gr. Power Max Bonded
+ 8,20       0,388    G1       14,26          866           61 325 WSM 220 gr. Power-Point
+ 8,61       0,548    G1       14,58          853           61 338 Winchester Mag. 225 gr. AccuBond CT
+ 8,61       0,500    G1       12,96          899           61 338 Winchester Mag. 200 gr. E-Tip
+ 8,61       0,414    G1       12,96          899           61 338 Winchester Mag. 200 gr. Ballistic Silvertip
+ 8,61       0,323    G1       12,96          902           61 338 Winchester Mag. 200 gr. Power Max Bonded
+ 8,61       0,308    G1       12,96          902           61 338 Winchester Mag. 200 gr. Power-Point
+ 8,88       0,289    G1       12,96          768           61 348 Winchester 200 gr. Silvertip
+ 9,12       0,193    G1       12,96          616           61 35 Remington 200 gr. Power-Point
+ 9,11       0,238    G1       12,96          750           61 356 Winchester 200 gr. Power-Point
+ 9,12       0,132    G1       11,66          472           51 357 Magnum 180 gr. Partition Gold
+ 9,12       0,163    G1       10,24          558           51 357 Magnum 158 gr. Jacketed H. P.
+ 9,12       0,163    G1       10,24          558           51 357 Magnum 158 gr. Jacketed Soft Point
+ 9,11       0,261    G1       12,96          759           61 358 Winchester 200 gr. Silvertip
+ 9,55       0,398    G1       19,44          771           61 375 H&H 300 gr. Nosler Partition
+ 9,55       0,198    G1       19,44          771           61 375 H&H 300 gr. Nosler Solid
+ 9,55       0,214    G1       12,96          671           61 375 Winchester 200 gr. Power-Point
+ 10,17       0,172    G1       11,66          354           61 38-40 Winchester 180 gr. Soft Point
+ 9,58       0,354    G1       16,52          402           61 38-55 Winchester 255 gr. Soft Point
+ 10,41       0,195    G1       15,55          558           51 41 Remington Mag. 240 gr. Platinum Tip
+ 10,57       0,390    G1       25,92          732           61 416 Rem-Mag 400 gr. Nosler Partition
+ 10,57       0,263    G1       25,92          732           61 416 Rem-Mag 400 gr. Nosler Solid
+ 10,57       0,390    G1       25,92          722           61 416 Rigby 400 gr. Nosler Partition
+ 10,57       0,263    G1       25,92          722           61 416 Rigby 400 gr. Nosler Solid
+ 10,97       0,188    G1       16,20          558           51 44 Remington Mag. 250 gr. Platinum Tip
+ 10,97       0,188    G1       16,20          552           51 44 Remington Mag. 250 gr. Partition Gold
+ 10,97       0,158    G1       15,55          536           61 44 Remington Mag. 240 gr. Hollow Soft Point
+ 10,85       0,161    G1       12,96          363           61 44-40 Winchester 200 gr. Soft Point
+ 11,63       0,191    G1       19,44          573           61 45-70 Government 300 gr. Ballistic Silvertip
+ 11,63       0,214    G1       19,44          573           61 45-70 Government 300 gr. Partition Gold
+ 11,63       0,267    G1       24,30          457           61 45-70 Government 375 gr. Dual Bond
+ 11,63       0,283    G1       19,44          573           61 45-70 Government 300 gr. Jacketed H. P.
+ 11,66       0,330    G1       32,40          613           61 458 Winchester Mag. 500 gr. Nosler Partition
+ 11,66       0,243    G1       32,40          613           61 458 Winchester Mag. 500 gr. Nosler Solid
+ 11,66       0,274    G1       33,05          622           61 458 Winchester Mag. 510 gr. Soft Point

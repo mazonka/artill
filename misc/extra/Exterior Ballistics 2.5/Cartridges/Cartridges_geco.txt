@@ -1,0 +1,38 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,275    G1       3,60          1010           60 223 Remington 56 gr. Target FMJ
+ 5,70       0,345    G1       4,10          950           60 223 Remington 63 gr. Target FMJ
+ 6,17       0,335    G1       6,80          900           60 243 Winchester 105 gr. SP
+ 6,17       0,335    G1       6,80          900           60 243 Winchester 105 gr. Target FMJ
+ 7,06       0,308    G1       9,10          905           65 270 Winchester 140 gr. SP
+ 7,06       0,308    G1       9,10          965           65 270 WSM 140 gr. SP
+ 7,23       0,360    G1       10,70          820           65 280 Remington 165 gr. SP
+ 7,25       0,360    G1       10,70          775           60 7 x 57 165 gr. Target FMJ
+ 7,25       0,360    G1       10,70          740           60 7 x 57 R 165 gr. SP
+ 7,25       0,360    G1       10,70          850           65 7 x 64 165 gr. SP
+ 7,25       0,360    G1       10,70          850           65 7 x 64 165 gr. Target FMJ
+ 7,25       0,360    G1       10,70          800           60 7 x 65 R 165 gr. SP
+ 7,23       0,360    G1       10,70          890           65 7mm Remington Mag. 165 gr. SP
+ 7,85       0,305    G1       11,00          805           60 308 Winchester 170 gr. SP
+ 7,85       0,305    G1       11,00          805           60 308 Winchester 170 gr. Target FMJ
+ 7,85       0,274    G1       11,00          810           60 308 Winchester 170 gr. Plus
+ 7,85       0,404    G1       10,70          820           60 308 Winchester 165 gr. Express
+ 7,85       0,305    G1       11,00          850           60 30-06 Springfield 170 gr. SP
+ 7,85       0,305    G1       11,00          850           60 30-06 Springfield 170 gr. Target FMJ
+ 7,85       0,274    G1       11,00          855           60 30-06 Springfield 170 gr. Plus
+ 7,85       0,404    G1       10,70          865           60 30-06 Springfield 165 gr. Express
+ 7,85       0,305    G1       11,00          955           65 300 Winchester Mag. 170 gr. SP
+ 7,85       0,274    G1       11,00          960           65 300 Winchester Mag. 170 gr. Plus
+ 7,85       0,404    G1       10,70          970           65 300 Winchester Mag. 165 gr. Express
+ 8,22       0,245    G1       12,00          810           60 8 x 57 JS 185 gr. SP
+ 8,22       0,245    G1       12,00          810           60 8 x 57 JS 185 gr. Target FMJ
+ 8,22       0,245    G1       12,00          775           60 8 x 57 JRS 185 gr. SP
+ 9,30       0,277    G1       16,50          770           60 9.3 x 62 255 gr. SP
+ 9,30       0,277    G1       16,50          770           60 9.3 x 62 255 gr. Target FMJ
+ 9,30       0,277    G1       16,50          750           60 9.3 x 74 R 255 gr. SP
