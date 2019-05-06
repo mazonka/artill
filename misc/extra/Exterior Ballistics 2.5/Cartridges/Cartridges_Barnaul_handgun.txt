@@ -1,0 +1,15 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 9,04       0,156    G1       6,1          315           ? 380 ACP 94 gr. FMJ
+ 9,27       0,1    G1       6,1          346           ? 9x18 Makarov 94 gr. FMJ
+ 9,27       0,1    G1       6,1          346           ? 9x18 Makarov 94 gr. HP
+ 9,03       0,127    G1       7,5          405           ? 9mm Luger 115 gr. FMJ
+ 9,03       0,246    G1       9,4          325           ? 9mm Luger 145 gr. HP
+ 9,03       0,14    G1       7,5          405           ? 9mm Luger 115 gr. FMJ Centaur
+ 11,48       0,184    G1       14,8          285           ? 45 ACP 228 gr. FMJ

@@ -1,0 +1,71 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,136    G1       2,9          741           ? 22 Hornet 45 gr. SP
+ 5,70       0,218    G1       3,2          957           ? 222 Remington 50 gr. SP
+ 5,70       0,248    G1       3,6          988           ? 223 Remington 55 gr. 5.56x45mm M193 FMJBT
+ 5,70       0,361    G1       4,0          930           ? 223 Remington 62 gr. 5.56x45mm M855 FMJBT
+ 5,70       0,239    G1       3,6          988           ? 223 Remington 55 gr. SP
+ 5,70       0,295    G1       4,0          927           ? 223 Remington 62 gr. FMJBT
+ 5,70       0,309    G1       4,5          870           ? 223 Remington 69 gr. Match HPBT
+ 5,70       0,404    G1       4,9          829           ? 223 Remington 75 gr. Match HPBT
+ 5,70       0,212    G1       3,6          1122           ? 22-250 Remington 55 gr. SP
+ 6,17       0,333    G1       5,8          945           ? 243 Winchester 90 gr. SP
+ 6,17       0,367    G1       6,5          902           ? 243 Winchester 100 gr. SP
+ 6,54       0,29    G1       6,5          985           ? 25-06 Remington 100 gr. SP
+ 6,80       0,375    G1       8,0          820           ? 6.5x52mm Carcano 123 gr. SP
+ 6,80       0,527    G1       9,0          770           ? 6.5x52mm Carcano 139 gr. FMJBT
+ 6,71       0,49    G1       9,0          774           ? 6.5x55mm Swedish 139 gr. SP
+ 6,71       0,529    G1       9,0          774           ? 6.5x55mm Swedish 139 gr. FMJBT
+ 6,73       0,491    G1       9,1          920           ? 264 Winchester Mag. 140 gr. SP
+ 7,06       0,378    G1       8,4          933           ? 270 Winchester 130 gr. SP
+ 7,06       0,355    G1       9,7          869           ? 270 Winchester 150 gr. SP
+ 7,23       0,397    G1       9,1          872           ? 7mm-08 Remington 140 gr. SPBT
+ 7,25       0,398    G1       9,0          811           ? 7x57mm Mauser 139 gr. SP
+ 7,25       0,615    G1       11,2          750           ? 7x57mm Mauser 173 gr. FMJBT
+ 7,23       0,41    G1       9,1          948           ? 7mm Rem. Magnum 140 gr. SPBT
+ 7,23       0,534    G1       11,3          844           ? 7mm Rem. Magnum 174 gr. SPBT
+ 7,84       0,344    G1       9,0          792           ? 7.5x54mm French 139 gr. FMJ
+ 7,78       0,417    G1       11,3          770           ? 7.5x55mm Swiss 175 gr. SP
+ 7,78       0,51    G1       11,3          770           ? 7.5x55mm Swiss 175 gr. FMJBT
+ 7,85       0,176    G1       7,1          607           ? 30 Carbine 110 gr. SPRN
+ 7,85       0,18    G1       7,1          607           ? 30 Carbine 110 gr. FMJRN
+ 7,85       0,226    G1       9,7          728           ? 30-30 Winchester 150 gr. SP
+ 7,85       0,262    G1       11,0          671           ? 30-30 Winchester 170 gr. SP
+ 7,85       0,404    G1       9,4          864           ? 308 Winchester 145 gr. FMJBT
+ 7,85       0,321    G1       9,7          860           ? 308 Winchester 150 gr. SP
+ 7,85       0,406    G1       10,7          815           ? 308 Winchester 165 gr. SPBT
+ 7,85       0,446    G1       10,9          796           ? 308 Winchester 168 gr. Match HPBT
+ 7,85       0,496    G1       11,3          789           ? 308 Winchester 175 gr. Match FMJBT
+ 7,85       0,415    G1       11,7          776           ? 308 Winchester 180 gr. SP
+ 7,85       0,342    G1       9,7          887           ? 30-06 Springfield 150 gr. FMJ
+ 7,85       0,342    G1       9,7          887           ? 30-06 Springfield 150 gr. SP
+ 7,85       0,404    G1       10,7          853           ? 30-06 Springfield 165 gr. SPBT
+ 7,85       0,412    G1       11,7          823           ? 30-06 Springfield 180 gr. SP
+ 7,85       0,479    G1       11,3          823           ? 30-06 Springfield 175 gr. FMJBT
+ 7,85       0,338    G1       9,7          991           ? 300 Win. Magnum 150 gr. SP
+ 7,85       0,405    G1       10,7          930           ? 300 Win. Magnum 165 gr. SPBT
+ 7,85       0,411    G1       11,7          885           ? 300 Win. Magnum 180 gr. SP
+ 7,92       0,335    G1       9,7          820           ? 303 British 150 gr. SPBT
+ 7,92       0,507    G1       11,7          750           ? 303 British 180 gr. SPBT
+ 7,92       0,478    G1       11,3          732           ? 303 British 174 gr. FMJBT
+ 7,92       0,257    G1       8,0          716           ? 7.62x39mm 123 gr. SP
+ 7,92       0,271    G1       8,0          716           ? 7.62x39mm 123 gr. FMJ
+ 7,92       0,354    G1       9,7          866           ? 7.62x54R 150 gr. SPBT
+ 7,92       0,48    G1       11,8          800           ? 7.62x54R 182 gr. FMJBT
+ 7,94       0,461    G1       11,7          776           ? 7.65x53mm Arg. 180 gr. SPBT
+ 7,94       0,48    G1       11,3          800           ? 7.65x53mm Arg. 174 gr. FMJBT
+ 8,13       0,251    G1       8,0          686           ? 7.9x33mm Kurz 124 gr. FMJ
+ 8,22       0,275    G1       12,7          750           ? 8mm Mauser 196 gr. SP
+ 8,22       0,564    G1       12,8          739           ? 8mm Mauser 198 gr. FMJBT
+ 8,30       0,568    G1       13,0          701           ? 8x50mm Lebel 200 gr. FMJBT
+ 8,40       0,47    G1       13,5          701           ? 8x56RSmm Mann 208 gr. SP
+ 8,40       0,503    G1       13,5          701           ? 8x56RSmm Mann 208 gr. FMJBT
+ 9,30       0,332    G1       18,5          690           ? 9.3x62mm Mauser 286 gr. SP
+ 9,55       0,254    G1       19,4          771           ? 375 H&H Magnum 300 gr. SPRN
+ 9,55       0,254    G1       19,4          750           ? 375 H&H Magnum 300 gr. FMJ

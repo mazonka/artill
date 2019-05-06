@@ -1,0 +1,65 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,251    G1       3,60          880           60 222 Rem. 55 gr. FMJ S538
+ 5,70       0,202    G1       3,60          880           60 222 Rem. 55 gr. SP E539
+ 5,70       0,251    G1       3,60          955           66 223 Rem. 55 gr. FMJ S538
+ 5,70       0,341    G1       4,50          850           51 223 Rem. 69 gr. Scenar GB541
+ 6,17       0,393    G1       5,80          885           61 243 Win. 90 gr. FMJ B503
+ 6,17       0,230    G1       5,80          910           61 243 Win. 90 gr. Naturalis N509
+ 6,17       0,357    G1       6,50          910           61 243 Win. 100 gr. SP E497
+ 6,18       0,434    G1       5,80          900           67 6 mm BR Norma 90 gr. Scenar GB493
+ 6,18       0,434    G1       5,80          930           67 6 mm BR Norma 90 gr. Scenar Silver Jacket GB493
+ 6,18       0,472    G1       6,80          850           67 6 mm BR Norma 105 gr. Scenar GB478
+ 6,18       0,472    G1       6,80          850           67 6 mm BR Norma 105 gr. Scenar Silver Jacket GB478
+ 6,71       0,424    G1       6,50          850           66 6.5 x 47 Lapua 100 gr. Scenar GB504
+ 6,71       0,465    G1       7,00          900           66 6.5 x 47 Lapua 108 gr. Scenar GB464
+ 6,71       0,527    G1       8,00          850           66 6.5 x 47 Lapua 123 gr. Scenar GB489
+ 6,71       0,578    G1       9,00          820           66 6.5 x 47 Lapua 139 gr. Scenar GB458
+ 6,71       0,250    G1       6,50          830           60 6.5 x 55 SE 100 gr. FMJ S341
+ 6,71       0,424    G1       6,50          800           74 6.5 x 55 SE 100 gr. Scenar GB504
+ 6,71       0,465    G1       7,00          900           74 6.5 x 55 SE 108 gr. Scenar GB464
+ 6,71       0,465    G1       7,00          920           74 6.5 x 55 SE 108 gr. Scenar Silver Jacket GB464
+ 6,71       0,527    G1       8,00          830           74 6.5 x 55 SE 123 gr. Scenar GB489
+ 6,71       0,527    G1       8,00          890           74 6.5 x 55 SE 123 gr. Scenar Silver Jacket GB489
+ 6,71       0,527    G1       8,00          920           74 6.5 x 55 SE 123 gr. Scenar GB489
+ 6,71       0,527    G1       8,00          830           74 6.5 x 55 SE 123 gr. Scenar Silver Jacket GB489
+ 6,71       0,578    G1       9,00          800           74 6.5 x 55 SE 139 gr. Scenar GB458
+ 6,71       0,578    G1       9,00          835           74 6.5 x 55 SE 139 gr. Scenar Silver Jacket GB458
+ 6,71       0,329    G1       9,10          800           60 6.5 x 55 SE 140 gr. Naturalis N507
+ 6,71       0,377    G1       10,10          780           74 6.5 x 55 SE 155 gr. Mega E471
+ 7,92       0,257    G1       8,00          715           42 7.62 x 39 123 gr. FMJ S405
+ 7,85       0,270    G1       8,00          895           66 308 Win. 123 gr. FMJ S374
+ 7,85       0,330    G1       9,00          850           66 308 Win. 150 gr. Mega E469
+ 7,85       0,434    G1       9,72          850           66 308 Win. 150 gr. Lock Base B466
+ 7,85       0,460    G1       10,00          860           66 308 Win. 155 gr. Scenar GB491
+ 7,85       0,440    G1       10,70          870           74 308 Win. 165 gr. Armour Piercing AP492
+ 7,85       0,446    G1       10,85          820           66 308 Win. 167 gr. Scenar GB422
+ 7,85       0,446    G1       10,85          840           66 308 Win. 167 gr. Scenar Silver Jacket GB422
+ 7,85       0,498    G1       11,00          860           76 308 Win. 170 gr. Lock Base B476
+ 7,85       0,321    G1       11,00          800           66 308 Win. 170 gr. Naturalis N518
+ 7,85       0,482    G1       12,00          755           66 308 Win. 185 gr. Scenar GB432
+ 7,85       0,482    G1       12,00          795           66 308 Win. 185 gr. Scenar Silver Jacket GB432
+ 7,85       0,319    G1       12,00          765           66 308 Win. 185 gr. Mega E415
+ 7,85       0,506    G1       12,00          760           66 308 Win. 185 gr. FMJBT D46
+ 7,85       0,518    G1       13,00          320           41 308 Win. 200 gr. FMJBT Subsonic B416
+ 7,85       0,270    G1       8,00          895           60 30-06 Spring. 123 gr. FMJ S374
+ 7,85       0,321    G1       11,00          830           60 30-06 Spring. 170 gr. Naturalis N518
+ 7,85       0,319    G1       12,00          800           60 30-06 Spring. 185 gr. Mega E415
+ 7,85       0,344    G1       13,00          775           60 30-06 Spring. 200 gr. Mega E401
+ 7,85       0,270    G1       8,00          895           61 7.62 x 53R / 54R 123 gr. FMJ S374
+ 7,85       0,319    G1       12,00          765           61 7.62 x 53R / 54R 185 gr. Mega E415
+ 8,61       0,373    G1       15,00          920           68 338 Lapua Mag. 231 gr. Naturalis N508
+ 8,61       0,648    G1       16,20          905           68 338 Lapua Mag. 250 gr. Scenar GB488
+ 8,61       0,625    G1       16,20          900           68 338 Lapua Mag. 250 gr. Lock Base B408
+ 8,61       0,556    G1       16,10          905           68 338 Lapua Mag. 248 gr. Armour Piercing AP485
+ 8,61       0,566    G1       16,40          895           68 338 Lapua Mag. 253 gr. Armour Piercing Incendiary API526
+ 8,61       0,736    G1       19,40          830           68 338 Lapua Mag. 300 gr. Scenar GB528
+ 8,61       0,732    G1       19,40          830           68 338 Lapua Mag. 300 gr. Armour Piercing AP529
+ 9,30       0,344    G1       14,30          800           60 9.3 x 62 220 gr. Naturalis N522
+ 9,30       0,339    G1       18,50          690           60 9.3 x 62 285 gr. Mega E433

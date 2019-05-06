@@ -1,0 +1,236 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 4,38       0,115    G1       0,99          625           61 17 Mach 2 15.5 gr. NTX
+ 4,38       0,125    G1       1,10          640           61 17 Mach 2 17 gr. V-MAX
+ 4,38       0,115    G1       0,99          770           61 17 HMR 15.5 gr. NTX
+ 4,38       0,125    G1       1,10          777           61 17 HMR 17 gr. V-MAX
+ 4,38       0,125    G1       1,30          724           61 17 HMR 20 gr. XTP
+ 4,38       0,185    G1       1,30          1113           61 17 Hornet 20 gr. V-MAX
+ 5,19       0,170    G1       1,94          1341           66 204 Ruger 24 gr. NTX
+ 5,19       0,210    G1       2,07          1288           66 204 Ruger 32 gr. V-MAX
+ 5,19       0,275    G1       2,59          1189           66 204 Ruger 40 gr. V-MAX
+ 5,19       0,245    G1       2,92          1105           66 204 Ruger 45 gr. SP
+ 5,60       0,270    G1       3,89          856           41 5.45 x 39 mm 60 gr. V-MAX Steel
+ 5,70       0,095    G1       1,94          671           61 22 WMR 30 gr. V-MAX
+ 5,70       0,109    G1       2,27          936           61 22 Hornet 35 gr. V-MAX
+ 5,70       0,170    G1       2,27          1146           61 222 Rem 35 gr. NTX
+ 5,70       0,200    G1       2,59          1097           61 222 Rem 40 gr. V-MAX
+ 5,70       0,242    G1       3,24          1020           61 222 Rem 50 gr. V-MAX
+ 5,70       0,200    G1       2,59          1158           61 223 Rem 40 gr. V-MAX
+ 5,70       0,177    G1       2,27          1219           61 223 Rem 35 gr. NTX
+ 5,70       0,290    G1       3,43          1056           61 223 Rem 53 gr. V-MAX
+ 5,70       0,254    G1       3,56          988           61 223 Rem 55 gr. HP
+ 5,70       0,255    G1       3,56          988           61 223 Rem 55 gr. V-MAX
+ 5,70       0,255    G1       3,56          988           61 223 Rem 55 gr. V-MAX w / Moly
+ 5,70       0,255    G1       3,56          988           61 223 Rem 55 gr. Z-MAX
+ 5,70       0,245    G1       3,56          998           61 223 Rem 55 gr. GMX
+ 5,70       0,255    G1       3,56          988           61 223 Rem 55 gr. TAP-FPD
+ 5,70       0,395    G1       4,86          893           61 223 Rem 75 gr. BTHP
+ 5,70       0,395    G1       4,86          850           61 223 Rem 75 gr. BTHP Match
+ 5,70       0,395    G1       4,86          850           61 223 Rem 75 gr. BTHP
+ 5,70       0,395    G1       4,86          850           61 223 Rem 75 gr. TAP-FPD
+ 5,70       0,245    G1       3,56          954           51 5.56 NATO 55 gr. GMX
+ 5,70       0,395    G1       4,86          887           51 5.56 NATO 75 gr. BTHP
+ 5,70       0,170    G1       2,27          1356           61 22-250 Rem 35 gr. NTX
+ 5,70       0,200    G1       2,59          1265           61 22-250 Rem 40 gr. V-MAX
+ 5,70       0,242    G1       3,24          1158           61 22-250 Rem 50 gr. V-MAX
+ 5,70       0,242    G1       3,24          1219           61 22-250 Rem 50 gr. V-MAX
+ 5,70       0,242    G1       3,24          1158           61 22-250 Rem 50 gr. V-MAX w / Moly
+ 5,70       0,255    G1       3,56          1122           61 22-250 Rem 55 gr. V-MAX
+ 5,70       0,264    G1       3,89          1076           61 22-250 Rem 60 gr. SP
+ 5,70       0,242    G1       3,24          1173           61 220 Swift 50 gr. V-MAX w / Moly
+ 5,70       0,255    G1       3,56          1122           61 220 Swift 55 gr. V-MAX
+ 5,70       0,271    G1       3,89          1097           61 220 Swift 60 gr. HP
+ 6,17       0,250    G1       3,76          1196           61 243 Win 58 gr. V-MAX
+ 6,17       0,250    G1       3,76          1143           61 243 Win 58 gr. V-MAX w / Moly
+ 6,17       0,294    G1       4,86          1018           61 243 Win 75 gr. HP
+ 6,17       0,300    G1       5,18          1044           61 243 Win 80 gr. GMX
+ 6,17       0,355    G1       6,16          971           61 243 Win 95 gr. SST
+ 6,17       0,355    G1       6,16          899           61 243 Win 95 gr. SST
+ 6,17       0,405    G1       6,48          902           61 243 Win 100 gr. BTSP InterLock
+ 6,18       0,355    G1       6,16          935           61 6 mm Rem 95 gr. SST
+ 6,18       0,405    G1       6,48          945           61 6 mm Rem 100 gr. BTSP InterLock
+ 6,55       0,390    G1       7,58          898           61 257 Roberts +P 117 gr. SST
+ 6,55       0,391    G1       7,58          847           61 257 Roberts +P 117 gr. BTSP InterLock
+ 6,54       0,290    G1       5,83          1021           61 25-06 Rem 90 gr. GMX
+ 6,54       0,390    G1       7,58          948           61 25-06 Rem 117 gr. SST
+ 6,54       0,390    G1       7,58          911           61 25-06 Rem 117 gr. SST
+ 6,54       0,391    G1       7,58          847           61 25-06 Rem 117 gr. BTSP InterLock
+ 6,54       0,290    G1       5,83          1082           61 257 Weatherby Mag. 90 gr. GMX
+ 6,71       0,520    G1       9,07          834           61 6.5 x 55 140 gr. SST
+ 6,71       0,580    G1       9,07          792           61 6.5 x 55 140 gr. BTHP Vintage Match
+ 6,72       0,510    G1       7,97          789           61 6.5 Grendel 123 gr. A-MAX
+ 6,72       0,480    G1       7,78          930           61 6.5 Creedmoor 120 gr. GMX
+ 6,72       0,485    G1       8,36          899           61 6.5 Creedmoor 129 gr. SST
+ 6,72       0,465    G1       7,78          887           61 6.5 Creedmoor 120 gr. A-MAX
+ 6,72       0,485    G1       8,36          899           61 6.5 Creedmoor 129 gr. InterBond
+ 6,72       0,585    G1       9,07          826           61 6.5 Creedmoor 140 gr. A-MAX
+ 7,06       0,290    G1       7,13          777           41 6.8 mm SPC 110 gr. V-MAX
+ 7,06       0,360    G1       7,13          777           41 6.8 mm SPC 110 gr. BTHP
+ 7,06       0,400    G1       7,78          750           41 6.8 mm SPC 120 gr. SST
+ 7,06       0,460    G1       8,42          972           61 270 Win 130 gr. GMX
+ 7,06       0,460    G1       8,42          975           61 270 Win 130 gr. SST
+ 7,06       0,460    G1       8,42          933           61 270 Win 130 gr. SST
+ 7,06       0,460    G1       8,42          975           61 270 Win 130 gr. InterBond
+ 7,06       0,409    G1       8,42          933           61 270 Win 130 gr. SP InterLock
+ 7,06       0,495    G1       9,07          942           61 270 Win 140 gr. SST
+ 7,06       0,486    G1       9,07          896           61 270 Win 140 gr. BTSP InterLock
+ 7,06       0,462    G1       9,72          866           61 270 Win 150 gr. SP InterLock
+ 7,25       0,486    G1       9,01          899           61 7 x 57 Mauser 139 gr. InterBond
+ 7,25       0,486    G1       9,01          835           61 7 x 57 Mauser 139 gr. GMX
+ 7,25       0,486    G1       9,01          841           61 7 x 57 Mauser 139 gr. SST
+ 7,25       0,453    G1       9,01          817           61 7 x 57 Mauser 139 gr. BTSP InterLock
+ 7,23       0,486    G1       9,01          890           ? 7-08 Rem 139 gr. GMX
+ 7,23       0,486    G1       9,01          902           ? 7-08 Rem 139 gr. SST
+ 7,23       0,486    G1       9,01          939           ? 280 Rem 139 gr. GMX
+ 7,23       0,486    G1       9,01          945           ? 280 Rem 139 gr. SST
+ 7,23       0,453    G1       9,01          960           61 7 mm Rem Mag 139 gr. BTSP InterLock
+ 7,23       0,486    G1       9,01          972           61 7 mm Rem Mag 139 gr. GMX
+ 7,23       0,486    G1       9,01          988           61 7 mm Rem Mag 139 gr. SST
+ 7,23       0,525    G1       9,98          945           61 7 mm Rem Mag 154 gr. SST
+ 7,23       0,525    G1       9,98          945           61 7 mm Rem Mag 154 gr. InterBond
+ 7,23       0,433    G1       9,98          925           61 7 mm Rem Mag 154 gr. SP InterLock
+ 7,23       0,525    G1       9,98          925           61 7 mm Rem Mag 154 gr. SST
+ 7,23       0,550    G1       10,50          924           61 7 mm Rem Mag 162 gr. SST
+ 7,23       0,514    G1       10,50          896           61 7 mm Rem Mag 162 gr. BTSP InterLock
+ 7,23       0,486    G1       9,01          1006           61 7 mm Wby Mag 139 gr. GMX
+ 7,23       0,525    G1       9,98          975           61 7 mm Wby Mag 154 gr. InterBond
+ 7,85       0,277    G1       9,07          762           61 30-30 Win 140 gr. MonoFlex
+ 7,85       0,186    G1       9,72          728           61 30-30 Win 150 gr. RN InterLock
+ 7,85       0,330    G1       10,37          732           61 30-30 Win 160 gr. FTX
+ 7,85       0,330    G1       10,37          732           61 30-30 Win 160 gr. Z-MAX
+ 7,85       0,189    G1       11,02          671           61 30-30 Win 170 gr. FP InterLock
+ 7,84       0,335    G1       9,07          853           61 308 Marlin Express 140 gr. MonoFlex
+ 7,84       0,395    G1       10,37          811           61 308 Marlin Express 160 gr. FTX
+ 7,85       0,290    G1       7,13          965           61 308 Win 110 gr. TAP-FPD
+ 7,85       0,415    G1       9,72          914           61 308 Win 150 gr. SST
+ 7,85       0,415    G1       9,72          896           61 308 Win 150 gr. GMX
+ 7,85       0,415    G1       9,72          860           61 308 Win 150 gr. InterBond
+ 7,85       0,349    G1       9,72          860           61 308 Win 150 gr. BTSP InterLock
+ 7,85       0,415    G1       9,72          860           61 308 Win 150 gr. SST
+ 7,85       0,435    G1       10,04          869           61 308 Win Palma 155 gr. A-MAX
+ 7,85       0,405    G1       10,04          796           61 308 Win 155 gr. BTHP
+ 7,85       0,435    G1       10,04          849           61 308 Win 155 gr. TAP-FPD
+ 7,85       0,405    G1       10,04          846           61 308 Win 155 gr. OTM Match
+ 7,85       0,447    G1       10,69          866           61 308 Win 165 gr. SST
+ 7,85       0,447    G1       10,69          838           61 308 Win 165 gr. InterBond
+ 7,85       0,447    G1       10,69          838           61 308 Win 165 gr. GMX
+ 7,85       0,435    G1       10,69          823           61 308 Win 165 gr. BTSP InterLock
+ 7,85       0,450    G1       10,89          823           61 308 Win 168 gr. BTHP Match
+ 7,85       0,450    G1       10,89          823           61 308 Win 168 gr. BTHP Match w / Moly
+ 7,85       0,475    G1       10,89          823           61 308 Win 168 gr. A-MAX
+ 7,85       0,475    G1       10,89          866           61 308 Win 168 gr. A-MAX
+ 7,85       0,475    G1       10,89          823           61 308 Win 168 gr. Z-MAX
+ 7,85       0,475    G1       10,89          823           61 308 Win 168 gr. TAP-FPD
+ 7,85       0,530    G1       11,53          847           61 308 Win 178 gr. BTHP
+ 7,85       0,415    G1       9,72          940           61 30-06 Sprg 150 gr. SST
+ 7,85       0,415    G1       9,72          940           61 30-06 Sprg 150 gr. GMX
+ 7,85       0,338    G1       9,72          887           61 30-06 Sprg 150 gr. SP InterLock
+ 7,85       0,349    G1       9,72          887           61 30-06 Sprg 150 gr. BTSP InterLock
+ 7,85       0,415    G1       9,72          939           61 30-06 Sprg 150 gr. InterBond
+ 7,85       0,415    G1       9,72          887           61 30-06 Sprg 150 gr. SST
+ 7,85       0,447    G1       10,69          902           61 30-06 Sprg 165 gr. InterBond
+ 7,85       0,447    G1       10,69          904           61 30-06 Sprg 165 gr. SST
+ 7,85       0,447    G1       10,69          898           61 30-06 Sprg 165 gr. GMX
+ 7,85       0,435    G1       10,69          853           61 30-06 Sprg 165 gr. BTSP InterLock
+ 7,85       0,447    G1       10,69          853           61 30-06 Sprg 165 gr. SST
+ 7,85       0,475    G1       10,89          826           61 30-06 M1 Garand 168 gr. A-MAX Match
+ 7,85       0,480    G1       11,66          860           61 30-06 Sprg 180 gr. InterBond
+ 7,85       0,480    G1       11,66          861           61 30-06 Sprg 180 gr. SST
+ 7,85       0,425    G1       11,66          823           61 30-06 Sprg 180 gr. SP InterLock
+ 7,85       0,480    G1       11,66          823           61 30-06 Sprg 180 gr. SST
+ 7,85       0,178    G1       7,13          610           ? 30 Carbine 110 gr. FMJ
+ 7,84       0,415    G1       9,72          890           61 30 TC 150 gr. GMX
+ 7,84       0,415    G1       9,72          914           61 30 TC 150 gr. SST
+ 7,84       0,447    G1       10,69          869           61 30 TC 165 gr. SST
+ 7,84       0,290    G1       7,13          723           41 300 Whisper 110 gr. V-MAX
+ 7,84       0,648    G1       13,48          311           41 300 Whisper 208 gr. A-MAX
+ 7,85       0,415    G1       9,72          835           ? 300 Savage 150 gr. SST
+ 7,85       0,415    G1       9,72          1009           61 300 RCM 150 gr. SST
+ 7,85       0,415    G1       9,72          995           61 300 RCM 150 gr. GMX
+ 7,85       0,447    G1       10,69          971           61 300 RCM 165 gr. SST
+ 7,85       0,447    G1       10,69          954           61 300 RCM 165 gr. InterBond
+ 7,85       0,447    G1       10,69          954           61 300 RCM 165 gr. GMX
+ 7,85       0,480    G1       11,66          927           61 300 RCM 180 gr. InterBond
+ 7,85       0,480    G1       11,66          927           61 300 RCM 180 gr. SST
+ 7,85       0,480    G1       11,66          847           61 300 H&H Mag 180 gr. InterBond
+ 7,85       0,415    G1       9,72          1036           61 300 Win Mag 150 gr. GMX
+ 7,85       0,415    G1       9,72          998           61 300 Win Mag 150 gr. SST
+ 7,85       0,349    G1       9,72          998           61 300 Win Mag 150 gr. BTSP InterLock
+ 7,85       0,415    G1       9,72          998           61 300 Win Mag 150 gr. InterBond
+ 7,85       0,447    G1       10,69          994           61 300 Win Mag 165 gr. InterBond
+ 7,85       0,447    G1       10,69          994           61 300 Win Mag 165 gr. GMX
+ 7,85       0,435    G1       10,69          945           61 300 Win Mag 165 gr. BTSP InterLock
+ 7,85       0,447    G1       10,69          945           61 300 Win Mag 165 gr. SST
+ 7,85       0,495    G1       11,53          902           61 300 Win Mag 178 gr. A-MAX
+ 7,85       0,425    G1       11,66          902           61 300 Win Mag 180 gr. SP InterLock
+ 7,85       0,480    G1       11,66          954           61 300 Win Mag 180 gr. InterBond
+ 7,85       0,480    G1       11,66          954           61 300 Win Mag 180 gr. SST
+ 7,85       0,480    G1       11,66          902           61 300 Win Mag 180 gr. SST
+ 7,83       0,415    G1       9,72          1029           61 300 Wby Mag 150 gr. InterBond
+ 7,83       0,447    G1       10,69          957           61 300 Wby Mag 165 gr. GMX
+ 7,83       0,425    G1       11,66          951           61 300 Wby Mag 180 gr. SP InterLock
+ 7,92       0,183    G1       7,97          719           51 7.62 x 39 mm 123 gr. SST
+ 8,18       0,310    G1       10,69          735           61 32 Special 165 gr. FTX
+ 7,92       0,361    G1       9,72          818           61 303 British 150 gr. SP InterLock
+ 8,22       0,410    G1       12,64          762           61 8 x 57 JS 195 gr. SP InterLock
+ 8,60       0,430    G1       12,96          782           61 338 Marlin Exp 200 gr. FTX
+ 8,61       0,420    G1       11,99          908           61 338 RCM 185 gr. GMX
+ 8,61       0,455    G1       12,96          869           61 338 RCM 200 gr. SST
+ 8,61       0,515    G1       14,58          838           61 338 RCM 225 gr. InterBond
+ 8,61       0,515    G1       14,59          837           61 338 RCM 225 gr. SST
+ 8,61       0,515    G1       14,59          849           61 338 Win Mag 225 gr. SST
+ 8,61       0,420    G1       11,99          939           61 338 Win Mag 185 gr. GMX
+ 8,61       0,455    G1       12,96          924           61 338 Win Mag 200 gr. SST
+ 8,61       0,515    G1       14,58          866           61 338 Win Mag 225 gr. InterBond
+ 8,61       0,515    G1       14,59          866           61 338 Win Mag 225 gr. SST
+ 8,61       0,670    G1       16,20          884           61 338 Lapua 250 gr. BTHP
+ 8,61       0,720    G1       18,47          837           61 338 Lapua 285 gr. BTHP
+ 9,12       0,300    G1       12,96          678           61 35 Rem 200 gr. FTX
+ 9,12       0,282    G1       12,96          678           61 35 Whelen 200 gr. SP
+ 9,30       0,400    G1       18,53          719           ? 9.3 x 62 286 gr. SP-RP
+ 9,30       0,400    G1       18,53          719           61 9.3 x 74R 286 gr. SP-RP
+ 9,55       0,320    G1       14,59          792           53 376 Steyr 225 gr. SP-RP InterLock
+ 9,55       0,380    G1       17,50          792           53 376 Steyr 270 gr. SP-RP InterLock
+ 9,55       0,380    G1       17,50          853           61 375 H&H 270 gr. SP-RP Superformance
+ 9,55       0,380    G1       17,50          823           61 375 H&H 270 gr. SP-RP
+ 9,55       0,275    G1       19,44          814           61 375 H&H 300 gr. DGS Superformance
+ 9,55       0,275    G1       19,44          771           61 375 H&H 300 gr. DGS
+ 9,55       0,275    G1       19,44          818           61 375 H&H 300 gr. DGX
+ 9,55       0,380    G1       17,50          866           61 375 Ruger 270 gr. SP-RP Superformance
+ 9,55       0,275    G1       19,44          811           61 375 Ruger 300 gr. DGS Superformance
+ 9,55       0,275    G1       19,44          811           61 375 Ruger 300 gr. DGX Superformance
+ 10,72       0,325    G1       25,92          701           61 404 Jeffery 400 gr. DGX
+ 10,72       0,325    G1       25,92          701           61 404 Jeffery 400 gr. DGS
+ 10,45       0,250    G1       19,44          671           61 405 Win 300 gr. SP InterLock
+ 10,57       0,319    G1       25,92          732           61 416 Rem 400 gr. DGX
+ 10,57       0,319    G1       25,92          732           61 416 Rem 400 gr. DGS
+ 10,57       0,319    G1       25,92          736           61 416 Rigby 400 gr. DGX
+ 10,57       0,319    G1       25,92          736           61 416 Rigby 400 gr. DGS
+ 10,58       0,319    G1       25,92          732           61 416 Ruger 400 gr. DGX
+ 10,58       0,319    G1       25,92          732           61 416 Ruger 400 gr. DGS
+ 10,93       0,189    G1       17,17          732           61 444 Marlin 265 gr. FP InterLock
+ 10,93       0,225    G1       17,17          709           61 444 Marlin 265 gr. FTX
+ 11,63       0,230    G1       21,06          625           61 45-70 Govt 325 gr. FTX
+ 11,64       0,230    G1       21,06          678           61 450 Marlin 325 gr. FTX
+ 11,64       0,195    G1       22,68          678           61 450 Marlin 350 gr. FP InterLock
+ 10,41       0,325    G1       25,92          625           61 450 / 400 Nitro Exp 400 gr. DGS
+ 10,41       0,325    G1       25,92          625           61 450 / 400 Nitro Exp 400 gr. DGX
+ 11,63       0,285    G1       31,10          655           61 450 Nitro Exp 480 gr. DGX
+ 11,63       0,285    G1       31,10          655           61 450 Nitro Exp 480 gr. DGS
+ 11,49       0,210    G1       16,20          671           61 450 Bushmaster 250 gr. FTX
+ 11,66       0,295    G1       32,40          652           61 458 Win Mag 500 gr. DGX Superformance
+ 11,66       0,295    G1       32,40          652           61 458 Win Mag 500 gr. DGS Superformance
+ 11,66       0,295    G1       32,40          701           61 458 Lott 500 gr. DGX
+ 11,66       0,295    G1       32,40          701           61 458 Lott 500 gr. DGS
+ 12,04       0,290    G1       32,40          655           61 470 Nitro Exp 500 gr. DGX
+ 12,04       0,290    G1       32,40          655           61 470 Nitro Exp 500 gr. DGS
+ 12,95       0,295    G1       36,94          655           61 500 Nitro Exp 570 gr. DGX
+ 12,95       0,295    G1       36,94          655           61 500 Nitro Exp 570 gr. DGS
+ 12,98       1,050    G1       48,60          858           61 50 BMG 750 gr. A-MAX

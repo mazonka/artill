@@ -1,0 +1,39 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 6,17       0,315    G1       6,50          930           ? 243 Win. 100 gr. CDP
+ 6,70       0,407    G1       8,20          870           ? 6.5 x 57 127 gr. CDP
+ 6,70       0,407    G1       8,20          845           ? 6.5 x 57 R 127 gr. CDP
+ 6,70       0,407    G1       8,20          890           ? 6.5 x 65 R 127 gr. CDP
+ 7,06       0,313    G1       8,40          950           ? 270 Win. 130 gr. CDP
+ 7,06       0,496    G1       9,00          1006           ? 270 WSM 140 gr. Nosler AccuBond
+ 7,25       0,376    G1       10,00          820           ? 7 x 57 154 gr. CDP
+ 7,25       0,376    G1       10,00          790           ? 7 x 57 R 154 gr. CDP
+ 7,25       0,430    G1       10,00          860           ? 7 x 64 154 gr. CDP
+ 7,25       0,430    G1       10,00          860           ? 7 x 65 R 154 gr. CDP
+ 7,22       0,485    G1       9,10          960           ? 7 mm Blaser Magnum 140 gr. Nosler AccuBond
+ 7,73       0,346    G1       10,70          830           ? 7.5 x 55 165 gr. CDP
+ 7,85       0,346    G1       10,70          820           ? 308 Win. 165 gr. CDP
+ 7,85       0,346    G1       10,70          850           ? 30-06 Spring. 165 gr. CDP
+ 7,85       0,346    G1       10,70          940           ? 30R Blaser 165 gr. CDP
+ 7,85       0,346    G1       10,70          970           ? 300 Win. Mag. 165 gr. CDP
+ 7,85       0,507    G1       11,70          905           ? 300 WSM 180 gr. Nosler AccuBond
+ 7,83       0,484    G1       11,70          920           ? 300 Blaser Magnum 180 gr. Barnes TTSX (bleifrei)
+ 7,83       0,385    G1       10,70          950           ? 300 Blaser Magnum 165 gr. CDP
+ 8,22       0,395    G1       12,70          790           ? 8 x 57 IS 196 gr. CDP
+ 8,22       0,395    G1       12,70          770           ? 8 x 57 IRS 196 gr. CDP
+ 8,22       0,363    G1       12,70          830           ? 8 x 75 RS 196 gr. CDP
+ 8,22       0,350    G1       12,70          950           ? 8 x 68 S 196 gr. CDP
+ 8,59       0,482    G1       13,60          900           ? 338 Blaser Magnum 210 gr. Barnes TTSX (bleifrei)
+ 8,59       0,414    G1       13,00          930           ? 338 Blaser Magnum 200 gr. Nosler AccuBond
+ 9,30       0,417    G1       18,50          720           ? 9.3 x 62 285 gr. CDP
+ 9,30       0,428    G1       18,50          700           ? 9.3 x 74 R 285 gr. CDP
+ 9,53       0,326    G1       17,50          840           ? 375 Blaser Magnum 270 gr. Barnes TSX
+ 10,54       0,276    G1       16,50          685           ? 10.3 x 60 R 255 gr. TM
+ 10,54       0,276    G1       16,50          685           ? 10.3 x 60 R 255 gr. VM
+ 11,64       0,164    G1       22,70          620           ? 45 Blaser 349 gr. TM

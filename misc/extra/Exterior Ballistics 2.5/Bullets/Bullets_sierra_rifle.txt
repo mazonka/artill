@@ -1,0 +1,506 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,18       0,221    G1       2,07          1204           ? 204 dia. Sierra 32 gr.  BlitzKing 1032
+ 5,18       0,218    vari.       2,07          1105           ? Variable Ballistic Coefficient  
+ 5,18       0,204    vari.       2,07          1006           ? Variable Ballistic Coefficient  
+ 5,18       0,189    vari.       2,07          678           ? Variable Ballistic Coefficient  
+ 5,18       0,179    vari.       2,07          533           ? Variable Ballistic Coefficient  
+ 5,18       0,287    G1       2,53          1097           ? 204 dia. Sierra 39 gr.  BlitzKing 1039
+ 5,18       0,270    vari.       2,53          1097           ? Variable Ballistic Coefficient  
+ 5,18       0,255    vari.       2,53          1036           ? Variable Ballistic Coefficient  
+ 5,18       0,236    vari.       2,53          853           ? Variable Ballistic Coefficient  
+ 5,18       0,210    vari.       2,53          701           ? Variable Ballistic Coefficient  
+ 5,66       0,117    G1       2,59          853           ? 223 dia. Sierra 40 gr. Hornet Varminter 1100
+ 5,66       0,123    vari.       2,59          853           ? Variable Ballistic Coefficient  
+ 5,66       0,136    vari.       2,59          610           ? Variable Ballistic Coefficient  
+ 5,66       0,132    G1       2,92          853           ? 223 dia. Sierra 45 gr. Hornet Varminter 1110
+ 5,66       0,138    vari.       2,92          853           ? Variable Ballistic Coefficient  
+ 5,66       0,153    vari.       2,92          610           ? Variable Ballistic Coefficient  
+ 5,69       0,196    G1       2,59          914           ? 224 dia. Sierra 40 gr.  BlitzKing 1440
+ 5,69       0,182    vari.       2,59          914           ? Variable Ballistic Coefficient  
+ 5,69       0,177    vari.       2,59          838           ? Variable Ballistic Coefficient  
+ 5,69       0,171    vari.       2,59          686           ? Variable Ballistic Coefficient  
+ 5,69       0,116    G1       2,59          853           ? 224 dia. Sierra 40 gr. Hornet Varminter 1200
+ 5,69       0,122    vari.       2,59          853           ? Variable Ballistic Coefficient  
+ 5,69       0,135    vari.       2,59          610           ? Variable Ballistic Coefficient  
+ 5,69       0,155    G1       2,59          732           ? 224 dia. Sierra 40 gr. HP Varminter 1385
+ 5,69       0,160    vari.       2,59          610           ? Variable Ballistic Coefficient  
+ 5,69       0,165    vari.       2,59          610           ? Variable Ballistic Coefficient  
+ 5,69       0,131    G1       2,92          853           ? 224 dia. Sierra 45 gr. Hornet Varminter 1210
+ 5,69       0,137    vari.       2,92          853           ? Variable Ballistic Coefficient  
+ 5,69       0,152    vari.       2,92          610           ? Variable Ballistic Coefficient  
+ 5,69       0,165    G1       2,92          853           ? 224 dia. Sierra 45 gr. SMP Semi Point 1300
+ 5,69       0,168    vari.       2,92          853           ? Variable Ballistic Coefficient  
+ 5,69       0,173    vari.       2,92          610           ? Variable Ballistic Coefficient  
+ 5,69       0,210    G1       2,92          914           ? 224 dia. Sierra 45 gr. SPT Varminter 1310
+ 5,69       0,196    vari.       2,92          914           ? Variable Ballistic Coefficient  
+ 5,69       0,181    vari.       2,92          549           ? Variable Ballistic Coefficient  
+ 5,69       0,222    G1       3,24          853           ? 224 dia. Sierra 50 gr. Blitz Varminter 1340
+ 5,69       0,217    vari.       3,24          853           ? Variable Ballistic Coefficient  
+ 5,69       0,207    vari.       3,24          549           ? Variable Ballistic Coefficient  
+ 5,69       0,248    G1       3,24          1006           ? 224 dia. Sierra 50 gr.  BlitzKing 1450
+ 5,69       0,243    vari.       3,24          1006           ? Variable Ballistic Coefficient  
+ 5,69       0,232    vari.       3,24          808           ? Variable Ballistic Coefficient  
+ 5,69       0,222    vari.       3,24          625           ? Variable Ballistic Coefficient  
+ 5,69       0,203    vari.       3,24          549           ? Variable Ballistic Coefficient  
+ 5,69       0,192    G1       3,24          853           ? 224 dia. Sierra 50 gr. SMP Varminter 1320
+ 5,69       0,190    vari.       3,24          853           ? Variable Ballistic Coefficient  
+ 5,69       0,190    vari.       3,24          549           ? Variable Ballistic Coefficient  
+ 5,69       0,222    G1       3,24          853           ? 224 dia. Sierra 50 gr. SPT Varminter 1330
+ 5,69       0,217    vari.       3,24          853           ? Variable Ballistic Coefficient  
+ 5,69       0,207    vari.       3,24          549           ? Variable Ballistic Coefficient  
+ 5,69       0,225    G1       3,37          914           ? 224 dia. Sierra 52 gr. HPBT  MatchKing 1410
+ 5,69       0,218    vari.       3,37          914           ? Variable Ballistic Coefficient  
+ 5,69       0,212    vari.       3,37          671           ? Variable Ballistic Coefficient  
+ 5,69       0,224    G1       3,43          853           ? 224 dia. Sierra 53 gr. HP  MatchKing 1400
+ 5,69       0,217    vari.       3,43          853           ? Variable Ballistic Coefficient  
+ 5,69       0,209    vari.       3,43          549           ? Variable Ballistic Coefficient  
+ 5,69       0,237    G1       3,56          884           ? 224 dia. Sierra 55 gr. Blitz Varminter 1345
+ 5,69       0,239    vari.       3,56          884           ? Variable Ballistic Coefficient  
+ 5,69       0,230    vari.       3,56          549           ? Variable Ballistic Coefficient  
+ 5,69       0,271    G1       3,56          945           ? 224 dia. Sierra 55 gr.  BlitzKing 1455
+ 5,69       0,264    vari.       3,56          945           ? Variable Ballistic Coefficient  
+ 5,69       0,250    vari.       3,56          777           ? Variable Ballistic Coefficient  
+ 5,69       0,236    vari.       3,56          625           ? Variable Ballistic Coefficient  
+ 5,69       0,224    vari.       3,56          549           ? Variable Ballistic Coefficient  
+ 5,69       0,272    G1       3,56          914           ? 224 dia. Sierra 55 gr. FMJBT GameKing 1355
+ 5,69       0,245    vari.       3,56          914           ? Variable Ballistic Coefficient  
+ 5,69       0,235    vari.       3,56          732           ? Variable Ballistic Coefficient  
+ 5,69       0,185    G1       3,56          853           ? 224 dia. Sierra 55 gr. HPBT GameKing 1390
+ 5,69       0,189    vari.       3,56          853           ? Variable Ballistic Coefficient  
+ 5,69       0,193    vari.       3,56          549           ? Variable Ballistic Coefficient  
+ 5,69       0,250    G1       3,56          914           ? 224 dia. Sierra 55 gr. SBT GameKing 1365
+ 5,69       0,245    vari.       3,56          914           ? Variable Ballistic Coefficient  
+ 5,69       0,235    vari.       3,56          610           ? Variable Ballistic Coefficient  
+ 5,69       0,204    G1       3,56          853           ? 224 dia. Sierra 55 gr. SMP Varminter 1350
+ 5,69       0,212    vari.       3,56          853           ? Variable Ballistic Coefficient  
+ 5,69       0,220    vari.       3,56          549           ? Variable Ballistic Coefficient  
+ 5,69       0,237    G1       3,56          853           ? 224 dia. Sierra 55 gr. SPT Varminter 1360
+ 5,69       0,239    vari.       3,56          853           ? Variable Ballistic Coefficient  
+ 5,69       0,230    vari.       3,56          549           ? Variable Ballistic Coefficient  
+ 5,69       0,246    G1       3,89          853           ? 224 dia. Sierra 60 gr. HP Varminter 1375
+ 5,69       0,240    vari.       3,89          853           ? Variable Ballistic Coefficient  
+ 5,69       0,246    vari.       3,89          610           ? Variable Ballistic Coefficient  
+ 5,69       0,231    G1       4,08          853           ? 224 dia. Sierra 63 gr. SMP Varminter 1370
+ 5,69       0,235    vari.       4,08          853           ? Variable Ballistic Coefficient  
+ 5,69       0,240    vari.       4,08          610           ? Variable Ballistic Coefficient  
+ 5,69       0,303    G1       4,21          838           ? 224 dia. Sierra 65 gr. SBT GameKing 1395
+ 5,69       0,297    vari.       4,21          838           ? Variable Ballistic Coefficient  
+ 5,69       0,293    vari.       4,21          747           ? Variable Ballistic Coefficient  
+ 5,69       0,287    vari.       4,21          655           ? Variable Ballistic Coefficient  
+ 5,69       0,270    vari.       4,21          351           ? Variable Ballistic Coefficient  
+ 5,69       0,301    G1       4,47          853           ? 224 dia. Sierra 69 gr. HPBT  MatchKing 1380
+ 5,69       0,305    vari.       4,47          853           ? Variable Ballistic Coefficient  
+ 5,69       0,317    vari.       4,47          671           ? Variable Ballistic Coefficient  
+ 5,69       0,372    G1       4,99          914           ? 224 dia. Sierra 77 gr. HPBT  MatchKing 1477
+ 5,69       0,362    vari.       4,99          762           ? Variable Ballistic Coefficient  
+ 5,69       0,362    vari.       4,99          518           ? Variable Ballistic Coefficient  
+ 5,69       0,343    vari.       4,99          518           ? Variable Ballistic Coefficient  
+ 5,69       0,372    G1       4,99          914           ? 224 dia. Sierra 77 gr. HPBT  Cannelure MatchKing 1478
+ 5,69       0,362    vari.       4,99          762           ? Variable Ballistic Coefficient  
+ 5,69       0,362    vari.       4,99          518           ? Variable Ballistic Coefficient  
+ 5,69       0,343    vari.       4,99          518           ? Variable Ballistic Coefficient  
+ 5,69       0,420    G1       5,18          671           ? 224 dia. Sierra 80 gr. HPBT  MatchKing 1480
+ 5,69       0,400    vari.       5,18          671           ? Variable Ballistic Coefficient  
+ 5,69       0,393    vari.       5,18          549           ? Variable Ballistic Coefficient  
+ 5,69       0,504    G1       5,83          671           ? 224 dia. Sierra 90 gr. HPBT  MatchKing 1490
+ 5,69       0,511    vari.       5,83          579           ? Variable Ballistic Coefficient  
+ 5,69       0,500    vari.       5,83          533           ? Variable Ballistic Coefficient  
+ 5,69       0,467    vari.       5,83          480           ? Variable Ballistic Coefficient  
+ 5,69       0,400    vari.       5,83          419           ? Variable Ballistic Coefficient  
+ 6,17       0,225    G1       3,56          899           ? 243 dia. Sierra (6mm) 55 gr.  BlitzKing 1502
+ 6,17       0,211    vari.       3,56          899           ? Variable Ballistic Coefficient  
+ 6,17       0,203    vari.       3,56          693           ? Variable Ballistic Coefficient  
+ 6,17       0,182    G1       3,89          762           ? 243 dia. Sierra (6mm) 60 gr. HP Varminter 1500
+ 6,17       0,193    vari.       3,89          762           ? Variable Ballistic Coefficient  
+ 6,17       0,205    vari.       3,89          549           ? Variable Ballistic Coefficient  
+ 6,17       0,299    G1       4,54          975           ? 243 dia. Sierra (6mm) 70 gr.  BlitzKing 1507
+ 6,17       0,288    vari.       4,54          975           ? Variable Ballistic Coefficient  
+ 6,17       0,278    vari.       4,54          792           ? Variable Ballistic Coefficient  
+ 6,17       0,257    vari.       4,54          670           ? Variable Ballistic Coefficient  
+ 6,17       0,237    vari.       4,54          548           ? Variable Ballistic Coefficient  
+ 6,17       0,259    G1       4,54          853           ? 243 dia. Sierra (6mm) 70 gr. HPBT  MatchKing 1505
+ 6,17       0,257    vari.       4,54          853           ? Variable Ballistic Coefficient  
+ 6,17       0,270    vari.       4,54          671           ? Variable Ballistic Coefficient  
+ 6,17       0,217    G1       4,86          853           ? 243 dia. Sierra (6mm) 75 gr. HP Varminter 1510
+ 6,17       0,221    vari.       4,86          853           ? Variable Ballistic Coefficient  
+ 6,17       0,232    vari.       4,86          671           ? Variable Ballistic Coefficient  
+ 6,17       0,319    G1       5,18          853           ? 243 dia. Sierra (6mm) 80 gr. SBT Blitz Varminter 1515
+ 6,17       0,310    vari.       5,18          853           ? Variable Ballistic Coefficient  
+ 6,17       0,295    vari.       5,18          671           ? Variable Ballistic Coefficient  
+ 6,17       0,311    G1       5,51          549           ? 243 dia. Sierra (6mm) 85 gr. HPBT GameKing 1530
+ 6,17       0,304    vari.       5,51          457           ? Variable Ballistic Coefficient  
+ 6,17       0,285    vari.       5,51          457           ? Variable Ballistic Coefficient  
+ 6,17       0,315    G1       5,51          853           ? 243 dia. Sierra (6mm) 85 gr. SPT Varminter 1520
+ 6,17       0,307    vari.       5,51          853           ? Variable Ballistic Coefficient  
+ 6,17       0,304    vari.       5,51          671           ? Variable Ballistic Coefficient  
+ 6,17       0,387    G1       5,83          853           ? 243 dia. Sierra (6mm) 90 gr. FMJBT GameKing 1535
+ 6,17       0,376    vari.       5,83          853           ? Variable Ballistic Coefficient  
+ 6,17       0,368    vari.       5,83          640           ? Variable Ballistic Coefficient  
+ 6,17       0,430    G1       6,48          853           ? 243 dia. Sierra (6mm) 100 gr. SBT GameKing 1560
+ 6,17       0,419    vari.       6,48          853           ? Variable Ballistic Coefficient  
+ 6,17       0,397    vari.       6,48          671           ? Variable Ballistic Coefficient  
+ 6,17       0,385    vari.       6,48          518           ? Variable Ballistic Coefficient  
+ 6,17       0,275    G1       6,48          853           ? 243 dia. Sierra (6mm) 100 gr. SMP Semi Point 1550
+ 6,17       0,287    vari.       6,48          853           ? Variable Ballistic Coefficient  
+ 6,17       0,317    vari.       6,48          671           ? Variable Ballistic Coefficient  
+ 6,17       0,373    G1       6,48          853           ? 243 dia. Sierra (6mm) 100 gr. SPT Pro-Hunter 1540
+ 6,17       0,363    vari.       6,48          853           ? Variable Ballistic Coefficient  
+ 6,17       0,352    vari.       6,48          671           ? Variable Ballistic Coefficient  
+ 6,17       0,342    vari.       6,48          518           ? Variable Ballistic Coefficient  
+ 6,17       0,527    G1       6,93          762           ? 243 dia. Sierra (6mm) 107 gr. HPBT  MatchKing 1570
+ 6,17       0,522    vari.       6,93          762           ? Variable Ballistic Coefficient  
+ 6,17       0,509    vari.       6,93          549           ? Variable Ballistic Coefficient  
+ 6,17       0,495    vari.       6,93          488           ? Variable Ballistic Coefficient  
+ 6,17       0,480    G1       6,16          838           ? 243 dia. Sierra (6mm) 95 gr. HPBT  MatchKing 1537
+ 6,17       0,450    vari.       6,16          518           ? Variable Ballistic Coefficient  
+ 6,17       0,400    vari.       6,16          518           ? Variable Ballistic Coefficient  
+ 6,53       0,189    G1       4,86          792           ? 257 dia. Sierra 75 gr. HP Varminter 1600
+ 6,53       0,197    vari.       4,86          792           ? Variable Ballistic Coefficient  
+ 6,53       0,210    vari.       4,86          610           ? Variable Ballistic Coefficient  
+ 6,53       0,230    vari.       4,86          457           ? Variable Ballistic Coefficient  
+ 6,53       0,293    G1       5,64          853           ? 257 dia. Sierra 87 gr. SPT Varminter 1610
+ 6,53       0,289    vari.       5,64          853           ? Variable Ballistic Coefficient  
+ 6,53       0,283    vari.       5,64          640           ? Variable Ballistic Coefficient  
+ 6,53       0,272    vari.       5,64          457           ? Variable Ballistic Coefficient  
+ 6,53       0,250    G1       5,83          853           ? 257 dia. Sierra 90 gr. HPBT GameKing 1615
+ 6,53       0,260    vari.       5,83          853           ? Variable Ballistic Coefficient  
+ 6,53       0,267    vari.       5,83          610           ? Variable Ballistic Coefficient  
+ 6,53       0,255    vari.       5,83          427           ? Variable Ballistic Coefficient  
+ 6,53       0,394    G1       6,48          991           ? 257 dia. Sierra 100 gr. HPBT  MatchKing 1628
+ 6,53       0,386    vari.       6,48          991           ? Variable Ballistic Coefficient  
+ 6,53       0,376    vari.       6,48          853           ? Variable Ballistic Coefficient  
+ 6,53       0,372    vari.       6,48          701           ? Variable Ballistic Coefficient  
+ 6,53       0,355    G1       6,48          853           ? 257 dia. Sierra 100 gr. SBT GameKing 1625
+ 6,53       0,333    vari.       6,48          853           ? Variable Ballistic Coefficient  
+ 6,53       0,310    vari.       6,48          488           ? Variable Ballistic Coefficient  
+ 6,53       0,330    G1       6,48          732           ? 257 dia. Sierra 100 gr. SPT Pro-Hunter 1620
+ 6,53       0,322    vari.       6,48          732           ? Variable Ballistic Coefficient  
+ 6,53       0,296    vari.       6,48          518           ? Variable Ballistic Coefficient  
+ 6,53       0,410    G1       7,58          762           ? 257 dia. Sierra 117 gr. SBT GameKing 1630
+ 6,53       0,403    vari.       7,58          762           ? Variable Ballistic Coefficient  
+ 6,53       0,370    vari.       7,58          549           ? Variable Ballistic Coefficient  
+ 6,53       0,388    G1       7,58          762           ? 257 dia. Sierra 117 gr. SPT Pro-Hunter 1640
+ 6,53       0,383    vari.       7,58          762           ? Variable Ballistic Coefficient  
+ 6,53       0,362    vari.       7,58          549           ? Variable Ballistic Coefficient  
+ 6,53       0,350    G1       7,78          732           ? 257 dia. Sierra 120 gr. HPBT GameKing 1650
+ 6,53       0,357    vari.       7,78          732           ? Variable Ballistic Coefficient  
+ 6,53       0,330    vari.       7,78          488           ? Variable Ballistic Coefficient  
+ 6,53       0,260    G1       4,54          960           ? 257 dia. Sierra 70 gr.  BlitzKing 1605
+ 6,53       0,251    vari.       4,54          853           ? Variable Ballistic Coefficient  
+ 6,53       0,242    vari.       4,54          549           ? Variable Ballistic Coefficient  
+ 6,53       0,230    vari.       4,54          549           ? Variable Ballistic Coefficient  
+ 6,53       0,388    G1       5,83          945           ? 257 dia. Sierra 90 gr.  BlitzKing 1616
+ 6,53       0,375    vari.       5,83          884           ? Variable Ballistic Coefficient  
+ 6,53       0,345    vari.       5,83          732           ? Variable Ballistic Coefficient  
+ 6,53       0,330    vari.       5,83          732           ? Variable Ballistic Coefficient  
+ 6,71       0,225    G1       5,51          823           ? 264 dia. Sierra (6.5mm) 85 gr. HP Varminter 1700
+ 6,71       0,237    vari.       5,51          823           ? Variable Ballistic Coefficient  
+ 6,71       0,250    vari.       5,51          640           ? Variable Ballistic Coefficient  
+ 6,71       0,264    vari.       5,51          488           ? Variable Ballistic Coefficient  
+ 6,71       0,259    G1       6,48          701           ? 264 dia. Sierra (6.5mm) 100 gr. HP Varminter 1710
+ 6,71       0,282    vari.       6,48          701           ? Variable Ballistic Coefficient  
+ 6,71       0,300    vari.       6,48          549           ? Variable Ballistic Coefficient  
+ 6,71       0,430    G1       6,93          1021           ? 264 dia. Sierra (6.5mm) 107 gr. HPBT  MatchKing 1715
+ 6,71       0,420    vari.       6,93          1021           ? Variable Ballistic Coefficient  
+ 6,71       0,406    vari.       6,93          853           ? Variable Ballistic Coefficient  
+ 6,71       0,395    vari.       6,93          701           ? Variable Ballistic Coefficient  
+ 6,71       0,385    vari.       6,93          549           ? Variable Ballistic Coefficient  
+ 6,71       0,421    G1       7,78          945           ? 264 dia. Sierra (6.5mm) 120 gr. HPBT  MatchKing 1725
+ 6,71       0,409    vari.       7,78          945           ? Variable Ballistic Coefficient  
+ 6,71       0,403    vari.       7,78          853           ? Variable Ballistic Coefficient  
+ 6,71       0,417    vari.       7,78          610           ? Variable Ballistic Coefficient  
+ 6,71       0,356    G1       7,78          853           ? 264 dia. Sierra (6.5mm) 120 gr. SPT Pro-Hunter 1720
+ 6,71       0,368    vari.       7,78          853           ? Variable Ballistic Coefficient  
+ 6,71       0,386    vari.       7,78          671           ? Variable Ballistic Coefficient  
+ 6,71       0,400    vari.       7,78          549           ? Variable Ballistic Coefficient  
+ 6,71       0,510    G1       7,97          0           ? 264 dia. Sierra (6.5mm) 123 gr. HPBT MatchKing 1727
+ 6,71       0,477    vari.       7,97          0           ? Variable Ballistic Coefficient  
+ 6,71       0,450    vari.       7,97          0           ? Variable Ballistic Coefficient  
+ 6,71       0,420    vari.       7,97          0           ? Variable Ballistic Coefficient  
+ 6,71       0,355    G1       8,42          732           ? 264 dia. Sierra (6.5mm) 130 gr. HPBT GameKing 1728
+ 6,71       0,375    vari.       8,42          564           ? Variable Ballistic Coefficient  
+ 6,71       0,395    vari.       8,42          564           ? Variable Ballistic Coefficient  
+ 6,71       0,535    G1       9,07          853           ? 264 dia. Sierra (6.5mm) 140 gr. HPBT  MatchKing 1740
+ 6,71       0,526    vari.       9,07          853           ? Variable Ballistic Coefficient  
+ 6,71       0,521    vari.       9,07          610           ? Variable Ballistic Coefficient  
+ 6,71       0,495    G1       9,07          853           ? 264 dia. Sierra (6.5mm) 140 gr. SBT GameKing 1730
+ 6,71       0,490    vari.       9,07          853           ? Variable Ballistic Coefficient  
+ 6,71       0,480    vari.       9,07          610           ? Variable Ballistic Coefficient  
+ 6,71       0,595    G1       9,20          869           ? 264 dia. Sierra (6.5mm) 142 gr. HPBT  MatchKing 1742
+ 6,71       0,580    vari.       9,20          869           ? Variable Ballistic Coefficient  
+ 6,71       0,575    vari.       9,20          732           ? Variable Ballistic Coefficient  
+ 6,71       0,550    vari.       9,20          625           ? Variable Ballistic Coefficient  
+ 6,71       0,570    G1       10,04          853           ? 264 dia. Sierra (6.5mm) 155 gr. HPBT MatchKing 9570
+ 6,71       0,560    vari.       10,04          853           ? Variable Ballistic Coefficient  
+ 6,71       0,555    vari.       10,04          610           ? Variable Ballistic Coefficient  
+ 6,71       0,353    G1       10,37          747           ? 264 dia. Sierra (6.5mm) 160 gr. SMP Semi Point 1750
+ 6,71       0,366    vari.       10,37          747           ? Variable Ballistic Coefficient  
+ 6,71       0,390    vari.       10,37          610           ? Variable Ballistic Coefficient  
+ 7,04       0,195    G1       5,83          853           ? 277 dia. Sierra 90 gr. HP Varminter 1800
+ 7,04       0,203    vari.       5,83          853           ? Variable Ballistic Coefficient  
+ 7,04       0,219    vari.       5,83          671           ? Variable Ballistic Coefficient  
+ 7,04       0,240    vari.       5,83          549           ? Variable Ballistic Coefficient  
+ 7,04       0,318    G1       7,13          853           ? 277 dia. Sierra 110 gr. SPT Pro-Hunter 1810
+ 7,04       0,314    vari.       7,13          853           ? Variable Ballistic Coefficient  
+ 7,04       0,308    vari.       7,13          610           ? Variable Ballistic Coefficient  
+ 7,04       0,297    vari.       7,13          488           ? Variable Ballistic Coefficient  
+ 7,04       0,318    G1       7,45          732           ? 277 dia. Sierra 115 gr. HPBT  MatchKing 1815
+ 7,04       0,317    vari.       7,45          732           ? Variable Ballistic Coefficient  
+ 7,04       0,267    vari.       7,45          549           ? Variable Ballistic Coefficient  
+ 7,04       0,436    G1       8,42          853           ? 277 dia. Sierra 130 gr. SBT GameKing 1820
+ 7,04       0,418    vari.       8,42          853           ? Variable Ballistic Coefficient  
+ 7,04       0,402    vari.       8,42          671           ? Variable Ballistic Coefficient  
+ 7,04       0,387    vari.       8,42          549           ? Variable Ballistic Coefficient  
+ 7,04       0,370    G1       8,42          823           ? 277 dia. Sierra 130 gr. SPT Pro-Hunter 1830
+ 7,04       0,379    vari.       8,42          823           ? Variable Ballistic Coefficient  
+ 7,04       0,383    vari.       8,42          671           ? Variable Ballistic Coefficient  
+ 7,04       0,488    G1       8,75          853           ? 277 dia. Sierra 135 gr. HPBT  MatchKing 1833
+ 7,04       0,482    vari.       8,75          853           ? Variable Ballistic Coefficient  
+ 7,04       0,440    vari.       8,75          610           ? Variable Ballistic Coefficient  
+ 7,04       0,390    vari.       8,75          457           ? Variable Ballistic Coefficient  
+ 7,04       0,337    G1       9,07          823           ? 277 dia. Sierra 140 gr. HPBT GameKing 1835
+ 7,04       0,345    vari.       9,07          823           ? Variable Ballistic Coefficient  
+ 7,04       0,366    vari.       9,07          671           ? Variable Ballistic Coefficient  
+ 7,04       0,390    vari.       9,07          518           ? Variable Ballistic Coefficient  
+ 7,04       0,457    G1       9,07          853           ? 277 dia. Sierra 140 gr. SBT GameKing 1845
+ 7,04       0,450    vari.       9,07          853           ? Variable Ballistic Coefficient  
+ 7,04       0,437    vari.       9,07          671           ? Variable Ballistic Coefficient  
+ 7,04       0,412    vari.       9,07          549           ? Variable Ballistic Coefficient  
+ 7,04       0,483    G1       9,72          853           ? 277 dia. Sierra 150 gr. SBT GameKing 1840
+ 7,04       0,476    vari.       9,72          853           ? Variable Ballistic Coefficient  
+ 7,04       0,462    vari.       9,72          671           ? Variable Ballistic Coefficient  
+ 7,04       0,435    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,21       0,209    G1       6,48          884           ? 284 dia. Sierra (7mm) 100 gr. HP Varminter 1895
+ 7,21       0,215    vari.       6,48          884           ? Variable Ballistic Coefficient  
+ 7,21       0,234    vari.       6,48          701           ? Variable Ballistic Coefficient  
+ 7,21       0,254    vari.       6,48          518           ? Variable Ballistic Coefficient  
+ 7,21       0,328    G1       7,78          853           ? 284 dia. Sierra (7mm) 120 gr. SPT Pro-Hunter 1900
+ 7,21       0,326    vari.       7,78          853           ? Variable Ballistic Coefficient  
+ 7,21       0,333    vari.       7,78          671           ? Variable Ballistic Coefficient  
+ 7,21       0,395    G1       8,42          869           ? 284 dia. Sierra (7mm) 130 gr. HPBT  MatchKing 1903
+ 7,21       0,391    vari.       8,42          869           ? Variable Ballistic Coefficient  
+ 7,21       0,387    vari.       8,42          701           ? Variable Ballistic Coefficient  
+ 7,21       0,370    vari.       8,42          549           ? Variable Ballistic Coefficient  
+ 7,21       0,375    G1       9,07          762           ? 284 dia. Sierra (7mm) 140 gr. HPBT GameKing 1912
+ 7,21       0,385    vari.       9,07          655           ? Variable Ballistic Coefficient  
+ 7,21       0,395    vari.       9,07          564           ? Variable Ballistic Coefficient  
+ 7,21       0,405    vari.       9,07          564           ? Variable Ballistic Coefficient  
+ 7,21       0,416    G1       9,07          732           ? 284 dia. Sierra (7mm) 140 gr. SBT GameKing 1905
+ 7,21       0,418    vari.       9,07          732           ? Variable Ballistic Coefficient  
+ 7,21       0,423    vari.       9,07          549           ? Variable Ballistic Coefficient  
+ 7,21       0,377    G1       9,07          732           ? 284 dia. Sierra (7mm) 140 gr. SPT Pro-Hunter 1910
+ 7,21       0,386    vari.       9,07          732           ? Variable Ballistic Coefficient  
+ 7,21       0,400    vari.       9,07          549           ? Variable Ballistic Coefficient  
+ 7,21       0,429    G1       9,72          732           ? 284 dia. Sierra (7mm) 150 gr. HPBT  MatchKing 1915
+ 7,21       0,435    vari.       9,72          732           ? Variable Ballistic Coefficient  
+ 7,21       0,450    vari.       9,72          518           ? Variable Ballistic Coefficient  
+ 7,21       0,436    G1       9,72          762           ? 284 dia. Sierra (7mm) 150 gr. SBT GameKing 1913
+ 7,21       0,430    vari.       9,72          762           ? Variable Ballistic Coefficient  
+ 7,21       0,410    vari.       9,72          610           ? Variable Ballistic Coefficient  
+ 7,21       0,384    G1       10,37          853           ? 284 dia. Sierra (7mm) 160 gr. HPBT GameKing 1925
+ 7,21       0,394    vari.       10,37          853           ? Variable Ballistic Coefficient  
+ 7,21       0,404    vari.       10,37          549           ? Variable Ballistic Coefficient  
+ 7,21       0,455    G1       10,37          853           ? 284 dia. Sierra (7mm) 160 gr. SBT GameKing 1920
+ 7,21       0,470    vari.       10,37          853           ? Variable Ballistic Coefficient  
+ 7,21       0,472    vari.       10,37          701           ? Variable Ballistic Coefficient  
+ 7,21       0,460    vari.       10,37          488           ? Variable Ballistic Coefficient  
+ 7,21       0,488    G1       10,89          853           ? 284 dia. Sierra (7mm) 168 gr. HPBT  MatchKing 1930
+ 7,21       0,494    vari.       10,89          853           ? Variable Ballistic Coefficient  
+ 7,21       0,484    vari.       10,89          610           ? Variable Ballistic Coefficient  
+ 7,21       0,280    G1       11,02          762           ? 284 dia. Sierra (7mm) 170 gr. RN Round Nose 1950
+ 7,21       0,317    vari.       11,02          762           ? Variable Ballistic Coefficient  
+ 7,21       0,360    vari.       11,02          610           ? Variable Ballistic Coefficient  
+ 7,21       0,608    G1       11,34          640           ? 284 dia. Sierra (7mm) 175 gr. HPBT MatchKing 1975
+ 7,21       0,582    vari.       11,34          640           ? Variable Ballistic Coefficient  
+ 7,21       0,532    vari.       11,34          466           ? Variable Ballistic Coefficient  
+ 7,21       0,500    vari.       11,34          396           ? Variable Ballistic Coefficient  
+ 7,21       0,533    G1       11,34          762           ? 284 dia. Sierra (7mm) 175 gr. SBT GameKing 1940
+ 7,21       0,538    vari.       11,34          762           ? Variable Ballistic Coefficient  
+ 7,21       0,560    vari.       11,34          610           ? Variable Ballistic Coefficient  
+ 7,21       0,660    G1       11,66          503           ? 284 dia. Sierra (7mm) 180 HPBT MatchKing 1980
+ 7,21       0,650    vari.       11,66          457           ? Variable Ballistic Coefficient  
+ 7,21       0,610    vari.       11,66          457           ? Variable Ballistic Coefficient  
+ 7,82       0,119    G1       8,10          732           ? 308 dia. Sierra (30-30) 125 gr. HP/FN Pro-Hunter 2020
+ 7,82       0,153    vari.       8,10          732           ? Variable Ballistic Coefficient  
+ 7,82       0,186    vari.       8,10          549           ? Variable Ballistic Coefficient  
+ 7,82       0,185    G1       9,72          732           ? 308 dia. Sierra (30-30) 150 gr. FN Pro-Hunter 2000
+ 7,82       0,224    vari.       9,72          732           ? Variable Ballistic Coefficient  
+ 7,82       0,265    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,82       0,205    G1       11,02          732           ? 308 dia. Sierra (30-30) 170 gr. FN Pro-Hunter 2010
+ 7,82       0,248    vari.       11,02          732           ? Variable Ballistic Coefficient  
+ 7,82       0,293    vari.       11,02          549           ? Variable Ballistic Coefficient  
+ 7,82       0,144    G1       7,13          853           ? 308 dia. Sierra 110 gr. FMJ Pro-Hunter 2105
+ 7,82       0,154    vari.       7,13          853           ? Variable Ballistic Coefficient  
+ 7,82       0,170    vari.       7,13          610           ? Variable Ballistic Coefficient  
+ 7,82       0,180    vari.       7,13          411           ? Variable Ballistic Coefficient  
+ 7,82       0,177    G1       7,13          853           ? 308 dia. Sierra 110 gr. HP Varminter 2110
+ 7,82       0,188    vari.       7,13          853           ? Variable Ballistic Coefficient  
+ 7,82       0,204    vari.       7,13          610           ? Variable Ballistic Coefficient  
+ 7,82       0,215    vari.       7,13          411           ? Variable Ballistic Coefficient  
+ 7,82       0,144    G1       7,13          853           ? 308 dia. Sierra 110 gr. RN Pro-Hunter 2100
+ 7,82       0,154    vari.       7,13          853           ? Variable Ballistic Coefficient  
+ 7,82       0,170    vari.       7,13          610           ? Variable Ballistic Coefficient  
+ 7,82       0,180    vari.       7,13          411           ? Variable Ballistic Coefficient  
+ 7,82       0,349    G1       8,10          808           ? 308 dia. Sierra 125 gr. HP  MatchKing 2121
+ 7,82       0,338    vari.       8,10          610           ? Variable Ballistic Coefficient  
+ 7,82       0,330    vari.       8,10          488           ? Variable Ballistic Coefficient  
+ 7,82       0,310    vari.       8,10          488           ? Variable Ballistic Coefficient  
+ 7,82       0,279    G1       8,10          853           ? 308 dia. Sierra 125 gr. SPT Pro-Hunter 2120
+ 7,82       0,277    vari.       8,10          853           ? Variable Ballistic Coefficient  
+ 7,82       0,264    vari.       8,10          610           ? Variable Ballistic Coefficient  
+ 7,82       0,390    G1       8,75          991           ? 308 dia. Sierra 135 gr. HPBT  MatchKing 2123
+ 7,82       0,370    vari.       8,75          579           ? Variable Ballistic Coefficient  
+ 7,82       0,345    vari.       8,75          457           ? Variable Ballistic Coefficient  
+ 7,82       0,300    vari.       8,75          457           ? Variable Ballistic Coefficient  
+ 7,82       0,408    G1       9,72          853           ? 308 dia. Sierra 150 gr. FMJBT GameKing 2115
+ 7,82       0,397    vari.       9,72          853           ? Variable Ballistic Coefficient  
+ 7,82       0,387    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,82       0,417    G1       9,72          853           ? 308 dia. Sierra 150 gr. HPBT  MatchKing 2190
+ 7,82       0,397    vari.       9,72          853           ? Variable Ballistic Coefficient  
+ 7,82       0,355    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,82       0,200    G1       9,72          823           ? 308 dia. Sierra 150 gr. RN Pro-Hunter 2135
+ 7,82       0,227    vari.       9,72          823           ? Variable Ballistic Coefficient  
+ 7,82       0,270    vari.       9,72          518           ? Variable Ballistic Coefficient  
+ 7,82       0,380    G1       9,72          792           ? 308 dia. Sierra 150 gr. SBT GameKing 2125
+ 7,82       0,368    vari.       9,72          792           ? Variable Ballistic Coefficient  
+ 7,82       0,360    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,82       0,336    G1       9,72          792           ? 308 dia. Sierra 150 gr. SPT Pro-Hunter 2130
+ 7,82       0,346    vari.       9,72          792           ? Variable Ballistic Coefficient  
+ 7,82       0,360    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,82       0,450    G1       10,04          792           ? 308 dia. Sierra 155 gr. HPBT  MatchKing 2155
+ 7,82       0,443    vari.       10,04          792           ? Variable Ballistic Coefficient  
+ 7,82       0,417    vari.       10,04          549           ? Variable Ballistic Coefficient  
+ 7,82       0,504    G1       10,04          823           ? 308 dia. Sierra 155 gr. HPBT Palma  MatchKing 2156
+ 7,82       0,470    vari.       10,04          549           ? Variable Ballistic Coefficient  
+ 7,82       0,430    vari.       10,04          457           ? Variable Ballistic Coefficient  
+ 7,82       0,380    vari.       10,04          457           ? Variable Ballistic Coefficient  
+ 7,82       0,363    G1       10,69          792           ? 308 dia. Sierra 165 gr. HPBT GameKing 2140
+ 7,82       0,355    vari.       10,69          792           ? Variable Ballistic Coefficient  
+ 7,82       0,363    vari.       10,69          549           ? Variable Ballistic Coefficient  
+ 7,82       0,404    G1       10,69          732           ? 308 dia. Sierra 165 gr. SBT GameKing 2145
+ 7,82       0,409    vari.       10,69          732           ? Variable Ballistic Coefficient  
+ 7,82       0,419    vari.       10,69          488           ? Variable Ballistic Coefficient  
+ 7,82       0,462    G1       10,89          792           ? 308 dia. Sierra 168 gr. HPBT  MatchKing 2200
+ 7,82       0,447    vari.       10,89          792           ? Variable Ballistic Coefficient  
+ 7,82       0,424    vari.       10,89          640           ? Variable Ballistic Coefficient  
+ 7,82       0,405    vari.       10,89          488           ? Variable Ballistic Coefficient  
+ 7,82       0,505    G1       11,34          853           ? 308 dia. Sierra 175 gr. HPBT  MatchKing 2275
+ 7,82       0,496    vari.       11,34          853           ? Variable Ballistic Coefficient  
+ 7,82       0,485    vari.       11,34          549           ? Variable Ballistic Coefficient  
+ 7,82       0,475    G1       11,66          853           ? 308 dia. Sierra 180 gr. HPBT  MatchKing 2220
+ 7,82       0,496    vari.       11,66          853           ? Variable Ballistic Coefficient  
+ 7,82       0,494    vari.       11,66          671           ? Variable Ballistic Coefficient  
+ 7,82       0,494    vari.       11,66          488           ? Variable Ballistic Coefficient  
+ 7,82       0,240    G1       11,66          853           ? 308 dia. Sierra 180 gr. RN Pro-Hunter 2170
+ 7,82       0,280    vari.       11,66          853           ? Variable Ballistic Coefficient  
+ 7,82       0,330    vari.       11,66          671           ? Variable Ballistic Coefficient  
+ 7,82       0,355    vari.       11,66          457           ? Variable Ballistic Coefficient  
+ 7,82       0,501    G1       11,66          823           ? 308 dia. Sierra 180 gr. SBT GameKing 2160
+ 7,82       0,506    vari.       11,66          823           ? Variable Ballistic Coefficient  
+ 7,82       0,505    vari.       11,66          518           ? Variable Ballistic Coefficient  
+ 7,82       0,407    G1       11,66          792           ? 308 dia. Sierra 180 gr. SPT Pro-Hunter 2150
+ 7,82       0,415    vari.       11,66          792           ? Variable Ballistic Coefficient  
+ 7,82       0,414    vari.       11,66          488           ? Variable Ballistic Coefficient  
+ 7,82       0,533    G1       12,31          640           ? 308 dia. Sierra 190 gr. HPBT  MatchKing 2210
+ 7,82       0,525    vari.       12,31          640           ? Variable Ballistic Coefficient  
+ 7,82       0,515    vari.       12,31          488           ? Variable Ballistic Coefficient  
+ 7,82       0,565    G1       12,96          640           ? 308 dia. Sierra 200 gr. HPBT  MatchKing 2230
+ 7,82       0,560    vari.       12,96          640           ? Variable Ballistic Coefficient  
+ 7,82       0,560    vari.       12,96          488           ? Variable Ballistic Coefficient  
+ 7,82       0,560    G1       12,96          792           ? 308 dia. Sierra 200 gr. SBT GameKing 2165
+ 7,82       0,552    vari.       12,96          792           ? Variable Ballistic Coefficient  
+ 7,82       0,555    vari.       12,96          701           ? Variable Ballistic Coefficient  
+ 7,82       0,560    vari.       12,96          579           ? Variable Ballistic Coefficient  
+ 7,82       0,645    G1       13,61          549           ? 308 dia. Sierra 210 gr. HPBT  MatchKing 2235
+ 7,82       0,630    vari.       13,61          488           ? Variable Ballistic Coefficient  
+ 7,82       0,600    vari.       13,61          427           ? Variable Ballistic Coefficient  
+ 7,82       0,530    vari.       13,61          427           ? Variable Ballistic Coefficient  
+ 7,82       0,629    G1       14,26          640           ? 308 dia. Sierra 220 gr. HPBT  MatchKing 2240
+ 7,82       0,624    vari.       14,26          640           ? Variable Ballistic Coefficient  
+ 7,82       0,608    vari.       14,26          518           ? Variable Ballistic Coefficient  
+ 7,82       0,310    G1       14,26          792           ? 308 dia. Sierra 220 gr. RN Pro-Hunter 2180
+ 7,82       0,335    vari.       14,26          792           ? Variable Ballistic Coefficient  
+ 7,82       0,378    vari.       14,26          671           ? Variable Ballistic Coefficient  
+ 7,82       0,410    vari.       14,26          488           ? Variable Ballistic Coefficient  
+ 7,82       0,711    G1       15,55          655           ? 308 dia. Sierra 240 gr. HPBT  MatchKing 2250
+ 7,82       0,702    vari.       15,55          655           ? Variable Ballistic Coefficient  
+ 7,82       0,685    vari.       15,55          549           ? Variable Ballistic Coefficient  
+ 7,90       0,274    G1       8,10          762           ? 311 dia. Sierra 125 gr. SPT Pro-Hunter 2305
+ 7,90       0,282    vari.       8,10          762           ? Variable Ballistic Coefficient  
+ 7,90       0,289    vari.       8,10          610           ? Variable Ballistic Coefficient  
+ 7,90       0,344    G1       9,72          716           ? 311 dia. Sierra 150 gr. SPT Pro-Hunter 2300
+ 7,90       0,341    vari.       9,72          716           ? Variable Ballistic Coefficient  
+ 7,90       0,334    vari.       9,72          549           ? Variable Ballistic Coefficient  
+ 7,90       0,499    G1       11,28          671           ? 311 dia. Sierra 174 gr. HPBT  MatchKing 2315
+ 7,90       0,493    vari.       11,28          671           ? Variable Ballistic Coefficient  
+ 7,90       0,480    vari.       11,28          549           ? Variable Ballistic Coefficient  
+ 7,90       0,411    G1       11,66          610           ? 311 dia. Sierra 180 gr. SPT Pro-Hunter 2310
+ 7,90       0,407    vari.       11,66          610           ? Variable Ballistic Coefficient  
+ 7,90       0,407    vari.       11,66          488           ? Variable Ballistic Coefficient  
+ 8,20       0,336    G1       9,72          792           ? 323 dia. Sierra (8mm) 150 gr. SPT Pro-Hunter 2400
+ 8,20       0,329    vari.       9,72          792           ? Variable Ballistic Coefficient  
+ 8,20       0,314    vari.       9,72          610           ? Variable Ballistic Coefficient  
+ 8,20       0,381    G1       11,34          655           ? 323 dia. Sierra (8mm) 175 gr. SPT Pro-Hunter 2410
+ 8,20       0,375    vari.       11,34          655           ? Variable Ballistic Coefficient  
+ 8,20       0,371    vari.       11,34          533           ? Variable Ballistic Coefficient  
+ 8,20       0,520    G1       12,96          701           ? 323 dia. Sierra (8mm) 200 gr. HPBT  MatchKing 2415
+ 8,20       0,505    vari.       12,96          701           ? Variable Ballistic Coefficient  
+ 8,20       0,461    vari.       12,96          518           ? Variable Ballistic Coefficient  
+ 8,20       0,521    G1       14,26          762           ? 323 dia. Sierra (8mm) 220 gr. SBT GameKing 2420
+ 8,20       0,524    vari.       14,26          762           ? Variable Ballistic Coefficient  
+ 8,20       0,512    vari.       14,26          564           ? Variable Ballistic Coefficient  
+ 8,20       0,495    vari.       14,26          472           ? Variable Ballistic Coefficient  
+ 8,59       0,485    G1       13,93          610           ? 338 dia. Sierra 215 gr. SBT GameKing 2610
+ 8,59       0,473    vari.       13,93          610           ? Variable Ballistic Coefficient  
+ 8,59       0,460    vari.       13,93          488           ? Variable Ballistic Coefficient  
+ 8,59       0,462    G1       14,58          884           ? 338 dia. Sierra 225 gr. SPT Pro-Hunter 2620
+ 8,59       0,455    vari.       14,58          716           ? Variable Ballistic Coefficient  
+ 8,59       0,448    vari.       14,58          579           ? Variable Ballistic Coefficient  
+ 8,59       0,435    vari.       14,58          579           ? Variable Ballistic Coefficient  
+ 8,59       0,587    G1       16,20          655           ? 338 dia. Sierra 250 gr. HPBT  MatchKing 2650
+ 8,59       0,606    vari.       16,20          655           ? Variable Ballistic Coefficient  
+ 8,59       0,576    vari.       16,20          518           ? Variable Ballistic Coefficient  
+ 8,59       0,484    vari.       16,20          427           ? Variable Ballistic Coefficient  
+ 8,59       0,565    G1       16,20          762           ? 338 dia. Sierra 250 gr. SBT GameKing 2600
+ 8,59       0,563    vari.       16,20          762           ? Variable Ballistic Coefficient  
+ 8,59       0,550    vari.       16,20          610           ? Variable Ballistic Coefficient  
+ 8,59       0,537    vari.       16,20          488           ? Variable Ballistic Coefficient  
+ 8,59       0,768    G1       19,44          701           ? 338 dia. Sierra 300 gr. HPBT  MatchKing 2675
+ 8,59       0,760    vari.       19,44          701           ? Variable Ballistic Coefficient  
+ 8,59       0,750    vari.       19,44          549           ? Variable Ballistic Coefficient  
+ 9,09       0,148    G1       12,96          610           ? 358 dia. Sierra 200 gr. RN Pro-Hunter 2800
+ 9,09       0,203    vari.       12,96          610           ? Variable Ballistic Coefficient  
+ 9,09       0,247    vari.       12,96          457           ? Variable Ballistic Coefficient  
+ 9,09       0,271    vari.       12,96          366           ? Variable Ballistic Coefficient  
+ 9,09       0,230    vari.       12,96          305           ? Variable Ballistic Coefficient  
+ 9,09       0,370    G1       14,58          762           ? 358 dia. Sierra 225 gr. SBT GameKing 2850
+ 9,09       0,384    vari.       14,58          762           ? Variable Ballistic Coefficient  
+ 9,09       0,387    vari.       14,58          610           ? Variable Ballistic Coefficient  
+ 9,09       0,370    vari.       14,58          488           ? Variable Ballistic Coefficient  
+ 9,53       0,195    G1       12,96          640           ? 375 dia. Sierra 200 gr. FN Pro-Hunter 2900
+ 9,53       0,212    vari.       12,96          640           ? Variable Ballistic Coefficient  
+ 9,53       0,232    vari.       12,96          533           ? Variable Ballistic Coefficient  
+ 9,53       0,248    vari.       12,96          427           ? Variable Ballistic Coefficient  
+ 9,53       0,353    G1       16,20          792           ? 375 dia. Sierra 250 gr. SBT GameKing 2950
+ 9,53       0,371    vari.       16,20          792           ? Variable Ballistic Coefficient  
+ 9,53       0,375    vari.       16,20          686           ? Variable Ballistic Coefficient  
+ 9,53       0,363    vari.       16,20          549           ? Variable Ballistic Coefficient  
+ 9,53       0,475    G1       19,44          792           ? 375 dia. Sierra 300 gr. SBT GameKing 3000
+ 9,53       0,480    vari.       19,44          792           ? Variable Ballistic Coefficient  
+ 9,53       0,470    vari.       19,44          671           ? Variable Ballistic Coefficient  
+ 9,53       0,458    vari.       19,44          549           ? Variable Ballistic Coefficient  
+ 9,53       0,805    G1       22,68          671           ? 375 dia. Sierra 350 gr. HP  MatchKing 9350
+ 9,53       0,780    vari.       22,68          518           ? Variable Ballistic Coefficient  
+ 9,53       0,720    vari.       22,68          518           ? Variable Ballistic Coefficient  
+ 11,63       0,120    G1       19,44          732           ? 458 dia. Sierra (45-70) 300 gr. HP/FN Pro-Hunter 8900
+ 11,63       0,145    vari.       19,44          732           ? Variable Ballistic Coefficient
+ 11,63       0,185    vari.       19,44          579           ? Variable Ballistic Coefficient
+ 11,63       0,210    vari.       19,44          427           ? Variable Ballistic Coefficient
+ 11,63       0,230    vari.       19,44          351           ? Variable Ballistic Coefficient

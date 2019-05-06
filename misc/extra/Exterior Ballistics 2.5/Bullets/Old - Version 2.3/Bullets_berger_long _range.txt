@@ -1,0 +1,30 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,382    G1       4,54          800           60 224 dia. Berger 22 cal 70 gr Match VLD Twist: 9"
+ 5,70       0,447    G1       4,86          800           60 224 dia. Berger 22 cal 75 gr Match VLD Twist: 9"
+ 5,70       0,389    G1       4,99          800           60 224 dia. Berger 22 cal 77 gr Match BT Twist: 8"
+ 5,70       0,471    G1       5,18          800           60 224 dia. Berger 22 cal 80 gr Match VLD Twist: 8"
+ 5,70       0,517    G1       5,83          800           60 224 dia. Berger 22 cal 90 gr Match VLD Twist: 7"
+ 6,17       0,514    G1       6,16          800           60 243 dia. Berger 6mm 95 gr Match VLD Twist: 9"
+ 6,17       0,556    G1       6,80          800           60 243 dia. Berger 6mm 105 gr Match VLD Twist: 8"
+ 6,17       0,595    G1       7,45          800           60 243 dia. Berger 6mm 115 gr Match VLD Twist: 7"
+ 6,54       0,523    G1       7,45          800           60 257 dia. Berger 25 cal 115 gr Match VLD Twist: 10"
+ 6,73       0,492    G1       7,78          800           60 264 dia. Berger 6.5mm 120 gr Match BT Twist: 10"
+ 6,73       0,595    G1       8,42          800           60 264 dia. Berger 6.5mm 130 gr Match VLD Twist: 10"
+ 6,73       0,640    G1       9,07          800           60 264 dia. Berger 6.5mm 140 gr Match VLD Twist: 9"
+ 7,21       0,643    G1       10,89          800           60 284 dia. Berger 7mm 168 gr Match VLD Twist: 10"
+ 7,21       0,684    G1       11,66          800           60 284 dia. Berger 7mm 180 gr Match VLD Twist: 9"
+ 7,85       0,453    G1       10,04          800           60 308 dia. Berger 30 cal 155 gr Match BT Twist: 14"
+ 7,85       0,472    G1       10,04          800           60 308 dia. Berger 30 cal 155 gr Match VLD Twist: 14"
+ 7,85       0,495    G1       10,89          800           60 308 dia. Berger 30 cal 168 gr Match BT Twist: 13"
+ 7,85       0,512    G1       10,89          800           60 308 dia. Berger 30 cal 168 gr Match VLD Twist: 13"
+ 7,85       0,528    G1       11,34          800           60 308 dia. Berger 30 cal 175 gr Match VLD Twist: 13"
+ 7,85       0,556    G1       11,99          800           60 308 dia. Berger 30 cal 185 gr Match VLD Twist: 12"
+ 7,85       0,574    G1       12,31          800           60 308 dia. Berger 30 cal 190 gr Match VLD Twist: 12"
+ 7,85       0,631    G1       13,61          800           60 308 dia. Berger 30 cal 210 gr Match VLD Twist: 11"

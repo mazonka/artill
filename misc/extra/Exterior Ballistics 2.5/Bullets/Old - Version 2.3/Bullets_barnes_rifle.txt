@@ -1,0 +1,118 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,149    G1       2,33          800           60 224 dia. 36 gr. Barnes Varmint Grenade 
+ 5,70       0,149    G1       2,33          800           60 224 dia. 36 gr. Barnes Varmint Grenade 
+ 5,70       0,195    G1       2,92          800           60 224 dia. 45 gr. Barnes Banded Spitzer 
+ 5,70       0,128    G1       2,92          800           60 224 dia. 45 gr. Barnes XLC BT
+ 5,70       0,204    G1       3,43          800           60 224 dia. 53 gr. Barnes TSX FB
+ 5,70       0,287    G1       4,02          800           60 224 dia. 62 gr. Barnes TSX BT
+ 5,70       0,314    G1       4,54          800           60 224 dia. 70 gr. Barnes TSX BT
+ 6,17       0,199    G1       4,02          800           60 243 dia. 62 gr. Barnes Varmint Grenade 
+ 6,17       0,199    G1       4,02          800           60 243 dia. 62 gr. Barnes Varmint Grenade 
+ 6,17       0,341    G1       4,86          800           60 243 dia. 75 gr. Barnes Banded Spitzer
+ 6,17       0,333    G1       5,51          800           60 243 dia. 85 gr. Barnes TSX BT
+ 6,17       0,230    G1       6,16          800           60 243 dia. 95 gr. Barnes XLC FB
+ 6,54       0,325    G1       5,83          800           60 257 dia. 90 gr. Barnes Banded Spitzer
+ 6,54       0,370    G1       6,48          800           60 257 dia. 100 gr. Barnes TSX BT
+ 6,54       0,335    G1       7,45          800           60 257 dia. 115 gr. Barnes TSX FB
+ 6,73       0,452    G1       7,13          800           60 264 dia. 110 gr. Barnes Banded Spitzer
+ 6,73       0,381    G1       7,78          800           60 264 dia. 120 gr. Barnes TSX BT
+ 6,73       0,363    G1       8,42          800           60 264 dia. 130 gr. Barnes TSX FB
+ 6,73       0,287    G1       9,07          800           60 264 dia. 140 gr. Barnes XLC FB
+ 7,06       0,323    G1       7,13          800           60 277 dia. 110 gr. Barnes TSX BT
+ 7,06       0,438    G1       7,78          800           60 277 dia. 120 gr. Barnes Banded Spitzer
+ 7,06       0,431    G1       8,42          800           60 277 dia. 130 gr. Barnes TSX BT
+ 7,06       0,380    G1       8,42          800           60 277 dia. 130 gr. Barnes MRX BT
+ 7,06       0,404    G1       9,07          800           60 277 dia. 140 gr. Barnes TSX BT
+ 7,06       0,386    G1       9,72          800           60 277 dia. 150 gr. Barnes TSX FB
+ 7,06       0,425    G1       9,72          800           60 277 dia. 150 gr. Barnes MRX BT
+ 7,23       0,349    G1       7,78          800           60 284 dia. 120 gr. Barnes TSX BT
+ 7,23       0,394    G1       9,07          800           60 284 dia. 140 gr. Barnes TSX BT
+ 7,23       0,464    G1       9,07          800           60 284 dia. 140 gr. Barnes Banded Spitzer
+ 7,23       0,406    G1       9,07          800           60 284 dia. 140 gr. Barnes MRX BT
+ 7,23       0,408    G1       9,72          800           60 284 dia. 150 gr. Barnes TSX BT
+ 7,23       0,392    G1       10,37          800           60 284 dia. 160 gr. Barnes TSX FB
+ 7,23       0,439    G1       10,37          800           60 284 dia. 160 gr. Barnes MRX BT
+ 7,23       0,417    G1       11,34          800           60 284 dia. 175 gr. Barnes TSX FB
+ 7,85       0,150    G1       6,48          800           60 308 dia. 100 gr. Barnes X FN
+ 7,85       0,340    G1       8,42          800           60 308 dia. 130 gr. Barnes TSX BT
+ 7,85       0,369    G1       9,72          800           60 308 dia. 150 gr. Barnes TSX BT
+ 7,85       0,184    G1       9,72          800           60 308 dia. 150 gr. Barnes TSX FN
+ 7,85       0,420    G1       9,72          800           60 308 dia. 150 gr. Barnes MRX BT
+ 7,85       0,380    G1       10,69          800           60 308 dia. 165 gr. Barnes TSX BT
+ 7,85       0,438    G1       10,69          800           60 308 dia. 165 gr. Barnes Banded Spitzer
+ 7,85       0,439    G1       10,69          800           60 308 dia. 165 gr. Barnes MRX BT
+ 7,85       0,404    G1       10,89          800           60 308 dia. 168 gr. Barnes TSX BT
+ 7,85       0,453    G1       11,66          800           60 308 dia. 180 gr. Barnes TSX BT
+ 7,85       0,473    G1       11,66          800           60 308 dia. 180 gr. Barnes MRX BT
+ 7,85       0,423    G1       12,96          800           60 308 dia. 200 gr. Barnes TSX FB
+ 8,22       0,381    G1       11,66          800           60 323 dia. 180 gr. Barnes TSX BT
+ 8,22       0,421    G1       12,96          800           60 323 dia. 200 gr. Barnes TSX BT
+ 8,61       0,200    G1       10,37          800           60 338 dia. 160 gr. Barnes X FB
+ 8,61       0,352    G1       11,99          800           60 338 dia. 185 gr. Barnes TSX BT
+ 8,61       0,379    G1       11,99          800           60 338 dia. 185 gr. Barnes MRX BT
+ 8,61       0,404    G1       13,61          800           60 338 dia. 210 gr. Barnes TSX BT
+ 8,61       0,386    G1       14,58          800           60 338 dia. 225 gr. Barnes TSX FB
+ 8,61       0,433    G1       14,58          800           60 338 dia. 225 gr. Barnes MRX BT
+ 8,61       0,425    G1       16,20          800           60 338 dia. 250 gr. Barnes TSX FB
+ 8,61       0,208    G1       16,20          800           60 338 dia. 250 gr. Barnes Banded Solid
+ 8,88       0,301    G1       14,26          800           60 348 dia. 220 gr. Barnes F.N.S.P.
+ 8,88       0,327    G1       16,20          800           60 348 dia. 250 gr. Barnes F.N.S.P.
+ 9,11       0,284    G1       12,96          800           60 358 dia. 200 gr. Barnes TSX FB
+ 9,11       0,359    G1       14,58          800           60 358 dia. 225 gr. Barnes TSX FB
+ 9,30       0,428    G1       16,20          800           60 366 dia. 250 gr. Barnes TSX FB
+ 9,30       0,222    G1       16,20          800           60 366 dia. 250 gr. Barnes Banded Solid
+ 9,30       0,468    G1       18,53          800           60 366 dia. 286 gr. Barnes TSX FB
+ 9,30       0,258    G1       18,53          800           60 366 dia. 286 gr. Barnes Banded Solid
+ 9,55       0,213    G1       13,61          800           60 375 dia. 210 gr. Barnes X FB
+ 9,55       0,270    G1       15,23          800           60 375 dia. 235 gr. Barnes TSX FB
+ 9,55       0,290    G1       16,52          800           60 375 dia. 255 gr. Barnes F.N.S.P.
+ 9,55       0,290    G1       16,52          800           60 375 dia. 255 gr. Barnes F.N.S.P.
+ 9,55       0,326    G1       17,50          800           60 375 dia. 270 gr. Barnes TSX FB
+ 9,55       0,274    G1       17,50          800           60 375 dia. 270 gr. Barnes Banded Solid
+ 9,55       0,357    G1       19,44          800           60 375 dia. 300 gr. Barnes TSX FB
+ 9,55       0,305    G1       19,44          800           60 375 dia. 300 gr. Barnes Banded Solid
+ 9,58       0,290    G1       16,52          800           60 377 dia. 255 gr. Barnes F.N.S.P.
+ 10,41       9,999    G1       25,92          800           60 410 dia. 400 gr. Barnes Banded Solid
+ 10,45       0,254    G1       19,44          800           60 411 dia. 300 gr. Barnes X FB
+ 10,57       0,248    G1       19,44          800           60 416 dia. 300 gr. Barnes X FB
+ 10,57       0,357    G1       22,68          800           60 416 dia. 350 gr. Barnes TSX FB
+ 10,57       0,289    G1       22,68          800           60 416 dia. 350 gr. Barnes Banded Solid
+ 10,57       0,392    G1       25,92          800           60 416 dia. 400 gr. Barnes TSX FB
+ 10,57       0,330    G1       25,92          800           60 416 dia. 400 gr. Barnes Banded Solid
+ 10,72       0,319    G1       25,92          800           60 422 dia. 400 gr. Barnes Banded Solid
+ 10,72       0,378    G1       25,92          800           60 423 dia. 400 gr. Barnes TSX FB
+ 11,66       0,136    G1       16,20          800           60 458 dia. 250 gr. Barnes TSX FN
+ 11,66       0,163    G1       19,44          800           60 458 dia. 300 gr. Barnes TSX FN
+ 11,66       0,204    G1       19,44          800           60 458 dia. 300 gr. Barnes X FB
+ 11,66       0,291    G1       19,44          800           60 458 dia. 300 gr. Barnes S.S.P.
+ 11,66       0,227    G1       19,44          800           60 458 dia. 300 gr. Barnes F.N.S.P
+ 11,66       0,238    G1       22,68          800           60 458 dia. 350 gr. Barnes X FB
+ 11,66       0,389    G1       25,92          800           60 458 dia. 400 gr. Barnes S.S.P.
+ 11,66       0,302    G1       25,92          800           60 458 dia. 400 gr. Barnes F.N.S.P.
+ 11,66       0,369    G1       29,16          800           60 458 dia. 450 gr. Barnes TSX FB
+ 11,66       0,306    G1       29,16          800           60 458 dia. 450 gr. Barnes Banded Solid
+ 11,66       0,412    G1       32,40          800           60 458 dia. 500 gr. Barnes TSX FB
+ 11,66       0,341    G1       32,40          800           60 458 dia. 500 gr. Barnes Banded Solid
+ 12,04       0,363    G1       32,40          800           60 474 dia. 500 gr. Barnes TSX FB
+ 12,04       0,318    G1       32,40          800           60 474 dia. 500 gr. Barnes Banded Solid
+ 12,83       0,294    G1       34,02          800           60 504 dia. 525 gr. Barnes Banded Solid
+ 12,83       0,320    G1       34,02          800           60 505 dia. 525 gr. Barnes TSX FB
+ 12,95       0,369    G1       36,94          800           60 509 dia. 570 gr. Barnes TSX FB
+ 12,95       0,314    G1       36,94          800           60 509 dia. 570 gr. Barnes Banded Solid
+ 12,76       0,183    G1       19,44          800           60 510 dia. 300 gr. Barnes F.N.S.P.
+ 12,76       0,274    G1       29,16          800           60 510 dia. 450 gr. Barnes F.N.S.P.
+ 12,76       0,355    G1       41,92          800           60 510 dia. 647 gr. Barnes X BT
+ 12,76       0,412    G1       48,60          800           60 510 dia. 750 gr. Barnes Solid
+ 12,76       0,412    G1       48,60          800           60 510 dia. 750 gr. Barnes Solid
+ 12,76       0,412    G1       48,60          800           60 510 dia. 750 gr. Barnes Solid
+ 12,76       0,439    G1       51,84          800           60 510 dia. 800 gr. Barnes Solid
+ 14,83       0,257    G1       48,60          800           60 583 dia. 750 gr. Barnes Banded Solid
+ 14,83       0,314    G1       48,60          800           60 585 dia. 750 gr. Barnes XLC FB
+ 15,75       0,380    G1       58,32          800           60 618 dia. 900 gr. Barnes Banded Solid

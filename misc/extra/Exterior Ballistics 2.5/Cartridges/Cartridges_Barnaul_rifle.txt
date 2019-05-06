@@ -1,0 +1,53 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,60       0,347    G1       3,89          940           ? 5.45x39 60 gr. FMJ
+ 5,60       0,228    G1       3,56          958           ? 5.45x39 55 gr. SP
+ 5,60       0,229    G1       3,56          963           ? 5.45x39 55 gr. HP
+ 5,70       0,225    G1       3,56          994           ? 5.56x45 55 gr. FMJBT
+ 5,70       0,248    G1       4,02          930           ? 5.56x45 62 gr. FMJBT
+ 5,70       0,227    G1       3,56          990           ? 5.56x45 55 gr. SPBT
+ 5,70       0,251    G1       4,02          926           ? 5.56x45 62 gr. SPBT
+ 5,70       0,189    G1       3,56          997           ? 5.56x45 55 gr. HPBT
+ 5,70       0,212    G1       4,02          931           ? 5.56x45 62 gr. HPBT
+ 5,70       0,214    G1       3,56          997           ? 5.56x45 55 gr. HP Enhanced accuracy
+ 5,70       0,255    G1       3,56          992           ? 5.56x45 55 gr. V-MAX Centaur
+ 5,70       0,243    G1       3,56          994           ? 5.56x45 55 gr. FMJBT Centaur
+ 5,70       0,285    G1       4,02          928           ? 5.56x45 62 gr. HPBT Centaur
+ 6,17       0,4    G1       5,83          809           ? 243 Win. (6.16x51) 90 gr. FMJBT Centaur
+ 6,17       0,405    G1       6,48          798           ? 243 Win. (6.16x51) 100 gr. HPBT Centaur
+ 6,71       0,515    G1       6,48          825           ? 6.5 Grendel 100 gr. FMJBT
+ 7,92       0,294    G1       7,97          775           ? 7.62x39 123 gr. FMJ
+ 7,92       0,289    G1       7,97          775           ? 7.62x39 123 gr. FMJ Enhanced accuracy
+ 7,92       0,25    G1       8,10          772           ? 7.62x39 125 gr. SP
+ 7,92       0,266    G1       7,97          773           ? 7.62x39 123 gr. HP
+ 7,92       0,271    G1       7,97          773           ? 7.62x39 123 gr. HP Enhanced accuracy
+ 7,92       0,183    G1       7,97          790           ? 7.62x39 123 gr. FMJ Centaur
+ 7,92       0,252    G1       7,97          779           ? 7.62x39 123 gr. SP Centaur
+ 7,92       0,445    G2       11,28          790           ? 7.62x54R 174 gr. FMJBT
+ 7,92       0,45    G3       11,28          790           ? 7.62x54R 174 gr. FMJBT Super
+ 7,92       0,524    G4       11,99          753           ? 7.62x54R 185 gr. FMJ
+ 7,92       0,515    G5       11,99          753           ? 7.62x54R 185 gr. FMJ Enhanced accuracy
+ 7,92       0,451    G6       13,15          703           ? 7.62x54R 203 gr. SPBT
+ 7,92       0,47    G7       11,28          786           ? 7.62x54R 174 gr. FMJ Centaur
+ 7,92       0,53    G8       11,28          784           ? 7.62x54R 174 gr. HP Centaur
+ 7,85       0,383    G1       9,40          840           ? 308 Winchester (7.62x51) 145 gr. FMJ
+ 7,85       0,479    G1       10,89          800           ? 308 Winchester (7.62x51) 168 gr. FMJBT
+ 7,85       0,289    G1       9,07          841           ? 308 Winchester (7.62x51) 140 gr. SP
+ 7,85       0,362    G1       10,89          798           ? 308 Winchester (7.62x51) 168 gr. SPBT
+ 7,85       0,398    G1       9,72          839           ? 308 Winchester (7.62x51) 150 gr. FMJ Centaur
+ 7,85       0,435    G1       10,69          797           ? 308 Winchester (7.62x51) 165 gr. SP Centaur
+ 7,85       0,452    G1       11,66          739           ? 308 Winchester (7.62x51) 180 gr. SP Centaur
+ 7,85       0,383    G1       9,40          858           ? 30-06 Springfield (7.62x63) 145 gr. FMJ
+ 7,85       0,479    G1       10,89          795           ? 30-06 Springfield (7.62x63) 168 gr. FMJBT
+ 7,85       0,29    G1       9,07          861           ? 30-06 Springfield (7.62x63) 140 gr. SP
+ 7,85       0,364    G1       10,89          796           ? 30-06 Springfield (7.62x63) 168 gr. SP
+ 7,85       0,398    G1       9,72          829           ? 30-06 Springfield (7.62x63) 150 gr. FMJ Centaur
+ 7,85       0,435    G1       10,69          797           ? 30-06 Springfield (7.62x63) 165 gr. SP Centaur
+ 7,85       0,452    G1       11,66          756           ? 30-06 Springfield (7.62x63) 180 gr. SP Centaur
+ 9,30       0,414    G1       17,37          697           ? 9.3x64 268 gr. SP

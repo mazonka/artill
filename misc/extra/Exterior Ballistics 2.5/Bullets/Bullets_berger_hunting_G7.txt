@@ -1,0 +1,27 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 6,17       0,211    G7       5,64          800           ? 243 dia. Berger 87 gr Match Grade VLD Hunting Nr. 24524 Twist 10"
+ 6,17       0,246    G7       6,16          800           ? 243 dia. Berger 95 gr Match Grade VLD Hunting Nr. 24527 Twist 9"
+ 6,17       0,272    G7       6,80          800           ? 243 dia. Berger 105 gr Match Grade VLD Hunting Nr. 24528 Twist 8"
+ 6,17       0,279    G7       7,45          800           ? 243 dia. Berger 115 gr Match Grade VLD Hunting Nr. 24530 Twist 7"
+ 6,53       0,239    G7       7,45          800           ? 257 dia. Berger 115 gr Match Grade VLD Hunting Nr. 25513 Twist 10"
+ 6,71       0,282    G7       8,42          800           ? 264 dia. Berger 130 gr Match Grade VLD Hunting Nr. 26503 Twist 8"
+ 6,71       0,313    G7       9,07          800           ? 264 dia. Berger 140 gr Match Grade VLD Hunting Nr. 26504 Twist 8"
+ 7,04       0,231    G7       8,42          800           ? 277 dia. Berger 130 gr Match Grade VLD Hunting Nr. 27501 Twist 11"
+ 7,04       0,248    G7       9,07          800           ? 277 dia. Berger 140 gr Match Grade VLD Hunting Nr. 27502 Twist 11"
+ 7,04       0,272    G7       9,72          800           ? 277 dia. Berger 150 gr Match Grade VLD Hunting Nr. 27503 Twist 10"
+ 7,21       0,261    G7       9,07          800           ? 284 dia. Berger 140 gr Match Grade VLD Hunting Nr. 28503 Twist 11"
+ 7,21       0,316    G7       10,89          800           ? 284 dia. Berger 168 gr Match Grade VLD Hunting Nr. 28501 Twist 10"
+ 7,21       0,337    G7       11,66          800           ? 284 dia. Berger 180 gr Match Grade VLD Hunting Nr. 28502 Twist 9"
+ 7,82       0,225    G7       10,04          800           ? 308 dia. Berger 155 gr Match Grade VLD Hunting Nr. 30508 Twist 14"
+ 7,82       0,242    G7       10,89          800           ? 308 dia. Berger 168 gr Match Grade VLD Hunting Nr. 30510 Twist 13"
+ 7,82       0,255    G7       11,34          800           ? 308 dia. Berger 175 gr Match Grade VLD Hunting Nr. 30512 Twist 13"
+ 7,82       0,281    G7       11,99          800           ? 308 dia. Berger 185 gr Match Grade VLD Hunting Nr. 30513 Twist 12"
+ 7,82       0,291    G7       12,31          800           ? 308 dia. Berger 190 gr Match Grade VLD Hunting Nr. 30514 Twist 12"
+ 7,82       0,323    G7       13,61          800           ? 308 dia. Berger 210 gr Match Grade VLD Hunting Nr. 30515 Twist 11"

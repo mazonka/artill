@@ -1,0 +1,39 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,65       0,264    G1       2,9          695           ? 22 Jet 45 gr. JSP
+ 6,38       0,109    G1       3,2          235           ? 25 ACP 50 gr. FMJ
+ 7,82       0,181    G1       6,4          226           ? 7.62 Nagant 98 gr. FMJ
+ 7,86       0,147    G1       5,5          460           ? 7.63mm Mauser 85 gr. FMJ
+ 7,90       0,15    G1       5,5          524           ? 7.62x25mm Tokarev 85 gr. FMJ
+ 7,90       0,147    G1       5,5          511           ? 7.62x25mm Tokarev 85 gr. JHP
+ 7,85       0,118    G1       4,6          276           ? 32 ACP 71 gr. FMJ
+ 7,85       0,118    G1       4,6          276           ? 32 ACP 71 gr. JHP
+ 8,00       0,12    G1       6,4          215           ? 32 S&W Long 98 gr. LRN
+ 9,04       0,075    G1       6,1          293           ? 380 ACP 94 gr. FMJ
+ 9,04       0,075    G1       6,1          293           ? 380 ACP 94 gr. JHP
+ 9,27       0,134    G1       6,0          320           ? 9x18mm Makarov 93 gr. FMJ
+ 9,27       0,136    G1       6,2          309           ? 9x18mm Makarov 95 gr. JHP
+ 9,03       0,157    G1       7,5          349           ? 9mm Luger 115 gr. FMJ
+ 9,03       0,157    G1       7,5          349           ? 9mm Luger 115 gr. JHP
+ 9,03       0,177    G1       8,0          341           ? 9mm Luger 124 gr. FMJ
+ 9,03       0,177    G1       8,0          341           ? 9mm Luger 124 gr. JHP
+ 9,03       0,184    G1       9,5          302           ? 9mm Luger 147 gr. FMJ
+ 9,03       0,184    G1       9,5          302           ? 9mm Luger 147 gr. JHP
+ 9,03       0,16    G1       10,2          290           ? 9mm Luger 158 gr. FMJ
+ 9,12       0,21    G1       10,2          271           ? 38 Special 158 gr. LRN
+ 9,12       0,178    G1       10,2          271           ? 38 Special 158 gr. LHP
+ 9,12       0,196    G1       10,2          378           ? 357 Magnum 158 gr. JHP
+ 9,03       0,152    G1       8,0          411           ? 357 SIG 124 gr. FMJ
+ 9,04       0,181    G1       8,4          370           ? 38 Super Auto 130 gr. FMJ
+ 10,17       0,165    G1       11,7          308           ? 40 S&W 180 gr. FMJ
+ 10,17       0,165    G1       11,7          308           ? 40 S&W 180 gr. JHP
+ 10,16       0,171    G1       11,7          366           ? 10mm Auto 180 gr. JHP
+ 10,97       0,173    G1       15,6          439           ? 44 Magnum 240 gr. JHP
+ 11,48       0,201    G1       14,9          255           ? 45 ACP 230 gr. FMJ
+ 11,48       0,144    G1       12,0          285           ? 45 ACP 185 gr. JHP

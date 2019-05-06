@@ -1,0 +1,66 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,221    G1       3,30          800           60 222 Rem Lapua 51 gr. HP Cutting Edge
+ 5,70       0,208    G1       3,56          800           60 222 Rem Lapua 55 gr. Soft Point
+ 5,70       0,202    G1       3,56          800           60 223 Rem Lapua 55 gr. Soft Point
+ 5,70       0,251    G1       3,56          800           60 223 Rem Lapua 55 gr. Spitzer
+ 5,70       0,321    G1       4,47          800           60 223 Rem Lapua 69 gr. Scenar
+ 5,70       0,321    G1       4,47          800           60 223 Rem Lapua 69 gr. Scenar Silver Jacket
+ 6,17       0,387    G1       5,83          800           60 243 Win  Lapua 90 gr. FMJ Boat Tail
+ 6,17       0,287    G1       6,48          800           60 243 Win  Lapua 100 gr. Soft Point
+ 6,17       0,23    G1       5,83          800           60 243 Win  Lapua 90 gr. Naturalis
+ 6,18       0,34    G1       4,99          800           60 6 mm  Lapua 77 gr. Hollow Point
+ 6,18       0,34    G1       4,99          800           60 6 mm  Lapua 77 gr. HP Silver Jacket
+ 6,18       0,42    G1       5,83          800           60 6 mm  Lapua 90 gr. Scenar
+ 6,18       0,42    G1       5,83          800           60 6 mm  Lapua 90 gr. Scenar Silver Jacket
+ 6,18       0,53    G1       6,80          800           60 6 mm  Lapua 105 gr. Scenar
+ 6,18       0,53    G1       6,80          800           60 6 mm  Lapua 105 gr. Scenar Silver Jacket
+ 6,71       0,25    G1       6,48          800           60 6.5 mm Lapua 100 gr. FMJ
+ 6,71       0,25    G1       6,48          800           60 6.5 mm Lapua 100 gr. FMJ Cutting Edge
+ 6,71       0,444    G1       6,48          800           60 6.5 mm Lapua 100 gr. Scenar
+ 6,71       0,444    G1       6,48          800           60 6.5 mm Lapua 100 gr. Scenar Silver Jacket
+ 6,71       0,478    G1       7,00          800           60 6.5 mm Lapua 108 gr. Scenar
+ 6,71       0,478    G1       7,00          800           60 6.5 mm Lapua 108 gr. Scenar Silver Jacket
+ 6,71       0,547    G1       7,97          800           60 6.5 mm Lapua 123 gr. Scenar
+ 6,71       0,547    G1       7,97          800           60 6.5 mm Lapua 123 gr. Scenar Silver Jacket
+ 6,71       0,615    G1       9,01          800           60 6.5 mm Lapua 139 gr. Scenar
+ 6,71       0,615    G1       9,01          800           60 6.5 mm Lapua 139 gr. Scenar Silver Jacket
+ 6,71       0,636    G1       9,33          800           60 6.5 mm Lapua 144 gr. FMJ Boat Tail
+ 6,71       0,377    G1       10,04          800           60 6.5 mm Lapua 155 gr. Mega
+ 6,71       0,329    G1       9,07          800           60 6.5 mm Lapua 140 gr. Naturalis
+ 7,21       0,28    G1       10,37          800           60 7.21 mm / 284 Lapua 160 gr. Naturalis
+ 7,85       0,17    G1       6,48          800           60 7.62 mm / 308 Lapua 100 gr. HP Cutting Edge
+ 7,85       0,28    G1       7,97          800           60 7.62 mm / 308 Lapua 123 gr. Spitzer
+ 7,85       0,28    G1       7,97          800           60 7.62 mm / 308 Lapua 123 gr. FMJ Cutting Edge
+ 7,85       0,508    G1       10,04          800           60 7.62 mm / 308 Lapua 155 gr. Scenar
+ 7,85       0,508    G1       10,04          800           60 7.62 mm / 308 Lapua 155 gr. Scenar Silver Jacket
+ 7,85       0,47    G1       10,82          800           60 7.62 mm / 308 Lapua 167 gr. Scenar
+ 7,85       0,47    G1       10,82          800           60 7.62 mm / 308 Lapua 167 gr. Scenar Silver Jacket
+ 7,85       0,521    G1       11,99          800           60 7.62 mm / 308 Lapua 185 gr. Scenar
+ 7,85       0,521    G1       11,99          800           60 7.62 mm / 308 Lapua 185 gr. Scenar Silver Jacket
+ 7,85       0,488    G1       9,72          800           60 7.62 mm / 308 Lapua 150 gr. Lock Base
+ 7,85       0,525    G1       11,02          800           60 7.62 mm / 308 Lapua 170 gr. Lock Base
+ 7,85       0,547    G1       11,99          800           60 7.62 mm / 308 Lapua 185 gr. FMH Boat Tail
+ 7,85       0,382    G1       12,96          800           60 7.62 mm / 308 Lapua 200 gr. Subsonic
+ 7,85       0,33    G1       9,72          800           60 7.62 mm / 308 Lapua 150 gr. Mega
+ 7,85       0,319    G1       11,99          800           60 7.62 mm / 308 Lapua 185 gr. Mega
+ 7,85       0,344    G1       12,96          800           60 7.62 mm / 308 Lapua 200 gr. Mega
+ 7,85       0,314    G1       11,02          800           60 7.62 mm / 308 Lapua 170 gr. Naturalis Long Range
+ 7,85       0,302    G1       11,66          800           60 7.62 mm / 308 Lapua 180 gr. Naturalis
+ 7,85       0,336    G1       11,73          800           60 7.62 mm / 308 Lapua 181 gr. Naturalis
+ 7,92       0,483    G1       12,96          800           60 7.62 mm / 311 Lapua 200 gr. FMJ Boat Tail
+ 7,92       0,28    G1       7,97          800           60 7.62 mm / 311 Lapua 123 gr. Spitzer
+ 8,61       0,662    G1       16,20          800           60 338 Lapua 250 gr. Lock Base
+ 8,61       0,675    G1       16,20          800           60 338 Lapua 250 gr. Scenar
+ 8,61       0,38    G1       14,90          800           60 338 Lapua 230 gr. Naturalis Long Range
+ 9,30       0,339    G1       18,47          800           60 9.3 mm  Lapua 285 gr. Mega
+ 9,30       0,304    G1       14,26          800           60 9.3 mm  Lapua 220 gr. Naturalis Long Range
+ 9,30       0,322    G1       17,50          800           60 9.3 mm  Lapua 270 gr. Naturalis
+ 12,76       0,96    G1       48,60          800           60 50 BMG Lapua 750 gr. Bullex-N
+ 12,76       0,98    G1       51,84          800           60 50 BMG Lapua 800 gr. Bullex-N

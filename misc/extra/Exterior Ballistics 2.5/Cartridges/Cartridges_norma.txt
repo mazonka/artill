@@ -1,0 +1,195 @@
+
+    *** List of Bullets and Cartridges *** 
+--------------------------------------------------
+                  Jan Krcmar 
+ 
+
+ Caliber [mm]  B.C. Drag   Weight [g]  Velocity [m/s]  Barrel [cm]  Notice 
+-----------------------------------------------------------------------------------------$
+ 5,70       0,200    G1       2,60          1050           ? 222 Rem. 40 gr. Hornady V-Max
+ 5,70       0,185    G1       3,20          975           ? 222 Rem. 50 gr. SP
+ 5,70       0,209    G1       3,60          850           ? 222 Rem. 55 gr. FMJ
+ 5,70       0,209    G1       3,60          940           ? 222 Rem. 55 gr. FMJ Jaktmatch
+ 5,70       0,185    G1       3,60          930           ? 222 Rem. 55 gr. Oryx
+ 5,70       0,214    G1       4,00          880           ? 222 Rem. 62 gr. SP
+ 5,70       0,200    G1       2,60          1140           ? 223 Rem. 40 gr. Hornady V-Max
+ 5,70       0,242    G1       3,20          1065           ? 223 Rem. 50 gr. Hornady V-Max
+ 5,70       0,237    G1       3,40          980           ? 223 Rem. 53 gr. SP
+ 5,70       0,185    G1       3,60          950           ? 223 Rem. 55 gr. Oryx
+ 5,70       0,209    G1       3,60          990           ? 223 Rem. 55 gr. FMJ Jaktmatch
+ 5,70       0,242    G1       3,20          1135           ? 22-250 Rem. 50 gr. Hornady V-Max
+ 5,70       0,237    G1       3,40          1130           ? 22-250 Rem. 53 gr. SP
+ 5,70       0,185    G1       3,60          1100           ? 22-250 Rem. 55 gr. Oryx
+ 5,70       0,209    G1       3,60          1100           ? 22-250 Rem. 55 gr. FMJ Jaktmatch
+ 5,70       0,185    G1       3,20          1225           ? 220 Swift 50 gr. SP
+ 5,70       0,185    G1       3,60          1150           ? 220 Swift 55 gr. Oryx
+ 5,70       0,268    G1       4,60          850           ? 5.6 x 52 R 71 gr. SP
+ 6,17       0,351    G1       6,20          850           ? 6 mm Norma Br 95 gr. FMJ Jaktmatch
+ 6,17       0,257    G1       6,50          830           ? 6 mm Norma Br 100 gr. Oryx
+ 6,17       0,379    G1       6,20          900           ? 6 mm XC 95 gr. Nosler Ballistic Tip
+ 6,17       0,351    G1       6,20          900           ? 6 mm XC 95 gr. FMJ Jaktmatch
+ 6,17       0,257    G1       6,50          900           ? 6 mm XC 100 gr. Oryx
+ 6,17       0,250    G1       3,80          1200           ? 243 Win. 58 gr. Hornady V-Max
+ 6,17       0,330    G1       4,90          1015           ? 243 Win. 75 gr. Hornady V-Max
+ 6,17       0,351    G1       6,20          975           ? 243 Win. 95 gr. FMJ Jaktmatch
+ 6,17       0,257    G1       6,50          910           ? 243 Win. 100 gr. SP
+ 6,17       0,261    G1       6,50          910           ? 243 Win. 100 gr. Oryx
+ 6,80       0,326    G1       10,10          710           ? 6.5 Carcano 156 gr. Alaska
+ 6,63       0,326    G1       10,10          630           ? 6.5 Jap. Ari. 156 gr. Alaska
+ 6,71       0,321    G1       6,50          800           ? 6.5 x 55 SM 100 gr. HP Rekrutt Jaktmatch
+ 6,71       0,431    G1       7,80          860           ? 6.5 x 55 SM 120 gr. Nosler BST
+ 6,71       0,428    G1       7,80          820           ? 6.5 x 55 SM 120 gr. FMJ Jaktmatch
+ 6,71       0,467    G1       9,10          820           ? 6.5 x 55 SM 140 gr. Nosler Partition
+ 6,71       0,354    G1       10,10          780           ? 6.5 x 55 SM 156 gr. Vulkan
+ 6,71       0,348    G1       10,10          780           ? 6.5 x 55 SM 156 gr. Oryx
+ 6,71       0,276    G1       10,10          780           ? 6.5 x 55 SM 156 gr. Alaska
+ 6,72       0,428    G1       7,80          950           ? 6.5-284 Norma 120 gr. FMJ Jaktmatch
+ 6,72       0,348    G1       10,10          850           ? 6.5-284 Norma 156 gr. Oryx
+ 7,06       0,370    G1       7,10          980           ? 270 Win. 110 gr. Hornady V-Max
+ 7,06       0,314    G1       7,80          1000           ? 270 Win. 120 gr. Kalahari
+ 7,06       0,359    G1       8,40          957           ? 270 Win. 130 gr. SP
+ 7,06       0,365    G1       8,40          880           ? 270 Win. 130 gr. FMJ Jaktmatch
+ 7,06       0,373    G1       9,70          870           ? 270 Win. 150 gr. Oryx
+ 7,06       0,340    G1       10,10          870           ? 270 Win. 156 gr. Vulkan
+ 7,06       0,314    G1       7,80          1060           ? 270 WSM 120 gr. Kalahari
+ 7,06       0,365    G1       8,40          960           ? 270 WSM 130 gr. FMJ Jaktmatch
+ 7,06       0,433    G1       8,40          1000           ? 270 WSM 130 gr. Nosler BST
+ 7,06       0,373    G1       9,70          950           ? 270 WSM 150 gr. Oryx
+ 7,23       0,315    G1       8,10          950           ? 280 Rem. 125 gr. Kalahari
+ 7,23       0,330    G1       10,10          850           ? 280 Rem. 156 gr. Oryx
+ 7,23       0,373    G1       11,00          825           ? 280 Rem. 170 gr. Plastic point
+ 7,23       0,353    G1       11,00          790           ? 280 Rem. 170 gr. Vulkan
+ 7,25       0,441    G1       9,70          805           ? 7 x 57 R 150 gr. FMJ
+ 7,25       0,330    G1       10,10          795           ? 7 x 57 R 156 gr. Oryx
+ 7,25       0,330    G1       10,10          805           ? 7 x 57 156 gr. Oryx
+ 7,25       0,315    G1       8,10          950           ? 7 x 64 125 gr. Kalahari
+ 7,25       0,485    G1       9,10          900           ? 7 x 64 140 gr. Nosler Accubond
+ 7,25       0,330    G1       10,10          850           ? 7 x 64 156 gr. Oryx
+ 7,25       0,378    G1       11,00          830           ? 7 x 64 170 gr. Plastic point
+ 7,25       0,353    G1       11,00          830           ? 7 x 64 170 gr. Vulkan
+ 7,25       0,324    G1       11,00          840           ? 7 x 64 170 gr. Oryx
+ 7,25       0,441    G1       9,70          840           ? 7 x 65 R 150 gr. FMJ
+ 7,25       0,330    G1       10,10          830           ? 7 x 65 R 156 gr. Oryx
+ 7,25       0,373    G1       11,00          800           ? 7 x 65 R 170 gr. Plastic point
+ 7,25       0,353    G1       11,00          810           ? 7 x 65 R 170 gr. Vulkan
+ 7,25       0,324    G1       11,00          810           ? 7 x 65 R 170 gr. Oryx
+ 7,23       0,315    G1       8,10          1025           ? 7 mm Rem. Mag. 125 gr. Kalahari
+ 7,23       0,394    G1       9,10          950           ? 7 mm Rem. Mag. 140 gr. Barnes TSX
+ 7,23       0,536    G1       9,70          965           ? 7 mm Rem. Mag. 150 gr. Swift Scirocco
+ 7,23       0,443    G1       9,70          913           ? 7 mm Rem. Mag. 150 gr. FMJ Jaktmatch
+ 7,23       0,330    G1       10,10          900           ? 7 mm Rem. Mag. 156 gr. Oryx
+ 7,23       0,353    G1       11,00          900           ? 7 mm Rem. Mag. 170 gr. Vulkan
+ 7,23       0,378    G1       11,00          900           ? 7 mm Rem. Mag. 170 gr. Plastic point
+ 7,23       0,324    G1       11,00          880           ? 7 mm Rem. Mag. 170 gr. Oryx
+ 7,22       0,330    G1       10,10          925           ? 7 mm Blaser Mag. 156 gr. Oryx
+ 7,23       0,485    G1       9,10          860           ? 7 mm-08 Rem. 140 gr. Nosler BST
+ 7,78       0,288    G1       11,70          760           ? 7.5 x 55 Swiss 180 gr. Oryx
+ 7,92       0,257    G1       11,70          785           ? 7.62 x 54 R Russian 180 gr. Alaska
+ 7,89       0,262    G1       11,30          760           ? 7.7 Jap. 174 gr. SP
+ 7,94       0,262    G1       11,30          760           ? 7.65 Arg. 174 gr. SP
+ 7,85       0,304    G1       9,70          890           ? 308 Win. 150 gr. Kalahari
+ 7,85       0,435    G1       9,70          860           ? 308 Win. 150 gr. Nosler BST
+ 7,85       0,423    G1       9,70          810           ? 308 Win. 150 gr. FMJ Jaktmatch
+ 7,85       0,367    G1       10,70          823           ? 308 Win. 165 gr. Swift A-Frame
+ 7,85       0,366    G1       11,70          796           ? 308 Win. 180 gr. Plastic point
+ 7,85       0,474    G1       11,70          796           ? 308 Win. 180 gr. Nosler Partition
+ 7,85       0,257    G1       11,70          796           ? 308 Win. 180 gr. Alaska
+ 7,85       0,315    G1       11,70          796           ? 308 Win. 180 gr. Vulkan
+ 7,85       0,288    G1       11,70          796           ? 308 Win. 180 gr. Oryx
+ 7,85       0,304    G1       9,70          910           ? 30-06 150 gr. Kalahari
+ 7,85       0,435    G1       9,70          895           ? 30-06 150 gr. Nosler BST
+ 7,85       0,423    G1       9,70          845           ? 30-06 150 gr. FMJ Jaktmatch
+ 7,85       0,507    G1       11,70          815           ? 30-06 180 gr. Nosler Accubond
+ 7,85       0,400    G1       11,70          823           ? 30-06 180 gr. Swift A-Frame
+ 7,85       0,257    G1       11,70          823           ? 30-06 180 gr. Alaska
+ 7,85       0,474    G1       11,70          823           ? 30-06 180 gr. Nosler Partition
+ 7,85       0,366    G1       11,70          823           ? 30-06 180 gr. Plastic point
+ 7,85       0,315    G1       11,70          823           ? 30-06 180 gr. Vulkan
+ 7,85       0,288    G1       11,70          823           ? 30-06 180 gr. Oryx
+ 7,85       0,338    G1       13,00          800           ? 30-06 200 gr. Oryx
+ 7,85       0,435    G1       9,70          990           ? 300 Win. Mag. 150 gr. Nosler BST
+ 7,85       0,428    G1       9,70          980           ? 300 Win. Mag. 150 gr. Barnes TSX
+ 7,85       0,423    G1       9,70          935           ? 300 Win. Mag. 150 gr. FMJ Jaktmatch
+ 7,85       0,305    G1       10,00          1000           ? 300 Win. Mag. 155 gr. Kalahari
+ 7,85       0,507    G1       11,70          900           ? 300 Win. Mag. 180 gr. Nosler Accubond
+ 7,85       0,400    G1       11,70          890           ? 300 Win. Mag. 180 gr. Swift A-Frame
+ 7,85       0,366    G1       11,70          920           ? 300 Win. Mag. 180 gr. Plastic point
+ 7,85       0,288    G1       11,70          890           ? 300 Win. Mag. 180 gr. Oryx
+ 7,85       0,338    G1       13,00          850           ? 300 Win. Mag. 200 gr. Oryx
+ 7,85       0,435    G1       9,70          980           ? 300 WSM 150 gr. Nosler BST
+ 7,85       0,423    G1       9,70          900           ? 300 WSM 150 gr. FMJ Jaktmatch
+ 7,85       0,305    G1       10,00          990           ? 300 WSM 155 gr. Kalahari
+ 7,85       0,288    G1       11,70          885           ? 300 WSM 180 gr. Oryx
+ 7,83       0,338    G1       13,00          860           ? 300 Blaser Mag. 200 gr. Oryx
+ 7,85       0,288    G1       11,70          900           ? 308 Norma Mag. 180 gr. Oryx
+ 8,59       0,370    G1       14,90          860           ? 338 Blaser Mag. 230 gr. Oryx
+ 8,61       0,499    G1       14,60          810           ? 338 Win. Mag. 225 gr. FMJ Jaktmatch
+ 8,61       0,370    G1       14,90          840           ? 338 Win. Mag. 230 gr. Oryx
+ 9,12       0,340    G1       16,20          740           ? 35 Whelen 250 gr. Oryx
+ 9,12       0,275    G1       15,00          800           ? 358 Norma Mag. 232 gr. FMJ Jaktmatch
+ 9,12       0,340    G1       16,20          840           ? 358 Norma Mag. 250 gr. Oryx
+ 8,22       0,191    G1       8,00          780           ? 8 x 57 JRS 123 gr. FMJ
+ 8,22       0,331    G1       12,70          730           ? 8 x 57 JRS 196 gr. Oryx
+ 8,22       0,345    G1       12,70          730           ? 8 x 57 JRS 196 gr. Alaska
+ 8,22       0,345    G1       12,70          730           ? 8 x 57 JRS 196 gr. Vulkan
+ 8,22       0,191    G1       8,00          860           ? 8 x 57 JS 123 gr. FMJ Jaktmatch
+ 8,22       0,305    G1       12,70          770           ? 8 x 57 JS 196 gr. Alaska
+ 8,22       0,331    G1       12,70          770           ? 8 x 57 JS 196 gr. Oryx
+ 8,22       0,347    G1       12,70          770           ? 8 x 57 JS 196 gr. Vulkan
+ 8,22       0,357    G1       12,70          900           ? 8 x 68 S 196 gr. Swift A-Frame
+ 9,30       0,275    G1       15,00          675           ? 9.3 x 57 232 gr. FMJ Jaktmatch
+ 9,30       0,267    G1       15,00          720           ? 9.3 x 57 232 gr. Oryx
+ 9,30       0,365    G1       18,50          630           ? 9.3 x 57 285 gr. Alaska
+ 9,30       0,267    G1       15,00          800           ? 9.3 x 62 232 gr. Oryx
+ 9,30       0,278    G1       15,00          800           ? 9.3 x 62 232 gr. Vulkan
+ 9,30       0,275    G1       15,00          765           ? 9.3 x 62 232 gr. FMJ Jaktmatch
+ 9,30       0,365    G1       18,50          720           ? 9.3 x 62 285 gr. Alaska
+ 9,30       0,365    G1       18,50          720           ? 9.3 x 62 285 gr. Plastic point
+ 9,30       0,330    G1       18,50          720           ? 9.3 x 62 285 gr. Oryx
+ 9,30       0,428    G1       18,50          720           ? 9.3 x 62 286 gr. Swift A-Frame
+ 9,30       0,383    G1       21,10          670           ? 9.3 x 62 325 gr. Oryx
+ 9,30       0,236    G1       17,80          745           ? 9.3 x 62 275 gr. Solid
+ 9,30       0,278    G1       15,00          780           ? 9.3 x 74 R 232 gr. Vulkan
+ 9,30       0,330    G1       18,50          710           ? 9.3 x 74 R 285 gr. Oryx
+ 9,30       0,365    G1       18,50          720           ? 9.3 x 74 R 285 gr. Plastic point
+ 9,30       0,365    G1       18,50          710           ? 9.3 x 74 R 285 gr. Alaska
+ 9,53       0,320    G1       19,40          820           ? 375 Blaser Mag. 300 gr. Oryx
+ 9,52       0,276    G1       19,40          730           ? 375 Flanged Mag. N. E. 300 gr. Woodleigh SP
+ 9,52       0,276    G1       19,40          730           ? 375 Flanged Mag. N. E. 300 gr. Woodleigh FMJ
+ 9,55       0,236    G1       17,50          800           ? 375 H&H Mag. 270 gr. Barnes TSX
+ 9,55       0,229    G1       19,40          777           ? 375 H&H Mag. 300 gr. Norma Solid
+ 9,55       0,325    G1       19,40          780           ? 375 H&H Mag. 300 gr. Swift A-Frame
+ 9,55       0,320    G1       19,40          780           ? 375 H&H Mag. 300 gr. Oryx
+ 9,55       0,321    G1       22,70          700           ? 375 H&H Mag. 350 gr. Woodleigh SP
+ 9,55       0,307    G1       22,70          700           ? 375 H&H Mag. 350 gr. FMJ
+ 10,72       0,247    G1       25,90          710           ? 404 Jeffery 400 gr. Norma Solid
+ 10,72       0,365    G1       29,20          655           ? 404 Jeffery 450 gr. Woodleigh SP
+ 10,72       0,360    G1       29,20          655           ? 404 Jeffery 450 gr. Woodleigh FMJ
+ 10,57       0,247    G1       25,90          730           ? 416 Rem. Mag. 400 gr. Norma Solid
+ 10,57       0,338    G1       29,20          655           ? 416 Rem. Mag. 450 gr. Woodleigh SP
+ 10,57       0,325    G1       29,20          655           ? 416 Rem. Mag. 450 gr. Woodleigh FMJ
+ 10,57       0,367    G1       25,90          716           ? 416 Rigby 400 gr. Swift A-Frame
+ 10,57       0,247    G1       25,90          725           ? 416 Rigby 400 gr. Norma Solid
+ 10,57       0,338    G1       29,20          655           ? 416 Rigby 450 gr. Woodleigh SP
+ 10,57       0,325    G1       29,20          655           ? 416 Rigby 450 gr. Woodleigh FMJ
+ 10,57       0,245    G1       24,30          715           ? 416 Taylor 375 gr. Norma Solid
+ 10,57       0,307    G1       26,60          710           ? 500/416 Nitro Express 410 gr. Woodleigh SP
+ 10,57       0,307    G1       26,60          710           ? 500/416 Nitro Express 410 gr. Woodleigh FMJ
+ 11,66       0,269    G1       32,40          760           ? 450 Rigby Rimless 500 gr. Norma Solid
+ 11,66       0,340    G1       35,60          640           ? 450 Rigby Rimless 550 gr. Woodleigh SP
+ 11,66       0,326    G1       35,60          640           ? 450 Rigby Rimless 550 gr. Woodleigh FMJ
+ 11,66       0,269    G1       32,40          700           ? 458 Lott 500 gr. Norma Solid
+ 11,66       0,330    G1       35,60          640           ? 458 Lott 550 gr. Woodleigh SP
+ 11,66       0,330    G1       35,60          640           ? 458 Lott 550 gr. Woodleigh FMJ
+ 11,66       0,269    G1       32,40          640           ? 458 Win. Mag. 500 gr. Norma Solid
+ 11,66       0,361    G1       32,40          645           ? 458 Win. Mag. 500 gr. Swift A-Frame
+ 12,04       0,370    G1       32,40          640           ? 470 Nitro Express 500 gr. Woodleigh FMJ
+ 12,04       0,374    G1       32,40          640           ? 470 Nitro Express 500 gr. Woodleigh SP
+ 12,95       0,350    G1       36,90          670           ? 500 Jeffery 570 gr. Woodleigh FMJ
+ 12,95       0,368    G1       36,90          640           ? 500 Jeffery 570 gr. Woodleigh SP
+ 12,95       0,239    G1       35,00          730           ? 500 Jeffery 540 gr. Norma Solid
+ 12,95       0,368    G1       36,90          640           ? 500 Nitro Express 3 570 gr. Woodleigh SP
+ 12,95       0,350    G1       36,90          640           ? 500 Nitro Express 3 570 gr. Woodleigh FMJ
+ 12,83       0,360    G1       39,00          640           ? 505 Magnum Gibbs 600 gr. Woodleigh FMJ
+ 12,83       0,360    G1       36,90          640           ? 505 Magnum Gibbs 570 gr. Woodleigh SP
+ 12,83       0,242    G1       35,00          700           ? 505 Magnum Gibbs 540 gr. Norma Solid
